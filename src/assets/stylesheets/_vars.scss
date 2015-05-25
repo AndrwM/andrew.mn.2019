@@ -1,0 +1,85 @@
+
+
+//----------------- Breakpoints, Susy, & Thangz
+
+$susy: (
+  gutters: 1/8,
+  global-box-sizing: border-box,
+);
+
+$bp-small: "min-width: 401px";
+$bp-medium: "min-width: 601px";
+$bp-large: "min-width: 901px";
+
+$border-radius: 4px;
+$font-size: 16px;
+
+//----------------- Colors
+
+// Green
+$c-green: #3D9D5B;
+
+// Neutrals
+$c-grey-light: #d0d6e0;
+$c-grey-mid: #81818b;
+
+//----------------- Type Mixins
+
+$ff-meta-serif: "ff-meta-serif-web-pro", Georgia, "Times New Roman", serif;
+$ff-futura: "futura-pt", Helvetica, Arial, sans-serif;
+
+@mixin ff-heading {
+  font-family: $ff-futura;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin ff-body-bold {
+  font-family: $ff-meta-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin ff-body {
+  font-family: $ff-meta-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+//----------------- Misc Presets
+
+@mixin transition-hover {
+  transition-duration: 0.3s;
+  transition-property: visibility, opacity, color, border, background, padding;
+}
+
+@include keyframes(introFade-top) {
+  0% {
+    opacity: 0;
+    transform:translate3d(0, 50px, 0);
+  }
+  100% {
+    transform:translate3d(0, 0px, 0);
+    opacity: 1;
+  }
+}
+@include keyframes(introFade-right) {
+  0% {
+    opacity: 0;
+    transform:translate3d(-70px, 0, 0);
+  }
+  100% {
+    transform:translate3d(0, 0px, 0);
+    opacity: 1;
+  }
+}
+@include keyframes(introFade-left) {
+  0% {
+    opacity: 0;
+    transform:translate3d(70px, 0, 0);
+  }
+  100% {
+    transform:translate3d(0, 0px, 0);
+    opacity: 1;
+  }
+}

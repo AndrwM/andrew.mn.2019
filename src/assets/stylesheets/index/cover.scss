@@ -1,0 +1,43 @@
+
+
+header.cover {
+	background:#000 url(/assets/images/index-cover-small.jpg) top center no-repeat;
+	padding: 200px 0 100px 0;
+
+	.bio {
+		max-width: 500px;
+		margin:auto;
+		color: #fff;
+		h1 {
+			margin-bottom: 30px;
+		}
+		p {
+			font-size: em(23px);
+			line-height: em(30px);
+		}
+	}
+}
+
+@include media($bp-medium) {
+
+	header.cover {
+		background:#000 url(/assets/images/index-cover-large.jpg) top center no-repeat;
+		background-size: contain;
+		min-height: 800px;
+		padding: 0;
+
+		.bio {
+			max-width: 500px;
+			margin:auto;
+			color: #fff;
+			h1 {
+				margin-bottom: 30px;
+			}
+			p {
+				font-size: em(23px);
+				line-height: em(30px);
+			}
+		}
+	}
+
+}

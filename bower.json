@@ -1,0 +1,17 @@
+{
+  "name": "Lien Nation",
+  "version": "0.0.1",
+  "authors": [
+    "Andrew McIntee <me@andrew.mn>"
+  ],
+  "dependencies": {
+    "console-polyfill": "~0.2.1",
+    "html5shiv": "~3.7.2",
+    "jquery": "~2.1.4",
+    "dragdealer": "git://github.com/skidding/dragdealer.git#~0.9.8",
+    "skrollr": "~0.6.29"
+  },
+  "devDependencies": {
+    "susy": "~2.2.3"
+  }
+}

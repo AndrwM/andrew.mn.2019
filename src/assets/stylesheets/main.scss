@@ -1,0 +1,16 @@
+
+//------------- Setup
+
+@import "utils";
+@import "vars";
+
+//------------- Global
+
+@import "reset";
+@import "global";
+
+//------------- Sitewide Elements
+
+body > .wrapper.index {
+	@import "index/cover";
+}
