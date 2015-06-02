@@ -43,11 +43,12 @@ section.projects {
 				float: left;
 				.preview {
 					bottom: -190px;
-					left:2%;
+					left:0;
+					right:0;
 				}
 				&.hero {
 					width: 98%;
-					height: 400px;
+					height: 360px;
 					.description {
 						h2 { text-align: left; }
 						p { text-align: left; }
@@ -58,7 +59,7 @@ section.projects {
 					}
 					.preview {
 						right: 2%;
-						bottom: -130px;
+						bottom: -170px;
 						left: auto;
 					}
 				}
@@ -70,6 +71,10 @@ section.projects {
 				}
 				&.small {
 					width: 38%;
+					.preview {
+						bottom: -190px;
+						left:6%;
+					}
 				}
 			}
 			//----------- Project Specific

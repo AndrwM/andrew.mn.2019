@@ -36,10 +36,13 @@ body {
 
 // Resuable Content Container
 .container {
-  max-width:1100px;
+  max-width:1300px;
   margin: 0 auto;
-  padding:0 20px;
+  padding:0 10px;
   @include clearfix;
+  @include media($bp-medium) {
+    padding:0 40px;
+  }
 }
 
 
