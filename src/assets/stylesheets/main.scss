@@ -1,6 +1,7 @@
 
 //------------- Setup
 
+// @import "../../../bower_components/susy/sass/susy";
 @import "utils";
 @import "vars";
 
@@ -13,4 +14,6 @@
 
 body > .wrapper.index {
 	@import "index/cover";
+	@import "index/endorsements";
+	@import "index/projects";
 }

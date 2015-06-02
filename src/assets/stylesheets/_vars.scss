@@ -2,35 +2,48 @@
 
 //----------------- Breakpoints, Susy, & Thangz
 
-$susy: (
-  gutters: 1/8,
-  global-box-sizing: border-box,
-);
+// $susy: (
+//   // gutters: 1/8,
+//   global-box-sizing: border-box,
+//   $total-columns: 10; // 10 columns
+//   $column-width: 4em; // columns are 4em wide
+//   $gutter-width: 1em; // with 1em gutters
+//   $grid-padding: 1em; // and 1em padding on the grid container
+// );
 
 $bp-small: "min-width: 401px";
-$bp-medium: "min-width: 601px";
-$bp-large: "min-width: 901px";
+$bp-medium: "min-width: 801px";
+$bp-large: "min-width: 1201px";
 
 $border-radius: 4px;
-$font-size: 16px;
+$font-size: 20px;
 
 //----------------- Colors
 
 // Green
 $c-green: #3D9D5B;
+// $c-green: #98C365;
+$c-yellow: #FFCD01;
+// $c-yellow: #DEC41E;
 
 // Neutrals
-$c-grey-light: #d0d6e0;
-$c-grey-mid: #81818b;
+$c-grey-light: #F3F3F3;
 
 //----------------- Type Mixins
 
 $ff-meta-serif: "ff-meta-serif-web-pro", Georgia, "Times New Roman", serif;
+$ff-minion-pro: "minion-pro", Georgia, "Times New Roman", serif;
 $ff-futura: "futura-pt", Helvetica, Arial, sans-serif;
 
 @mixin ff-heading {
   font-family: $ff-futura;
   font-weight: 700;
+  font-style: normal;
+}
+
+@mixin ff-label {
+  font-family: $ff-futura;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -41,8 +54,9 @@ $ff-futura: "futura-pt", Helvetica, Arial, sans-serif;
 }
 
 @mixin ff-body {
+  // font-family: $ff-meta-serif;
   font-family: $ff-meta-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 }
 

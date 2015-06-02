@@ -1,0 +1,43 @@
+
+
+section.endorsements {
+	
+	// .brands {
+	// 	background:#fff url();
+	// 	padding:80px 0 200px;
+	// 	.logos {
+	// 		margin:30px 0;
+	// 		height: 54px;
+	// 		background: url(/assets/images/index-brands.jpg) no-repeat center center;
+	// 		@include seo-text;
+	// 	}
+	// }
+
+	.testimonials {
+		background: $c-grey-light;
+		// padding: 50px 0;
+		blockquote {
+			max-width:460px;
+			margin:50px auto;
+			font-style: italic;
+			font-size: em(16px);
+			line-height: em(28px);
+			&:before {
+				content:"\201C";
+				  position: absolute;
+				  left: -22px;
+				  font-size: 32px;
+				  top: 6px;
+				  opacity: 0.5;
+			}
+			cite {
+				@include ff-label;
+				font-style: normal;
+				font-size: em(14px);
+				display: block;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+}

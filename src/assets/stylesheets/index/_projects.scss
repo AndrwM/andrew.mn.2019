@@ -1,0 +1,28 @@
+
+
+section.projects {
+	padding: 40px 0;
+	.project-listing {
+		.project {
+			background:$c-yellow;
+			// border-radius:$border-radius;
+			height: 400px;
+			display: block;
+			// @include span(2);
+			margin:1%;
+			float: left;
+			// box-sizing: content-box;
+			&.hero {
+				width: 98%;
+			}
+			&.large {
+				width: 58%;
+			}
+			&.small {
+				width: 38%;
+			}
+		}
+	}
+
+
+}
