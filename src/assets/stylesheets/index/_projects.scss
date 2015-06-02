@@ -11,6 +11,7 @@ section.projects {
 			float: left;
 			overflow: hidden;
 			text-decoration:none;
+			transition: all .2s ease-in-out;
 			.description {
 				color:#fff;
 				padding:40px;
@@ -22,8 +23,9 @@ section.projects {
 				}
 				p {
 					font-size: em(16px);
-					line-height: em(28px);
+					line-height: em(30px);
 					text-align: center;
+					opacity:0.8;
 				}
 			}
 			.preview {
@@ -31,6 +33,7 @@ section.projects {
 				bottom: -190px;
 				left:2%;
 			}
+			//----------- Layout States
 			&.hero {
 				width: 98%;
 				height: 400px;
@@ -40,10 +43,11 @@ section.projects {
 					text-align: left;
 					width: 400px;
 					top:20%;
+					left:1%;
 				}
 				.preview {
 					right: 2%;
-					bottom: -150px;
+					bottom: -130px;
 					left: auto;
 				}
 			}
@@ -52,6 +56,19 @@ section.projects {
 			}
 			&.small {
 				width: 38%;
+			}
+			//----------- Project Specific
+
+			&.project-echo {
+				background-color: #262f38;
+				&:hover {
+					background-color: darken(#262f38, 4%);
+				}
+			}
+
+			//----------------------------------
+			&:hover {
+				transform: scale(1.02);
 			}
 		}
 	}
