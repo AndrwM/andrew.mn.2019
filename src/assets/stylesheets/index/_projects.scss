@@ -5,15 +5,47 @@ section.projects {
 	.project-listing {
 		.project {
 			background:$c-yellow;
-			// border-radius:$border-radius;
-			height: 400px;
+			height: 450px;
 			display: block;
-			// @include span(2);
 			margin:1%;
 			float: left;
-			// box-sizing: content-box;
+			overflow: hidden;
+			text-decoration:none;
+			.description {
+				color:#fff;
+				padding:40px;
+				h2 {
+					text-transform: none;
+					font-size: em(33px);
+					text-align: center;
+					margin-bottom: 10px;
+				}
+				p {
+					font-size: em(16px);
+					line-height: em(28px);
+					text-align: center;
+				}
+			}
+			.preview {
+				position: absolute;
+				bottom: -190px;
+				left:2%;
+			}
 			&.hero {
 				width: 98%;
+				height: 400px;
+				.description {
+					h2 { text-align: left; }
+					p { text-align: left; }
+					text-align: left;
+					width: 400px;
+					top:20%;
+				}
+				.preview {
+					right: 2%;
+					bottom: -150px;
+					left: auto;
+				}
 			}
 			&.large {
 				width: 58%;
