@@ -17,3 +17,6 @@ body > .wrapper.index {
 	@import "index/endorsements";
 	@import "index/projects";
 }
+body > .wrapper.project {
+	@import "project/project-header";
+}
