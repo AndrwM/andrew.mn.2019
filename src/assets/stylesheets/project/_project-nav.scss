@@ -1,0 +1,68 @@
+
+// Ooops this sass isn't dry #moist-coding
+
+nav {
+	background:$c-yellow;
+	opacity:1;
+	padding:20px;
+	text-align:center;
+	.link {
+	  text-transform: uppercase;
+	  letter-spacing: 1px;
+	  color: #fff;
+	  @include ff-heading-medium;
+	  .page-name {
+	  	display: none;
+	  }
+	}
+	.link.right { display:none; }
+}
+
+@include media($bp-medium) {
+	nav {
+		@include clearfix;
+		@include transition-hover;
+		background: rgba(#fff, 0.95);
+		opacity:0.5;
+		padding:0;
+		left:0;
+		right:0;
+		top:0;
+		width:100%;
+		position: fixed;
+		z-index: 5000;
+		&:hover {
+			opacity: 1;
+		}
+		.link {
+			@include ff-heading-medium;
+		  text-align: left;
+		  font-size: em(14px);
+		  text-transform: uppercase;
+		  letter-spacing: 1px;
+		  color: $c-grey-dark;
+		  padding:20px;
+		  &.left {
+		  	float: left;
+		  }
+		  &.right {
+		  	float: right;
+		  	display: block; // this overwrites the mobile style - sorry for the lazy.
+		  }
+		  .page-name {
+		  	@include ff-heading-bold;
+		  	display: inline-block;  // this overwrites the mobile style - sorry for the lazy.
+		  	&:before {
+		  		content: " / ";
+		  		color: $c-grey-medium;
+		  	}
+		  }
+		  a {
+		  	@include transition-hover;
+		  	&:hover {
+			  	color: $c-yellow;
+			  }
+		  }
+		}
+	}
+}

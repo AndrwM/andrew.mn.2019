@@ -18,5 +18,6 @@ body > .wrapper.index {
 	@import "index/projects";
 }
 body > .wrapper.project {
-	@import "project/project-header";
+	@import "project/project-nav";
+	@import "project/project-main";
 }

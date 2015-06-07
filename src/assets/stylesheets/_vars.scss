@@ -39,17 +39,17 @@ $ff-minion-pro: "minion-pro", Georgia, "Times New Roman", serif;
 $ff-futura: "futura-pt", Helvetica, Arial, sans-serif;
 $ff-freight-sans: "freight-sans-pro", Helvetica, Arial, sans-serif;
 
-@mixin ff-heading1 {
+@mixin ff-heading-light {
   font-family: $ff-freight-sans;
   font-weight: 500;
   font-style: normal;
 }
-@mixin ff-heading2 {
+@mixin ff-heading-medium {
   font-family: $ff-freight-sans;
   font-weight: 600;
   font-style: normal;
 }
-@mixin ff-heading3 {
+@mixin ff-heading-bold {
   font-family: $ff-freight-sans;
   font-weight: 700;
   font-style: normal;

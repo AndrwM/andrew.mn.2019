@@ -1,0 +1,50 @@
+
+
+//----------Header
+header {
+	padding:20% 20px;
+}
+
+.image {
+	text-align:center;
+	padding:30px;
+	img {
+		max-width: 100%;
+	}
+}
+
+//----------Textual
+.copy {
+	margin-top:50px;
+	max-width:900px;
+	p { margin-bottom:50px;}
+}
+
+//----------Image feature w/ text descr
+.feature {
+	@include clearfix;
+	img {
+		max-width: 100%;
+		margin-bottom: 50px;
+	}
+	@include media($bp-medium) {
+		img {
+		  width: 78%;
+		}
+		.description {
+			width: 18%;
+			font-size: em(16px);
+			h2 {
+				text-align: left;
+			}
+		}
+		&.left {
+			img { float: left; }
+			.description { float: right; }
+		}
+		&.right {
+			img { float: right; }
+			.description { float: left; }
+		}
+	}
+}
