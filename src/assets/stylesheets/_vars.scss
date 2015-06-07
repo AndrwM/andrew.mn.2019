@@ -22,11 +22,14 @@ $font-size: 20px;
 
 // Green
 $c-green: #3D9D5B;
+$c-green-faded: #909286;
 // $c-green: #98C365;
 $c-yellow: #FFCD01;
 // $c-yellow: #DEC41E;
 
 // Neutrals
+$c-grey-dark: #333;
+$c-grey-medium: #909286;
 $c-grey-light: #F3F3F3;
 
 //----------------- Type Mixins
@@ -34,18 +37,29 @@ $c-grey-light: #F3F3F3;
 $ff-meta-serif: "ff-meta-serif-web-pro", Georgia, "Times New Roman", serif;
 $ff-minion-pro: "minion-pro", Georgia, "Times New Roman", serif;
 $ff-futura: "futura-pt", Helvetica, Arial, sans-serif;
+$ff-freight-sans: "freight-sans-pro", Helvetica, Arial, sans-serif;
 
-@mixin ff-heading {
-  font-family: $ff-futura;
+@mixin ff-heading1 {
+  font-family: $ff-freight-sans;
+  font-weight: 500;
+  font-style: normal;
+}
+@mixin ff-heading2 {
+  font-family: $ff-freight-sans;
+  font-weight: 600;
+  font-style: normal;
+}
+@mixin ff-heading3 {
+  font-family: $ff-freight-sans;
   font-weight: 700;
   font-style: normal;
 }
 
-@mixin ff-label {
-  font-family: $ff-futura;
-  font-weight: 500;
-  font-style: normal;
-}
+// @mixin ff-label {
+//   font-family: $ff-freight-sans;
+//   font-weight: 500;
+//   font-style: normal;
+// }
 
 @mixin ff-body-bold {
   font-family: $ff-meta-serif;
@@ -54,7 +68,6 @@ $ff-futura: "futura-pt", Helvetica, Arial, sans-serif;
 }
 
 @mixin ff-body {
-  // font-family: $ff-meta-serif;
   font-family: $ff-meta-serif;
   font-weight: 400;
   font-style: normal;

@@ -25,7 +25,7 @@ body {
   -webkit-font-smoothing: antialiased;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
   background:#fff;
-  color: #333;
+  color: $c-grey-dark;
   font-size:16px;
   @include ff-body;
   @include clearfix;
@@ -51,9 +51,10 @@ body {
 //-- Headlines
 
 h1 {
-  @include ff-heading;
-  font-size: em(36px);
+  @include ff-heading1;
+  font-size: em(40px);
   margin-bottom: 20px;
+  color: #000;
   // color:$c-green;
   @include media($bp-medium) {
     text-align: center;
@@ -61,8 +62,9 @@ h1 {
 }
 
 h2 {
-  @include ff-heading;
+  @include ff-heading2;
   font-size: em(30px);
+  line-height: em(24px);
   text-transform: uppercase;
   @include media($bp-medium) {
     text-align: center;
