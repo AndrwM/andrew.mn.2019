@@ -20,6 +20,7 @@ section.projects {
 				color:#fff;
 				padding:40px;
 				h2 {
+					@include ff-heading-medium;
 					text-transform: none;
 					font-size: em(33px);
 					text-align: center;
