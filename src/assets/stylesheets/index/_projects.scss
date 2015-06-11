@@ -86,15 +86,22 @@ section.projects {
 			//----------- Project Specific
 
 			&.project-echo {
-				background-color: #262f38;
+				background-color: #E8E9EA;
+				.description {
+					color:$c-grey-dark;
+				}
 				&:hover {
-					background-color: darken(#262f38, 4%);
+					background-color: darken(#E8E9EA, 4%);
 				}
 			}
 
 			//----------------------------------
 			&:hover {
-				transform: scale(1.01);
+				// box-shadow: inset 0px 0px 0px 4px rgba(#fff, 1);
+				transform: scale(0.995);
+			}
+			&:active {
+				transform: scale(0.98);
 			}
 		}
 	}

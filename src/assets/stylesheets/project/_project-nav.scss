@@ -22,8 +22,7 @@ nav {
 	nav {
 		@include clearfix;
 		@include transition-hover;
-		background: rgba(#fff, 0.95);
-		opacity:0.5;
+		opacity:0.95;
 		padding:0;
 		left:0;
 		right:0;
@@ -40,7 +39,7 @@ nav {
 		  font-size: em(14px);
 		  text-transform: uppercase;
 		  letter-spacing: 1px;
-		  color: $c-grey-dark;
+		  // color: $c-grey-dark;
 		  padding:20px;
 		  &.left {
 		  	float: left;
@@ -52,15 +51,15 @@ nav {
 		  .page-name {
 		  	@include ff-heading-bold;
 		  	display: inline-block;  // this overwrites the mobile style - sorry for the lazy.
+		  	color: $c-yellow-dark;
 		  	&:before {
 		  		content: " / ";
-		  		color: $c-grey-medium;
 		  	}
 		  }
 		  a {
 		  	@include transition-hover;
 		  	&:hover {
-			  	color: $c-yellow;
+			  	color: #000;
 			  }
 		  }
 		}

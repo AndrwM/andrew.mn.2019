@@ -21,12 +21,13 @@ $font-size: 20px;
 //----------------- Colors
 
 // Green
-$c-green: #3D9D5B;
-$c-green-faded: #909286;
+// $c-green: #3D9D5B;
+// $c-green-faded: #909286;
 // $c-green: #98C365;
+
+// Yellows
 $c-yellow: #FFCD01;
-// $c-yellow: #fdc001;
-// $c-yellow: #DEC41E;
+$c-yellow-dark: darken( $c-yellow, 10% );
 
 // Neutrals
 $c-grey-dark: #333;
