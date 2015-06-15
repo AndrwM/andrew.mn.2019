@@ -1,19 +1,21 @@
 include ../../includes/_head
 
-- var BgColor = "#E8E9EA";
+- var headerColor = "red";
+- var bgColor = "#E8E9EA";
 
 style.
   h2,h3 { color: red; }
+  blockquote { color:#fff; background: #{bgColor} }
 
 body
   .wrapper.project.project-echo
     include ../../includes/project/_project-nav
 
-    header
+    header(style="background:#{headerColor};")
       h1 Web branding of an all-new ECHO Tools venture.
       p.center Designing and executing the web branding of an all-new ECHO Tools venture.
 
-    section.image.full(style="background:#{BgColor};margin-top: 70px;"): img(src='/assets/images/projects/echo/hero.png',style="margin-top: -170px;")
+    section.image.full(style="background:#{bgColor};margin-top: 70px;"): img(src='/assets/images/projects/echo/hero.png',style="margin-top: -170px;")
 
     section.copy.container
       h2 Title here
@@ -47,16 +49,16 @@ body
           h3 cool stuff here
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor, ante eget luctus convallis, sem dolor placerat massa.
    
-    blockquote.container
+    blockquote: .container
       p We trusted Andrew to build flagship apps that help us reach developers. I'm delighted by what we were able to achieve through our collaboration.”
       cite John Doe
 
-    section.lockup(style="background:#{BgColor};"): .container
-      img(src='http://placekitten.com/g/600/400').feature.large
-      img(src='http://placekitten.com/g/600/400').feature.small
-      img(src='http://placekitten.com/g/600/400').feature.hero
-      img(src='http://placekitten.com/g/600/400').feature.medium
-      img(src='http://placekitten.com/g/600/400').feature.medium
+    //- section.lockup(style="background:#{BgColor};"): .container
+    //-   img(src='http://placekitten.com/g/600/400').feature.large
+    //-   img(src='http://placekitten.com/g/600/400').feature.small
+    //-   img(src='http://placekitten.com/g/600/400').feature.hero
+    //-   img(src='http://placekitten.com/g/600/400').feature.medium
+    //-   img(src='http://placekitten.com/g/600/400').feature.medium
  
     include ../../includes/project/_project-footer
     include ../../includes/_footer

@@ -2,14 +2,14 @@
 // Ooops this sass isn't dry #moist-coding
 
 nav {
-	background:$c-yellow;
+	background:#fff;
 	opacity:1;
 	padding:20px;
 	text-align:center;
 	.link {
 	  text-transform: uppercase;
 	  letter-spacing: 1px;
-	  color: #fff;
+	  // color: #000;
 	  @include ff-heading-medium;
 	  .page-name {
 	  	display: none;
@@ -22,7 +22,8 @@ nav {
 	nav {
 		@include clearfix;
 		@include transition-hover;
-		opacity:0.95;
+		opacity:0.99;
+		 color: $c-grey-medium;
 		padding:0;
 		left:0;
 		right:0;
@@ -36,11 +37,10 @@ nav {
 		.link {
 			@include ff-heading-medium;
 		  text-align: left;
-		  font-size: em(14px);
-		  text-transform: uppercase;
+		  font-size: em(12px);
 		  letter-spacing: 1px;
-		  // color: $c-grey-dark;
-		  padding:20px;
+		  color: $c-grey-medium;
+		  padding:18px 20px;
 		  &.left {
 		  	float: left;
 		  }
@@ -51,8 +51,9 @@ nav {
 		  .page-name {
 		  	@include ff-heading-bold;
 		  	display: inline-block;  // this overwrites the mobile style - sorry for the lazy.
-		  	color: $c-yellow-dark;
+		  	color: $c-grey-dark;
 		  	&:before {
+		  		color: $c-grey-light;
 		  		content: " / ";
 		  	}
 		  }

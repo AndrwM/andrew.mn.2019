@@ -43,10 +43,8 @@ gulp.task("bower-files", function(){
 
 gulp.task('wiredep',['bower-files'], function () {
   // del("./src/templates/includes/head.jade",function(err, data){console.log("ahhhhhh")} );
-  gulp.src('./src/includes/head.jade')
-     .pipe(wiredep({
-       ignorePath: /^(\.\.\.\/)*\.\./
-     }))
+  gulp.src('./src/includes/_head.jade')
+     .pipe(wiredep())
      .pipe(gulp.dest('./src/includes'));
  });
 

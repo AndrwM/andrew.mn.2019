@@ -15,7 +15,7 @@ $bp-small: "min-width: 401px";
 $bp-medium: "min-width: 801px";
 $bp-large: "min-width: 1201px";
 
-$border-radius: 4px;
+$border-radius: 2px;
 $font-size: 20px;
 
 //----------------- Colors
@@ -30,9 +30,9 @@ $c-yellow: #FFCD01;
 $c-yellow-dark: darken( $c-yellow, 10% );
 
 // Neutrals
-$c-grey-dark: #333;
+$c-grey-dark: #333; // #3B3E33
 $c-grey-medium: #909286;
-$c-grey-light: #F3F3F3;
+$c-grey-light: #F4F4F4;
 
 //----------------- Type Mixins
 

@@ -8,8 +8,8 @@
     "console-polyfill": "~0.2.1",
     "html5shiv": "~3.7.2",
     "jquery": "~2.1.4",
-    "dragdealer": "git://github.com/skidding/dragdealer.git#~0.9.8",
-    "skrollr": "~0.6.29"
+    "skrollr": "~0.6.29",
+    "headroom.js": "~0.7.0"
   },
   "devDependencies": {
     "susy": "~2.2.3"
