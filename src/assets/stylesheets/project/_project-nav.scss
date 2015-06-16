@@ -23,7 +23,7 @@ nav {
 		@include clearfix;
 		@include transition-hover;
 		opacity:0.99;
-		 color: $c-grey-medium;
+		color: $c-grey-medium;
 		padding:0;
 		left:0;
 		right:0;
@@ -31,6 +31,7 @@ nav {
 		width:100%;
 		position: fixed;
 		z-index: 5000;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
 		&:hover {
 			opacity: 1;
 		}
@@ -53,8 +54,10 @@ nav {
 		  	display: inline-block;  // this overwrites the mobile style - sorry for the lazy.
 		  	color: $c-grey-dark;
 		  	&:before {
-		  		color: $c-grey-light;
+		  		color: $c-grey-medium;
 		  		content: " / ";
+		  		font-size: 90%;
+		  		vertical-align: top;
 		  	}
 		  }
 		  a {

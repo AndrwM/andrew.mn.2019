@@ -104,14 +104,49 @@ p {
   }
 }
 
+a.btn {
+  display: inline-block;
+  padding:20px 34px;
+  margin:20px;
+  border:1px solid rgba(#000,0.1);
+  @include transition-hover;
+  border-radius: $border-radius;
+  // @include ff-heading-bold;
+  // font-size: em(14px);
+  // text-transform: uppercase;
+  &:hover {
+    background:$c-yellow;
+    color:#fff;
+    transform: scale(0.995);
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
 blockquote {
-  padding:40px 0;
+  padding:60px 0;
   text-align: center;
   p {
+    text-indent: -1.4em;
     font-size: em(24px);
-    @include ff-heading-light;
+    @include ff-heading-medium;
     margin: 0 auto;
     max-width: 800px;
+    &:before {
+      content: '\201C';
+      padding: 0.2em;
+      font-size: 1.8em;
+      vertical-align: -0.2em;
+      color: rgba(#000,0.3);
+    }
+    &:after {
+      content: '\201D';
+      padding: 0.2em;
+      font-size: 1.8em;
+      vertical-align: -0.2em;
+      color: rgba(#000,0.3);
+    }
   }
   cite {
     @include ff-heading-bold;
@@ -123,7 +158,7 @@ blockquote {
     line-height: em(24px);
     span {
       display: block;
-      color:$c-yellow-dark;
+      color: rgba(#000,0.4);
       font-size: em(16px);
     }
   }

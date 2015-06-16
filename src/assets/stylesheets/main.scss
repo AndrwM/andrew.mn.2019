@@ -12,12 +12,13 @@
 
 //------------- Sitewide Elements
 
-body > .wrapper.index {
+body > .wrapper-page.index {
 	@import "index/cover";
 	@import "index/endorsements";
 	@import "index/projects";
+	@import "index/connect";
 }
-body > .wrapper.project {
+body > .wrapper-page.project {
 	@import "project/project-nav";
 	@import "project/project-main";
 }

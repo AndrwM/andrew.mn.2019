@@ -59,21 +59,24 @@ section.feature {
 
 
 //-----------Quote
-
-blockquote {
-	max-width:460px;
-	margin:50px auto;
-	font-style: italic;
-	font-size: em(16px);
-	line-height: em(28px);
-	&:before {
-		content:"\201C";
-	  position: absolute;
-	  left: -22px;
-	  font-size: 32px;
-	  top: 6px;
-	  opacity: 0.5;
+section.endorsement {
+	background:red;
+	padding:40px 0 60px 0;
+	blockquote {
+		p {
+			color: #fff;
+		}
 	}
+}
+
+	// &:before {
+	// 	content:"\201C";
+	//   position: absolute;
+	//   left: -22px;
+	//   font-size: 32px;
+	//   top: 6px;
+	//   opacity: 0.5;
+	// }
 	// cite {
 	// 	@include ff-label;
 	// 	font-style: normal;
@@ -81,7 +84,7 @@ blockquote {
 	// 	display: block;
 	// 	text-transform: uppercase;
 	// }
-}
+// }
 //-----------Image lockup
 
 section.lockup {

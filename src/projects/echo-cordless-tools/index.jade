@@ -5,10 +5,9 @@ include ../../includes/_head
 
 style.
   h2,h3 { color: red; }
-  blockquote { color:#fff; background: #{bgColor} }
 
 body
-  .wrapper.project.project-echo
+  .wrapper-page.project.project-echo
     include ../../includes/project/_project-nav
 
     header(style="background:#{headerColor};")
@@ -49,9 +48,10 @@ body
           h3 cool stuff here
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor, ante eget luctus convallis, sem dolor placerat massa.
    
-    blockquote: .container
-      p We trusted Andrew to build flagship apps that help us reach developers. I'm delighted by what we were able to achieve through our collaboration.”
+    section.endorsement: .container: blockquote
+      p We trusted Andrew to build flagship apps that help us reach developers. I'm delighted by what we were able to achieve through our collaboration.
       cite John Doe
+        span Cool Title, ECHO Cordless Marketing Team
 
     //- section.lockup(style="background:#{BgColor};"): .container
     //-   img(src='http://placekitten.com/g/600/400').feature.large
