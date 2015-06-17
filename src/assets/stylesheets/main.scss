@@ -2,6 +2,7 @@
 //------------- Setup
 
 // @import "../../../bower_components/susy/sass/susy";
+@import "../fonts/social/ss-social-circle.css";
 @import "utils";
 @import "vars";
 
@@ -9,6 +10,7 @@
 
 @import "reset";
 @import "global";
+@import "footer";
 
 //------------- Sitewide Elements
 
@@ -16,7 +18,7 @@ body > .wrapper-page.index {
 	@import "index/cover";
 	@import "index/endorsements";
 	@import "index/projects";
-	@import "index/connect";
+	@import "index/writing";
 }
 body > .wrapper-page.project {
 	@import "project/project-nav";

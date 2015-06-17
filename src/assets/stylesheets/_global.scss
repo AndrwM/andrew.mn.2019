@@ -24,8 +24,8 @@
 body {
   -webkit-font-smoothing: antialiased;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-  background: $c-grey-light;
-  color: $c-grey-dark;
+  background: $c-grey-extralight;
+  color: $c-grey-extradark;
   font-size:16px;
   @include ff-body;
   @include clearfix;
@@ -106,18 +106,18 @@ p {
 
 a.btn {
   display: inline-block;
-  padding:20px 34px;
+  padding:18px 36px;
   margin:20px;
-  border:1px solid rgba(#000,0.1);
+  border:2px solid $c-grey-extradark;
   @include transition-hover;
   border-radius: $border-radius;
-  // @include ff-heading-bold;
-  // font-size: em(14px);
+  @include ff-heading-bold;
+  font-size: em(18px);
+  // letter-spacing: 0.05em;
   // text-transform: uppercase;
   &:hover {
-    background:$c-yellow;
+    background:$c-grey-extradark;
     color:#fff;
-    transform: scale(0.995);
   }
   &:active {
     transform: scale(0.98);

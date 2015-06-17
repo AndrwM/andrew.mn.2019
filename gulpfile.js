@@ -90,6 +90,12 @@ gulp.task('images', function() {
     .pipe(gulp.dest('./dist/assets/images'))
 })
 
+gulp.task('fonts', function() {
+  // return gulp.src('./src/assets/fonts/**/*.{otf,woff,ttf,svg,eot}')
+  return gulp.src('./src/assets/fonts/**/*')
+    .pipe(gulp.dest('./dist/assets/fonts'))
+})
+
 gulp.task('templates', function() {
   // Disable county template from being renderd.
   return gulp.src(['src/**/!(_)*.jade'])
@@ -100,10 +106,10 @@ gulp.task('templates', function() {
     .pipe( gulp.dest('dist/') )
 });
 
-gulp.task('build', ['styles', 'js', 'templates', 'images', 'wiredep']);
+gulp.task('build', ['styles', 'js', 'templates', 'images', 'fonts', 'wiredep']);
 
 
-gulp.task('serve', ['styles', 'js', 'templates', 'images', 'wiredep', 'browser-sync'], function () {
+gulp.task('serve', ['styles', 'js', 'templates', 'images', 'fonts', 'wiredep', 'browser-sync'], function () {
   gulp.watch('src/assets/stylesheets/**/*.{scss,sass}',['styles', reload]);
   gulp.watch('src/assets/scripts/*.js',['js', reload]);
   gulp.watch('src/assets/images/**/*',['images', reload]);

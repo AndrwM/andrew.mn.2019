@@ -30,9 +30,11 @@ $c-yellow: #FFCD01;
 $c-yellow-dark: darken( $c-yellow, 10% );
 
 // Neutrals
-$c-grey-dark: #333; // #3B3E33
-$c-grey-medium: #909286;
-$c-grey-light: #F4F4F4;
+$c-grey-extradark: #22242C; // #3B3E33
+$c-grey-dark: #363943; // #3B3E33
+$c-grey-medium: #32353E;
+$c-grey-light: #939499;
+$c-grey-extralight: #F4F4F4;
 
 //----------------- Type Mixins
 
@@ -40,6 +42,7 @@ $ff-meta-serif: "ff-meta-serif-web-pro", Georgia, "Times New Roman", serif;
 $ff-minion-pro: "minion-pro", Georgia, "Times New Roman", serif;
 $ff-futura: "futura-pt", Helvetica, Arial, sans-serif;
 $ff-freight-sans: "freight-sans-pro", Helvetica, Arial, sans-serif;
+// $ff-social: "social", Helvetica, Arial, sans-serif;
 
 @mixin ff-heading-light {
   font-family: $ff-freight-sans;
