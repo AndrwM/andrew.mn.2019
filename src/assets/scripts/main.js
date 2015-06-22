@@ -7,7 +7,11 @@ window.a = {
     console.log('Exciting Times')
 
     // INITIATE ALL THE THINGS
-    this.navController.init();
+    if ( $('.wrapper-page > nav.sticky').length ) {
+      alert('yup')
+    }
+
+    // this.navController.init();
 
   },
   //-----------------------------------------------------
