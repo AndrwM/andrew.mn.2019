@@ -7,7 +7,7 @@ header {
 
 section.image {
 	text-align:center;
-	margin-bottom:100px;
+	margin-bottom:200px;
 	img {
 		max-width: 100%;
 		vertical-align: middle; // Weird padding bug fix
@@ -29,16 +29,16 @@ section.copy {
 section.feature {
 	@include clearfix;
 	margin-top: 100px;
+	margin-bottom: 100px;
 	img {
 		max-width: 100%;
-		margin-bottom: 50px;
 	}
 	@include media($bp-medium) {
 		img {
 		  width: 78%;
 		}
 		.description {
-			margin-top: 50px;
+			margin-top: 40px;
 			width: 18%;
 			font-size: em(16px);
 			h3 {
