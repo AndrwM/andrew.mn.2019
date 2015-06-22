@@ -7,8 +7,10 @@ window.a = {
     console.log('Exciting Times')
 
     // INITIATE ALL THE THINGS
-    if ( $('.wrapper-page > nav.sticky').length ) {
-      alert('yup')
+    if ( $('.wrapper-page > nav').length ) {
+      $('.wrapper-page > nav').headroom({
+        tolerance:20,
+      });
     }
 
     // this.navController.init();
