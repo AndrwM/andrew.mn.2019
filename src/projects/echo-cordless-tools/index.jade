@@ -1,0 +1,66 @@
+include ../../includes/_head
+
+- var headerColor = "red";
+- var bgColor = "#E8E9EA";
+
+style.
+  h2,h3 { color: red; }
+
+body
+  .wrapper-page.project.project-echo
+    include ../../includes/project/_project-nav
+
+    header(style="background:#{headerColor};")
+      h1 Web branding of an all-new ECHO Tools venture.
+      p.center Designing and executing the web branding of an all-new ECHO Tools venture.
+
+    section.image.full(style="background:#{bgColor};margin-top: 70px;"): img(src='/assets/images/projects/echo/hero.png',style="margin-top: -170px;")
+
+    section.copy.container
+      h2 Title here
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor, ante eget luctus convallis, sem dolor placerat massa, in euismod erat lorem non massa. Proin ultricies est a cursus lacinia. In purus turpis, mollis a porttitor eu, scelerisque non ligula. Mauris vitae leo sed odio pretium aliquam. Vestibulum cursus dolor eget neque pellentesque consequat. Quisque vitae elementum felis. Praesent at mollis lectus. Etiam dapibus odio sapien, tristique mattis velit hendrerit a.
+
+    section.image.full: img(src='/assets/images/projects/echo/existing-branding.png')
+
+    section.feature.left: .container
+      img(src='/assets/images/projects/echo/feature-packaging.jpg')
+      .description
+        h3 cool stuff here
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor, ante eget luctus convallis, sem dolor placerat massa.
+
+    section.copy.container
+      h2 Title here
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor, ante eget luctus convallis, sem dolor placerat massa, in euismod erat lorem non massa. Proin ultricies est a cursus lacinia. In purus turpis, mollis a porttitor eu, scelerisque non ligula. Mauris vitae leo sed odio pretium aliquam. Vestibulum cursus dolor eget neque pellentesque consequat. Quisque vitae elementum felis. Praesent at mollis lectus. Etiam dapibus odio sapien, tristique mattis velit hendrerit a.
+
+    section.feature.right: .container
+      img(src='/assets/images/projects/echo/feature-index.jpg')
+      .description
+        h3 cool stuff here
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor, ante eget luctus convallis, sem dolor placerat massa.
+    section.feature.right: .container
+      img(src='/assets/images/projects/echo/feature-detail.jpg')
+      .description
+        h3 cool stuff here
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor, ante eget luctus convallis, sem dolor placerat massa.
+     section.feature.right: .container
+        img(src='/assets/images/projects/echo/feature-registration.jpg')
+        .description
+          h3 cool stuff here
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor, ante eget luctus convallis, sem dolor placerat massa.
+   
+    section.endorsement: .container: blockquote
+      p We trusted Andrew to build flagship apps that help us reach developers. I'm delighted by what we were able to achieve through our collaboration.
+      cite John Doe
+        span Cool Title, ECHO Cordless Marketing Team
+
+    //- section.lockup(style="background:#{BgColor};"): .container
+    //-   img(src='http://placekitten.com/g/600/400').feature.large
+    //-   img(src='http://placekitten.com/g/600/400').feature.small
+    //-   img(src='http://placekitten.com/g/600/400').feature.hero
+    //-   img(src='http://placekitten.com/g/600/400').feature.medium
+    //-   img(src='http://placekitten.com/g/600/400').feature.medium
+ 
+    include ../../includes/project/_project-footer
+    include ../../includes/_footer
+
+  include ../../includes/_closing-scripts
