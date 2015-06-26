@@ -78,17 +78,17 @@ gulp.task('js', function() {
     .pipe( gulp.dest('dist/assets/scripts/'));
 });
 
-
-gulp.task('clean', function(cb) {
-  del('./dist', cb);
-});
-
 gulp.task('images', function() {
   return gulp.src('./src/assets/images/**/*')
     .pipe($.imagemin({
       progressive: true
     }))
     .pipe(gulp.dest('./dist/assets/images'))
+})
+
+gulp.task('root-files', function() {
+  return gulp.src('./src/**/*!(.jade)')
+    .pipe(gulp.dest('./dist/'))
 })
 
 gulp.task('fonts', function() {
@@ -98,7 +98,7 @@ gulp.task('fonts', function() {
 })
 
 gulp.task('templates', function() {
-  // Disable county template from being renderd.
+  // Disable partials from being renderd.
   return gulp.src(['src/**/!(_)*.jade'])
     .pipe($.plumber())
     .pipe($.jade({
@@ -107,7 +107,11 @@ gulp.task('templates', function() {
     .pipe( gulp.dest('dist/') )
 });
 
-gulp.task('build', ['styles', 'js', 'templates', 'images', 'fonts', 'wiredep']);
+gulp.task('clean', function(cb) {
+  del('./dist', cb);
+});
+
+gulp.task('build', ['styles', 'js', 'templates', 'images', 'fonts', 'root-files', 'wiredep']);
 
 gulp.task('serve', ['build', 'browser-sync'], function () {
   gulp.watch('src/assets/stylesheets/**/*.{scss,sass}',['styles', reload]);
