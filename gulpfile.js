@@ -6,6 +6,7 @@ var gulp            = require('gulp'),
     del             = require('del'),
     fs              = require('fs'),
     gulpBowerFiles  = require('gulp-bower-files'),
+    deploy          = require('gulp-gh-pages'),
     wiredep         = require('wiredep').stream;
 
 
@@ -108,12 +109,16 @@ gulp.task('templates', function() {
 
 gulp.task('build', ['styles', 'js', 'templates', 'images', 'fonts', 'wiredep']);
 
-
-gulp.task('serve', ['styles', 'js', 'templates', 'images', 'fonts', 'wiredep', 'browser-sync'], function () {
+gulp.task('serve', ['build', 'browser-sync'], function () {
   gulp.watch('src/assets/stylesheets/**/*.{scss,sass}',['styles', reload]);
   gulp.watch('src/assets/scripts/*.js',['js', reload]);
   gulp.watch('src/assets/images/**/*',['images', reload]);
   gulp.watch('src/**/*.jade',['templates', reload]);
+});
+
+gulp.task('deploy', ['build'], function () {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy())
 });
 
 gulp.task('default', ['serve']);
