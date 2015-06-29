@@ -11,7 +11,7 @@ window.a = {
 
       $('.wrapper-page > nav').headroom({ tolerance:10 });
 
-      $(".description").stick_in_parent({
+      $("section.feature .description").stick_in_parent({
         offset_top:80,
       })
         .on('sticky_kit:bottom', function(e) {

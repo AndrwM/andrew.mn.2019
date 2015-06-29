@@ -11,13 +11,14 @@
 @import "reset";
 @import "global";
 @import "footer";
+@import "project-tiles";
 
 //------------- Sitewide Elements
 
 body > .wrapper-page.index {
 	@import "index/cover";
 	@import "index/endorsements";
-	@import "index/projects";
+	// @import "index/projects";
 	@import "index/writing";
 }
 body > .wrapper-page.project {
