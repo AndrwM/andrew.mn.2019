@@ -54,6 +54,7 @@ gulp.task('browser-sync', function() {
     open: false,
     server: {
       baseDir: "./dist",
+      // baseDir: "./.publish",
     }
   });
 });
