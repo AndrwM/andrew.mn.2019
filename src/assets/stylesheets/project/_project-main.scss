@@ -60,13 +60,18 @@ section.feature {
 
 //-----------Quote
 section.endorsement {
-	background:red;
+	background:inherit;
 	padding:40px 0 60px 0;
 	blockquote {
 		p {
 			color: #fff;
 		}
 	}
+}
+
+//-----------Project Tiles
+section.project-tiles {
+	background:#fff;
 }
 
 	// &:before {

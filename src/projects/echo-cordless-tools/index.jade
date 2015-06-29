@@ -1,10 +1,12 @@
 include ../../includes/_head
 
-- var headerColor = "red";
-- var bgColor = "#E8E9EA";
+- var headerColor = "";
+- var subHeaderColor = "#BBC0C3";
+- var endorsementColor = "#BBC0C3";
 
-//- style.
-//-   h2,h3 { color: red; }
+style.
+  body > .wrapper-page { background:#F2F7FA; }
+  //- h1,h2,h3 { color: #E53A2D; }
 
 body
   .wrapper-page.project.project-echo
@@ -14,7 +16,7 @@ body
       h1 Web branding of an all-new ECHO Tools venture.
       p.center Designing and executing the web branding of an all-new ECHO Tools venture.
 
-    section.image.full(style="background:#{bgColor};margin-top: 70px;"): img(src='/assets/images/projects/echo/hero.png',style="margin-top: -170px;")
+    section.image.full(style="background:#{subHeaderColor};"): img(src='/assets/images/projects/echo/hero.png',style="margin-top: -170px;")
 
     section.copy.container
       h2 Title here
@@ -48,12 +50,12 @@ body
           h3 cool stuff here
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor, ante eget luctus convallis, sem dolor placerat massa.
    
-    section.endorsement: .container: blockquote
+    section.endorsement(style="background:#{endorsementColor};"): .container: blockquote
       p We trusted Andrew to build flagship apps that help us reach developers. I'm delighted by what we were able to achieve through our collaboration.
       cite John Doe
         span Cool Title, ECHO Cordless Marketing Team
 
-    //- section.lockup(style="background:#{BgColor};"): .container
+    //- section.lockup(style="background:#{subHeaderColor};"): .container
     //-   img(src='http://placekitten.com/g/600/400').feature.large
     //-   img(src='http://placekitten.com/g/600/400').feature.small
     //-   img(src='http://placekitten.com/g/600/400').feature.hero
