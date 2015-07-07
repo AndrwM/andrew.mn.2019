@@ -9,7 +9,9 @@ window.a = {
     // INITIATE ALL THE THINGS
     if ( $('.wrapper-page.project').length ) {
 
-      $('.wrapper-page > nav').headroom({ tolerance:10 });
+      $('.wrapper-page > nav').headroom({
+        tolerance: { top:20, bottom:4 }
+      });
 
       $("section.feature .description").stick_in_parent({
         offset_top:80,

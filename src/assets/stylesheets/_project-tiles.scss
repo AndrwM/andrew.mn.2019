@@ -87,19 +87,27 @@ section.project-tiles {
 			//----------- Project Specific
 
 			&.project-echo {
-				background-color: #E8E9EA;
-				.description {
-					color:$c-grey-dark;
+				background-color: #0F1B26;
+				h2 { color: #fff; }
+				.description { color:#fff; }
+			}
+
+			&.project-zenjuries {
+				background: #2481b7 url(/assets/images/projects/zenjuries/hero-bg.jpg);
+				h2 { color: #fff; }
+				.description { color:#fff; }
+				.preview {
+				  right: 0%;
+				  bottom: -20px;
 				}
 				&:hover {
-					background-color: darken(#E8E9EA, 4%);
+					// background-color: darken(#E53A2D, 4%);
 				}
 			}
 
 			//----------------------------------
 			&:hover {
-				// box-shadow: inset 0px 0px 0px 4px rgba(#fff, 1);
-				transform: scale(0.995);
+				transform: scale(1.015);
 			}
 			&:active {
 				transform: scale(0.98);

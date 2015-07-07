@@ -34,7 +34,7 @@ nav {
 		border-bottom: 1px solid rgba(0,0,0,0.1);
 		&.headroom { transition: transform 200ms linear; }
 		&.headroom--pinned { transform: translateY(0%); }
-		&.headroom--unpinned { transform: translateY(-100%); }
+		&.headroom--unpinned, &.headroom--top { transform: translateY(-100%); }
 		&:hover { }
 		.link {
 			@include ff-heading-medium;
@@ -71,8 +71,11 @@ nav {
 		  }
 		  .connect {
 		  	padding: 6px 12px;
-		  	border:1px solid $c-grey-light;
+		  	border:1px solid rgba($c-grey-light, 0.3);
 		  	border-radius: $border-radius;
+		  	&:hover {
+		  		border-color:$c-grey-light;
+		  	}
 		  }
 		  a {
 		  	@include transition-hover;
