@@ -1,6 +1,6 @@
 section.connect {
-  background:tranparent;
-  padding: 80px 0 100px 0;
+  background:#fff;
+  padding: 120px 0 120px 0;
   text-align: center;
   // color:#fff;
 }
@@ -22,13 +22,14 @@ section.connect {
 // 	}
 // }
 section.social {
-	padding:20px 0;
-	color:#fff;
+	padding:10px 0;
+	display:none;
+	background:#fff;
 	text-align: center;
 	a {
 		display: inline-block;
 	  padding: 14px 10px 0px 10px;
-	  font-size: 30px;
+	  font-size: 26px;
 	  color: lighten($c-grey-light, 20%);
 	  @include transition-hover;
 	  &:hover { color:$c-grey-light; }

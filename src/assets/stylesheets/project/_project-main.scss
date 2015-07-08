@@ -7,7 +7,7 @@ header {
 
 section.image {
 	text-align:center;
-	margin-bottom:150px;
+	margin-bottom:100px;
 	img {
 		max-width: 100%;
 		vertical-align: middle; // Weird padding bug fix
@@ -16,9 +16,9 @@ section.image {
 
 //----------Textual
 section.copy {
-	margin-top:50px;
+	margin-top:0;
 	max-width:900px;
-	margin-bottom:50px;
+	  margin-bottom: 150px;
 	p {
 		margin-bottom:50px;
 		&:last-child { margin-bottom: 0;	}
@@ -28,8 +28,8 @@ section.copy {
 //----------Image feature w/ text descr
 section.feature {
 	@include clearfix;
-	margin-top: 150px;
-	margin-bottom: 150px;
+	margin-top: 100px;
+	margin-bottom: 100px;
 	img {
 		max-width: 100%;
 	}

@@ -9,13 +9,13 @@ section.project-tiles {
 	}
 	.project-listing {
 		.project {
-			background:$c-yellow;
+			background:$c-grey-light;
 			height: 450px;
 			display: block;
 			margin:1%;
 			overflow: hidden;
 			text-decoration:none;
-			transition: all .2s ease-in-out;
+			transition: all .3s ease-in-out;
 			border-radius: $border-radius;
 			.description {
 				color:#fff;
@@ -87,7 +87,7 @@ section.project-tiles {
 			//----------- Project Specific
 
 			&.project-echo {
-				background-color: #0F1B26;
+				background: #0F1B26 url(/assets/images/projects/echo/hero-bg.jpg);
 				h2 { color: #fff; }
 				.description { color:#fff; }
 			}
@@ -97,11 +97,22 @@ section.project-tiles {
 				h2 { color: #fff; }
 				.description { color:#fff; }
 				.preview {
-				  right: 0%;
+				  right: -8%;
 				  bottom: -20px;
+				  left:auto !important;
 				}
 				&:hover {
 					// background-color: darken(#E53A2D, 4%);
+				}
+			}
+
+			&.project-arkiver {
+				background: #333335 url(/assets/images/projects/arkiver/bg-sm.jpg) top left;
+				h2 { color: #fff; }
+				.description { color:#fff; }
+				.preview {
+				  // right: -8%;
+				  bottom: -40px;
 				}
 			}
 

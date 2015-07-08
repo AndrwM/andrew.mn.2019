@@ -108,17 +108,18 @@ a.btn {
   display: inline-block;
   padding:18px 36px;
   margin:20px;
-  border:2px solid $c-grey-extradark;
-  @include transition-hover;
+  border:2px solid $c-yellow;
+  transition: all .3s ease-in-out;
   border-radius: $border-radius;
   @include ff-heading-bold;
   font-size: em(18px);
   // letter-spacing: 0.05em;
   // text-transform: uppercase;
   &:hover {
-    background:$c-grey-extradark;
-    color:#fff;
-  }
+    background:$c-yellow;
+    color:$c-grey-extradark;
+    transform: scale(1.03);
+    }
   &:active {
     transform: scale(0.98);
   }
