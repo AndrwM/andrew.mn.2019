@@ -17,7 +17,9 @@
 header.cover {
 	// background:#000 url(/assets/images/index-cover-small.jpg) top center no-repeat;
 	padding: 200px 0 100px 0;
-
+	.container {
+		height: 100%;
+	}
 	.bio {
 		max-width: 500px;
 		padding:50px;
@@ -59,7 +61,13 @@ header.cover {
 		// background-size: cover;
 		background: #252A2D url(/assets/images/index3-cover-large.jpg) bottom center no-repeat;
 		height: 860px;
+		min-height: 700px;
+		max-height: 860px;
 		padding: 0;
+		// Cool scrolling stuff
+		position: fixed;
+		top:0;
+	  width: 100%;
 
 		.bio {
 			max-width: 460px;
@@ -67,7 +75,7 @@ header.cover {
 			padding: 0;
 			position: absolute;
 	    right: 60px;
-		  top: 280px;
+		  bottom: 170px;
 			color: #fff;
 		}
 		.scroll-down {
@@ -79,14 +87,15 @@ header.cover {
 			height: 100px;
 			width: 100px;
 			position: absolute;
-			bottom:30px;
+			bottom:0;
 			left:0;
 			right: 0;
 			margin: 0 auto;
 			display: inline-block;
+			z-index: 600;
 			&:hover, &:active {
 				opacity: 1;
-				bottom:26px;
+				bottom:4px;
 				padding-top:4px;
 			}
 		}

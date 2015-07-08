@@ -17,6 +17,12 @@
 //------------- Sitewide Elements
 
 body > .wrapper-page.index {
+	.wrapper-scrollable {
+		@include media($bp-medium) {
+			margin-top:860px;
+		}
+		background:$c-grey-extralight;
+	}
 	@import "index/cover";
 	@import "index/endorsements";
 	// @import "index/projects";

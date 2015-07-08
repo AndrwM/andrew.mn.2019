@@ -1,12 +1,14 @@
 section.connect {
   background:$c-grey-medium;
-  padding: 90px;
+  padding: 90px 0;
   text-align: center;
   color:#fff;
   a.btn {
   	color:#fff;
-  	// background:#000;
+  	background:#000;
+  	border:none;
   	&:hover {
+  		background:$c-yellow;
   		color: $c-grey-extradark;
   	}
   }
