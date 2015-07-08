@@ -1,8 +1,15 @@
 section.connect {
-  background:#fff;
-  padding: 120px 0 120px 0;
+  background:$c-grey-medium;
+  padding: 90px;
   text-align: center;
-  // color:#fff;
+  color:#fff;
+  a.btn {
+  	color:#fff;
+  	// background:#000;
+  	&:hover {
+  		color: $c-grey-extradark;
+  	}
+  }
 }
 
 // section.social {

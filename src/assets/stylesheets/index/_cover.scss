@@ -15,7 +15,7 @@
 
 
 header.cover {
-	background:#000 url(/assets/images/index-cover-small.jpg) top center no-repeat;
+	// background:#000 url(/assets/images/index-cover-small.jpg) top center no-repeat;
 	padding: 200px 0 100px 0;
 
 	.bio {
@@ -55,9 +55,10 @@ header.cover {
 @include media($bp-medium) {
 
 	header.cover {
-		background:#000 url(/assets/images/index-cover-medium.jpg) center center no-repeat;
-		background-size: cover;
-		min-height: 1000px;
+		// background:#000 url(/assets/images/index-cover-medium.jpg) center center no-repeat;
+		// background-size: cover;
+		background: #252A2D url(/assets/images/index3-cover-large.jpg) bottom center no-repeat;
+		height: 860px;
 		padding: 0;
 
 		.bio {
@@ -65,14 +66,14 @@ header.cover {
 			margin: 0;
 			padding: 0;
 			position: absolute;
-		  right: 21%;
-		  top: 29%;
+	    right: 60px;
+		  top: 280px;
 			color: #fff;
 		}
 		.scroll-down {
 			opacity: 0.3;
 			transition-duration: 0.3s;
-	  transition-property: visibility, opacity, bottom;
+		  transition-property: visibility, opacity, bottom;
 			@include seo-text;
 			background: url(/assets/images/icon-scroll.png) no-repeat center center;
 			height: 100px;
@@ -91,10 +92,4 @@ header.cover {
 		}
 	}
 
-}
-
-@include media($bp-large) {
-	header.cover {
-		background-image: url(/assets/images/index-cover-xlarge.jpg);
-	}
 }
