@@ -51,7 +51,7 @@ body {
 //-- Headlines
 
 h1 {
-  @include ff-heading-medium;
+  @include ff-heading-light;
   font-size: em(46px);
   margin-bottom: 20px;
   // color:$c-green;
