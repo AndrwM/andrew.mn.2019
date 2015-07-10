@@ -107,7 +107,7 @@ p {
 a.btn {
   display: inline-block;
   padding:18px 36px;
-  margin:20px;
+  margin:20px 0;
   border:2px solid $c-yellow;
   transition: all .3s ease-in-out;
   border-radius: $border-radius;
@@ -130,8 +130,9 @@ blockquote {
   text-align: center;
   p {
     text-indent: -1.4em;
-    font-size: em(24px);
-    @include ff-heading-medium;
+    font-size: em(30px);
+    line-height: 1.2;
+    @include ff-heading-light;
     margin: 0 auto;
     max-width: 800px;
     &:before {
