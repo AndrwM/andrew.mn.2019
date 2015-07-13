@@ -42,12 +42,12 @@ gulp.task("bower-files", function(){
     gulpBowerFiles().pipe(gulp.dest("./dist/bower_components/"));
 });
 
-gulp.task('wiredep',['bower-files'], function () {
-  // del("./src/templates/includes/head.jade",function(err, data){console.log("ahhhhhh")} );
-  gulp.src('./src/includes/_head.jade')
-     .pipe(wiredep())
-     .pipe(gulp.dest('./src/includes'));
- });
+// gulp.task('wiredep',['bower-files'], function () {
+//   // del("./src/templates/includes/head.jade",function(err, data){console.log("ahhhhhh")} );
+//   gulp.src('./src/includes/_head.jade')
+//      .pipe(wiredep())
+//      .pipe(gulp.dest('./src/includes'));
+//  });
 
 gulp.task('browser-sync', function() {
   browserSync({
@@ -98,12 +98,17 @@ gulp.task('fonts', function() {
     .pipe(gulp.dest('./dist/assets/fonts'))
 })
 
-gulp.task('templates', function() {
+gulp.task('templates',['bower-files'], function() {
   // Disable partials from being renderd.
   return gulp.src(['src/**/!(_)*.jade'])
     .pipe($.plumber())
     .pipe($.jade({
       pretty: true
+    }))
+    .pipe(wiredep({
+      ignorePath: '..',
+      directory: './bower_components',
+      bowerJson: require('./bower.json')
     }))
     .pipe( gulp.dest('dist/') )
 });
