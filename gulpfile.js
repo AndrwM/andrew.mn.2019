@@ -117,7 +117,7 @@ gulp.task('clean', function(cb) {
   del('./dist', cb);
 });
 
-gulp.task('build', ['styles', 'js', 'templates', 'images', 'fonts', 'root-files', 'wiredep']);
+gulp.task('build', ['styles', 'js', 'templates', 'images', 'fonts', 'root-files']);
 
 gulp.task('serve', ['build', 'browser-sync'], function () {
   gulp.watch('src/assets/stylesheets/**/*.{scss,sass}',['styles', reload]);

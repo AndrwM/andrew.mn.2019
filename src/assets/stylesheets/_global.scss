@@ -84,7 +84,7 @@ a {
 p {
   font-size: em(20px);
   line-height: em(36px);
-  max-width: 900px;
+  max-width: 810px;
   // margin:0 auto;
   // padding:40px;
   &.center {
@@ -131,7 +131,7 @@ blockquote {
   p {
     text-indent: -1.4em;
     font-size: em(30px);
-    line-height: 1.2;
+    line-height: 1;
     @include ff-heading-light;
     margin: 0 auto;
     max-width: 800px;
@@ -158,6 +158,14 @@ blockquote {
     display: block;
     margin: 20px 0 0 0;
     line-height: em(24px);
+    img {
+      border-radius: 50%;
+      // border: 2px solid #FFF;
+      box-shadow: 0px 0px 0px 2px #000;
+      height: 50px;
+      margin: 0 auto 10px auto;
+      display: block;
+    }
     span {
       display: block;
       color: rgba(#000,0.4);

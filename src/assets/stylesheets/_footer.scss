@@ -10,7 +10,7 @@ footer {
 		color:$c-grey-medium;
 		a {
 			@include transition-hover;
-			&:hover { color:$c-grey-light; }
+			&:hover { color:$c-yellow; }
 			&:active { color:#fff; }
 		}
 		.left, .right {

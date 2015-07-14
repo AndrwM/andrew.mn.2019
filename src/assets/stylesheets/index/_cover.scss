@@ -59,9 +59,9 @@ header.cover {
 	header.cover {
 		// background:#000 url(/assets/images/index-cover-medium.jpg) center center no-repeat;
 		// background-size: cover;
-		background: #252A2D url(/assets/images/index3-cover-large.jpg) bottom center no-repeat;
+		background: $c-grey-dark url(/assets/images/index3-cover-large.jpg) center center no-repeat;
 		height: 860px;
-		min-height: 700px;
+		min-height: 600px;
 		max-height: 860px;
 		padding: 0;
 		// Cool scrolling stuff
@@ -75,7 +75,7 @@ header.cover {
 			padding: 0;
 			position: absolute;
 	    right: 60px;
-		  bottom: 170px;
+		  bottom: 17%;
 			color: #fff;
 		}
 		.scroll-down {
