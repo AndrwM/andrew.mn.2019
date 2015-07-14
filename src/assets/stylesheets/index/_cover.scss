@@ -43,6 +43,12 @@ header.cover {
 			padding:0 0 20px 0;
 			// font-size: em(23px);
 			// line-height: em(30px);
+			a {
+				border-bottom-color:#47484A;
+				&:hover {
+					border-bottom-color: $c-yellow;
+				}
+			}
 			&.closing {
 				@include ff-body-bold;
 				font-style: italic;

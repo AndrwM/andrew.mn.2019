@@ -96,10 +96,14 @@ p {
   a {
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px dashed #fff;
+    padding-bottom:1px;
+    border-bottom: 1px solid $c-grey-light;
+    @include transition-hover;
     &:hover {
-       border-bottom-color: $c-yellow;
-       color: $c-yellow;
+      padding-bottom:3px;
+      border-bottom-color: $c-yellow;
+      border-bottom-width: 2px;
+       // color: $c-yellow;
     }
   }
 }
