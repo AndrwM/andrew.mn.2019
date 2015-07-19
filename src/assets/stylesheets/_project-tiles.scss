@@ -23,7 +23,7 @@ section.project-tiles {
 			margin:1%;
 			overflow: hidden;
 			text-decoration:none;
-			transition: all .3s ease-in-out;
+			@include transition-hover;
 			border-radius: $border-radius;
 			.description {
 				color:#fff;

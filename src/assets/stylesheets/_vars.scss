@@ -81,8 +81,9 @@ $ff-freight-sans: "freight-sans-pro", Helvetica, Arial, sans-serif;
 //----------------- Misc Presets
 
 @mixin transition-hover {
-  transition-duration: 0.4s;
-  transition-property: visibility, opacity, color, border, background, padding;
+  transition-duration: 0.5s;
+  transition-property: all;
+  transition-timing-function: ease-out;
 }
 
 @include keyframes(introFade-top) {

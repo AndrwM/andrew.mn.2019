@@ -17,6 +17,8 @@
 header.cover {
 	// background:#000 url(/assets/images/index-cover-small.jpg) top center no-repeat;
 	padding: 200px 0 100px 0;
+	position: static;
+	background: $c-grey-dark;
 	.container {
 		height: 100%;
 	}
@@ -81,7 +83,7 @@ header.cover {
 			padding: 0;
 			position: absolute;
 	    right: 60px;
-		  bottom: 17%;
+		  bottom: 22%;
 			color: #fff;
 		}
 		.scroll-down {

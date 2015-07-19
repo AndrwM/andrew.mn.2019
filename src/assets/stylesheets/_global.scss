@@ -18,6 +18,15 @@
   color: #fff;
 }
 
+//----------------- Tell JS About Breakpoints
+
+.js-bp-check {
+  display: none !important;
+  z-index: 0;
+  @include media($bp-small) { z-index: 1; }
+  @include media($bp-medium) { z-index: 2; }
+  @include media($bp-large) { z-index: 3; }
+}
 
 //----------------- GLOBAL LAYOUT
 
@@ -62,18 +71,22 @@ h1 {
 
 h2 {
   @include ff-heading-light;
-  font-size: em(30px);
+  font-size: em(40px);
   line-height: em(24px);
   margin-bottom: 20px;
+  @include media($bp-medium) {
+    font-size: em(30px);
+  }
 }
 
 h3 {
   @include ff-heading-bold;
-  margin-bottom: 10px;
+  margin-bottom: 19px;
   font-size: em(20px);
   text-transform: uppercase;
   letter-spacing: 1px;
-  // color: $c-yellow;
+  font-size: em(16px);
+  color: $c-yellow;
 }
 
 a {
@@ -100,9 +113,10 @@ p {
     border-bottom: 1px solid $c-grey-light;
     @include transition-hover;
     &:hover {
-      padding-bottom:3px;
+      padding-bottom:2px;
       border-bottom-color: $c-yellow;
-      border-bottom-width: 2px;
+      background: rgba(#000, 0.2);
+      border-bottom-width: 3px;
        // color: $c-yellow;
     }
   }
@@ -113,7 +127,7 @@ a.btn {
   padding:18px 36px;
   margin:20px 0;
   border:2px solid $c-yellow;
-  transition: all .3s ease-in-out;
+  @include transition-hover;
   border-radius: $border-radius;
   @include ff-heading-bold;
   font-size: em(18px);
@@ -123,7 +137,7 @@ a.btn {
     background:$c-yellow;
     color:$c-grey-extradark;
     transform: scale(1.03);
-    }
+  }
   &:active {
     transform: scale(0.98);
   }

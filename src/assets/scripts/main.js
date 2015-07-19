@@ -22,6 +22,14 @@ window.a = {
     // this.navController.init();
 
   },
+  utils: {
+    breakpoint: function () {
+      $('body').append('<div class="js-bp-check"></div>');
+      var bp = $('.js-bp-check').css('z-index');
+      console.log('breakpoint:',bp);
+      return bp;
+    },
+  },
   /////////--------------------- INDEX
   index: {
     resizeHeader: function() {

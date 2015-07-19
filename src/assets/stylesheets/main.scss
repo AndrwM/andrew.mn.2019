@@ -3,7 +3,7 @@
 
 // @import "../../../bower_components/susy/sass/susy";
 @import "../fonts/social/ss-social-circle.css";
-@import "../fonts/gizmo/ss-gizmo.css";
+// @import "../fonts/gizmo/ss-gizmo.css";
 @import "utils";
 @import "vars";
 
@@ -13,6 +13,7 @@
 @import "global";
 @import "footer";
 @import "connect";
+@import "nav";
 @import "project-tiles";
 
 //------------- Sitewide Elements
@@ -31,6 +32,6 @@ body > .wrapper-page.index {
 	@import "index/writing";
 }
 body > .wrapper-page.project {
-	@import "project/project-nav";
+	// @import "project/project-nav";
 	@import "project/project-main";
 }
