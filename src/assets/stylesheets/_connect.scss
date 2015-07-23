@@ -1,7 +1,5 @@
 section.connect {
-  background:$c-grey-medium url(/assets/images/bg-connect.jpg) center center fixed;
-  background-size:cover;
-  // box-shadow:0px 20px 100px 0px $c-grey-dark inset;
+  background:$c-grey-medium;
   padding: 160px 0 240px 0;
   color:#fff;
   .container {
@@ -17,6 +15,7 @@ section.connect {
   }
   a.btn {
   	color:#fff;
+    width: 100%;
   	background:$c-grey-extradark;
   	border:none;
   	&:hover {
@@ -25,7 +24,8 @@ section.connect {
   	}
   }
   .social {
-    float: right;
+    // float: right;
+    text-align: center;
     padding: 20px 0;
     a {
       display: inline-block;
@@ -46,26 +46,24 @@ section.connect {
   }
 }
 
-// section.social {
-// 	background:$c-grey-extradark;
-// 	padding:20px 0;
-// 	color:#fff;
-// 	text-align: center;
-// 	a {
-// 		display: inline-block;
-// 	  padding: 14px 10px 0px 10px;
-// 	  font-size: 40px;
-// 	  color: $c-grey-medium;
-// 	  @include transition-hover;
-// 	  &:hover { color:$c-grey-light; }
-// 	  &:active { color:#fff; }
-// 		span { @include seo-text;	}
-// 	}
-// }
-section.social {
-	padding:10px 0;
-	display:none;
-	background:#fff;
-	text-align: center;
-	
+@include media($bp-small) {
+  section.connect {
+    background:$c-grey-medium url(/assets/images/bg-connect.jpg) center center;
+    background-size:cover;
+    .container {
+      max-width: 700px;
+    }
+    a.btn {
+      width: auto;
+    }
+    .social {
+      float: right;
+    }
+  }
 }
+
+
+
+
+
+

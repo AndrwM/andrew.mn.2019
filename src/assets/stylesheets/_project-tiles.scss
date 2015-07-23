@@ -8,12 +8,16 @@ section.project-tiles {
 		margin-top: 00px;
 	}
 	.brands {
+		display: none;
 		text-align: center;
 	  margin-bottom: 40px;
 	  margin-top: 40px;
 	  opacity:0.4;
 	  @include transition-hover;
 	  &:hover { opacity:1; }
+	  @include media($bp-medium) {
+	  	display: block;
+	  }
 	}
 	.project-listing {
 		.project {
@@ -47,6 +51,9 @@ section.project-tiles {
 				left:6%;
 			}
 			@include media($bp-medium) {
+				.brands {
+
+				}
 				.preview {
 					left:0;
 					right:0;

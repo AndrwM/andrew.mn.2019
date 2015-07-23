@@ -14,8 +14,11 @@ window.a = {
 
     } else if ( $('.wrapper-page.index').length ) {
 
-      this.index.resizeHeader()
-      this.index.scrollToContent()
+      if (a.utils.breakpoint() >= 2) {
+        console.log('shit runs')
+        this.index.resizeHeader()
+        this.index.scrollToContent()
+      }
 
     }
 
