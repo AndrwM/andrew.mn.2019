@@ -38,10 +38,6 @@ function fixPipe(stream) {
 }
 //------- END HOTFIX ERROR HANDLING
 
-gulp.task("bower-files", function(){
-    gulpBowerFiles().pipe(gulp.dest("./dist/bower_components/"));
-});
-
 // gulp.task('wiredep',['bower-files'], function () {
 //   // del("./src/templates/includes/head.jade",function(err, data){console.log("ahhhhhh")} );
 //   gulp.src('./src/includes/_head.jade')
@@ -49,15 +45,7 @@ gulp.task("bower-files", function(){
 //      .pipe(gulp.dest('./src/includes'));
 //  });
 
-gulp.task('browser-sync', function() {
-  browserSync({
-    open: false,
-    server: {
-      baseDir: "./dist",
-      // baseDir: "./.publish",
-    }
-  });
-});
+//---------------------- COMPILE
 
 gulp.task('styles', function() {
   return gulp.src('./src/assets/stylesheets/**/*.{scss,sass}')
@@ -66,7 +54,6 @@ gulp.task('styles', function() {
     }))
     .pipe(gulp.dest('./dist/assets/stylesheets'));
 });
-
 
 gulp.task('js', function() {
   return gulp.src('src/assets/scripts/*.js')
@@ -113,8 +100,26 @@ gulp.task('templates',['bower-files'], function() {
     .pipe( gulp.dest('dist/') )
 });
 
+//---------------------- UTILS
+
+gulp.task("bower-files", function(){
+    gulpBowerFiles().pipe(gulp.dest("./dist/bower_components/"));
+});
+
 gulp.task('clean', function(cb) {
   del('./dist', cb);
+});
+
+//---------------------- SERVE & BUILD
+
+gulp.task('browser-sync', function() {
+  browserSync({
+    open: false,
+    server: {
+      baseDir: "./dist",
+      // baseDir: "./.publish",
+    }
+  });
 });
 
 gulp.task('build', ['styles', 'js', 'templates', 'images', 'fonts', 'root-files']);
@@ -125,6 +130,8 @@ gulp.task('serve', ['build', 'browser-sync'], function () {
   gulp.watch('src/assets/images/**/*',['images', reload]);
   gulp.watch('src/**/*.jade',['templates', reload]);
 });
+
+//---------------------- DEPLOY YO
 
 gulp.task('deploy', ['build'], function () {
   return gulp.src("./dist/**/*")
