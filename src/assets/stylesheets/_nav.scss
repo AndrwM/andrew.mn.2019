@@ -9,7 +9,7 @@ nav {
 	right:0;
 	width:100%;
 	background:transparent;
-	height:80px;
+	height:70px;
 	@include transition-hover;
 	.pageinfo {
 		@include transition-hover;
@@ -27,27 +27,27 @@ nav {
 	.link {
 		padding:9px;
 		border-radius:50%;
-		background:#fff;
+		background:rgba(#fff, 0.8);
 		box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1);
 		display: inline-block;
 		height: 40px;
 		width: 40px;
-		top: 19px;
+		top: 14px;
 		position: absolute;
 		@include transition-hover;
 		img {
-			opacity: 0.3;
+			opacity: 0.6;
 			@include transition-hover;
 		}
 		&.back {
-			left:22px;
+			left:14px;
 			img {
 				height: 20px;
 				padding: 1px 0px 0 4px;
 			}
 		}
 		&.connect {
-			right:22px;
+			right:14px;
 			img {
 				height: 22px;
 				padding: 0;
@@ -66,8 +66,8 @@ nav {
 	}
 	@include media($bp-small) {
 		&:hover {
-			background:rgba(#fff,0.9);
-			box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1);
+			background:rgba(#fff, 0.98);
+			box-shadow: 0px 0px 4px 2px rgba(#000, 0.06);
 			.pageinfo {
 				opacity: 1;
 			}

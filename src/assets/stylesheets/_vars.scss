@@ -39,8 +39,8 @@ $c-grey-extralight: #F4F4F4;
 //----------------- Type Mixins
 
 $ff-meta-serif: "ff-meta-serif-web-pro", Georgia, "Times New Roman", serif;
-$ff-minion-pro: "minion-pro", Georgia, "Times New Roman", serif;
-$ff-futura: "futura-pt", Helvetica, Arial, sans-serif;
+// $ff-minion-pro: "minion-pro", Georgia, "Times New Roman", serif;
+// $ff-futura: "futura-pt", Helvetica, Arial, sans-serif;
 $ff-freight-sans: "freight-sans-pro", Helvetica, Arial, sans-serif;
 // $ff-social: "social", Helvetica, Arial, sans-serif;
 
@@ -49,11 +49,11 @@ $ff-freight-sans: "freight-sans-pro", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-@mixin ff-heading-medium {
-  font-family: $ff-freight-sans;
-  font-weight: 500;
-  font-style: normal;
-}
+// @mixin ff-heading-medium {
+//   font-family: $ff-freight-sans;
+//   font-weight: 500;
+//   font-style: normal;
+// }
 @mixin ff-heading-bold {
   font-family: $ff-freight-sans;
   font-weight: 600;
@@ -81,7 +81,7 @@ $ff-freight-sans: "freight-sans-pro", Helvetica, Arial, sans-serif;
 //----------------- Misc Presets
 
 @mixin transition-hover {
-  transition-duration: 0.5s;
+  transition-duration: 0.4s;
   transition-property: all;
   transition-timing-function: ease-out;
 }
