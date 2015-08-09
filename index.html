@@ -3,88 +3,82 @@
   <head>
     <title>Andrew McIntee Is A User Interface Designer &amp; Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/favicon-v2.ico">
     <link rel="stylesheet" href="/assets/stylesheets/main.css">
+    <!-- bower:js-->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/console-polyfill/index.js"></script>
-    <script src="/bower_components/headroom.js/dist/headroom.js"></script>
-    <script src="/bower_components/headroom.js/dist/jQuery.headroom.js"></script>
+    <script src="/bower_components/html5shiv/dist/html5shiv.js"></script>
     <script src="/bower_components/sticky-kit/jquery.sticky-kit.js"></script>
-    <script src="/assets/scripts/main.js"></script>
+    <script src="/bower_components/animsition/dist/js/jquery.animsition.js"></script>
+    <script src="/bower_components/animsition/dist/js/jquery.animsition.min.js"></script>
+    <!-- endbower-->
+    <script type="text/javascript" src="/assets/scripts/main.js"></script>
     <script type="text/javascript" src="//use.typekit.net/qfv8roj.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
 </html>
 <body>
-  <div class="wrapper-page index">
-    <header class="cover"><a href="#endorsements" class="scroll-down">Scroll Down</a>
-      <div class="bio">
-        <h1>Hello internet traveler,</h1>
-        <p>I’m a multi-disciplinarian user interface designer, web developer, and speaker. As an idea executer dedicated to crafting highly efficient and friendly digital products, I specialize in molding ideas&mdash;from usability testing through wireframing to creating a cohesive brand aesthetic and developing intuitive software and web based experiences. My best work comes from a collaborative, down-to-earth relationship with my clients. I also enjoy face-to-face conversations, travel, tasty beer, and the outdoors.</p>
+  <div class="wrapper-page index animsition">
+    <header class="cover"><a href="#content" class="scroll-down">Scroll Down</a>
+      <div class="container">
+        <div class="bio">
+          <h1>I'm Andrew McIntee&hellip;</h1>
+          <p>A multi-disciplinarian user interface designer and front-end engineer. I specialize in honing big visions into human-friendly digital products. With over 6 years of industry experience leading teams on both the development and design side, I’m well-versed in planning and building digital products. I value face-to-face interaction and strive to reflect that same connected intimacy through the products I create.</p>
+        </div>
       </div>
     </header>
-    <div class="wrapper-scrollable">
-      <section id="endorsements" class="endorsements">
+    <div id="content" class="wrapper-scrollable">
+      <section id="skills" class="skills">
         <div class="container">
-          <blockquote>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam laoreet nulla ut felis euismod, at hendrerit nulla scelerisque. Aliquam erat volutpat. Cras suscipit elit sit amet consequat mollis. Ut blandit massa.</p>
-            <cite>Jane Doe <span>Partner, ACME Inc.</span></cite>
-          </blockquote>
-        </div>
-      </section>
-      <section id="projects" class="projects">
-        <div class="intro">
-          <div class="container">
-            <h1>Projects</h1>
+          <h2 class="intro">Skillsets</h2>
+          <div class="tile">
+            <h3><img src="/assets/images/icon-skillset-marketing.png">Marketing Design</h3>
+            <p>This is where problem solving meets visual impact. I unite products and users.</p>
+          </div>
+          <div class="tile">
+            <h3><img src="/assets/images/icon-skillset-ui.png">User Interface Design</h3>
+            <p>Be it iOS, Android, or Desktop software, I create useful, elegent native experiences.</p>
+          </div>
+          <div class="tile">
+            <h3><img src="/assets/images/icon-skillset-dev.png">Front-End Engineering</h3>
+            <p>It doesn't stop with concepting. I develop products from visual concept to interactive experience.</p>
           </div>
         </div>
-        <div class="project-listing container"><a href="#" class="project project-echo hero">
+      </section>
+      <section class="project-tiles">
+        <div class="project-listing container">
+          <h2 class="intro">Projects</h2><a href="/projects/zenjuries" class="project project-zenjuries hero animsition-link">
             <div class="description">
               <h2>Zenjuries Employee Injury Managment Platform</h2>
-              <p>Designing and executing the web branding of an all-new ECHO Tools venture.</p>
-            </div><img src="assets/images/projects/echo/listing.png" class="preview"></a><a href="/projects/echo-cordless-tools" class="project project-echo large">
+              <p>SAAS Platform Assisting Businesses In Effectively Managing On-The-Job Injuries.</p>
+            </div><img src="/assets/images/projects/zenjuries/listing.png" class="preview"></a><a href="/projects/echo-cordless-tools" class="project project-echo large animsition-link">
             <div class="description">
               <h2>Echo Cordless Tools</h2>
-              <p>Designing and executing the web branding of an all-new ECHO Tools venture.</p>
-            </div><img src="assets/images/projects/echo/listing.png" class="preview"></a><a href="#" class="project small">
+              <p>Creating An Online Brand Experience For An Innovative New Line Of Cordless Outdoor Tools.</p>
+            </div><img src="/assets/images/projects/echo/listing.png" class="preview"></a><a href="/projects/arkiver" class="project project-arkiver small animsition-link">
             <div class="description">
-              <h2>Echo Cordless Tools</h2>
-              <p>Designing and executing the web branding of an all-new ECHO Tools venture.</p>
-            </div><img src="assets/images/projects/echo/listing.png" class="preview"></a><a href="#" class="project medium">
-            <div class="description">
-              <h2>Echo Cordless Tools</h2>
-              <p>Designing and executing the web branding of an all-new ECHO Tools venture.</p>
-            </div><img src="assets/images/projects/echo/listing.png" class="preview"></a><a href="#" class="project medium">
-            <div class="description">
-              <h2>Echo Cordless Tools</h2>
-              <p>Designing and executing the web branding of an all-new ECHO Tools venture.</p>
-            </div><img src="assets/images/projects/echo/listing.png" class="preview"></a></div>
-      </section>
-      <section id="writing" class="writing">
-        <h1>Writing</h1>
-        <div class="writing-listing container"><a href="#">
-            <h2>Thoughts On Vulnerability And Human Connection</h2>
-            <div class="date">May 2015</div></a><a href="#">
-            <h2>Thoughts On Vulnerability And Human Connection</h2>
-            <div class="date">May 2015</div></a><a href="#">
-            <h2>Thoughts On Vulnerability And Human Connection</h2>
-            <div class="date">May 2015</div></a></div>
+              <h2>Arkiver</h2>
+              <p>Designing An Application Interface To Elegantly Capture, Curate, And Share Memories.</p>
+            </div><img src="/assets/images/projects/arkiver/listing.png" class="preview"></a>
+        </div>
+        <div class="brands container"><img src="/assets/images/index-brands.jpg"></div>
       </section>
     </div>
-    <footer>
-      <section id="connect" class="connect">
-        <div class="container">
-          <h1>Connect Anytime</h1>
-          <p class="center">I'm available for select consulting engagements at this time.</p><a href="#" class="btn">Contact Me Via Electronic Mail</a>
+    <section id="connect" class="connect">
+      <div class="container">
+        <h2>Connect Anytime</h2>
+        <p>I have a passion for learning what makes people tick and building custom tailored software to meet their needs. I would love to chat about how I can collaborate with your team.</p><a href="mailto:studio@andrew.mn" class="btn">Studio@Andrew.mn</a>
+        <div class="social"><a href="https://twitter.com/AndrwM" target="_blank" class="ss-twitter"><span>Twitter</span></a><a href="https://www.linkedin.com/in/andrewmcintee" target="_blank" class="ss-linkedin"><span>LinkedIn</span></a><a href="https://github.com/AndrwM/" target="_blank" class="ss-github"><span>Github</span></a><a href="http://www.rdio.com/people/andrwm/" target="_blank" class="ss-rdio"><span>Rdio</span></a>
         </div>
-      </section>
-      <section class="social">
-        <div class="container"><a href="#" class="ss-twitter"><span>Twitter</span></a><a href="#" class="ss-dribbble"><span>Dribbble</span></a><a href="#" class="ss-github"><span>Github</span></a><a href="#" class="ss-rdio"><span>Rdio</span></a><a href="#" class="ss-instagram"><span>Instagram</span></a></div>
-      </section>
+      </div>
+    </section>
+    <footer>
       <section class="copyright">
         <div class="container">
-          <div class="left">Copyright Andrew McIntee 2015.</div>
-          <div class="right">This site is typeset in Freight Sans &amp; FF Meta Serif with photography by Zach Suggs.
+          <div class="right">This site is typeset in <a href="https://www.dardenstudio.com/typefaces/freight_sans" target="_blank">Freight Sans</a> &amp; <a href="http://metaserif.com" target="_blank"> FF Meta Serif</a> with <a href="http://www.zachsuggs.com" target="_blank">photography by Zach Suggs.</a>
           </div>
+          <div class="left">&copy; Andrew McIntee 2015. &mdash; <a href="#">Many thanks to&#8230;</a></div>
         </div>
       </section>
       <section id="colophon" class="colophon">

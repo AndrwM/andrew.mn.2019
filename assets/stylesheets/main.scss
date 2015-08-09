@@ -2,7 +2,9 @@
 //------------- Setup
 
 // @import "../../../bower_components/susy/sass/susy";
+@import "/bower_components/animsition/dist/css/animsition.min.css";
 @import "../fonts/social/ss-social-circle.css";
+// @import "../fonts/gizmo/ss-gizmo.css";
 @import "utils";
 @import "vars";
 
@@ -11,16 +13,27 @@
 @import "reset";
 @import "global";
 @import "footer";
+@import "connect";
+@import "nav";
+@import "project-tiles";
 
 //------------- Sitewide Elements
 
 body > .wrapper-page.index {
+	.wrapper-scrollable {
+		@include media($bp-medium) {
+			margin-top:860px;
+		}
+		box-shadow:0px -20px 100px 0px $c-grey-dark;
+		background:$c-grey-extralight;
+	}
 	@import "index/cover";
-	@import "index/endorsements";
-	@import "index/projects";
+	@import "index/skills";
+	// @import "index/endorsements";
+	// @import "index/projects";
 	@import "index/writing";
 }
 body > .wrapper-page.project {
-	@import "project/project-nav";
+	// @import "project/project-nav";
 	@import "project/project-main";
 }

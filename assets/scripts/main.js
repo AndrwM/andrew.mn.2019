@@ -5,65 +5,99 @@ window.a = {
   init: function() {
 
     console.log('Exciting Times')
+    if (a.utils.breakpoint() >= 2) {
+      $(".animsition").animsition({
+        inClass               :   'fade-in',
+        outClass              :   'fade-out',
+        inDuration            :    1500,
+        outDuration           :    800,
+        linkElement           :   '.animsition-link',
+        // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+        loading               :    true,
+        loadingParentElement  :   'body', //animsition wrapper element
+        loadingClass          :   'animsition-loading',
+        unSupportCss          :   [],
+        //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+        //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+
+        overlay               :   false,
+
+        overlayClass          :   'animsition-overlay-slide',
+        overlayParentElement  :   'body'
+      });
+    }
 
     // INITIATE ALL THE THINGS
     if ( $('.wrapper-page.project').length ) {
 
-      $('.wrapper-page > nav').headroom({ tolerance:10 });
+      this.project.stickyDescriptions()
 
-      $(".description").stick_in_parent({
-        offset_top:80,
-      })
+    } else if ( $('.wrapper-page.index').length ) {
+
+      if (a.utils.breakpoint() >= 2) {
+        console.log('shit runs')
+        this.index.resizeHeader()
+        this.index.scrollToContent()
+      }
+
+    }
+
+    // this.navController.init();
+
+  },
+  utils: {
+    breakpoint: function () {
+      $('body').append('<div class="js-bp-check"></div>');
+      var bp = $('.js-bp-check').css('z-index');
+      console.log('breakpoint:',bp);
+      return bp;
+    },
+  },
+  /////////--------------------- INDEX
+  index: {
+    resizeHeader: function() {
+
+      var $header = $('header');
+      $header.height( $(window).height() );
+      //Gotta get the height again bc of mn-height issues
+      $('.wrapper-scrollable').css('margin-top', $header.height());
+
+    },
+    scrollToContent: function () {
+
+      $('header a.scroll-down').on('click', function (e) {
+        var target = $(this).attr('href')
+        console.log(target)
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 500);
+        return false;
+      });
+
+    }
+  },
+  /////////--------------------- PROJECT
+  project: {
+    stickyDescriptions: function () {
+
+      $(window).load(function() {
+
+        $("section.feature .description").stick_in_parent({
+          offset_top:80,
+        })
         .on('sticky_kit:bottom', function(e) {
           $(this).parent().css('position', 'static');
         })
         .on('sticky_kit:unbottom', function(e) {
           $(this).parent().css('position', 'relative');
         });
-    }
 
-    // this.navController.init();
+      });
 
+    },
   },
-  //-----------------------------------------------------
-  comparisonSlider: function() {
+//-----------------------------------------------------
 
-    window.slider = new Dragdealer('handleTrack', {
-      steps: 7,
-      x: .5,
-      left:6,
-      right:6,
-      animationCallback: function(x, y) {
-        // $('.js-comparison-slider .mask.left').width( Math.round(x * 100) + "%");
-        // $('.js-comparison-slider .mask.right').width( Math.round((1 - x) * 100) + "%");
-
-        if (x >= .5) {
-          var backgroundSize = Math.round(x * 800)
-        } else if (x <= .5) {
-          var backgroundSize = Math.round((1 - x) * 800)
-        }
-
-        $('.js-comparison-slider .mask.left').css({
-          "width": Math.round(x * 100) + "%",
-          "background-size": backgroundSize
-        });
-
-        $('.js-comparison-slider .mask.right').css({
-          "width": Math.round((1 - x) * 100) + "%",
-          "background-size": backgroundSize
-        });
-      }
-    });
-
-    $('.js-comparison-slider .mask.left').click(function (e) {
-      slider.setStep(5)
-    })
-    $('.js-comparison-slider .mask.right').click(function (e) {
-      slider.setStep(3)
-    })
-
-  },
-  //-----------------------------------------------------
 };
 
 

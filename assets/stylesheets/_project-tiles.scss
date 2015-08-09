@@ -1,21 +1,31 @@
 
 
-section.projects {
-	padding: 40px 0;
-	.intro {
-		// text-align: center;
-		margin-bottom: 40px;
-		margin-top: 40px;
+section.project-tiles {
+	padding: 70px 0;
+	h2.intro {
+    margin-left: 10px;
+	}
+	.brands {
+		display: none;
+		text-align: center;
+	  margin-bottom: 40px;
+	  margin-top: 40px;
+	  opacity:0.4;
+	  @include transition-hover;
+	  &:hover { opacity:1; }
+	  @include media($bp-medium) {
+	  	display: block;
+	  }
 	}
 	.project-listing {
 		.project {
-			background:$c-yellow;
+			background:$c-grey-light;
 			height: 450px;
 			display: block;
 			margin:1%;
 			overflow: hidden;
 			text-decoration:none;
-			transition: all .2s ease-in-out;
+			@include transition-hover;
 			border-radius: $border-radius;
 			.description {
 				color:#fff;
@@ -39,6 +49,9 @@ section.projects {
 				left:6%;
 			}
 			@include media($bp-medium) {
+				.brands {
+
+				}
 				.preview {
 					left:0;
 					right:0;
@@ -87,19 +100,38 @@ section.projects {
 			//----------- Project Specific
 
 			&.project-echo {
-				background-color: #E8E9EA;
-				.description {
-					color:$c-grey-dark;
+				background: #0F1B26 url(/assets/images/projects/echo/hero-bg.jpg);
+				h2 { color: #fff; }
+				.description { color:#fff; }
+			}
+
+			&.project-zenjuries {
+				background: #2481b7 url(/assets/images/projects/zenjuries/hero-bg.jpg);
+				h2 { color: #fff; }
+				.description { color:#fff; }
+				.preview {
+				  right: -8%;
+				  bottom: -20px;
+				  left:auto !important;
 				}
 				&:hover {
-					background-color: darken(#E8E9EA, 4%);
+					// background-color: darken(#E53A2D, 4%);
+				}
+			}
+
+			&.project-arkiver {
+				background: #333335 url(/assets/images/projects/arkiver/listing-bg.jpg) top left;
+				h2 { color: #fff; }
+				.description { color:#fff; }
+				.preview {
+				  // right: -8%;
+				  bottom: -40px;
 				}
 			}
 
 			//----------------------------------
 			&:hover {
-				// box-shadow: inset 0px 0px 0px 4px rgba(#fff, 1);
-				transform: scale(0.995);
+				transform: scale(1.015);
 			}
 			&:active {
 				transform: scale(0.98);

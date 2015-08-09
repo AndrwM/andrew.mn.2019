@@ -1,0 +1,100 @@
+
+- var headerColor = "#333335";
+- var subHeaderColor = "#333335";
+- var endorsementColor = "#bb8339";
+- var headerTitle = "Arkiver";
+
+include ../../includes/_head
+
+style.
+  body > .wrapper-page { background:#faf9f7; }
+  header { color:#bb8339; }
+  h1 { color:#fff; }
+  h2,h3 { color: #bb8339; }
+  p a:hover {  border-bottom-color: #bb8339; }
+
+body
+  .wrapper-page.project.project-echo.animsition
+    include ../../includes/project/_project-nav
+
+    header(style="background:#{headerColor}; padding-bottom:280px;")
+      h1 Arkiver
+      p.center Designing An Application Interface To Elegantly Capture, Curate, And Share Memories.
+
+    section.image.full(style="background:#{subHeaderColor}; background-size:cover;"): img(src='/assets/images/projects/arkiver/hero.png',style="margin-top: -206px;")
+
+    section.copy.container
+      h2 Take Back Control Of Your Digital ‘Moments’
+      p The founders of Arkiver first approached me to provide creative direction and user interface mockups for to iterate on their application, I was thrilled. The app was simple in concept, give users a local storage for all their internet content (‘moments’) scattered across various social media sites. My job was to prototype how one of these moments would operate across all screen sizes, providing a consistent experience with any device.
+    //- section.image.full: img(src='/assets/images/projects/arkiver/feature-login.jpg')
+
+    section.feature.left: .container
+      img(src='/assets/images/projects/arkiver/feature-moment-full.jpg')
+      .description
+        h3 Full / Desktop View
+        p A moment in its regular state and edit state along with a prototype of the collapsable left navigation.
+
+    section.feature.left: .container
+      img(src='/assets/images/projects/arkiver/feature-moment-slim.jpg')
+      .description
+        h3 Tablet / Slim View
+        p The moment view with its metadata stacked vertically for design for portrait tablets.
+
+    section.feature.left: .container
+      img(src='/assets/images/projects/arkiver/feature-moment-mobile.jpg')
+      .description
+        h3 Mobile View
+        p The flow for viewing and editing a moment on mobile devices. The tags, people, and category edits states are relagated to an additional screen to account for the necessary larger hitspaces needed on smaller devices.
+
+    section.copy.container
+      h2 Other Interface Elements
+      p Throughout our engagement I consulted with Arkiver to prototype more interaction heavy views for their app. These include login, bulk editing, moment-sharing, and user-onboarding. This is a selection of a few of the final protypes.
+
+    section.feature.left: .container
+      img(src='/assets/images/projects/arkiver/feature-listing.jpg')
+      .description
+        h3 Sorting &amp; Bulk Editing
+        p Filtering, sorting, and bulk editing moments is intended to be a desktop only feature. These mockups showcase a flow for the filtering and bulk editing moments.
+
+    section.copy.container
+      h2 Project Summary
+      p The Arkiver founders were thrilled with my work and since our first engagement we maintain an regular user interface design consulting relationship for prototyping new features and finessing current application interactions.
+      p Interested in hearing more about my process? <a href="/#connect">Let's connect!</a>
+    //- section.copy.container
+    //-   h2 The Highest Battery Capacity Yet - Launched At A Break-Neck Pace
+    //-   p This project ran at a drop-dead sprint because it was imperative that the online marketing materials launch simultaneously with the retail product rollout. Midnight oil was burned and we were able to launch the site two weeks early to allow for additional bugtesting before the product became publically available.
+
+    //- section.feature.right: .container
+    //-   img(src='/assets/images/projects/echo/feature-index.jpg')
+    //-   .description
+    //-     h3 Homepage
+    //-     p The homepage serves as a directory for accessing all tools as well as promoting the product brand.
+    //- section.feature.right: .container
+    //-   img(src='/assets/images/projects/echo/feature-detail.jpg')
+    //-   .description
+    //-     h3 About The Product
+    //-     p Showcasing the voltage and consumer-warranty promise was paramount. We were able to strike a cohesive balance featuring product while also satisfying legal and marketing concerns.
+    //-  section.feature.right: .container
+    //-     img(src='/assets/images/projects/echo/feature-registration.jpg')
+    //-     .description
+    //-       h3 Registration
+    //-       p The ability for a user to register his/her product following purchase was imperative for the legal department. I worked closely to meld their requirements into a functional and aesthetically pleasing registration dashboard.
+   
+    section.endorsement(style="background:#{endorsementColor};"): .container: blockquote
+      p Thanks Andrew!
+      cite
+        img(src="/assets/images/projects/arkiver/logan.jpg")
+        | Logan Metcalfe
+        span CEO, Arkiver
+
+    //- section.lockup(style="background:#{subHeaderColor};"): .container
+    //-   img(src='http://placekitten.com/g/600/400').feature.large
+    //-   img(src='http://placekitten.com/g/600/400').feature.small
+    //-   img(src='http://placekitten.com/g/600/400').feature.hero
+    //-   img(src='http://placekitten.com/g/600/400').feature.medium
+    //-   img(src='http://placekitten.com/g/600/400').feature.medium
+ 
+    include ../../includes/project/_project-footer
+    include ../../includes/_footer
+
+  include ../../includes/_closing-scripts

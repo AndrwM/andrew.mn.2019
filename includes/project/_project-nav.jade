@@ -1,5 +1,14 @@
+//- nav
+//- 	.link.left
+//- 		a(href="/").brand
+//- 			img(src="/assets/images/brand-small-dark.png")
+//- 			| Andrew McIntee 
+//- 		span.page-name #{headerTitle}
+//- 	.link.right: a(href="/").connect Connect Anytime
+
 nav
-	.link.left
-		a(href="/") Andrew McIntee 
-		span.page-name ECHO Cordless Tools
-	.link.right: a(href="/") Connect Anytime
+	h3.pageinfo Andrew McIntee
+	a.link.back(href="/").animsition-link
+		img(src="/assets/images/icon-back.svg")
+	a.link.connect(href="/#connect").animsition-link
+		img(src="/assets/images/icon-connect.svg")

@@ -15,12 +15,16 @@
 
 
 header.cover {
-	background:#000 url(/assets/images/index-cover-small.jpg) top center no-repeat;
+	// background:#000 url(/assets/images/index-cover-small.jpg) top center no-repeat;
 	padding: 200px 0 100px 0;
-
+	position: static;
+	background: $c-grey-dark;
+	.container {
+		height: 100%;
+	}
 	.bio {
 		max-width: 500px;
-		padding:50px;
+		// padding:50px;
 		margin:auto;
 		color: #fff;
 		h1 {
@@ -41,6 +45,12 @@ header.cover {
 			padding:0 0 20px 0;
 			// font-size: em(23px);
 			// line-height: em(30px);
+			a {
+				border-bottom-color:#47484A;
+				&:hover {
+					border-bottom-color: $c-yellow;
+				}
+			}
 			&.closing {
 				@include ff-body-bold;
 				font-style: italic;
@@ -55,46 +65,48 @@ header.cover {
 @include media($bp-medium) {
 
 	header.cover {
-		background:#000 url(/assets/images/index-cover-medium.jpg) center center no-repeat;
-		background-size: cover;
-		min-height: 1000px;
+		// background:#000 url(/assets/images/index-cover-medium.jpg) center center no-repeat;
+		// background-size: cover;
+		background: $c-grey-dark url(/assets/images/index3-cover-large.jpg) center center no-repeat;
+		height: 860px;
+		min-height: 600px;
+		max-height: 860px;
 		padding: 0;
+		// Cool scrolling stuff
+		position: fixed;
+		top:0;
+	  width: 100%;
 
 		.bio {
 			max-width: 460px;
 			margin: 0;
 			padding: 0;
 			position: absolute;
-		  right: 21%;
-		  top: 29%;
+	    right: 60px;
+		  bottom: 26%;
 			color: #fff;
 		}
 		.scroll-down {
 			opacity: 0.3;
 			transition-duration: 0.3s;
-	  transition-property: visibility, opacity, bottom;
+		  transition-property: visibility, opacity, bottom;
 			@include seo-text;
 			background: url(/assets/images/icon-scroll.png) no-repeat center center;
 			height: 100px;
 			width: 100px;
 			position: absolute;
-			bottom:30px;
+			bottom:0;
 			left:0;
 			right: 0;
 			margin: 0 auto;
 			display: inline-block;
+			z-index: 600;
 			&:hover, &:active {
 				opacity: 1;
-				bottom:26px;
+				bottom:4px;
 				padding-top:4px;
 			}
 		}
 	}
 
-}
-
-@include media($bp-large) {
-	header.cover {
-		background-image: url(/assets/images/index-cover-xlarge.jpg);
-	}
 }

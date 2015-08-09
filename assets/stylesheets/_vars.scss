@@ -12,8 +12,8 @@
 // );
 
 $bp-small: "min-width: 401px";
-$bp-medium: "min-width: 801px";
-$bp-large: "min-width: 1201px";
+$bp-medium: "min-width: 901px";
+$bp-large: "min-width: 1101px";
 
 $border-radius: 2px;
 $font-size: 20px;
@@ -31,16 +31,16 @@ $c-yellow-dark: darken( $c-yellow, 10% );
 
 // Neutrals
 $c-grey-extradark: #22242C; // #3B3E33
-$c-grey-dark: #363943; // #3B3E33
-$c-grey-medium: #32353E;
+$c-grey-dark: #252A2D; // #3B3E33
+$c-grey-medium: #2E3337;
 $c-grey-light: #939499;
-$c-grey-extralight: #faf3f2;
+$c-grey-extralight: #F4F4F4;
 
 //----------------- Type Mixins
 
 $ff-meta-serif: "ff-meta-serif-web-pro", Georgia, "Times New Roman", serif;
-$ff-minion-pro: "minion-pro", Georgia, "Times New Roman", serif;
-$ff-futura: "futura-pt", Helvetica, Arial, sans-serif;
+// $ff-minion-pro: "minion-pro", Georgia, "Times New Roman", serif;
+// $ff-futura: "futura-pt", Helvetica, Arial, sans-serif;
 $ff-freight-sans: "freight-sans-pro", Helvetica, Arial, sans-serif;
 // $ff-social: "social", Helvetica, Arial, sans-serif;
 
@@ -49,11 +49,11 @@ $ff-freight-sans: "freight-sans-pro", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-@mixin ff-heading-medium {
-  font-family: $ff-freight-sans;
-  font-weight: 500;
-  font-style: normal;
-}
+// @mixin ff-heading-medium {
+//   font-family: $ff-freight-sans;
+//   font-weight: 500;
+//   font-style: normal;
+// }
 @mixin ff-heading-bold {
   font-family: $ff-freight-sans;
   font-weight: 600;
@@ -81,8 +81,9 @@ $ff-freight-sans: "freight-sans-pro", Helvetica, Arial, sans-serif;
 //----------------- Misc Presets
 
 @mixin transition-hover {
-  transition-duration: 0.3s;
-  transition-property: visibility, opacity, color, border, background, padding;
+  transition-duration: 0.4s;
+  transition-property: all;
+  transition-timing-function: ease-out;
 }
 
 @include keyframes(introFade-top) {

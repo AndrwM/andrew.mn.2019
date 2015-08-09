@@ -18,6 +18,15 @@
   color: #fff;
 }
 
+//----------------- Tell JS About Breakpoints
+
+.js-bp-check {
+  display: none !important;
+  z-index: 0;
+  @include media($bp-small) { z-index: 1; }
+  @include media($bp-medium) { z-index: 2; }
+  @include media($bp-large) { z-index: 3; }
+}
 
 //----------------- GLOBAL LAYOUT
 
@@ -38,11 +47,19 @@ body {
 .container {
   max-width:1300px;
   margin: 0 auto;
-  padding:0 10px;
+  padding:0 20px;
   @include clearfix;
   @include media($bp-medium) {
     padding:0 40px;
   }
+}
+
+.animsition-loading:after {
+  color:$c-grey-light;
+  font-size: 12px;
+  padding: 4px 0 0 0;
+  @include ff-heading-bold;
+  text-transform: uppercase;
 }
 
 
@@ -51,8 +68,8 @@ body {
 //-- Headlines
 
 h1 {
-  @include ff-heading-light;
-  font-size: em(40px);
+  @include ff-heading-bold;
+  font-size: em(33px);
   margin-bottom: 20px;
   // color:$c-green;
   @include media($bp-medium) {
@@ -60,19 +77,31 @@ h1 {
   }
 }
 
+// h2 {
+//   @include ff-heading-light;
+//   font-size: em(40px);
+//   line-height: em(24px);
+//   margin-bottom: 20px;
+//   @include media($bp-medium) {
+//     font-size: em(30px);
+//   }
+// }
+
 h2 {
-  @include ff-heading-light;
-  font-size: em(30px);
-  line-height: em(24px);
-  margin-bottom: 20px;
+  @include ff-heading-bold;
+  margin-bottom: 19px;
+  font-size: em(16px);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba($c-grey-dark,0.2);
 }
 
 h3 {
   @include ff-heading-bold;
-  margin-bottom: 10px;
-  font-size: em(20px);
+  margin-bottom: 19px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: em(14px);
   color: $c-yellow;
 }
 
@@ -84,7 +113,7 @@ a {
 p {
   font-size: em(20px);
   line-height: em(36px);
-  max-width: 900px;
+  max-width: 810px;
   // margin:0 auto;
   // padding:40px;
   &.center {
@@ -96,19 +125,25 @@ p {
   a {
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px dashed #fff;
+    padding-bottom:1px;
+    border-bottom: 1px solid $c-grey-light;
+    @include transition-hover;
     &:hover {
-       border-bottom-color: $c-yellow;
-       color: $c-yellow;
+      padding-bottom:2px;
+      border-bottom-color: $c-yellow;
+      // background: rgba(#000, 0.2);
+      border-bottom-width: 3px;
+       // color: $c-yellow;
     }
   }
 }
 
 a.btn {
   display: inline-block;
+  text-align: center;
   padding:18px 36px;
-  margin:20px;
-  border:2px solid $c-grey-extradark;
+  margin:20px 0;
+  border:2px solid $c-yellow;
   @include transition-hover;
   border-radius: $border-radius;
   @include ff-heading-bold;
@@ -116,8 +151,9 @@ a.btn {
   // letter-spacing: 0.05em;
   // text-transform: uppercase;
   &:hover {
-    background:$c-grey-extradark;
-    color:#fff;
+    background:$c-yellow;
+    color:$c-grey-extradark;
+    transform: scale(1.03);
   }
   &:active {
     transform: scale(0.98);
@@ -129,8 +165,9 @@ blockquote {
   text-align: center;
   p {
     text-indent: -1.4em;
-    font-size: em(24px);
-    @include ff-heading-medium;
+    font-size: em(30px);
+    line-height: 1;
+    @include ff-heading-light;
     margin: 0 auto;
     max-width: 800px;
     &:before {
@@ -156,6 +193,14 @@ blockquote {
     display: block;
     margin: 20px 0 0 0;
     line-height: em(24px);
+    img {
+      border-radius: 50%;
+      // border: 2px solid #FFF;
+      box-shadow: 0px 0px 0px 2px #000;
+      height: 50px;
+      margin: 0 auto 10px auto;
+      display: block;
+    }
     span {
       display: block;
       color: rgba(#000,0.4);

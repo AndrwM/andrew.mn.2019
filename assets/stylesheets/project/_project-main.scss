@@ -2,12 +2,15 @@
 
 //----------Header
 header {
-	padding:14% 20px;
+	padding:76px 20px 0 20px;
+	@include media($bp-medium) {
+		padding:10% 20px;
+	}
 }
 
 section.image {
 	text-align:center;
-	margin-bottom:200px;
+	margin-bottom:100px;
 	img {
 		max-width: 100%;
 		vertical-align: middle; // Weird padding bug fix
@@ -16,24 +19,32 @@ section.image {
 
 //----------Textual
 section.copy {
-	margin-top:50px;
+	margin-top:0;
 	max-width:900px;
-	margin-bottom:50px;
+	margin-bottom: 60px;
 	p {
 		margin-bottom:50px;
 		&:last-child { margin-bottom: 0;	}
+	}
+	@include media($bp-medium) {
+		margin-bottom: 150px;
 	}
 }
 
 //----------Image feature w/ text descr
 section.feature {
 	@include clearfix;
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-top: 60px;
+	margin-bottom: 60px;
 	img {
 		max-width: 100%;
 	}
+	.description {
+		padding-top: 10px;
+	}
 	@include media($bp-medium) {
+		margin-top: 100px;
+		margin-bottom: 100px;
 		img {
 		  width: 78%;
 		}
@@ -44,6 +55,7 @@ section.feature {
 			h3 {
 				font-size: em(18px);
 				text-align: left;
+				margin-bottom: 10px;
 			}
 		}
 		&.left {
@@ -60,13 +72,18 @@ section.feature {
 
 //-----------Quote
 section.endorsement {
-	background:red;
+	background:inherit;
 	padding:40px 0 60px 0;
 	blockquote {
 		p {
 			color: #fff;
 		}
 	}
+}
+
+//-----------Project Tiles
+section.project-tiles {
+	background:#fff;
 }
 
 	// &:before {
