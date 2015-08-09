@@ -1,7 +1,7 @@
 
 
 section.skills {
-	padding: 60px 0 40px 0;
+	padding: 60px 0 50px 0;
 	background: #fff;
 
 	h2.intro {
@@ -10,8 +10,19 @@ section.skills {
 	.tile {
 		float: left;
 		width: 33%;
-		padding:8px 80px 30px 10px;
+		padding:10px 60px 20px 12px;
+		h3 {
+			margin-bottom: 16px;
+			color: $c-grey-dark;
+			img {
+				height: 20px;
+		    vertical-align: -5px;
+        margin-right: 8px;
+		    margin-left: 2px;
+		  }
+		}
 		p {
+			color: $c-grey-medium;
 			font-size: em(16px);
 			line-height: em(30px);
 		}
