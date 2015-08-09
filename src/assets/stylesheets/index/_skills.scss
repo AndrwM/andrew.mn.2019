@@ -1,0 +1,20 @@
+
+
+section.skills {
+	padding: 60px 0 40px 0;
+	background: #fff;
+
+	h2.intro {
+		margin-left:10px;
+	}
+	.tile {
+		float: left;
+		width: 33%;
+		padding:8px 80px 30px 10px;
+		p {
+			font-size: em(16px);
+			line-height: em(30px);
+		}
+	}
+
+}

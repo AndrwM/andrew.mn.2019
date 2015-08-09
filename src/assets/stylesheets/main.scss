@@ -28,7 +28,8 @@ body > .wrapper-page.index {
 		background:$c-grey-extralight;
 	}
 	@import "index/cover";
-	@import "index/endorsements";
+	@import "index/skills";
+	// @import "index/endorsements";
 	// @import "index/projects";
 	@import "index/writing";
 }
