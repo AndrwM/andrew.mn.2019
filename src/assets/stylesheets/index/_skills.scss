@@ -1,16 +1,18 @@
 
 
 section.skills {
-	padding: 60px 0 50px 0;
-	background: #fff;
+	padding: 50px 0 60px 0;
+	background: $c-yellow;
 
 	h2.intro {
-		margin-left:10px;
+		color: $c-yellow-dark;
 	}
 	.tile {
 		float: left;
 		width: 33%;
-		padding:10px 60px 20px 12px;
+		margin:10px 0 0 0;
+		padding:0px 40px 14px 26px;
+		border-left: 1px solid rgba($c-yellow-dark,0.3);
 		h3 {
 			margin-bottom: 16px;
 			color: $c-grey-dark;
@@ -22,7 +24,7 @@ section.skills {
 		  }
 		}
 		p {
-			color: $c-grey-medium;
+			color: $c-yellow-dark;
 			font-size: em(16px);
 			line-height: em(30px);
 		}

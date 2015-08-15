@@ -94,6 +94,9 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: rgba($c-grey-dark,0.2);
+  &.intro {
+    font-size: em(12px);
+  }
 }
 
 h3 {
