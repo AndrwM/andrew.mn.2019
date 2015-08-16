@@ -20,14 +20,13 @@ section.image {
 //----------Textual
 section.copy {
 	margin-top:0;
-	max-width:900px;
 	margin-bottom: 60px;
 	p {
 		margin-bottom:50px;
 		&:last-child { margin-bottom: 0;	}
 	}
 	@include media($bp-medium) {
-		margin-bottom: 150px;
+		margin-bottom: 80px;
 	}
 }
 
