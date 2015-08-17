@@ -82,7 +82,7 @@ $ff-freight-sans: "freight-sans-pro", Helvetica, Arial, sans-serif;
 //----------------- Misc Presets
 
 @mixin transition-hover {
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
   transition-property: all;
   transition-timing-function: ease-out;
 }

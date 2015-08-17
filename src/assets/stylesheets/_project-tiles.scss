@@ -2,7 +2,10 @@
 
 section.project-tiles {
 	padding: 70px 0;
-	h2.intro {
+	.container {
+		padding:0 30px; // Compensate for padding around tiles
+	}
+	h3.intro {
     margin-left: 10px;
 	}
 	.brands {
@@ -131,10 +134,10 @@ section.project-tiles {
 
 			//----------------------------------
 			&:hover {
-				transform: scale(1.015);
+				transform: scale(1.03);
 			}
 			&:active {
-				transform: scale(0.98);
+				// transform: scale(0.98);
 			}
 		}
 	}
