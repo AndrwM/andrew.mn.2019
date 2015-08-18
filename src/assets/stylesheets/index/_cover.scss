@@ -88,7 +88,7 @@ header.cover {
 		}
 		.scroll-down {
 			opacity: 0.3;
-			transition-duration: 0.3s;
+			transition-duration: 0.2s;
 		  transition-property: visibility, opacity, bottom;
 			@include seo-text;
 			background: url(/assets/images/icon-scroll.png) no-repeat center center;
