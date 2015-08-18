@@ -34,7 +34,7 @@ body {
   -webkit-font-smoothing: antialiased;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
   background: $c-grey-extralight;
-  color: $c-grey-extradark;
+  color: $c-grey-medium;
   font-size:16px;
   @include ff-body;
   @include clearfix;
@@ -54,12 +54,15 @@ body {
   }
 }
 
-.animsition-loading:after {
-  color:$c-grey-light;
-  font-size: 12px;
-  padding: 4px 0 0 0;
-  @include ff-heading-bold;
-  text-transform: uppercase;
+.animsition-loading {
+  background-image: url(/assets/images/loading4.gif);
+  &:after {
+    color:$c-grey-light;
+    font-size: 12px;
+    padding: 20px 0 0 0;
+    @include ff-heading-bold;
+    text-transform: uppercase;
+  }
 }
 
 
@@ -87,13 +90,26 @@ h1 {
 //   }
 // }
 
+// h2 {
+//   @include ff-heading-bold;
+//   margin-bottom: 19px;
+//   font-size: em(16px);
+//   text-transform: uppercase;
+//   letter-spacing: 1px;
+//   color: rgba($c-grey-dark,0.2);
+//   &.intro {
+//     font-size: em(12px);
+//   }
+// }
+
 h2 {
   @include ff-heading-bold;
   margin-bottom: 19px;
-  font-size: em(16px);
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-size: em(24px);
   color: rgba($c-grey-dark,0.2);
+  &.intro {
+    font-size: em(12px);
+  }
 }
 
 h3 {
@@ -103,6 +119,10 @@ h3 {
   letter-spacing: 1px;
   font-size: em(14px);
   color: $c-yellow;
+  &.intro {
+    color: rgba($c-grey-dark,0.2);
+    font-size: em(12px);
+  }
 }
 
 a {
@@ -113,7 +133,7 @@ a {
 p {
   font-size: em(20px);
   line-height: em(36px);
-  max-width: 810px;
+  max-width: 540px;
   // margin:0 auto;
   // padding:40px;
   &.center {
