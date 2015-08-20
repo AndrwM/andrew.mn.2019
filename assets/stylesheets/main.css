@@ -360,7 +360,8 @@ footer section.colophon {
   color: #4d4f5d; }
 
 section.connect {
-  background: #252A2D;
+  background: #4d4f5d url(/assets/images/bg-connect.jpg) center center;
+  background-size: cover;
   padding: 160px 0 240px 0;
   color: #fff; }
   section.connect .container {
@@ -398,13 +399,10 @@ section.connect {
         color: transparent; }
 
 @media (min-width: 401px) {
-  section.connect {
-    background: #4d4f5d url(/assets/images/bg-connect.jpg) center center;
-    background-size: cover; }
-    section.connect a.btn {
-      width: auto; }
-    section.connect .social {
-      float: right; } }
+  section.connect a.btn {
+    width: auto; }
+  section.connect .social {
+    float: right; } }
 
 nav {
   z-index: 6000;
@@ -473,7 +471,7 @@ section.project-tiles {
     transition-property: all;
     transition-timing-function: ease-out; }
     section.project-tiles .brands:hover {
-      opacity: 1; }
+      opacity: 0.6; }
     @media (min-width: 901px) {
       section.project-tiles .brands {
         display: block; } }
@@ -503,7 +501,8 @@ section.project-tiles {
         font-size: 0.8em;
         line-height: 1.5em;
         text-align: center;
-        opacity: 0.8; }
+        opacity: 0.8;
+        max-width: none; }
     section.project-tiles .project-listing .project .preview {
       position: absolute;
       left: 6%; }
@@ -576,16 +575,18 @@ section.project-tiles {
 body > .wrapper-page.index .wrapper-scrollable {
   box-shadow: 0px -20px 100px 0px #252A2D;
   background: #F4F4F4; }
-  @media (min-width: 901px) {
+  @media (max-width: 901px) {
     body > .wrapper-page.index .wrapper-scrollable {
-      margin-top: 860px; } }
+      margin-top: 0 !important; } }
 
 body > .wrapper-page.index header.cover {
-  padding: 200px 0 100px 0;
   position: static;
-  background: #252A2D; }
+  background: #252A2D;
+  max-height: 750px; }
   body > .wrapper-page.index header.cover .container {
-    height: 100%; }
+    height: 100%;
+    padding-top: 200px;
+    padding-bottom: 100px; }
   body > .wrapper-page.index header.cover .bio {
     max-width: 500px;
     margin: auto;
@@ -605,6 +606,10 @@ body > .wrapper-page.index header.cover {
         font-style: italic; }
   body > .wrapper-page.index header.cover .scroll-down {
     display: none; }
+
+@media (min-width: 401px) {
+  body > .wrapper-page.index header.cover {
+    max-height: 600px; } }
 
 @media (min-width: 901px) {
   body > .wrapper-page.index header.cover {
@@ -810,3 +815,24 @@ body > .wrapper-page.project section.lockup {
           body > .wrapper-page.project section.lockup .feature.small .preview {
             bottom: -190px;
             left: 6%; } }
+
+body > .wrapper-page.standard {
+  background: #4d4f5d url(/assets/images/bg-connect.jpg) center center;
+  background-size: cover; }
+
+body > .wrapper-page.standard section.copy {
+  padding-top: 150px;
+  padding-bottom: 200px; }
+  body > .wrapper-page.standard section.copy h1 {
+    color: #fff;
+    text-align: left; }
+  body > .wrapper-page.standard section.copy h2 {
+    color: #FFCD01; }
+  body > .wrapper-page.standard section.copy p {
+    color: #fff;
+    margin-bottom: 50px; }
+    body > .wrapper-page.standard section.copy p:last-child {
+      margin-bottom: 0; }
+  @media (min-width: 901px) {
+    body > .wrapper-page.standard section.copy {
+      margin-bottom: 80px; } }

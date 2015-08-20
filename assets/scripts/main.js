@@ -4,8 +4,11 @@ window.a = {
   //-----------------------------------------------------
   init: function() {
 
-    console.log('Exciting Times')
     if (a.utils.breakpoint() >= 2) {
+
+      // Add the body class required for animsition
+      $('body > .wrapper-page').addClass('animsition');
+
       $(".animsition").animsition({
         inClass               :   'fade-in',
         outClass              :   'fade-out',
@@ -27,18 +30,15 @@ window.a = {
       });
     }
 
-    // INITIATE ALL THE THINGS
+    // Initiate Things On A Per Page Basis
     if ( $('.wrapper-page.project').length ) {
 
       this.project.stickyDescriptions()
 
     } else if ( $('.wrapper-page.index').length ) {
 
-      if (a.utils.breakpoint() >= 2) {
-        console.log('shit runs')
-        this.index.resizeHeader()
-        this.index.scrollToContent()
-      }
+      this.index.resizeHeader()
+      this.index.scrollToContent()
 
     }
 
@@ -47,10 +47,16 @@ window.a = {
   },
   utils: {
     breakpoint: function () {
-      $('body').append('<div class="js-bp-check"></div>');
+
+      // Double check that the div doesn't already exist..
+      if ( $('body > .js-bp-check').length <= 0 ) {
+        $('body').append('<div class="js-bp-check"></div>');
+      }
+
       var bp = $('.js-bp-check').css('z-index');
       console.log('breakpoint:',bp);
       return bp;
+
     },
   },
   /////////--------------------- INDEX
@@ -59,7 +65,7 @@ window.a = {
 
       var $header = $('header');
       $header.height( $(window).height() );
-      //Gotta get the height again bc of mn-height issues
+
       $('.wrapper-scrollable').css('margin-top', $header.height());
 
     },

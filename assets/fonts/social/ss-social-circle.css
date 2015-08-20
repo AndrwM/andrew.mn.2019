@@ -12,11 +12,11 @@
 
 @font-face {
   font-family: "social";
-  src: url('ss-social-circle.eot');
-  src: url('ss-social-circle.eot?#iefix') format('embedded-opentype'),
-       url('ss-social-circle.woff') format('woff'),
-       url('ss-social-circle.ttf')  format('truetype'),
-       url('ss-social-circle.svg#SSSocialCircle') format('svg');
+  src: url('http://localhost:3000/assets/fonts/social/ss-social-circle.eot');
+  src: url('http://localhost:3000/assets/fonts/social/ss-social-circle.eot?#iefix') format('embedded-opentype'),
+       url('http://localhost:3000/assets/fonts/social/ss-social-circle.woff') format('woff'),
+       url('http://localhost:3000/assets/fonts/social/ss-social-circle.ttf')  format('truetype'),
+       url('http://localhost:3000/assets/fonts/social/ss-social-circle.svg#SSSocialCircle') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -29,7 +29,7 @@ html:hover [class^="ss-"]{-ms-zoom: 1;}
 [class^="ss-"].ss-social-circle:before, [class*=" ss-"].ss-social-circle:before,
 [class^="ss-"].right:after, [class*=" ss-"].right:after,
 [class^="ss-"].ss-social-circle.right:after, [class*=" ss-"].ss-social-circle.right:after {
-  font-family: "SSSocialCircle";
+  font-family: "social";
   font-style: normal;
   font-weight: normal;
   text-decoration: none;
