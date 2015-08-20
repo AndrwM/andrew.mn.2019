@@ -20,8 +20,8 @@
 body > .wrapper-page.index {
 
 	.wrapper-scrollable {
-		@include media($bp-medium) {
-			margin-top:860px;
+		@media ( max-width: 901px ) {
+			margin-top:0 !important;
 		}
 		box-shadow:0px -20px 100px 0px $c-grey-dark;
 		background:$c-grey-extralight;

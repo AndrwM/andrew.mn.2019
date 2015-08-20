@@ -16,11 +16,13 @@
 
 header.cover {
 	// background:#000 url(/assets/images/index-cover-small.jpg) top center no-repeat;
-	padding: 200px 0 100px 0;
 	position: static;
 	background: $c-grey-dark;
+	max-height:750px;
 	.container {
 		height: 100%;
+		padding-top:200px;
+		padding-bottom:100px;
 	}
 	.bio {
 		max-width: 500px;
@@ -61,6 +63,14 @@ header.cover {
 		display: none;
 	}
 }
+@include media($bp-small) {
+
+	header.cover {
+		max-height:600px;
+	}
+
+}
+
 
 @include media($bp-medium) {
 
