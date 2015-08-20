@@ -71,7 +71,7 @@ window.a = {
     },
     scrollToContent: function () {
 
-      $('header a.scroll-down').on('click', function (e) {
+      $('.js-scroll-to').on('click', function (e) {
         var target = $(this).attr('href')
         console.log(target)
         $('html, body').animate({
