@@ -1,6 +1,8 @@
 
 & {
-	background: #203340; // custom dark teal
+	// background: #203340; // custom dark teal
+	background:$c-grey-medium url(/assets/images/bg-connect.jpg) center center;
+  background-size:cover;
 }
 
 //----------Textual

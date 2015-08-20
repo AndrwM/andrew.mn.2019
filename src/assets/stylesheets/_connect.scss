@@ -1,5 +1,6 @@
 section.connect {
-  background:$c-grey-dark;
+  background:$c-grey-medium url(/assets/images/bg-connect.jpg) center center;
+  background-size:cover;
   padding: 160px 0 240px 0;
   color:#fff;
   .container {
@@ -44,8 +45,7 @@ section.connect {
 
 @include media($bp-small) {
   section.connect {
-    background:$c-grey-medium url(/assets/images/bg-connect.jpg) center center;
-    background-size:cover;
+
     a.btn {
       width: auto;
     }
