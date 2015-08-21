@@ -589,7 +589,7 @@ body > .wrapper-page.index .wrapper-scrollable {
 
 body > .wrapper-page.index header.cover {
   position: static;
-  background: #252A2D;
+  background: #252A2D url(/assets/images/index3-cover-mobile.jpg) center bottom no-repeat;
   max-height: 750px; }
   body > .wrapper-page.index header.cover .container {
     height: 100%;

@@ -17,7 +17,7 @@
 header.cover {
 	// background:#000 url(/assets/images/index-cover-small.jpg) top center no-repeat;
 	position: static;
-	background: $c-grey-dark;
+	background: $c-grey-dark url(/assets/images/index3-cover-mobile.jpg) center bottom no-repeat;
 	max-height:750px;
 	.container {
 		height: 100%;
