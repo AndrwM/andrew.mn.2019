@@ -7,7 +7,6 @@ section.skills {
 	.container {
 		padding-top:50px;
 		padding-bottom:60px;
-		background: url('/assets/images/bg-skillset.png') left center no-repeat;
 	}
 
 	h2.intro {
@@ -16,21 +15,18 @@ section.skills {
 
 	.primary {
 		h2 { color: $c-yellow; }
-		float: left;
-		width: 540px;
-		margin-right:30px;
+		margin:0 auto;
+		// margin-right:30px;
 	}
 
 	.secondary {
-		float: right;
+		margin:50px auto 0 auto;
 		h3.intro {
 			margin-left:10px;
 		}
 		.strengths {
-			width: 600px;
+			@include clearfix;
 			.strength {
-				float: left;
-				width:25%;
 				padding:10px;
 				.icon {
 					height: 120px;
@@ -67,29 +63,39 @@ section.skills {
 					line-height: 1.4em
 				}
 			}
-			// h3 {
-			// 	color: $c-grey-medium;
-			// 	// color: rgba($c-grey-dark,0.2);
-		 //    font-size: em(12px);
-			// 	margin: 14px 0;
-			// 	&:first-child {
-			// 		margin-top:0;
-			// 	}
-			// 	img {
-			// 		height: 20px;
-			//     vertical-align: -5px;
-	  //       margin-right: 8px;
-			//     margin-left: 2px;
-			//   }
-			// }
-			// p {
-			// 	display: none !important;
-			// 	// color: $c-yellow-dark;
-			// 	// margin-left:4px;
-			// 	font-size: em(16px);
-			// 	line-height: em(30px);
-			// }
 		}
 	}
 
+}
+@include media($bp-medium) {
+	section.skills {
+		.primary {
+			width: 540px;
+		}
+		.secondary {
+			width: 540px;
+			.strengths .strength {
+				float: left;
+				width:25%;
+			}
+		}
+	}
+}
+
+
+@include media($bp-large) {
+	section.skills {
+		.container {
+			background: url('/assets/images/bg-skillset.png') left center no-repeat;
+		}
+		.primary {
+			float: left;
+			margin: 0 30px 0 0;
+		}
+		.secondary {
+			width: 650px;
+			margin:0;
+			float: right;
+		}
+	}
 }
