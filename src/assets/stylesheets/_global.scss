@@ -106,7 +106,7 @@ h2 {
   @include ff-heading-bold;
   margin-bottom: 19px;
   font-size: em(24px);
-  color: rgba($c-grey-dark,0.2);
+  color: $c-grey-dark;
   &.intro {
     font-size: em(12px);
   }
