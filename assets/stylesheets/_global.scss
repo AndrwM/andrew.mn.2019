@@ -106,7 +106,7 @@ h2 {
   @include ff-heading-bold;
   margin-bottom: 19px;
   font-size: em(24px);
-  color: rgba($c-grey-dark,0.2);
+  color: $c-grey-dark;
   &.intro {
     font-size: em(12px);
   }
@@ -141,6 +141,14 @@ p {
      @include media($bp-medium) {
       text-align: center;
     }
+  }
+  em {
+    @include ff-body-bold;
+    font-style: italic;
+    color: $c-yellow;
+  }
+  strong {
+    // @include ff-body-bold;
   }
   a {
     color: inherit;
