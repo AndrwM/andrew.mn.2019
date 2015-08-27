@@ -44,8 +44,12 @@ gulp.task('images', function() {
     .pipe(gulp.dest('./dist/assets/images'))
 })
 
-gulp.task('root-files', function() {
-  return gulp.src('./src/*!(.jade)')
+gulp.task('files', function() {
+  return gulp.src([
+        './src/CNAME',
+        // '!src/**/*.html',
+        // '!src/bower_components{,/**}'
+    ])
     .pipe(gulp.dest('./dist/'))
 })
 
@@ -92,7 +96,7 @@ gulp.task('browser-sync', function() {
   });
 });
 
-gulp.task('build', ['styles', 'js', 'templates', 'images', 'fonts', 'root-files']);
+gulp.task('build', ['styles', 'js', 'templates', 'images', 'fonts', 'files']);
 
 gulp.task('serve', ['build', 'browser-sync'], function () {
   gulp.watch('src/assets/stylesheets/**/*.{scss,sass}',['styles', reload]);
