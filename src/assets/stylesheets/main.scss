@@ -1,7 +1,15 @@
 
 //------------- Setup
 
-@import "../fonts/social/ss-social-circle.css";
+@import "reset";
+
+//------------- Components
+
+@import "../../../bower_components/animsition/src/scss/animsition.scss";
+@import "../fonts/social/ss-social-circle.scss";
+
+//------------- Setup
+
 @import "utils";
 @import "vars";
 
@@ -38,6 +46,4 @@ body > .wrapper-page.project {
 
 body > .wrapper-page.standard {
 	@import "standard";
-	// display: none;
-	// background:red !important;
 }

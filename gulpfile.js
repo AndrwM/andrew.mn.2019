@@ -5,6 +5,7 @@ var gulp            = require('gulp'),
     reload          = browserSync.reload,
     del             = require('del'),
     fs              = require('fs'),
+    csso            = require('gulp-csso'),
     concat          = require('gulp-concat'),
     deploy          = require('gulp-gh-pages'),
     gulpif          = require('gulp-if'),
@@ -18,16 +19,14 @@ var gulp            = require('gulp'),
 
 gulp.task('styles', function() {
   return gulp.src('./src/assets/stylesheets/**/*.{scss,sass}')
+    .pipe($.plumber())
     .pipe($.sass({
       includePaths: ['./src/assets/stylesheets']
     }))
+    .pipe(
+      gulpif( argv.production, csso() )
+    )
     .pipe(gulp.dest('./dist/assets/stylesheets'));
-});
-
-gulp.task('vendor-styles', function() {
-  return gulp.src(mainBowerFiles('**/*.css' ,{debugging:true}))
-    .pipe(concat('vendor.css'))
-    .pipe(gulp.dest('./dist/assets/stylesheets/'));
 });
 
 gulp.task('scripts', function() {
@@ -44,7 +43,8 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('vendor-scripts', function() {
-  return gulp.src(mainBowerFiles('**/*.js' ,{debugging:true}))
+  return gulp.src(mainBowerFiles('**/*.js' ,{debugging:false}))
+    .pipe($.plumber())
     .pipe(concat('vendor.js'))
     .pipe(
       gulpif( argv.production, $.uglify() )
@@ -54,6 +54,7 @@ gulp.task('vendor-scripts', function() {
 
 gulp.task('images', function() {
   return gulp.src('./src/assets/images/**/*')
+    .pipe($.plumber())
     .pipe($.imagemin({
       progressive: true
     }))
@@ -70,6 +71,7 @@ gulp.task('files', function() {
 gulp.task('fonts', function() {
   // return gulp.src('./src/assets/fonts/**/*.{otf,woff,ttf,svg,eot}')
   return gulp.src('./src/assets/fonts/**/*')
+    .pipe($.plumber())
     .pipe(gulp.dest('./dist/assets/fonts'))
 })
 
@@ -101,7 +103,7 @@ gulp.task('browser-sync', function() {
   });
 });
 
-gulp.task('build', ['styles', 'vendor-styles', 'scripts', 'vendor-scripts', 'templates', 'images', 'fonts', 'files']);
+gulp.task('build', ['styles', 'scripts', 'vendor-scripts', 'templates', 'images', 'fonts', 'files']);
 
 gulp.task('serve', ['build', 'browser-sync'], function () {
   gulp.watch('src/assets/stylesheets/**/*.{scss,sass}',['styles', reload]);
