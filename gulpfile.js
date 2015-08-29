@@ -5,9 +5,10 @@ var gulp            = require('gulp'),
     reload          = browserSync.reload,
     del             = require('del'),
     fs              = require('fs'),
-    gulpBowerFiles  = require('gulp-bower-files'),
+    concat          = require('gulp-concat'),
     deploy          = require('gulp-gh-pages'),
     gulpif          = require('gulp-if'),
+    mainBowerFiles  = require('main-bower-files')
     argv            = require('yargs').argv,
     wiredep         = require('wiredep').stream;
 
@@ -23,7 +24,13 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('./dist/assets/stylesheets'));
 });
 
-gulp.task('js', function() {
+gulp.task('vendor-styles', function() {
+  return gulp.src(mainBowerFiles('**/*.css' ,{debugging:true}))
+    .pipe(concat('vendor.css'))
+    .pipe(gulp.dest('./dist/assets/stylesheets/'));
+});
+
+gulp.task('scripts', function() {
   return gulp.src('src/assets/scripts/*.js')
     .pipe($.plumber())
     .pipe( $.browserify({
@@ -34,6 +41,15 @@ gulp.task('js', function() {
     )
     .pipe( $.rename('main.js'))
     .pipe( gulp.dest('dist/assets/scripts/'));
+});
+
+gulp.task('vendor-scripts', function() {
+  return gulp.src(mainBowerFiles('**/*.js' ,{debugging:true}))
+    .pipe(concat('vendor.js'))
+    .pipe(
+      gulpif( argv.production, $.uglify() )
+    )
+    .pipe(gulp.dest('./dist/assets/scripts/'));
 });
 
 gulp.task('images', function() {
@@ -47,8 +63,6 @@ gulp.task('images', function() {
 gulp.task('files', function() {
   return gulp.src([
         './src/CNAME',
-        // '!src/**/*.html',
-        // '!src/bower_components{,/**}'
     ])
     .pipe(gulp.dest('./dist/'))
 })
@@ -59,26 +73,17 @@ gulp.task('fonts', function() {
     .pipe(gulp.dest('./dist/assets/fonts'))
 })
 
-gulp.task('templates',['bower-files'], function() {
+gulp.task('templates', function() {
   // Disable partials from being renderd.
   return gulp.src(['src/**/!(_)*.jade'])
     .pipe($.plumber())
     .pipe($.jade({
       pretty: true
     }))
-    .pipe(wiredep({
-      ignorePath: '..',
-      directory: './bower_components',
-      bowerJson: require('./bower.json')
-    }))
     .pipe( gulp.dest('dist/') )
 });
 
 //---------------------- UTILS
-
-gulp.task("bower-files", function(){
-    gulpBowerFiles().pipe(gulp.dest("./dist/bower_components/"));
-});
 
 gulp.task('clean', function(cb) {
   del('./dist', cb);
@@ -96,11 +101,11 @@ gulp.task('browser-sync', function() {
   });
 });
 
-gulp.task('build', ['styles', 'js', 'templates', 'images', 'fonts', 'files']);
+gulp.task('build', ['styles', 'vendor-styles', 'scripts', 'vendor-scripts', 'templates', 'images', 'fonts', 'files']);
 
 gulp.task('serve', ['build', 'browser-sync'], function () {
   gulp.watch('src/assets/stylesheets/**/*.{scss,sass}',['styles', reload]);
-  gulp.watch('src/assets/scripts/*.js',['js', reload]);
+  gulp.watch('src/assets/scripts/*.js',['scripts', reload]);
   gulp.watch('src/assets/images/**/*',['images', reload]);
   gulp.watch('src/**/*.jade',['templates', reload]);
 });
