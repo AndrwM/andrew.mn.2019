@@ -10,10 +10,13 @@ var gulp            = require('gulp'),
     deploy          = require('gulp-gh-pages'),
     gulpif          = require('gulp-if'),
     mainBowerFiles  = require('main-bower-files')
+    autoprefixer    = require('gulp-autoprefixer'),
     argv            = require('yargs').argv,
     wiredep         = require('wiredep').stream;
 
+//---------------------- ABOUT
 
+// This gulpfile accepts the --production flag to optimized css and js
 
 //---------------------- COMPILE
 
@@ -22,6 +25,10 @@ gulp.task('styles', function() {
     .pipe($.plumber())
     .pipe($.sass({
       includePaths: ['./src/assets/stylesheets']
+    }))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
     }))
     .pipe(
       gulpif( argv.production, csso() )
