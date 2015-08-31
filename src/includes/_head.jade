@@ -3,7 +3,11 @@
 doctype html
 html(lang="en")
   head
-    title="Andrew McIntee Is A User Interface Designer"
+
+    if pageTitle == null
+      - var pageTitle = 'Andrew McIntee Is A User Interface Designer';
+
+    title=pageTitle
     meta(name='description', content='Multi-disciplinarian user interface designer and front-end web engineer – I specialize in honing big visions into human-friendly digital products.')
     meta(name='descriptions', content='design, designer, ui designer, ui, ux designer, greenville, south carolina, web, engineer, freelance, consulting, front end, front-end, coder, developer, product design, ios')
 
