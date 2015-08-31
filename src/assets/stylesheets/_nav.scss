@@ -26,11 +26,17 @@ nav {
 	// 	}
 	// }
 	.brand {
-		// @include transition-hover;
+		@include transition-hover;
     width: 30px;
     margin: 20px auto 0 auto;
     display: block;
     opacity: 0.1;
+    img {
+    	width: 30px;
+    }
+    &:hover {
+    	opacity: 0.2;
+    }
 	}
 	.link {
 		padding:9px;
