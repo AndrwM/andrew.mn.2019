@@ -8,6 +8,11 @@ footer {
     font-size: em(16px);
 		text-align: center;
 		color:$c-grey-medium;
+		em {
+			// color:$c-grey-dark;
+			font-size: 70%;
+			font-style: italic;
+		}
 		a {
 			@include transition-hover;
 			&:hover { color:$c-yellow; }
