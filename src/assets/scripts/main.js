@@ -54,7 +54,7 @@ window.a = {
       }
 
       var bp = $('.js-bp-check').css('z-index');
-      console.log('breakpoint:',bp);
+      // console.log('breakpoint:',bp);
       return bp;
 
     },
@@ -73,7 +73,7 @@ window.a = {
 
       $('.js-scroll-to').on('click', function (e) {
         var target = $(this).attr('href')
-        console.log(target)
+        // console.log(target)
         $('html, body').animate({
             scrollTop: $(target).offset().top
         }, 500);
@@ -109,4 +109,7 @@ window.a = {
 
 $(document).ready(function () {
   a.init();
+  console.log('Interested in what\'s going on under the hood? Contact me: Studio@Andrew.mn');
+  console.log('Thanks for visiting!');
 });
+

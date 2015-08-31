@@ -40,7 +40,7 @@ $c-grey-extralight: #F4F4F4;
 //----------------- Type Mixins
 
 $ff-meta-serif: "ff-meta-serif-web-pro", Georgia, "Times New Roman", serif;
-$ff-meta-serif-sc: "ff-meta-serif-sc-web-pro", "ff-meta-serif-web-pro", Georgia, "Times New Roman", serif;
+// $ff-meta-serif-sc: "ff-meta-serif-sc-web-pro", "ff-meta-serif-web-pro", Georgia, "Times New Roman", serif;
 // $ff-minion-pro: "minion-pro", Georgia, "Times New Roman", serif;
 // $ff-futura: "futura-pt", Helvetica, Arial, sans-serif;
 $ff-freight-sans: "freight-sans-pro", Helvetica, Arial, sans-serif;
@@ -74,11 +74,11 @@ $ff-freight-sans: "freight-sans-pro", Helvetica, Arial, sans-serif;
   font-style: normal;
 }
 
-@mixin ff-body-sc {
-  font-family: $ff-meta-serif-sc;
-  font-weight: 500;
-  font-style: normal;
-}
+// @mixin ff-body-sc {
+//   font-family: $ff-meta-serif-sc;
+//   font-weight: 500;
+//   font-style: normal;
+// }
 
 @mixin ff-body {
   font-family: $ff-meta-serif;
