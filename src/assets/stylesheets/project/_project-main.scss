@@ -80,6 +80,19 @@ section.endorsement {
 	}
 }
 
+//-----------Quote
+section.quote {
+	background:inherit;
+	background: #fff;
+  padding: 60px 0 60px;
+  margin-bottom: 80px;
+	blockquote {
+		p {
+			// color: #fff;
+		}
+	}
+}
+
 //-----------Project Tiles
 section.project-tiles {
 	background:#fff;

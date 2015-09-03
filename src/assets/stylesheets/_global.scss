@@ -188,15 +188,67 @@ a.btn {
   }
 }
 
+// blockquote.block {
+//   padding:60px 0;
+//   text-align: center;
+//   p {
+//     text-indent: -1.4em;
+//     font-size: em(30px);
+//     line-height: 1;
+//     @include ff-heading-light;
+//     margin: 0 auto;
+//     max-width: 800px;
+//     &:before {
+//       content: '\201C';
+//       padding: 0.2em;
+//       font-size: 1.8em;
+//       vertical-align: -0.2em;
+//       color: rgba(#000,0.3);
+//     }
+//     &:after {
+//       content: '\201D';
+//       padding: 0.2em;
+//       font-size: 1.8em;
+//       vertical-align: -0.2em;
+//       color: rgba(#000,0.3);
+//     }
+//   }
+//   cite {
+//     @include ff-heading-bold;
+//     font-size: em(16px);
+//     text-transform: uppercase;
+//     color: #fff;
+//     display: block;
+//     margin: 20px 0 0 0;
+//     line-height: em(24px);
+//     img {
+//       border-radius: 50%;
+//       // border: 2px solid #FFF;
+//       box-shadow: 0px 0px 0px 2px #000;
+//       height: 50px;
+//       margin: 0 auto 10px auto;
+//       display: block;
+//     }
+//     span {
+//       display: block;
+//       color: rgba(#000,0.4);
+//       font-size: em(16px);
+//     }
+//   }
+// }
+
 blockquote {
-  padding:60px 0;
-  text-align: center;
+  // padding:40px 0;
+  // text-align: center;
+    // background:#fff;
   p {
     text-indent: -1.4em;
-    font-size: em(30px);
-    line-height: 1;
-    @include ff-heading-light;
+    text-align: center;
+    // font-size: em(16px);
+    // line-height: 1;
+    // @include ff-heading-bold;
     margin: 0 auto;
+    font-style: italic;
     max-width: 800px;
     &:before {
       content: '\201C';
@@ -215,24 +267,26 @@ blockquote {
   }
   cite {
     @include ff-heading-bold;
-    font-size: em(16px);
+    font-size: em(12px);
+    width: 200px;
     text-transform: uppercase;
-    color: #fff;
+    // color: #fff;
     display: block;
-    margin: 20px 0 0 0;
-    line-height: em(24px);
+    margin: 30px auto 0 auto;
+    line-height: em(26px);
     img {
+      float: left;
       border-radius: 50%;
       // border: 2px solid #FFF;
-      box-shadow: 0px 0px 0px 2px #000;
-      height: 50px;
-      margin: 0 auto 10px auto;
+      box-shadow: 0px 0px 0px 2px #fff;
+      height: 36px;
+      margin: -4px 14px 0 2px;
       display: block;
     }
     span {
       display: block;
       color: rgba(#000,0.4);
-      font-size: em(16px);
+      // font-size: em(16px);
     }
   }
 }

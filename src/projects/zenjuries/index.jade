@@ -9,7 +9,7 @@
 include ../../includes/_head
 
 style.
-  body > .wrapper-page { background:#fcfdfd; }
+  body > .wrapper-page { background:#F3F5F7; }
   header { color:#2481b7; }
   h1 { color: #fff; }
   h2,h3 { color: #2481b7; }
@@ -23,9 +23,16 @@ body
       h1 Zenjuries Employee Injury Management Platform 
       p.center SAAS Platform Assisting Businesses in Effectively Managing On-the-Job Injuries
 
-    section.image.full(style="background:#{subHeaderColor};background-size:cover;"): img(src='/assets/images/projects/zenjuries/hero.png',style="margin-top: -90px;")
+    section.image.full(style="background:#{subHeaderColor};background-size:cover; margin-bottom:0;"): img(src='/assets/images/projects/zenjuries/hero.png',style="margin-top: -90px;")
 
     //- --------------------------------------------------
+
+    section.quote: .container: blockquote
+      p On time and under budget is music to my ears! I'm thrilled with the Zenjuries user interface design.
+      cite
+        img(src="/assets/images/projects/zenjuries/jesse.jpg")
+        | Jesse Dantice
+        span CEO, Zenjuries
     
     section.copy.container
       h2 On-the-Job Injuries Cost Double with Delays
@@ -103,13 +110,6 @@ body
 
      section.copy.container
         p Interested in hearing more about my process? <a href="/#connect">Let's connect!</a>
-
-    section.endorsement(style="background:#{endorsementColor};background-size:cover;"): .container: blockquote
-      p On time and under budget is music to my ears! I'm thrilled with the Zenjuries user interface design.
-      cite
-        img(src="/assets/images/projects/zenjuries/jesse.jpg")
-        | Jesse Dantice
-        span CEO, Zenjuries
 
     //- section.lockup(style="background:#{subHeaderColor};"): .container
     //-   img(src='http://placekitten.com/g/600/400').feature.large
