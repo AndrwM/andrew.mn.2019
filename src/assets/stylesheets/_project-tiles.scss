@@ -15,7 +15,7 @@ section.project-tiles {
 	  margin-top: 40px;
 	  opacity:0.4;
 	  @include transition-hover;
-	  &:hover { opacity:0.8; }
+	  // &:hover { opacity:0.8; }
 	  @include media($bp-medium) {
 	  	display: block;
 	  }
@@ -125,6 +125,7 @@ section.project-tiles {
 
 			&.project-arkiver {
 				background: #333335 url(/assets/images/projects/arkiver/listing-bg.jpg) top left;
+				background-size:cover;
 				h2 { color: #fff; }
 				.description { color:#fff; }
 				.preview {

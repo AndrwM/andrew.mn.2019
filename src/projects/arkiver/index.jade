@@ -15,6 +15,7 @@ style.
   h1 { color:#fff; }
   h2,h3 { color: #bb8339; }
   p a:hover {  border-bottom-color: #bb8339; }
+  blockquote p:after, blockquote p:before, blockquote cite { color:#bb8339; }
 
 body
   .wrapper-page.project.project-echo
@@ -27,7 +28,7 @@ body
     section.image.full(style="background:#{subHeaderColor}; background-size:cover; margin-bottom:0;"): img(src='/assets/images/projects/arkiver/hero.png',style="margin-top: -206px;")
 
     section.quote: .container: blockquote.inline
-      p I would highly recommend Andrew to others needing top quality design work done. Andrew was able to incorporate a powerful set of features in a beautiful and simple user experience. He is open to alternative ways of approaching design problems which is not always a quality found in other designers. As well as being very talented, Andrew is very personable which is why I continue to use him for projects as they arise.
+      p I highly recommend Andrew to others needing top quality design work done. Andrew was able to incorporate a powerful set of features in a beautiful and simple user experience. He is open to alternative ways of approaching design problems which is not always a quality found in other designers. As well as being very talented, Andrew is very personable which is why I continue to use him for projects as they arise.
       cite
         img(src="/assets/images/projects/arkiver/logan.jpg")
         | Logan Metcalfe
@@ -69,35 +70,19 @@ body
     section.copy.container
       h2 Project Summary
       p The Arkiver founders were thrilled with my work and since our first engagement we maintain a regular user interface design consulting relationship for prototyping new features and finessing current application interactions.
-      p Interested in hearing more about my process? <a href="/#connect">Let's connect!</a>
-    //- section.copy.container
-    //-   h2 The Highest Battery Capacity Yet - Launched At A Break-Neck Pace
-    //-   p This project ran at a drop-dead sprint because it was imperative that the online marketing materials launch simultaneously with the retail product rollout. Midnight oil was burned and we were able to launch the site two weeks early to allow for additional bugtesting before the product became publically available.
+      p Interested in hearing more about my process? <a href="#connect" class="js-scroll-to">Let's connect!</a>
 
-    //- section.feature.right: .container
-    //-   img(src='/assets/images/projects/echo/feature-index.jpg')
-    //-   .description
-    //-     h3 Homepage
-    //-     p The homepage serves as a directory for accessing all tools as well as promoting the product brand.
-    //- section.feature.right: .container
-    //-   img(src='/assets/images/projects/echo/feature-detail.jpg')
-    //-   .description
-    //-     h3 About The Product
-    //-     p Showcasing the voltage and consumer-warranty promise was paramount. We were able to strike a cohesive balance featuring product while also satisfying legal and marketing concerns.
-    //-  section.feature.right: .container
-    //-     img(src='/assets/images/projects/echo/feature-registration.jpg')
-    //-     .description
-    //-       h3 Registration
-    //-       p The ability for a user to register his/her product following purchase was imperative for the legal department. I worked closely to meld their requirements into a functional and aesthetically pleasing registration dashboard.
-
-    //- section.lockup(style="background:#{subHeaderColor};"): .container
-    //-   img(src='http://placekitten.com/g/600/400').feature.large
-    //-   img(src='http://placekitten.com/g/600/400').feature.small
-    //-   img(src='http://placekitten.com/g/600/400').feature.hero
-    //-   img(src='http://placekitten.com/g/600/400').feature.medium
-    //-   img(src='http://placekitten.com/g/600/400').feature.medium
- 
-    include ../../includes/project/_project-footer
+    //- --------------------
+    section.project-tiles
+      .project-listing.container
+        h3.intro More Case Studies
+        a(href="/projects/zenjuries").project.project-zenjuries.hero.animsition-link
+          .description
+            h2 Zenjuries Employee Injury Management Platform
+            p SAAS Platform Assisting Businesses in Effectively Managing On-the-Job Injuries
+          img(src="/assets/images/projects/zenjuries/listing.png").preview
+    
+    include ../../includes/_connect
     include ../../includes/_footer
 
   include ../../includes/_closing-scripts

@@ -244,12 +244,17 @@ blockquote {
   p {
     text-indent: -1.4em;
     text-align: center;
+    padding:inherit 40px;
     // font-size: em(16px);
     // line-height: 1;
     // @include ff-heading-bold;
     margin: 0 auto;
     font-style: italic;
     max-width: 800px;
+    &.large {
+      font-size: em(24px);
+      max-width:700px;
+    }
     &:before {
       content: '\201C';
       padding: 0.2em;
@@ -285,7 +290,7 @@ blockquote {
     }
     span {
       display: block;
-      color: rgba(#000,0.4);
+      color: rgba(#000,0.3);
       // font-size: em(16px);
     }
   }

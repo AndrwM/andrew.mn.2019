@@ -13,7 +13,8 @@ style.
   header { color:#E53A2D; }
   h1 { color:#fff; }
   h2,h3 { color: #E53A2D; }
-    p a:hover {  border-bottom-color: #E53A2D; }
+  p a:hover {  border-bottom-color: #E53A2D; }
+  blockquote p:after, blockquote p:before, blockquote cite { color:#E53A2D; }
 
 body
   .wrapper-page.project.project-echo
@@ -26,7 +27,7 @@ body
     section.image.full(style="background:#{subHeaderColor};margin-bottom:0;"): img(src='/assets/images/projects/echo/hero.png',style="margin-top: -170px;")
 
     section.quote: .container: blockquote
-      p We trusted Andrew to build this flagship site. I'm delighted by what we were able to achieve through our collaboration.
+      p.large We trusted Andrew to build this flagship site. I'm delighted by what we were able to achieve through our collaboration.
       cite(style="width:250px;")
         img(src="/assets/images/projects/echo/dave.jpg")
         | Dave Breeze
@@ -66,18 +67,23 @@ body
         .description
           h3 Registration
           p The ability for a user to register his/her product following purchase was imperative for the legal department. I worked closely to meld their requirements into a functional and aesthetically pleasing registration dashboard.
-   
+     
      section.copy.container
-        p Interested in hearing more about my process? <a href="/#connect">Let's connect!</a>
+        p Interested in hearing more about my process? <a href="#connect" class="js-scroll-to">Let's connect!</a>
 
-    //- section.lockup(style="background:#{subHeaderColor};"): .container
-    //-   img(src='http://placekitten.com/g/600/400').feature.large
-    //-   img(src='http://placekitten.com/g/600/400').feature.small
-    //-   img(src='http://placekitten.com/g/600/400').feature.hero
-    //-   img(src='http://placekitten.com/g/600/400').feature.medium
-    //-   img(src='http://placekitten.com/g/600/400').feature.medium
- 
-    include ../../includes/project/_project-footer
+     section.project-tiles
+      .project-listing.container
+        h3.intro More Case Studies
+        a(href="/projects/arkiver").project.project-arkiver.hero.animsition-link
+          .description
+            h2 Arkiver
+            p Designing An Application Interface To Elegantly Capture, Curate, And Share Memories
+          img(src="/assets/images/projects/arkiver/listing.png").preview
+
+
+
+    
+    include ../../includes/_connect
     include ../../includes/_footer
 
   include ../../includes/_closing-scripts
