@@ -70,15 +70,15 @@ body {
 
 //-- Headlines
 
-h1 {
-  @include ff-heading-bold;
-  font-size: em(33px);
-  margin-bottom: 20px;
-  // color:$c-green;
-  @include media($bp-medium) {
-    text-align: center;
-  }
-}
+// h1 {
+//   @include ff-heading-bold;
+//   font-size: em(33px);
+//   margin-bottom: 20px;
+//   // color:$c-green;
+//   @include media($bp-medium) {
+//     text-align: center;
+//   }
+// }
 
 // h2 {
 //   @include ff-heading-light;
@@ -102,19 +102,20 @@ h1 {
 //   }
 // }
 
-h2 {
+h1 {
   @include ff-heading-bold;
   margin-bottom: 19px;
   font-size: em(24px);
-  color: $c-grey-dark;
+  color: $c-yellow;
   &.intro {
     font-size: em(12px);
   }
 }
 
-h3 {
+h2 {
   @include ff-heading-bold;
-  margin-bottom: 19px;
+  margin-bottom: 14px;
+  margin-top: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: em(14px);

@@ -16,12 +16,12 @@
 
 header.cover {
 	// background:#000 url(/assets/images/index-cover-small.jpg) top center no-repeat;
-	position: static;
-	background: $c-grey-dark url(/assets/images/index3-cover-mobile.jpg) center bottom no-repeat;
-	max-height:750px;
+	// position: static;
+	background: $c-grey-dark url(/assets/images/index3-cover-mobile.jpg) center top no-repeat;
+	height:100%;
 	.container {
 		height: 100%;
-		padding-top:110px;
+		// padding-top:110px;
 		padding-bottom:100px;
 	}
 	.bio {
@@ -29,18 +29,7 @@ header.cover {
 		// padding:50px;
 		margin:auto;
 		color: #fff;
-		h2 {
-			// @include ff-heading3;
-			// margin-bottom: 19px;
-			// text-align: left;
-			// font-size: em(20px);
-			// color: $c-yellow;
-			// @include ff-heading-bold;
-		 //  margin-bottom: 19px;
-		 //  text-align: left;
-		 //  font-size: em(16px);
-		 //  text-transform: uppercase;
-		 //  letter-spacing: 1px;
+		h1 {
 		  color: $c-yellow;
 		}
 		p {
@@ -66,7 +55,7 @@ header.cover {
 @include media($bp-small) {
 
 	header.cover {
-		max-height:600px;
+		// max-height:600px;
 	}
 
 }
@@ -79,12 +68,12 @@ header.cover {
 		// background-size: cover;
 		background: $c-grey-dark url(/assets/images/index3-cover-large.jpg) center center no-repeat;
 		height: 860px;
-		min-height: 600px;
-		max-height: 860px;
+		// min-height: 600px;
+		// max-height: 860px;
 		padding: 0;
 		// Cool scrolling stuff
-		position: fixed;
-		top:0;
+		// position: fixed;
+		// top:0;
 	  width: 100%;
 
 		.bio {

@@ -4,44 +4,44 @@ window.a = {
   //-----------------------------------------------------
   init: function() {
 
-    if (a.utils.breakpoint() >= 2) {
+    // if (a.utils.breakpoint() >= 2) {
 
-      // Add the body class required for animsition
-      $('body > .wrapper-page').addClass('animsition');
+    //   // Add the body class required for animsition
+    //   $('body > .wrapper-page').addClass('animsition');
 
-      $(".animsition").animsition({
-        inClass               :   'fade-in',
-        outClass              :   'fade-out',
-        inDuration            :    1500,
-        outDuration           :    800,
-        linkElement           :   '.animsition-link',
-        // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
-        loading               :    true,
-        loadingParentElement  :   'body', //animsition wrapper element
-        loadingClass          :   'animsition-loading',
-        unSupportCss          :   [],
-        //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-        //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    //   $(".animsition").animsition({
+    //     inClass               :   'fade-in',
+    //     outClass              :   'fade-out',
+    //     inDuration            :    1500,
+    //     outDuration           :    800,
+    //     linkElement           :   '.animsition-link',
+    //     // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+    //     loading               :    true,
+    //     loadingParentElement  :   'body', //animsition wrapper element
+    //     loadingClass          :   'animsition-loading',
+    //     unSupportCss          :   [],
+    //     //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    //     //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
 
-        overlay               :   false,
+    //     overlay               :   false,
 
-        overlayClass          :   'animsition-overlay-slide',
-        overlayParentElement  :   'body'
-      });
-    }
+    //     overlayClass          :   'animsition-overlay-slide',
+    //     overlayParentElement  :   'body'
+    //   });
+    // }
 
-    // Initiate Things On A Per Page Basis
-    if ( $('.wrapper-page.project').length ) {
+    // // Initiate Things On A Per Page Basis
+    // if ( $('.wrapper-page.project').length ) {
 
-      this.project.stickyDescriptions()
+    //   this.project.stickyDescriptions()
 
-    } else if ( $('.wrapper-page.index').length ) {
+    // } else if ( $('.wrapper-page.index').length ) {
 
-      this.index.resizeHeader()
+    //   this.index.resizeHeader()
 
-    }
+    // }
 
-    this.utils.scrollToContent()
+    // this.utils.scrollToContent()
 
   },
   utils: {
