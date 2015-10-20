@@ -107,6 +107,9 @@ h1 {
   margin-bottom: 19px;
   font-size: em(24px);
   color: $c-yellow;
+  span.grey {
+    color:#797979;
+  }
   &.intro {
     font-size: em(12px);
   }
