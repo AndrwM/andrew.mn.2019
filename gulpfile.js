@@ -9,7 +9,7 @@ var gulp            = require('gulp'),
     concat          = require('gulp-concat'),
     deploy          = require('gulp-gh-pages'),
     gulpif          = require('gulp-if'),
-    mainBowerFiles  = require('main-bower-files')
+    mainBowerFiles  = require('main-bower-files'),
     autoprefixer    = require('gulp-autoprefixer'),
     argv            = require('yargs').argv,
     wiredep         = require('wiredep').stream;
@@ -129,12 +129,3 @@ gulp.task('deploy', ['build'], function () {
 //---------------------- GUlP DEFAULT
 
 gulp.task('default', ['serve']);
-
-
-
-
-
-
-
-
-
