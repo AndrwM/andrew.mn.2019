@@ -104,9 +104,9 @@ body {
   box-sizing: border-box;
   padding: 10% 3% 0 3%;
   border: 16px #ffffff solid;
-  font: 400 16px/1.7 Graphik, sans-serif; }
+  font: 400 16px/1.8 Graphik, sans-serif; }
   body .container {
-    max-width: 700px;
+    max-width: 640px;
     margin: auto; }
     body .container:before,
     body .container:after {
@@ -143,9 +143,10 @@ body {
         text-decoration: none;
         transition: all 0.5s ease-in-out;
         color: #4d4f5d;
+        white-space: nowrap;
         position: relative;
         transition: all 0.1s ease-in-out;
-        padding: 2px 1px; }
+        padding: 2px 0px; }
         body .bio p a::before {
           height: 1px;
           width: 100%;
