@@ -124,7 +124,7 @@ body {
       *zoom: 1; }
   body .image {
     float: left;
-    width: 10%;
+    width: 13%;
     margin-right: 5%; }
     body .image img {
       width: 100%;
@@ -132,7 +132,7 @@ body {
       border-radius: 6px; }
   body .bio {
     float: left;
-    width: 80%;
+    width: 82%;
     color: #4d4f5d; }
     body .bio p {
       padding: 0 0 20px 0; }
