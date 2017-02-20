@@ -96,14 +96,8 @@ table {
   font-weight: 400;
   src: local("Graphik"), local("Graphik-Regular"), url("/assets/fonts/Graphik-Regular-Web.woff2") format("woff2"); }
 
-@font-face {
-  font-family: Graphik-Medium;
-  font-style: normal;
-  font-weight: 400;
-  src: local("Graphik"), local("Graphik-Medium"), url("/assets/fonts/Graphik-Medium-Web.woff2") format("woff2"); }
-
 body {
-  background: #faf7ef;
+  background: #faf8f4;
   height: 100%;
   width: 100%;
   position: fixed;
