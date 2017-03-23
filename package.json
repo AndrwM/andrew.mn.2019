@@ -1,12 +1,14 @@
 {
   "name": "test",
   "version": "0.0.1",
+  "private": true,
   "devDependencies": {
     "async": "^0.9.0",
     "browser-sync": "^1.8.1",
     "browserify": "^3.41.0",
     "del": "^1.1.1",
     "gulp": "^3.5.0",
+    "gulp-autoprefixer": "^3.1.1",
     "gulp-bower-files": "^0.2.7",
     "gulp-browserify": "^0.5.0",
     "gulp-concat": "~2.1.7",
@@ -20,6 +22,7 @@
     "gulp-sass": "^2.0.0-alpha.1",
     "gulp-uglify": "~0.1.0",
     "gulp-util": "~2.2.12",
+    "main-bower-files": "^2.13.1",
     "marked": "~0.3.0",
     "mkdirp": "^0.5.0",
     "wiredep": "^2.2.2"
