@@ -6,73 +6,79 @@
 @import "fonts";
 @import "./bower_components/avalanche-css/avalanche";
 
-html {
-  height: 100%;
-  font-size: 16px;
-}
-
 body {
-  // background: $c-tertiary-light;
   box-sizing: border-box;
-  color: $c-tertiary-dark;
-  border: 30px #ffffff solid;
+  color: $c-dark;
   min-height: 100%;
   width: 100%;
-  font: 400 18px/1.8 Graphik, sans-serif;
-  padding: 6% 3% 10%;
+  font: 500 18px/1.8 $ff-primary;
+}
 
-  &.body--center {
-    position: fixed;
-    padding: 10% 3% 0 3%;
+.wrapper {
+  margin: 0 40px;
+  padding: 120px 0;
+
+  &--light-blue { background: $c-light-blue; }
+  &--header {
+    padding: 120px 0;
+    min-height: 300px;
   }
 }
 
 .container {
-    @include clearfix;
-    max-width: 1000px;
-    margin: auto;
-
-    &.container--slim {
-      margin-top: 5%;
-      font: 400 16px/1.8 Graphik, sans-serif;
-      max-width: 640px;
-      
-    }
-  }
-
-  .image {
-    float: left;
-    width: 10%;
-    margin-right: 5%; 
-
-    img {
-      width: 100%;
-      margin: 5px 0;
-      border-radius: 6px;
-    }
-  }
-
-.bio {
-  float: left;
-  width: 82%;
+  @include clearfix;
+  max-width: 1300px;
+  margin: auto;
 }
 
-p {
+.title {
+  margin: 0 0 10px;
+
+  &--large {
+    font: 400 28px/1.8 Graphik, sans-serif;
+  }
+
+  &--label {
+    color: $c-primary;
+    font: 500 11px/1.2 Graphik, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
+
+.image {
+  padding: 40px 0 0 40px;
+  border-radius: $border-radius;
+  background: $c-light-blue;
+  margin: 0 0 60px;
+  overflow: hidden;
+  height: 400px;
+  position: relative;
+
+  img {
+    width: calc(100% - 40px);
+  }
+}
+
+.paragraph {
   padding: 0 0 25px 0;
   margin: 0;
   max-width: 640px;
 
-  &.small {
+  &--small {
     font-size: 12px;
     color: $c-tertiary;
   }
 
-  &.medium {
+  &--medium {
     font-size: 14px;
   }
 }
 
-a {
+.link {
+  $faded-color: rgba($c-tertiary, 0.4);
+
   text-decoration: none;
   transition: all 0.5s ease-in-out;
   color: $c-grey-medium;
@@ -85,7 +91,7 @@ a {
     height: 1px;
     width: 100%;
     bottom: -1px;
-    background: rgba($c-tertiary, 0.4);
+    background: $faded-color;
     content: "";
     position: absolute;
     left: 0;
@@ -94,37 +100,84 @@ a {
 
   &:hover {
     color: $c-primary;
-    background: lighten(saturate($c-primary, 50%), 30%);
+    background: #ffffff;
 
     &::before {
       transform: translateY(4px);
       background: $c-primary;
     }
   }
+
+  &--focal {
+    display: inline-block;
+    font-size: 16px;
+
+    &::after {
+      content: "\2192";
+      margin: 0 0 0 2px;
+      color: $faded-color;
+      transition: all 0.1s ease-in-out;
+    }
+
+    &:hover::after {
+      margin: 0 0 0 6px;
+      color: $c-primary;
+    }
+  }
 }
 
+.browser {
+  border-radius: $border-radius;
+  padding: 26px 0 0;
+  position: relative;
+  height: 400px;
+  background: #e7e7e9;
+  overflow: hidden;
+  margin: 400px;
 
-h1 {
-  font: 400 20px/1.8 Graphik, sans-serif;
-  margin-bottom: 10px;
+  &::after {
+    position: absolute;
+    top: 10px;
+    background: rgba(#000000, 0.1);
+    height: 6px;
+    right: 10px;
+    width: 10px;
+    border-radius: $border-radius;
+    content: "";
+  }
+
+  &::before {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    background: #ffffff;
+    height: 12px;
+    width: calc(100% - 40px);
+    border-radius: $border-radius;
+    content: "";
+  }
+
+  &__content {
+    width: 100%;
+  }
 }
 
-h2 {
-  margin-bottom: 60px;
-  border-bottom: 1px dashed rgba($c-tertiary, 0.4);
-}
+// h2 {
+//   margin-bottom: 60px;
+//   border-bottom: 1px dashed rgba($c-tertiary, 0.4);
+// }
 
-h3 {
-  font: 600 16px/1.8 Graphik, sans-serif;
-  margin: 0;
-  // color: $c-primary;
-}
+// h3 {
+//   font: 600 16px/1.8 Graphik, sans-serif;
+//   margin: 0;
+//   // color: $c-primary;
+// }
 
-h4 {
-  font: 400 12px/1.8 Graphik, sans-serif;
-  margin: 0;
-  color: $c-primary;
-}
+// h4 {
+//   font: 400 12px/1.8 Graphik, sans-serif;
+//   margin: 0;
+//   color: $c-primary;
+// }
 
 ul {
   margin: 10px 0 60px;
@@ -148,13 +201,6 @@ ul {
 
 .subtle {
   color: $c-tertiary;
-}
-
-.label {
-  color: $c-tertiary;
-  font: 500 11px/1.8 Graphik, sans-serif;
-  letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 small {
