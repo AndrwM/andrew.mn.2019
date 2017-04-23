@@ -65,31 +65,32 @@ gulp.task('images', function() {
     .pipe($.imagemin({
       progressive: true
     }))
-    .pipe(gulp.dest('./dist/assets/images'))
-})
+    .pipe(gulp.dest('./dist/assets/images'));
+});
 
 gulp.task('files', function() {
   return gulp.src([
         './src/CNAME',
     ])
-    .pipe(gulp.dest('./dist/'))
-})
+    .pipe(gulp.dest('./dist/'));
+});
 
 gulp.task('fonts', function() {
   // return gulp.src('./src/assets/fonts/**/*.{otf,woff,ttf,svg,eot}')
   return gulp.src('./src/assets/fonts/**/*')
     .pipe($.plumber())
-    .pipe(gulp.dest('./dist/assets/fonts'))
-})
+    .pipe(gulp.dest('./dist/assets/fonts'));
+});
 
 gulp.task('templates', function() {
   // Disable partials from being renderd.
   return gulp.src(['src/**/!(_)*.jade'])
     .pipe($.plumber())
     .pipe($.jade({
-      pretty: true
+      pretty: true,
+      basedir: path.resolve('src')
     }))
-    .pipe( gulp.dest('dist/') )
+    .pipe( gulp.dest('dist/') );
 });
 
 //---------------------- UTILS
@@ -123,7 +124,7 @@ gulp.task('serve', ['build', 'browser-sync'], function () {
 
 gulp.task('deploy', ['build'], function () {
   return gulp.src("./dist/**/*")
-    .pipe(deploy())
+    .pipe(deploy());
 });
 
 //---------------------- GUlP DEFAULT
