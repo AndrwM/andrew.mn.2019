@@ -47,6 +47,10 @@ body {
     font: 400 28px/1.8 Graphik, sans-serif;
   }
 
+  &--medium {
+    font: 400 22px/1.8 Graphik, sans-serif;
+  }
+
   &--label {
     color: $c-primary;
     font: 500 11px/1.2 Graphik, sans-serif;
@@ -142,7 +146,7 @@ body {
   height: 400px;
   background: #e7e7e9;
   overflow: hidden;
-  margin: 400px;
+  // margin: 400px;
 
   &::after {
     position: absolute;
@@ -212,7 +216,8 @@ ul {
   color: $c-tertiary;
 }
 
-small {
+small,
+.small {
   color: rgba($c-tertiary-dark, 0.6);
   font: 500 10px/1.8 Graphik, sans-serif;
   margin-left: 14px
