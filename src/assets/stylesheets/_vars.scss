@@ -1,18 +1,7 @@
-
-
 //----------------- Breakpoints, Susy, & Thangz
 
-// $susy: (
-//   // gutters: 1/8,
-//   global-box-sizing: border-box,
-//   $total-columns: 10; // 10 columns
-//   $column-width: 4em; // columns are 4em wide
-//   $gutter-width: 1em; // with 1em gutters
-//   $grid-padding: 1em; // and 1em padding on the grid container
-// );
-
 $av-gutter: 30px;
-$av-widths: (1,2,3,4,5);
+$av-widths: (1,2,3,4,5, 6);
 
 $bp-small: "min-width: 401px";
 $bp-medium: "min-width: 901px";
@@ -28,7 +17,10 @@ $font-size: 20px;
 // $c-green-faded: #909286;
 // $c-green: #98C365;
 
-$c-tertiary: #fbf6f4;
+$c-tertiary-dark: #69615d;
+$c-tertiary-light: #fbf6f4;
+$c-tertiary: #e1c6bc;
+$c-primary: #6a5ef5;
 
 // Yellows
 $c-yellow: #FFCD01;
