@@ -6,12 +6,15 @@
 @import "fonts";
 @import "./bower_components/avalanche-css/avalanche";
 
+img { width: 100%; }
+
 body {
+  -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   color: $c-dark;
   min-height: 100%;
   width: 100%;
-  background: $c-system;
+  background: #ffffff;
   font: 500 18px/1.8 $ff-primary;
 }
 
@@ -20,18 +23,34 @@ body {
   padding: 0 0 80px 0;
 
   &--has-footer {
-    @include elevation(4);
+    @include elevation(3);
     margin-bottom: 300px;
   }
 }
 
 .wrapper {
-  margin: 0 5%;
-  padding: 120px 0;
+  padding: 140px 4%;
+  margin: 0;
+
+  @include media($bp-medium) {
+    margin: 0 2%;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  @include media($bp-large) {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
 
   &--header {
-    padding: 200px 0;
+    // padding: 200px 0;
     min-height: 300px;
+    padding-top: 200px;
+    padding-bottom: 70px;
+    // @include media($bp-medium) {
+    //   padding: 120px 2% 200px;
+    // }
   }
 
   &--footer {
@@ -40,70 +59,73 @@ body {
     right: 0;
     bottom: 0;
     z-index: -1;
-    padding: 100px 0;
+    padding-bottom: 100px;
   }
 
   &--slim {
-    padding: 60px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
-  &--light-blue {
-    background: $c-light-blue;
-    padding-left: 50px;
-    padding-right: 50px
-  }
-
-  &--brand {
-    padding-left: 50px;
-    padding-right: 50px
-    &-echo { background: $c-light-blue; }
-  }
+  &--light-blue { background: $c-light-blue; }
 }
 
 .container {
   @include clearfix;
   max-width: 1500px;
   margin: auto;
+  &--centered { text-align: center; }
 }
 
 .title {
+  letter-spacing: 0.5px;
   margin: 0 0 10px;
 
+  &--xlarge {
+    font: 600 42px/1.8 Graphik, sans-serif;
+  }
+
   &--large {
-    font: 400 28px/1.8 Graphik, sans-serif;
+    font: 600 30px/1.8 Graphik, sans-serif;
   }
 
   &--medium {
-    font: 400 22px/1.8 Graphik, sans-serif;
+    font: 600 20px/1.8 Graphik, sans-serif;
   }
 
   &--label {
-    color: $c-primary;
-    font: 500 11px/1.2 Graphik, sans-serif;
+    color: grey;
+    font: 500 10px/1.2 Graphik, sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin: 0;
+    // border: 1px solid grey;
+    display: inline-block;
+    // padding: 7px 10px 5px;
+    // border-radius: $border-radius;
   }
 }
 
 .image {
-  padding: 40px 0 0 40px;
-  border-radius: $border-radius;
-  background: $c-light-blue;
-  margin: 0 0 60px;
-  overflow: hidden;
-  height: 400px;
-  position: relative;
+  // padding: 40px 0 0 40px;
+  // border-radius: $border-radius;
+  // background: $c-light-blue;
+  // margin: 0 0 60px;
+  // overflow: hidden;
+  // height: 400px;
+  // position: relative;
 
-  img {
-    width: calc(100% - 40px);
-  }
+  // img {
+  //   width: calc(100% - 40px);
+  // }
 }
 
 .paragraph {
   padding: 0 0 25px 0;
   margin: 0;
   max-width: 640px;
+  color: #4d4f5d;
+  font: 500 20px/1.8 $ff-secondary;
 
   &--small {
     font-size: 12px;
@@ -124,12 +146,13 @@ body {
   white-space: nowrap;
   position: relative;
   transition: all 0.1s ease-in-out;
-  padding: 2px 0px;
+  // padding: 2px 0px;
 
   &::before {
     height: 1px;
     width: 100%;
-    bottom: -1px;
+    bottom: 0;
+    transform: translateY(10px);
     background: $faded-color;
     content: "";
     position: absolute;
@@ -142,13 +165,13 @@ body {
     background: #ffffff;
 
     &::before {
-      transform: translateY(4px);
+      transform: translateY(8px);
       background: $c-primary;
     }
   }
 
   &--focal {
-    display: inline-block;
+    // display: inline-block;
     font-size: 16px;
 
     &::after {
@@ -171,7 +194,6 @@ body {
   position: relative;
   background: #e7e7e9;
   overflow: hidden;
-  // margin: 400px;
 
   &::after {
     position: absolute;

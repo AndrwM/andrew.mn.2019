@@ -38,9 +38,4 @@ $c-system: #fafafa;
 
 //----------------- Type Mixins
 $ff-primary: Graphik, sans-serif;
-
-@mixin ff-heading-light {
-  font-family: $ff-freight-sans;
-  font-weight: 400;
-  font-style: normal;
-}
+$ff-secondary: "ff-meta-serif-web-pro", Georgia, "Times New Roman", serif;

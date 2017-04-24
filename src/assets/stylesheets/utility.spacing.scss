@@ -1,0 +1,43 @@
+$inuit-spacing-directions: (
+  null: null,
+  '-top': '-top',
+  '-right': '-right',
+  '-bottom': '-bottom',
+  '-left': '-left',
+  '-horizontal': '-left' '-right',
+  '-vertical': '-top' '-bottom',
+) !default;
+
+$inuit-spacing-properties: (
+  'padding': 'padding',
+  'margin': 'margin',
+) !default;
+
+$inuit-spacing-sizes: (
+  null: 40px,
+  '-small': 20px,
+  '-large': 80px,
+  '-none': 0
+) !default;
+
+@each $property-namespace, $property in $inuit-spacing-properties {
+
+  @each $direction-namespace, $direction-rules in $inuit-spacing-directions {
+
+    @each $size-namespace, $size in $inuit-spacing-sizes {
+
+      .u-#{$property-namespace}#{$direction-namespace}#{$size-namespace} {
+
+        @each $direction in $direction-rules {
+          #{$property}#{$direction}: $size !important;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+/* stylelint-enable string-quotes */
