@@ -33,7 +33,7 @@ body {
   margin: 0;
 
   @include media($bp-medium) {
-    margin: 0 2%;
+    // margin: 0 2%;
     padding-left: 6%;
     padding-right: 6%;
   }
@@ -75,6 +75,35 @@ body {
   max-width: 1500px;
   margin: auto;
   &--centered { text-align: center; }
+}
+
+.navigation {
+  @include clearfix();
+  @include elevation(1);
+  position: fixed;
+  padding: 20px 2%;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba(#ffffff, 0.98);
+  z-index: 2000;
+
+  &__link,
+  &__breadcrumb {
+    color: grey;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font: 600 10px/1 Graphik, sans-serif;
+  }
+
+  &__link {
+    float: right;
+  }
+
+  &__breadcrumb {
+    float: left;
+  }
 }
 
 .title {
