@@ -7,60 +7,52 @@ include /includes/_head
 - var endorsementColor = "#E53A2D";
 - var headerTitle = "Echo Cordless Tools";
 
-body.page--echo-cordless
-  header.wrapper.wrapper--header.wrapper--brand-echo: .container: .grid
-    div(class="grid__cell 2/4--lap-and-up")
-      h1.title.title--label Echo Cordless Tools
-      h2.title.title--xlarge Online Brand Experience
+body
+  .page.page--echo-cordless.page--has-footer
+    header.wrapper.wrapper--header.wrapper--brand-echo: .container.container--centered: .grid
+      div(class="grid__cell 2/4--lap-and-up")
+        h1.title.title--label Echo Cordless Tools
+        h2.title.title--xlarge Online Brand Experience
 
-      img(src='/assets/images/projects/echo/hero.png')
+        img(src='/assets/images/projects/echo/hero.png')
 
-  section.wrapper.wrapper--header: .container
-      h2.title.title--large A New Mini-Site for an Innovative, New Product Line
-      p.paragraph For over 60 years Echo has been a leader in the commercial power and outdoor tool market. I was thrilled to be selected to lead the web branding and interactive development initiative for a groundbreaking new line of high-powered, 58-volt outdoor tools. Throughout the project, I worked closely with Echo; their exclusive retailer, The Home Depot; and manufacturing partner, Torque Creative/TTI North America. There were multiple brand and marketing stakeholders that presented challenging constraints with regard to placement and size of existing brand logo marks. I worked with the existing Echo brand assets below.
+    section.wrapper.wrapper: .container
+        h2.title.title--large A New Mini-Site for an Innovative, New Product Line
+        p.paragraph For over 60 years Echo has been a leader in the commercial power and outdoor tool market. I was thrilled to be selected to lead the web branding and interactive development initiative for a groundbreaking new line of high-powered, 58-volt outdoor tools. Throughout the project, I worked closely with Echo; their exclusive retailer, The Home Depot; and manufacturing partner, Torque Creative/TTI North America. There were multiple brand and marketing stakeholders that presented challenging constraints with regard to placement and size of existing brand logo marks. I worked with the existing Echo brand assets below.
 
-    //- section: img(src='/assets/images/projects/echo/existing-branding.png')
+      //- section: img(src='/assets/images/projects/echo/existing-branding.png')
 
-    //- section.feature.left: .container
-    //-   img(src='/assets/images/projects/echo/feature-packaging.jpg')
-    //-   .description
-    //-     h3 Existing Brand Marketing
-    //-     p In addition the to the brand assets, these are samples of the existing packaging and web marketing assets.
+      //- section.feature.left: .container
+      //-   img(src='/assets/images/projects/echo/feature-packaging.jpg')
+      //-   .description
+      //-     h3 Existing Brand Marketing
+      //-     p In addition the to the brand assets, these are samples of the existing packaging and web marketing assets.
 
-  section.wrapper.wrapper--header: .container
-    h2.title.title--large The Highest Battery Capacity Yet&mdash;Launched at a Break-Neck Pace
-    p.paragraph This project ran at a drop-dead sprint because it was imperative that the online marketing materials launch simultaneously with the retail product rollout. Midnight oil was burned; we were able to launch the site two weeks early to allow for additional testing before the product became publicly available.
+    section.wrapper.wrapper: .container
+      h2.title.title--medium The Highest Battery Capacity Yet&mdash;Launched at a Break-Neck Pace
+      p.paragraph This project ran at a drop-dead sprint because it was imperative that the online marketing materials launch simultaneously with the retail product rollout. Midnight oil was burned; we were able to launch the site two weeks early to allow for additional testing before the product became publicly available.
 
-  section.wrapper.wrapper--header(js-project-feature): .container: .grid
-    div(class="grid__cell 2/5--lap-and-up")
-      .browser: img.browser__content(src='/assets/images/projects/echo/feature-detail.jpg')
-    div(class="grid__cell 3/5--lap-and-up", js-project-feature__description)
-      h3.title.title--medium About The Product
-      p.paragraph Showcasing the voltage and consumer-warranty promise was paramount. We were able to strike a cohesive balance featuring the product, while also satisfying legal and marketing concerns.
+    section.wrapper.wrapper(js-project-feature): .container: .grid
+      div(class="grid__cell 2/5--lap-and-up")
+        .browser: img.browser__content(src='/assets/images/projects/echo/feature-detail.jpg')
+      div(class="grid__cell 3/5--lap-and-up", js-project-feature__description)
+        h3.title.title--medium About The Product
+        p.paragraph Showcasing the voltage and consumer-warranty promise was paramount. We were able to strike a cohesive balance featuring the product, while also satisfying legal and marketing concerns.
 
-  section.wrapper.wrapper--header(js-project-feature): .container: .grid
-    div(class="grid__cell 2/5--lap-and-up")
-      .browser: img.browser__content(src='/assets/images/projects/echo/feature-index.jpg')
-    div(class="grid__cell 3/5--lap-and-up", js-project-feature__description)
-      h3.title.title--medium Homepage
-      p.paragraph The homepage serves as a directory for accessing all tools as well as promoting the product brand.
-  
-  section.wrapper.wrapper--header(js-project-feature): .container: .grid
-    div(class="grid__cell 2/5--lap-and-up")
-      .browser: img.browser__content(src='/assets/images/projects/echo/feature-registration.jpg')
-    div(class="grid__cell 3/5--lap-and-up", js-project-feature__description)
-      h3.title.title--medium Registration
-      p.paragraph The ability for a user to register his/her product following purchase was imperative for the legal department. I worked closely to meld their requirements into a functional and aesthetically pleasing registration dashboard.
+    section.wrapper.wrapper(js-project-feature): .container: .grid
+      div(class="grid__cell 2/5--lap-and-up")
+        .browser: img.browser__content(src='/assets/images/projects/echo/feature-index.jpg')
+      div(class="grid__cell 3/5--lap-and-up", js-project-feature__description)
+        h3.title.title--medium Homepage
+        p.paragraph The homepage serves as a directory for accessing all tools as well as promoting the product brand.
+    
+    section.wrapper.wrapper(js-project-feature): .container: .grid
+      div(class="grid__cell 2/5--lap-and-up")
+        .browser: img.browser__content(src='/assets/images/projects/echo/feature-registration.jpg')
+      div(class="grid__cell 3/5--lap-and-up", js-project-feature__description)
+        h3.title.title--medium Registration
+        p.paragraph The ability for a user to register his/her product following purchase was imperative for the legal department. I worked closely to meld their requirements into a functional and aesthetically pleasing registration dashboard.
 
   include ../../includes/_footer
-
-  section.wrapper: .container: .grid
-    div(class="grid__cell 2/5--lap-and-up")
-      .image: img(src="/assets/images/projects/echo/listing.png")
-      h2.title.title--label Echo Cordless Tools
-      h3.title.title--large Online Brand Experience
-      p.paragraph We were asked to bring life to a business model. Meet Stuart, an on-demand delivery service we built and designed from scratch.
-      a.link.link--focal(src="#") View Case Study
-
 
   include ../../includes/_closing-scripts

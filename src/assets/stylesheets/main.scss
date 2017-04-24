@@ -11,7 +11,18 @@ body {
   color: $c-dark;
   min-height: 100%;
   width: 100%;
+  background: $c-system;
   font: 500 18px/1.8 $ff-primary;
+}
+
+.page {
+  background: #ffffff;
+  padding: 0 0 80px 0;
+
+  &--has-footer {
+    @include elevation(4);
+    margin-bottom: 300px;
+  }
 }
 
 .wrapper {
@@ -19,8 +30,17 @@ body {
   padding: 120px 0;
 
   &--header {
-    padding: 120px 0;
+    padding: 200px 0;
     min-height: 300px;
+  }
+
+  &--footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    padding: 100px 0;
   }
 
   &--slim {
@@ -31,6 +51,12 @@ body {
     background: $c-light-blue;
     padding-left: 50px;
     padding-right: 50px
+  }
+
+  &--brand {
+    padding-left: 50px;
+    padding-right: 50px
+    &-echo { background: $c-light-blue; }
   }
 }
 
@@ -143,7 +169,6 @@ body {
   border-radius: $border-radius;
   padding: 26px 0 0;
   position: relative;
-  height: 400px;
   background: #e7e7e9;
   overflow: hidden;
   // margin: 400px;
@@ -161,17 +186,21 @@ body {
 
   &::before {
     position: absolute;
-    top: 7px;
+    top: 6px;
     left: 8px;
     background: #ffffff;
-    height: 12px;
+    height: 14px;
     width: calc(100% - 36px);
-    border-radius: $border-radius;
+    border-radius: ($border-radius / 2);
     content: "";
   }
 
   &__content {
     width: 100%;
+  }
+
+  &--medium {
+    height: 400px;
   }
 }
 

@@ -1,9 +1,4 @@
-
-//----------------- General Utility Mixins
-
-
 //-------- Clearfix
-
 @mixin clearfix {
   // http://nicolasgallagher.com/micro-clearfix-hack/
   &:before,
@@ -15,18 +10,14 @@
   & { *zoom: 1; }
 }
 
-
 //-------- SEO Text
-
 @mixin seo-text {
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
 }
 
-
 //-------- Animation
-
 @mixin keyframes($animation_name) {
   @-webkit-keyframes $animation_name {
     @content;
@@ -41,6 +32,7 @@
     @content;
   }
 }
+
 @mixin animation($animation) {
   -o-animation: $animation;
   -moz-animation: $animation;
@@ -49,13 +41,11 @@
 }
 
 //-------- Basic Media Query
-
 @mixin media($point) {
   @media ( #{$point} ) {
      @content;
   }
 }
-
 
 //-------- Typography Conversion
 // https://github.com/Toadstool-Stipe/stipe/blob/master/stylesheets/stipe/typography/_functions.scss
@@ -80,4 +70,19 @@
 // margin-bottom: baseline-margin($baseline_size);
 @function baseline-margin($baseline_size) {
   @return ($line / $baseline_size) * 1em;
+}
+
+//-------- Elevation
+@mixin elevation($number) {
+  @if $number == 0 {
+    box-shadow: none;
+  } @else if $number == 1 {
+    box-shadow: 0 2px 4px -1px rgba(#000000, 0.06);
+  } @else if $number == 2 {
+    box-shadow: 0 3px 6px 0 rgba(#000000, 0.08);
+  } @else if $number == 3 {
+    box-shadow: 0 4px 10px 0 rgba(#000000, 0.07);
+  } @else if $number == 4 {
+    box-shadow: 0 18px 40px 0 rgba(#000000, 0.04);
+  }
 }
