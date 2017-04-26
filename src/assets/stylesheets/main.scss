@@ -11,6 +11,7 @@ img { width: 100%; }
 
 body {
   -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   box-sizing: border-box;
   color: $c-dark;
   min-height: 100%;
