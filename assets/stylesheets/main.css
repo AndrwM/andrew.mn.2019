@@ -1216,7 +1216,6 @@ body {
     float: left; }
 
 .title {
-  letter-spacing: 0.5px;
   margin: 0 0 10px; }
   .title--xlarge {
     font: 600 42px/1.8 Graphik, sans-serif; }
