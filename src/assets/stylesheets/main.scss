@@ -32,7 +32,7 @@ body {
 }
 
 .wrapper {
-  padding: 140px 4%;
+  padding: 140px 20px;
   margin: 0;
 
   @include media($bp-medium) {
@@ -307,7 +307,9 @@ body {
 
   .list__item {
     font-size: 14px;
+    line-height: 1.5;
     display: flex;
+    margin: 0 0 5px 0;
     &:before {
       content: "- ";
       color: $c-grey-light;
