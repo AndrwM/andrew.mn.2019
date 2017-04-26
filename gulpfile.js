@@ -71,6 +71,7 @@ gulp.task('images', function() {
 gulp.task('files', function() {
   return gulp.src([
         './src/CNAME',
+        './src/robots.txt',
     ])
     .pipe(gulp.dest('./dist/'));
 });
