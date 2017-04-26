@@ -5,6 +5,7 @@
 @import "vars";
 @import "fonts";
 @import "./bower_components/avalanche-css/avalanche";
+@import "utility.spacing";
 
 img { width: 100%; }
 
@@ -15,12 +16,13 @@ body {
   min-height: 100%;
   width: 100%;
   background: #ffffff;
+  color: #4d4f5d;
   font: 500 18px/1.8 $ff-primary;
 }
 
 .page {
   background: #ffffff;
-  padding: 0 0 80px 0;
+  padding: 0;
 
   &--has-footer {
     @include elevation(3);
@@ -67,7 +69,18 @@ body {
     padding-bottom: 50px;
   }
 
+  &--slimmest {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &--flush {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   &--light-blue { background: $c-light-blue; }
+  &--light { background: $c-tertiary-light; }
 }
 
 .container {
@@ -78,7 +91,7 @@ body {
 }
 
 .navigation {
-  @include clearfix();
+  @include clearfix;
   @include elevation(1);
   position: fixed;
   padding: 20px 2%;
@@ -94,7 +107,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     text-decoration: none;
-    font: 600 10px/1 Graphik, sans-serif;
+    font: 600 10px/1 $ff-primary;
   }
 
   &__link {
@@ -111,23 +124,34 @@ body {
   margin: 0 0 10px;
 
   &--xlarge {
-    font: 600 42px/1.8 Graphik, sans-serif;
+    font: 600 42px/1.8 $ff-primary;
   }
 
   &--large {
-    font: 600 30px/1.8 Graphik, sans-serif;
+    font: 600 26px/1.8 $ff-primary;
+    margin: 0 0 20px;
+    letter-spacing: 0;
   }
 
   &--medium {
-    font: 600 20px/1.8 Graphik, sans-serif;
+    font: 600 20px/1.8 $ff-primary;
+  }
+
+  &--small {
+    font: 600 16px/1.8 $ff-primary;
+    letter-spacing: 0;
+  }
+
+  &--smallest {
+    font: 500 15px/1.8 $ff-primary;
+    letter-spacing: 0;
   }
 
   &--label {
     color: grey;
-    font: 500 10px/1.2 Graphik, sans-serif;
+    font: 500 10px/1.2 $ff-primary;
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin: 0;
     // border: 1px solid grey;
     display: inline-block;
     // padding: 7px 10px 5px;
@@ -150,19 +174,23 @@ body {
 }
 
 .paragraph {
-  padding: 0 0 25px 0;
-  margin: 0;
+  padding: 0;
+  margin: 0 0 25px 0;
   max-width: 640px;
   color: #4d4f5d;
   font: 500 20px/1.8 $ff-secondary;
 
   &--small {
-    font-size: 12px;
-    color: $c-tertiary;
+    font-size: 13px;
+    margin: 0 0 10px 0;
   }
 
   &--medium {
     font-size: 14px;
+  }
+
+  &--sans {
+    font-family: $ff-primary;
   }
 }
 
@@ -175,12 +203,11 @@ body {
   white-space: nowrap;
   position: relative;
   transition: all 0.1s ease-in-out;
-  // padding: 2px 0px;
 
   &::before {
     height: 1px;
     width: 100%;
-    bottom: 0;
+    bottom: 5px;
     transform: translateY(10px);
     background: $faded-color;
     content: "";
@@ -261,23 +288,23 @@ body {
 // }
 
 // h3 {
-//   font: 600 16px/1.8 Graphik, sans-serif;
+//   font: 600 16px/1.8 $ff-primary;
 //   margin: 0;
 //   // color: $c-primary;
 // }
 
 // h4 {
-//   font: 400 12px/1.8 Graphik, sans-serif;
+//   font: 400 12px/1.8 $ff-primary;
 //   margin: 0;
 //   color: $c-primary;
 // }
 
-ul {
-  margin: 10px 0 60px;
+.list {
+  margin: 0 0 20px;
   padding: 0;
   list-style: none inside;
 
-  li {
+  .list__item {
     font-size: 14px;
     display: flex;
     &:before {
@@ -285,6 +312,10 @@ ul {
       color: $c-grey-light;
       margin: 0 8px 0 0;
     }
+  }
+
+  &--small .list__item {
+    font-size: 12px;
   }
 }
 
@@ -299,6 +330,6 @@ ul {
 small,
 .small {
   color: rgba($c-tertiary-dark, 0.6);
-  font: 500 10px/1.8 Graphik, sans-serif;
+  font: 500 11px/1.8 $ff-primary;
   margin-left: 14px
 }
