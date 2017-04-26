@@ -1140,7 +1140,7 @@ body {
     margin-bottom: 300px; }
 
 .wrapper {
-  padding: 140px 4%;
+  padding: 140px 20px;
   margin: 0; }
   @media (min-width: 901px) {
     .wrapper {
@@ -1322,8 +1322,10 @@ body {
   list-style: none inside; }
   .list .list__item {
     font-size: 14px;
+    line-height: 1.5;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    margin: 0 0 5px 0; }
     .list .list__item:before {
       content: "- ";
       color: #939499;
