@@ -293,6 +293,7 @@ body {
     line-height: 1.5;
     display: flex;
     margin: 0 0 5px 0;
+
     &:before {
       content: "- ";
       color: $c-grey-light;
@@ -311,6 +312,11 @@ body {
 
 .subtle {
   color: $c-tertiary;
+}
+
+.emoji {
+  font-size: 24px;
+  vertical-align: middle;
 }
 
 small,
