@@ -1,139 +1,132 @@
 include ../includes/_head
 
-body
-  .page.page--echo-cordless
-    header.wrapper.wrapper--light-blue.u-margin-bottom: .container
-      //- h2.title.title--small.u-margin-bottom-none Andrew McIntee
-      h1.title.title--large <a class="link" href="/">Andrew McIntee</a>: Resume
-        //- a(href="/").link Andrew McIntee
-        //- &nbsp;<span class="focal">Resume</span>
-      p.paragraph.u-margin-bottom Hi, my name is Andrew McIntee. I’m a Atlanta-based software designer specializing in UI design &amp; front-end engineering. I enjoy working with positive people who sweat the small details and share the same passion for pragmatic and thoughtful design.
-      p.title--smallest.u-margin-vertical-none
-        span.emoji ☎️
-        &nbsp;&nbsp;
-        a(href="tel:8649150648").link (864) 915-0648
-      p.title--smallest.u-margin-vertical-none
-        span.emoji 💌
-        &nbsp;&nbsp;
-        a(href="mailto:contact@andrew.mn").link Contact@Andrew.mn
+body: .page
+  header.wrapper.wrapper--light-blue: .container
+    p.paragraph Hi, my name is Andrew McIntee. I’m a Atlanta-based software designer specializing in UI design &amp; front-end engineering. I enjoy working with positive people who sweat the small details and share the same passion for pragmatic and thoughtful design.
+    p.paragraph
+      span.emoji 🚀
+      &nbsp; Contact me at <a class="link" href="mailto:studio@andrew.mn">Studio@Andrew.mn</a> or by phone at <a class="link" href="mailto:studio@andrew.mn">(864) 915 0648</a>.
+  //- nav.wrapper.wrapper--sticky.wrapper--transparent-blue.wrapper--flush
+    ul.navigation
+      li.navigation__item: a.navigation__link.navigation__link--active(href="/resume") Resume
+      li.navigation__item: a.navigation__link(href="/work") Work
 
-
-
-    section.wrapper.wrapper--slimmest: .container
-      h2.title.title--medium.u-margin-bottom Experience
-      .grid
-        div(class="grid__cell 1/6--lap-and-up")
-          h3.title.title--label 2015 – Present
-        div(class="grid__cell 5/6--lap-and-up")
-          h3.title.title--small.u-margin-bottom-none The Iron Yard
-          h4.title.title--smallest Product Designer
-          ul.list
-            li.list__item Lead design, development &amp; launch of The Iron Yard's new marketing site.
-            li.list__item Lead design and front-end development of in-browser code IDE for online coding tests.
-            li.list__item Lead specification, design, and front-end development of custom admissions software.
-            li.list__item Design, build, and maintain modular design systems for each online marketing site, student classroom application, and internal tooling.
-            li.list__item Conduct student user-behavior studies to test design assumptions and solve usability issues.
-            li.list__item Wrote application feature tests to ensure the stability of key user flows and UI components.
-    section.wrapper.wrapper--slimmest: .container: .grid
+  section.wrapper.wrapper--slimmest.u-margin-top-large: .container
+    h2.title.title--medium.u-margin-bottom Experience
+    .grid
       div(class="grid__cell 1/6--lap-and-up")
-        h3.title.title--label 2012 – 2015
-      div(class="grid__cell 5/6--lap-and-up")
-        h3.title.title--small.u-margin-bottom-none National International
-        h4.title.title--smallest Founder
-        ul.list
-          li.list__item Plan, design, and develop mobile-responsive web software
-          li.list__item Perform usability interviews and testing to define end-user needs and behavior
-          li.list__item Leverage extensive industry network to build a team of freelance engineers and designers
-          li.list__item Consult with clients to develop strategies for meeting business goals with design
-          small  Clients: Clemson University,  NFL,  The Iron Yard,  Auburn University
-    section.wrapper.wrapper--slimmest: .container: .grid
-      div(class="grid__cell 1/6--lap-and-up")
-        h3.title.title--label 2014 – 2015
-      div(class="grid__cell 5/6--lap-and-up")
-        h3.title.title--small.u-margin-bottom-none Torque Creative, TTI North America
-        h4.title.title--smallest Interactive Designer
-        ul.list
-          li.list__item Lead online creative direction for new Echo Cordless power tool line marketing site
-          li.list__item Design and execute interactive, mobile-responsive eBlast campaigns for national brands
-          small  Clients: The Home Depot,  Echo Cordless,  Ridgid,  Ryobi Tools,  Stōk Grills
-    section.wrapper.wrapper--slimmest: .container: .grid
-      div(class="grid__cell 1/6--lap-and-up")
-        h3.title.title--label 2013 – 2014
-      div(class="grid__cell 5/6--lap-and-up")
-        h3.title.title--small.u-margin-bottom-none Organic
-        h4.title.title--smallest Senior User Interface Designer
-        ul.list
-          li.list__item Lead interactive developer for Depend Canada brand marketing website
-          li.list__item Lead interactive developer for Depend Underwearness Campaign video streaming player
-          li.list__item Develop engaging, mobile-responsive marketing websites for national brands
-          small  Clients: U By Kotex,  Depend USA,  Depend Underwearness,  Depend Canada,  Huggies Pull-Ups
-    section.wrapper.wrapper--slimmest: .container: .grid
-      div(class="grid__cell 1/6--lap-and-up")
-        h3.title.title--label 2012 – 2014
-      div(class="grid__cell 5/6--lap-and-up")
-        h3.title.title--small.u-margin-bottom-none Waldschmidt Partners International
-        h4.title.title--smallest Interactive Creative Director
-        ul.list
-          li.list__item Develop interactive brand styleguide and internal web development standards
-          li.list__item Launch and manage 9 fully custom Wordpress website properties
-          li.list__item Manage site/database migrations and vendor relationships
-    section.wrapper.wrapper--slimmest: .container: .grid
-      div(class="grid__cell 1/6--lap-and-up")
-        h3.title.title--label 2012
+        h3.title.title--label 2015 – Present
       div(class="grid__cell 5/6--lap-and-up")
         h3.title.title--small.u-margin-bottom-none The Iron Yard
-        h4.title.title--smallest Designer In Residence (2012 Startup Accelerator)
+        h4.title.title--smallest Product Designer
         ul.list
-          li.list__item Provided brand and user interface design services to The Iron Yard portfolio companies
-    section.wrapper.wrapper--slimmest: .container: .grid
-      div(class="grid__cell 1/6--lap-and-up")
-        h3.title.title--label 2010 - 2011
-      div(class="grid__cell 5/6--lap-and-up")
-        h3.title.title--small.u-margin-bottom-none ER Design
-        h4.title.title--smallest Marketing Designer/Web Developer
-        ul.list
-          li.list__item Provided brand and user interface design services to The Iron Yard portfolio companies
-
-    section.wrapper.wrapper--light.wrapper--slim.u-margin-top: .container
-      h2.title.title--medium.u-margin-bottom-small Speaking
-      .u-margin-bottom
-        h3.title.title--small.u-margin-bottom-none Clemson University 2016 <span class="subtle">&mdash;</span> Guest Lecturer (Graphic Communications Department)
-        p.paragraph.paragraph--sans.paragraph--small Lead a crash course on Javascript basics, jQuery, and the basics of debugging code to teach the class how to create a primitive budgetting calculator.
-      .u-margin-bottom
-        h3.title.title--small.u-margin-bottom-none The Iron Yard 2014 &amp; 2015 <span class="subtle">&mdash;</span> Regular Guest Lecturer
-        p.paragraph.paragraph--sans.paragraph--small Guest lectured for The Iron Yard's User Interface Design and Front-End Engineering classes in Austin,&nbsp;TX&nbsp;and Greenville, SC on:
-        ul.list.list--small
-          li.list__item Importance Of Design Systems
-          li.list__item Developer &amp; Designer Relations: How to effectively manage communications across departments
-          li.list__item Design Asset Management &amp; Organization
-      .u-margin-bottom
-        h3.title.title--small.u-margin-bottom-none Clemson University 2014 <span class="subtle">&mdash;</span> Design Mentor (Startup Weekend Program)
-        p.paragraph.paragraph--sans.paragraph--small.u-margin-bottom-none User interface design mentor for the Clemson University branch of Startup Weekend. Taught collegiate startup companies user experience principles over a weekend.
-
-    section.wrapper.wrapper--slim: .container
-      h3.title.title--medium.u-margin-bottom-small More
-      .grid
-        div(class="grid__cell 1/3--lap-and-up")
-          h3.title.title--small Skillsets
-          p.paragraph.paragraph--sans.paragraph--small.u-margin-bottom Test driven development, UI prototyping, user-testing, responsive design and development, project planning, UI design, marketing/advertising design, email campaign development, atomic design system design, branding/brand standards documentation
-        div(class="grid__cell 1/3--lap-and-up")
-          h3.title.title--small Frameworks And Tooling
-          p.paragraph.paragraph--sans.paragraph--small.u-margin-bottom React, Backbone, SASS, Ruby On Rails, jQuery, Git, SVN, Photoshop, Sketch, Wordpress, Jade, Gulp
-        div(class="grid__cell 1/3--lap-and-up")
-          h3.title.title--small Programming Languages
-          p.paragraph.paragraph--sans.paragraph--small.u-margin-bottom Javascript &amp; Ruby
-            br
-            | Some experience with PHP &amp; C++.
-        div(class="grid__cell")
-          h3.title.title--small References
-          h3.title.title--smallest.u-margin-bottom-none Mason Stewart &mdash; CTO, The Iron Yard
-          p.paragraph.paragraph--sans.paragraph--small.u-margin-bottom-smallest (xxx) xxx - xxx
-          h3.title.title--smallest.u-margin-bottom-none Brent Dillingham &mdash; VP Engineering, The Iron Yard
-          p.paragraph.paragraph--sans.paragraph--small.u-margin-bottom-smallest (xxx) xxx - xxx
-
-    section.wrapper: .container
+          li.list__item Lead design, development &amp; launch of The Iron Yard's new marketing site.
+          li.list__item Lead design and front-end development of in-browser code IDE for online coding tests.
+          li.list__item Lead specification, design, and front-end development of custom admissions software.
+          li.list__item Design, build, and maintain modular design systems for each online marketing site, student classroom application, and internal tooling.
+          li.list__item Conduct student user-behavior studies to test design assumptions and solve usability issues.
+          li.list__item Wrote application feature tests to ensure the stability of key user flows and UI components.
+  section.wrapper.wrapper--slimmest: .container: .grid
+    div(class="grid__cell 1/6--lap-and-up")
+      h3.title.title--label 2012 – 2015
+    div(class="grid__cell 5/6--lap-and-up")
+      h3.title.title--small.u-margin-bottom-none National International
+      h4.title.title--smallest Founder
+      ul.list
+        li.list__item Plan, design, and develop mobile-responsive web software
+        li.list__item Perform usability interviews and testing to define end-user needs and behavior
+        li.list__item Leverage extensive industry network to build a team of freelance engineers and designers
+        li.list__item Consult with clients to develop strategies for meeting business goals with design
+        small  Clients: Clemson University,  NFL,  The Iron Yard,  Auburn University
+  section.wrapper.wrapper--slimmest: .container: .grid
+    div(class="grid__cell 1/6--lap-and-up")
+      h3.title.title--label 2014 – 2015
+    div(class="grid__cell 5/6--lap-and-up")
+      h3.title.title--small.u-margin-bottom-none Torque Creative, TTI North America
+      h4.title.title--smallest Interactive Designer
+      ul.list
+        li.list__item Lead online creative direction for new Echo Cordless power tool line marketing site
+        li.list__item Design and execute interactive, mobile-responsive eBlast campaigns for national brands
+        small  Clients: The Home Depot,  Echo Cordless,  Ridgid,  Ryobi Tools,  Stōk Grills
+  section.wrapper.wrapper--slimmest: .container: .grid
+    div(class="grid__cell 1/6--lap-and-up")
+      h3.title.title--label 2013 – 2014
+    div(class="grid__cell 5/6--lap-and-up")
+      h3.title.title--small.u-margin-bottom-none Organic
+      h4.title.title--smallest Senior User Interface Designer
+      ul.list
+        li.list__item Lead interactive developer for Depend Canada brand marketing website
+        li.list__item Lead interactive developer for Depend Underwearness Campaign video streaming player
+        li.list__item Develop engaging, mobile-responsive marketing websites for national brands
+        small  Clients: U By Kotex,  Depend USA,  Depend Underwearness,  Depend Canada,  Huggies Pull-Ups
+  section.wrapper.wrapper--slimmest: .container: .grid
+    div(class="grid__cell 1/6--lap-and-up")
+      h3.title.title--label 2012 – 2014
+    div(class="grid__cell 5/6--lap-and-up")
+      h3.title.title--small.u-margin-bottom-none Waldschmidt Partners International
+      h4.title.title--smallest Interactive Creative Director
+      ul.list
+        li.list__item Develop interactive brand styleguide and internal web development standards
+        li.list__item Launch and manage 9 fully custom Wordpress website properties
+        li.list__item Manage site/database migrations and vendor relationships
+  section.wrapper.wrapper--slimmest: .container: .grid
+    div(class="grid__cell 1/6--lap-and-up")
+      h3.title.title--label 2012
+    div(class="grid__cell 5/6--lap-and-up")
+      h3.title.title--small.u-margin-bottom-none The Iron Yard
+      h4.title.title--smallest Designer In Residence (2012 Startup Accelerator)
+      ul.list
+        li.list__item Provided brand and user interface design services to The Iron Yard portfolio companies
+  section.wrapper.wrapper--slimmest: .container: .grid
+    div(class="grid__cell 1/6--lap-and-up")
+      h3.title.title--label 2010 - 2011
+    div(class="grid__cell 5/6--lap-and-up")
+      h3.title.title--small.u-margin-bottom-none ER Design
+      h4.title.title--smallest Marketing Designer/Web Developer
+      ul.list
+        li.list__item Provided brand and user interface design services to The Iron Yard portfolio companies
+  section.wrapper.wrapper--light.wrapper--slim.u-margin-top: .container
+    h2.title.title--medium.u-margin-bottom-small Speaking
+    .u-margin-bottom
+      h3.title.title--small.u-margin-bottom-none Clemson University 2016 <span class="subtle">&mdash;</span> Guest Lecturer (Graphic Communications Department)
+      p.paragraph.paragraph--sans.paragraph--small Lead a crash course on Javascript basics, jQuery, and the basics of debugging code to teach the class how to create a primitive budgetting calculator.
+    .u-margin-bottom
+      h3.title.title--small.u-margin-bottom-none The Iron Yard 2014 &amp; 2015 <span class="subtle">&mdash;</span> Regular Guest Lecturer
+      p.paragraph.paragraph--sans.paragraph--small Guest lectured for The Iron Yard's User Interface Design and Front-End Engineering classes in Austin,&nbsp;TX&nbsp;and Greenville, SC on:
+      ul.list.list--small
+        li.list__item Importance Of Design Systems
+        li.list__item Developer &amp; Designer Relations: How to effectively manage communications across departments
+        li.list__item Design Asset Management &amp; Organization
+    .u-margin-bottom
+      h3.title.title--small.u-margin-bottom-none Clemson University 2014 <span class="subtle">&mdash;</span> Design Mentor (Startup Weekend Program)
+      p.paragraph.paragraph--sans.paragraph--small.u-margin-bottom-none User interface design mentor for the Clemson University branch of Startup Weekend. Taught collegiate startup companies user experience principles over a weekend.
+  section.wrapper.wrapper--slim: .container
+    h2.title.title--medium.u-margin-bottom-small More
+    .grid
+      div(class="grid__cell 1/3--lap-and-up")
+        h3.title.title--small Skillsets
+        p.paragraph.paragraph--sans.paragraph--small.u-margin-bottom-large Test driven development, UI prototyping, user-testing, responsive design and development, project planning, UI design, marketing/advertising design, email campaign development, atomic design system design, branding/brand standards documentation
+      div(class="grid__cell 1/3--lap-and-up")
+        h3.title.title--small Frameworks And Tooling
+        p.paragraph.paragraph--sans.paragraph--small.u-margin-bottom-large React, Backbone, SASS, Ruby On Rails, jQuery, Git, SVN, Photoshop, Sketch, Wordpress, Jade, Gulp
+      div(class="grid__cell 1/3--lap-and-up")
+        h3.title.title--small Programming Languages
+        p.paragraph.paragraph--sans.paragraph--small.u-margin-bottom-large Javascript &amp; Ruby
+          br
+          | Some experience with PHP &amp; C++.
+      div(class="grid__cell")
+        h3.title.title--small References
+        h3.title.title--smallest.u-margin-bottom-none Mason Stewart &mdash; CTO, The Iron Yard
+        p.paragraph.paragraph--sans.paragraph--small.u-margin-bottom-smallest (xxx) xxx - xxx
+        h3.title.title--smallest.u-margin-bottom-none Brent Dillingham &mdash; VP Engineering, The Iron Yard
+        p.paragraph.paragraph--sans.paragraph--small.u-margin-bottom-smallest (xxx) xxx - xxx
+  section.wrapper: .container
       p.title--smallest.u-margin-vertical-smallest
-        🎉&nbsp;&nbsp;Thanks for visiting. Have a great day.
+         span.emoji 🎉
+         &nbsp; Thanks for visiting. Have a great day. &copy; Andrew McIntee 2017.
+      p.title--smallest.u-margin-vertical-smallest.u-
+         span.emoji 🎉
+         &nbsp; Thanks for visiting. Have a great day. &copy; Andrew McIntee 2017.
 
   include ../includes/_closing-scripts
  

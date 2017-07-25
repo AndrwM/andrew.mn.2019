@@ -4,9 +4,15 @@ body
   //- include /includes/_nav
 
   .page.page--has-footer
-    header.wrapper.wrapper--header.wrapper--light-blue: .container
-      p.paragraph Hello! <span class="subtle">&mdash;</span> I’m a UI designer &amp; front-end web engineer living in Atlanta. Formerly a freelance consultant, I now work with <a class="link" href="http://theironyard.com">The Iron Yard</a> building an online classroom experience. I’m interested in social inclusivity, modular design systems, and the outdoors.
-      p.paragraph Thanks for dropping by. Contact me by email at <a class="link" href="mailto:studio@andrew.mn">Studio@Andrew.mn</a>.
+    header.wrapper.wrapper--light-blue.u-padding-bottom-none: .container
+      //- h1.title.title--large Andrew McIntee
+      p.paragraph Hi, my name is Andrew McIntee. I’m a Atlanta-based software designer specializing in UI design &amp; front-end engineering. I enjoy working with positive people who sweat the small details and share the same passion for pragmatic and thoughtful design.
+      p.paragraph
+        span.emoji 🚀
+        &nbsp; Contact me at <a class="link" href="mailto:studio@andrew.mn">Studio@Andrew.mn</a> or by phone at <a class="link" href="mailto:studio@andrew.mn">(864) 915 0648</a>.
+    nav.navigation: ul.navigation.container
+      li.navigation__item: a.navigation__link(href="/resume") Resume
+      li.navigation__item: a.navigation__link.navigation__link--active(href="/work") Work
 
     section.wrapper: .container: .grid
       div(class="grid__cell 2/3--lap-and-up")
