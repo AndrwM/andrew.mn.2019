@@ -123,7 +123,7 @@ gulp.task('serve', ['build', 'browser-sync'], function () {
 
 //---------------------- DEPLOY YO
 
-gulp.task('deploy', ['build'], function () {
+gulp.task('deploy', ['clean', 'build'], function () {
   return gulp.src("./dist/**/*")
     .pipe(deploy());
 });
