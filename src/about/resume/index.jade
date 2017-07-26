@@ -1,15 +1,7 @@
-include ../includes/_head
+include /includes/_head
 
 body: .page
-  header.wrapper.wrapper--light-blue: .container
-    p.paragraph Hi, my name is Andrew McIntee. I’m a Atlanta-based software designer specializing in UI design &amp; front-end engineering. I enjoy working with positive people who sweat the small details and share the same passion for pragmatic and thoughtful design.
-    p.paragraph
-      span.emoji 🚀
-      &nbsp; Contact me at <a class="link" href="mailto:studio@andrew.mn">Studio@Andrew.mn</a> or by phone at <a class="link" href="mailto:studio@andrew.mn">(864) 915 0648</a>.
-  //- nav.wrapper.wrapper--sticky.wrapper--transparent-blue.wrapper--flush
-    ul.navigation
-      li.navigation__item: a.navigation__link.navigation__link--active(href="/resume") Resume
-      li.navigation__item: a.navigation__link(href="/work") Work
+  include /includes/about/_header
 
   section.wrapper.wrapper--slimmest.u-margin-top-large: .container
     h2.title.title--medium.u-margin-bottom Experience
@@ -120,13 +112,7 @@ body: .page
         p.paragraph.paragraph--sans.paragraph--small.u-margin-bottom-smallest (xxx) xxx - xxx
         h3.title.title--smallest.u-margin-bottom-none Brent Dillingham &mdash; VP Engineering, The Iron Yard
         p.paragraph.paragraph--sans.paragraph--small.u-margin-bottom-smallest (xxx) xxx - xxx
-  section.wrapper: .container
-      p.title--smallest.u-margin-vertical-smallest
-         span.emoji 🎉
-         &nbsp; Thanks for visiting. Have a great day. &copy; Andrew McIntee 2017.
-      p.title--smallest.u-margin-vertical-smallest.u-
-         span.emoji 🎉
-         &nbsp; Thanks for visiting. Have a great day. &copy; Andrew McIntee 2017.
 
-  include ../includes/_closing-scripts
+  include /includes/about/_footer
+  include /includes/_closing-scripts
  

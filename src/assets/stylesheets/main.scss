@@ -15,7 +15,7 @@ body {
   box-sizing: border-box;
   color: $c-grey-medium;
   font-smoothing: antialiased;
-  font: 500 18px/1.8 $ff-primary;
+  font: 500 18px / 1.8 $ff-primary;
   min-height: 100%;
   width: 100%;
 }
@@ -91,6 +91,7 @@ body {
   @include clearfix;
   margin: auto;
   max-width: 1500px;
+
   &--centered { text-align: center; }
 }
 
@@ -109,7 +110,7 @@ body {
   &__link {
     color: $c-primary;
     display: block;
-    font: 500 16px/1.8 $ff-primary;
+    font: 500 16px / 1.8 $ff-primary;
     margin: 0 20px;
     padding: 15px 0;
     text-decoration: none;
@@ -131,35 +132,41 @@ body {
   margin: 0 0 10px;
 
   &--xlarge {
-    font: 600 42px/1.8 $ff-primary;
+    font: 600 42px / 1.8 $ff-primary;
   }
 
   &--large {
-    font: 600 24px/1.8 $ff-primary;
+    font: 600 26px / 1.8 $ff-primary;
     letter-spacing: 0;
     margin: 0 0 20px;
   }
 
   &--medium {
-    font: 600 22px/1.8 $ff-primary;
+    font: 600 22px / 1.8 $ff-primary;
   }
 
   &--small {
-    font: 600 16px/1.8 $ff-primary;
+    font: 600 18px / 1.8 $ff-primary;
     letter-spacing: 0;
   }
 
   &--smallest {
-    font: 500 15px/1.8 $ff-primary;
+    font: 500 15px / 1.8 $ff-primary;
     letter-spacing: 0;
   }
 
   &--label {
     color: grey;
     display: inline-block;
-    font: 500 10px/1.2 $ff-primary;
+    font: 500 10px / 1.2 $ff-primary;
     letter-spacing: 1px;
     text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  &--flush {
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -178,11 +185,11 @@ body {
 }
 
 .paragraph {
-  padding: 0;
+  color: #4d4f5d;
+  font: 500 20px / 1.8 $ff-secondary;
   margin: 0 0 25px 0;
   max-width: 640px;
-  color: #4d4f5d;
-  font: 500 20px/1.8 $ff-secondary;
+  padding: 0;
 
   &--small {
     font-size: 13px;
@@ -325,6 +332,6 @@ body {
 small,
 .small {
   color: rgba($c-tertiary-dark, 0.6);
-  font: 500 11px/1.8 $ff-primary;
+  font: 500 11px / 1.8 $ff-primary;
   margin-left: 14px
 }
