@@ -3,29 +3,28 @@
 // Make it safe to do console.log() always.
 (function(global) {
   'use strict';
-  global.console = global.console || {};
+  if (!global.console) {
+    global.console = {};
+  }
   var con = global.console;
   var prop, method;
-  var empty = {};
   var dummy = function() {};
-  var properties = 'memory'.split(',');
+  var properties = ['memory'];
   var methods = ('assert,clear,count,debug,dir,dirxml,error,exception,group,' +
      'groupCollapsed,groupEnd,info,log,markTimeline,profile,profiles,profileEnd,' +
      'show,table,time,timeEnd,timeline,timelineEnd,timeStamp,trace,warn').split(',');
-  while (prop = properties.pop()) if (!con[prop]) con[prop] = empty;
-  while (method = methods.pop()) if (!con[method]) con[method] = dummy;
+  while (prop = properties.pop()) if (!con[prop]) con[prop] = {};
+  while (method = methods.pop()) if (typeof con[method] !== 'function') con[method] = dummy;
+  // Using `this` for web workers & supports Browserify / Webpack.
 })(typeof window === 'undefined' ? this : window);
-// Using `this` for web workers while maintaining compatibility with browser
-// targeted script loaders such as Browserify or Webpack where the only way to
-// get to the global object is via `window`.
 
 /**
-* @preserve HTML5 Shiv 3.7.2 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
+* @preserve HTML5 Shiv 3.7.3 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
 */
 ;(function(window, document) {
 /*jshint evil:true */
   /** version */
-  var version = '3.7.2';
+  var version = '3.7.3';
 
   /** Preset options */
   var options = window.html5 || {};
@@ -142,7 +141,7 @@
    * returns a shived element for the given nodeName and document
    * @memberOf html5
    * @param {String} nodeName name of the element
-   * @param {Document} ownerDocument The context document.
+   * @param {Document|DocumentFragment} ownerDocument The context document.
    * @returns {Object} The shived element.
    */
   function createElement(nodeName, ownerDocument, data){
@@ -340,7 +339,11 @@
   // shiv the document
   shivDocument(document);
 
-}(this, document));
+  if(typeof module == 'object' && module.exports){
+    module.exports = html5;
+  }
+
+}(typeof window !== "undefined" ? window : this, document));
 
 /*!
  * jQuery JavaScript Library v2.1.4
