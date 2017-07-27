@@ -32,18 +32,7 @@ body {
 
 .wrapper {
   margin: 0;
-  padding: 140px 20px;
-
-  @include media($bp-medium) {
-    // margin: 0 2%;
-    padding-left: 6%;
-    padding-right: 6%;
-  }
-
-  @include media($bp-large) {
-    padding-left: 8%;
-    padding-right: 8%;
-  }
+  padding: 140px 6%;
 
   &--header {
     min-height: 300px;
@@ -83,7 +72,6 @@ body {
 
   &--white { background: #ffffff; }
   &--light-blue { background: $c-light-blue; }
-  // &--transparent-blue { background: rgba($c-light-blue, 0.4); }
   &--light { background: $c-tertiary-light; }
 }
 
@@ -187,13 +175,13 @@ body {
 .paragraph {
   color: #4d4f5d;
   font: 500 20px / 1.8 $ff-secondary;
-  margin: 0 0 25px 0;
+  margin: 0 0 25px;
   max-width: 640px;
   padding: 0;
 
   &--small {
     font-size: 13px;
-    margin: 0 0 10px 0;
+    margin: 0 0 10px;
   }
 
   &--medium {
@@ -216,15 +204,15 @@ body {
   transition: all 0.1s ease-in-out;
 
   &::before {
-    height: 1px;
-    width: 100%;
-    bottom: 5px;
-    transform: translateY(10px);
     background: $faded-color;
+    bottom: 5px;
     content: "";
-    position: absolute;
+    height: 1px;
     left: 0;
+    position: absolute;
+    transform: translateY(10px);
     transition: all 0.1s ease-in-out;
+    width: 100%;
   }
 
   &:hover {

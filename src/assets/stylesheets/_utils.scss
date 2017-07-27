@@ -19,31 +19,15 @@
 
 //-------- Animation
 @mixin keyframes($animation_name) {
-  @-webkit-keyframes $animation_name {
-    @content;
-  }
-  @-moz-keyframes $animation_name {
-    @content;
-  }
-  @-o-keyframes $animation_name {
-    @content;
-  }
   @keyframes $animation_name {
     @content;
   }
 }
 
-@mixin animation($animation) {
-  -o-animation: $animation;
-  -moz-animation: $animation;
-  -webkit-animation: $animation;
-  animation: $animation;
-}
-
 //-------- Basic Media Query
 @mixin media($point) {
-  @media ( #{$point} ) {
-     @content;
+  @media #{$point} {
+    @content;
   }
 }
 
