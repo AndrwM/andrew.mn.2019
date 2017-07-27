@@ -1,10 +1,15 @@
 //----------------- Breakpoints, Susy, & Thangz
 $av-gutter: 80px;
 $av-widths: (1,2,3,4,5,6,7);
+$av-enable-grid-rev: true;
 
-$bp-small: "min-width: 401px";
-$bp-medium: "min-width: 901px";
-$bp-large: "min-width: 1101px";
+$bp-lap: "screen and (min-width: 901px)";
+$bp-desk: "screen and (min-width: 1201px)";
+
+$av-breakpoints: (
+  "lap":    $bp-lap,
+  "desk":   $bp-desk,
+);
 
 $border-radius: 8px;
 $font-size: 20px;
