@@ -1,86 +1,39 @@
-//------------- Setup
+@import 'vars';
+@import './bower_components/normalize-css/normalize';
+@import './bower_components/avalanche-css/avalanche';
+@import 'font-face';
+@import 'tools';
 
-@import "./bower_components/normalize-css/normalize";
-@import "utils";
-@import "vars";
-@import "fonts";
-@import "./bower_components/avalanche-css/avalanche";
-@import "utility.spacing";
-
-img { width: 100%; }
-
+//---------------------- Base
 body {
-  -webkit-font-smoothing: antialiased;
   background: #ffffff;
   box-sizing: border-box;
   color: $c-grey-medium;
-  font-smoothing: antialiased;
   font: 500 18px / 1.8 $ff-primary;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   min-height: 100%;
   width: 100%;
 }
 
-.page {
-  background: #ffffff;
-  padding: 0;
+img { width: 100%; }
 
-  &--has-footer {
-    @include elevation(3);
-    margin-bottom: 300px;
-  }
-}
+//---------------------- Components
+@import 'components/c.browser';
+@import 'components/c.button';
+@import 'components/c.container';
+@import 'components/c.emoji';
+@import 'components/c.link';
+@import 'components/c.list';
+@import 'components/c.page';
+@import 'components/c.paragraph';
+@import 'components/c.title';
+@import 'components/c.wrapper';
 
-.wrapper {
-  margin: 0;
-  padding: 140px 6%;
+//---------------------- Utilities
+@import 'utilities/u.spacing';
 
-  &--header {
-    min-height: 300px;
-    padding-bottom: 70px;
-    padding-top: 200px;
-  }
-
-  &--footer {
-    bottom: 0;
-    left: 0;
-    padding-bottom: 100px;
-    position: fixed;
-    right: 0;
-    z-index: -1;
-  }
-
-  &--slim {
-    padding-bottom: 50px;
-    padding-top: 50px;
-  }
-
-  &--slimmest {
-    padding-bottom: 15px;
-    padding-top: 15px;
-  }
-
-  &--flush {
-    padding-bottom: 0;
-    padding-top: 0;
-  }
-
-  &--white { background: #ffffff; }
-  &--light-blue { background: $c-light-blue; }
-  &--light { background: $c-tertiary-light; }
-}
-
-.container {
-  @include clearfix;
-  margin: auto;
-  max-width: 1500px;
-
-  // &--small {
-  //   900px;
-  // }
-
-  &--centered { text-align: center; }
-}
-
+//---------------------- Garbage
 .navigation {
   @include clearfix;
   margin: 0;
@@ -93,7 +46,7 @@ body {
     padding: 0;
   }
 
-  &__link {
+  &__.c-link {
     color: $c-primary;
     display: block;
     font: 500 16px / 1.8 $ff-primary;
@@ -114,48 +67,6 @@ body {
   }
 }
 
-.title {
-  margin: 0 0 10px;
-
-  &--xlarge {
-    font: 600 42px / 1.8 $ff-primary;
-  }
-
-  &--large {
-    font: 600 26px / 1.8 $ff-primary;
-    letter-spacing: 0;
-    margin: 0 0 20px;
-  }
-
-  &--medium {
-    font: 600 22px / 1.8 $ff-primary;
-  }
-
-  &--small {
-    font: 600 18px / 1.8 $ff-primary;
-    letter-spacing: 0;
-  }
-
-  &--smallest {
-    font: 500 15px / 1.8 $ff-primary;
-    letter-spacing: 0;
-  }
-
-  &--label {
-    color: grey;
-    display: block;
-    font: 500 10px / 1.2 $ff-primary;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    white-space: nowrap;
-  }
-
-  &--flush {
-    margin: 0;
-    padding: 0;
-  }
-}
-
 .image {
   // padding: 40px 0 0 40px;
   // border-radius: $border-radius;
@@ -168,199 +79,4 @@ body {
   // img {
   //   width: calc(100% - 40px);
   // }
-}
-
-.paragraph {
-  color: #4d4f5d;
-  font: 500 20px / 1.8 $ff-secondary;
-  margin: 0 0 25px;
-  max-width: 640px;
-  padding: 0;
-
-  &--small {
-    font-size: 13px;
-    margin: 0 0 10px;
-  }
-
-  &--medium {
-    color: grey;
-    font-size: 15px;
-  }
-
-  &--sans {
-    font-family: $ff-primary;
-  }
-}
-
-.link {
-  $faded-color: rgba($c-tertiary, 0.4);
-
-  text-decoration: none;
-  transition: all 0.5s ease-in-out;
-  color: $c-grey-medium;
-  white-space: nowrap;
-  position: relative;
-  transition: all 0.1s ease-in-out;
-
-  &::before {
-    background: $faded-color;
-    bottom: 5px;
-    content: "";
-    height: 1px;
-    left: 0;
-    position: absolute;
-    transform: translateY(10px);
-    transition: all 0.1s ease-in-out;
-    width: 100%;
-  }
-
-  &:hover {
-    color: $c-primary;
-    background: #ffffff;
-
-    &::before {
-      transform: translateY(8px);
-      background: $c-primary;
-    }
-  }
-
-  &--focal {
-    // display: inline-block;
-    font-size: 16px;
-
-    &::after {
-      content: "\2192";
-      margin: 0 0 0 2px;
-      color: $faded-color;
-      transition: all 0.1s ease-in-out;
-    }
-
-    &:hover::after {
-      margin: 0 0 0 6px;
-      color: $c-primary;
-    }
-  }
-}
-
-.browser {
-  border-radius: $border-radius;
-  padding: 26px 0 0;
-  position: relative;
-  background: #e7e7e9;
-  overflow: hidden;
-
-  &::after {
-    position: absolute;
-    top: 10px;
-    background: rgba(#000000, 0.1);
-    height: 6px;
-    right: 10px;
-    width: 10px;
-    border-radius: $border-radius;
-    content: "";
-  }
-
-  &::before {
-    position: absolute;
-    top: 6px;
-    left: 8px;
-    background: #ffffff;
-    height: 14px;
-    width: calc(100% - 36px);
-    border-radius: ($border-radius / 2);
-    content: "";
-  }
-
-  &__content {
-    width: 100%;
-  }
-
-  &--medium {
-    height: 400px;
-  }
-}
-
-.list {
-  margin: 0 0 20px;
-  padding: 0;
-  list-style: none inside;
-
-  .list__item {
-    font-size: 14px;
-    line-height: 1.5;
-    display: flex;
-    margin: 0 0 5px 0;
-
-    &:before {
-      content: "- ";
-      color: $c-grey-light;
-      margin: 0 8px 0 0;
-    }
-  }
-
-  &--small .list__item {
-    font-size: 12px;
-  }
-}
-
-.focal {
-  color: $c-primary;
-}
-
-.subtle {
-  color: $c-tertiary;
-}
-
-.emoji {
-  font-size: 24px;
-  vertical-align: middle;
-}
-
-small,
-.small {
-  color: rgba($c-tertiary-dark, 0.6);
-  font: 500 11px / 1.8 $ff-primary;
-  margin-left: 14px
-}
-
-.button {
-  font: 600 14px / 1 $ff-primary;
-  border-radius: 1000px;
-  padding: 9px 0;
-  display: inline-block;
-  border: 1px solid transparent;
-  color: $c-primary;
-  text-decoration: none;
-  transition: all 0.1s ease-in-out;
-
-  &:focus,
-  &:active,
-  &:hover {
-    border-color: rgba($c-tertiary, 0.4);
-    padding-left: 13px;
-    padding-right: 13px;
-  }
-
-  &:focus,
-  &:active {
-    background: $c-primary;
-    border-color: $c-primary;
-    color: #ffffff;
-  }
-
-  &--arrow-r {
-    cursor: e-resize;
-
-    &::after {
-      content: " \2192";
-      opacity: 0;
-      transition: all 0.1s ease-in-out;
-    }
-
-    &:focus::after,
-    &:active::after,
-    &:hover::after {
-      opacity: 1;
-    }
-  }
 }

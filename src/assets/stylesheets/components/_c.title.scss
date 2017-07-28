@@ -1,0 +1,41 @@
+.c-title {
+  margin: 0 0 10px;
+
+  &--xlarge {
+    font: 600 42px / 1.8 $ff-primary;
+  }
+
+  &--large {
+    font: 600 26px / 1.8 $ff-primary;
+    letter-spacing: 0;
+    margin: 0 0 20px;
+  }
+
+  &--medium {
+    font: 600 22px / 1.8 $ff-primary;
+  }
+
+  &--small {
+    font: 600 18px / 1.8 $ff-primary;
+    letter-spacing: 0;
+  }
+
+  &--smallest {
+    font: 500 15px / 1.8 $ff-primary;
+    letter-spacing: 0;
+  }
+
+  &--label {
+    color: grey;
+    display: block;
+    font: 500 10px / 1.2 $ff-primary;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  &--flush {
+    margin: 0;
+    padding: 0;
+  }
+}

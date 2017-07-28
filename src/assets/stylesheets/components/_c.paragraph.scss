@@ -1,0 +1,21 @@
+.c-paragraph {
+  color: #4d4f5d;
+  font: 500 20px / 1.8 $ff-secondary;
+  margin: 0 0 25px;
+  max-width: 640px;
+  padding: 0;
+
+  &--small {
+    font-size: 13px;
+    margin: 0 0 10px;
+  }
+
+  &--medium {
+    color: grey;
+    font-size: 15px;
+  }
+
+  &--sans {
+    font-family: $ff-primary;
+  }
+}

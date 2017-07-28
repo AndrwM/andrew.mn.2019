@@ -16,7 +16,7 @@ var gulp            = require('gulp'),
 
 //---------------------- ABOUT
 
-// This gulpfile accepts the --production flag to optimized css and js
+// This gulpfile accepts the --production flag to optimize css and js
 
 //---------------------- COMPILE
 

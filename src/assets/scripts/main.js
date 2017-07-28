@@ -7,15 +7,15 @@ window.a = {
     // if (a.utils.breakpoint() >= 2) {
 
     //   // Add the body class required for animsition
-    //   $('body > .wrapper-page').addClass('animsition');
+    //   $('body > .c-wrapper-page').addClass('animsition');
 
     //   $(".animsition").animsition({
     //     inClass               :   'fade-in',
     //     outClass              :   'fade-out',
     //     inDuration            :    1500,
     //     outDuration           :    800,
-    //     linkElement           :   '.animsition-link',
-    //     // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+    //     .c-linkElement           :   '.animsition-.c-link',
+    //     // e.g. .c-linkElement   :   'a:not([target="_blank"]):not([href^=#])'
     //     loading               :    true,
     //     loadingParentElement  :   'body', //animsition wrapper element
     //     loadingClass          :   'animsition-loading',
@@ -31,11 +31,11 @@ window.a = {
     // }
 
     // // Initiate Things On A Per Page Basis
-    // if ( $('.wrapper-page.project').length ) {
+    // if ( $('.c-wrapper-page.project').length ) {
 
     //   this.project.stickyDescriptions()
 
-    // } else if ( $('.wrapper-page.index').length ) {
+    // } else if ( $('.c-wrapper-page.index').length ) {
 
     //   this.index.resizeHeader()
 
@@ -77,7 +77,7 @@ window.a = {
       var $header = $('header');
       $header.height( $(window).height() );
 
-      $('.wrapper-scrollable').css('margin-top', $header.height());
+      $('.c-wrapper-scrollable').css('margin-top', $header.height());
 
     },
   },

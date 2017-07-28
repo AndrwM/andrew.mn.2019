@@ -1,0 +1,49 @@
+.c-link {
+  $faded-color: rgba($c-tertiary, 0.4);
+
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  color: $c-grey-medium;
+  white-space: nowrap;
+  position: relative;
+  transition: all 0.1s ease-in-out;
+
+  &::before {
+    background: $faded-color;
+    bottom: 5px;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    transform: translateY(10px);
+    transition: all 0.1s ease-in-out;
+    width: 100%;
+  }
+
+  &:hover {
+    color: $c-primary;
+    background: #ffffff;
+
+    &::before {
+      transform: translateY(8px);
+      background: $c-primary;
+    }
+  }
+
+  &--focal {
+    // display: inline-block;
+    font-size: 16px;
+
+    &::after {
+      content: "\2192";
+      margin: 0 0 0 2px;
+      color: $faded-color;
+      transition: all 0.1s ease-in-out;
+    }
+
+    &:hover::after {
+      margin: 0 0 0 6px;
+      color: $c-primary;
+    }
+  }
+}

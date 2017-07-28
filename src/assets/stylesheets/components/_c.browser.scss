@@ -1,0 +1,37 @@
+.c-browser {
+  border-radius: $border-radius;
+  padding: 26px 0 0;
+  position: relative;
+  background: #e7e7e9;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    top: 10px;
+    background: rgba(#000000, 0.1);
+    height: 6px;
+    right: 10px;
+    width: 10px;
+    border-radius: $border-radius;
+    content: "";
+  }
+
+  &::before {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    background: #ffffff;
+    height: 14px;
+    width: calc(100% - 36px);
+    border-radius: ($border-radius / 2);
+    content: "";
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &--medium {
+    height: 400px;
+  }
+}

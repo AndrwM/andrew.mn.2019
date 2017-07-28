@@ -1,0 +1,41 @@
+.c-button {
+  font: 600 14px / 1 $ff-primary;
+  border-radius: 1000px;
+  padding: 9px 0;
+  display: inline-block;
+  border: 1px solid transparent;
+  color: $c-primary;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+
+  &:focus,
+  &:active,
+  &:hover {
+    border-color: rgba($c-tertiary, 0.4);
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+  &:focus,
+  &:active {
+    background: $c-primary;
+    border-color: $c-primary;
+    color: #ffffff;
+  }
+
+  &--arrow-r {
+    cursor: e-resize;
+
+    &::after {
+      content: " \2192";
+      opacity: 0;
+      transition: all 0.1s ease-in-out;
+    }
+
+    &:focus::after,
+    &:active::after,
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+}
