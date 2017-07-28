@@ -4,7 +4,7 @@
   padding: 9px 0;
   display: inline-block;
   border: 1px solid transparent;
-  color: $c-primary;
+  color: $c-grey-medium;
   text-decoration: none;
   transition: all 0.1s ease-in-out;
 
@@ -12,6 +12,7 @@
   &:active,
   &:hover {
     border-color: rgba($c-tertiary, 0.4);
+    color: $c-primary;
     padding-left: 13px;
     padding-right: 13px;
   }
