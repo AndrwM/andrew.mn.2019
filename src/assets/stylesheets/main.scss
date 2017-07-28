@@ -64,12 +64,6 @@ body {
     padding-top: 0;
   }
 
-  &--sticky {
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
-
   &--white { background: #ffffff; }
   &--light-blue { background: $c-light-blue; }
   &--light { background: $c-tertiary-light; }
@@ -79,6 +73,10 @@ body {
   @include clearfix;
   margin: auto;
   max-width: 1500px;
+
+  // &--small {
+  //   900px;
+  // }
 
   &--centered { text-align: center; }
 }
@@ -185,7 +183,8 @@ body {
   }
 
   &--medium {
-    font-size: 14px;
+    color: grey;
+    font-size: 15px;
   }
 
   &--sans {
@@ -325,29 +324,43 @@ small,
 }
 
 .button {
-  font: 600 14px / 1.2 $ff-primary;
-  // letter-spacing: 1px;
+  font: 600 14px / 1 $ff-primary;
   border-radius: 1000px;
-  padding: 8px 0;
+  padding: 9px 0;
   display: inline-block;
   border: 1px solid transparent;
   color: $c-primary;
   text-decoration: none;
   transition: all 0.1s ease-in-out;
-  // text-transform: uppercase;
 
   &:focus,
   &:active,
   &:hover {
-    border-color: $c-primary;
-    padding-left: 14px;
-    padding-right: 14px;
+    border-color: rgba($c-tertiary, 0.4);
+    padding-left: 13px;
+    padding-right: 13px;
   }
 
   &:focus,
   &:active {
     background: $c-primary;
-    transform: scale(0.95);
+    border-color: $c-primary;
     color: #ffffff;
+  }
+
+  &--arrow-r {
+    cursor: e-resize;
+
+    &::after {
+      content: " \2192";
+      opacity: 0;
+      transition: all 0.1s ease-in-out;
+    }
+
+    &:focus::after,
+    &:active::after,
+    &:hover::after {
+      opacity: 1;
+    }
   }
 }
