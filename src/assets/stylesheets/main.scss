@@ -145,7 +145,7 @@ body {
 
   &--label {
     color: grey;
-    display: inline-block;
+    display: block;
     font: 500 10px / 1.2 $ff-primary;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -322,4 +322,32 @@ small,
   color: rgba($c-tertiary-dark, 0.6);
   font: 500 11px / 1.8 $ff-primary;
   margin-left: 14px
+}
+
+.button {
+  font: 600 14px / 1.2 $ff-primary;
+  // letter-spacing: 1px;
+  border-radius: 1000px;
+  padding: 8px 0;
+  display: inline-block;
+  border: 1px solid transparent;
+  color: $c-primary;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+  // text-transform: uppercase;
+
+  &:focus,
+  &:active,
+  &:hover {
+    border-color: $c-primary;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  &:focus,
+  &:active {
+    background: $c-primary;
+    transform: scale(0.95);
+    color: #ffffff;
+  }
 }
