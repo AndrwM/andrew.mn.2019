@@ -2,7 +2,7 @@
   margin: 0 0 10px;
 
   &--xlarge {
-    font: 600 42px / 1.8 $ff-primary;
+    font: 600 42px / 1.2 $ff-primary;
   }
 
   &--large {
@@ -26,9 +26,9 @@
   }
 
   &--label {
-    color: grey;
+    opacity: .75;
     display: block;
-    font: 500 10px / 1.2 $ff-primary;
+    font: 600 10px / 1.2 $ff-primary;
     letter-spacing: 1px;
     text-transform: uppercase;
     white-space: nowrap;
