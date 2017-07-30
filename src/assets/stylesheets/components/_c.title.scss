@@ -12,7 +12,7 @@
   }
 
   &--medium {
-    font: 600 22px / 1.8 $ff-primary;
+    font: 600 20px / 1.8 $ff-primary;
   }
 
   &--small {
@@ -21,15 +21,15 @@
   }
 
   &--smallest {
-    font: 500 15px / 1.8 $ff-primary;
+    font: 500 14px / 1.8 $ff-primary;
     letter-spacing: 0;
   }
 
   &--label {
-    opacity: .75;
     display: block;
     font: 600 10px / 1.2 $ff-primary;
     letter-spacing: 1px;
+    opacity: .70;
     text-transform: uppercase;
     white-space: nowrap;
   }
