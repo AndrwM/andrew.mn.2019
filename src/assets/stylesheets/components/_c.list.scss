@@ -6,12 +6,21 @@
   .c-list__item {
     font-size: 14px;
     line-height: 1.5;
-    margin: 0 0 5px 0;
+    margin: 2px 0 10px;
 
-    &:before {
-      content: "- ";
+
+    &::before {
       color: $c-grey-light;
-      margin: 0 8px 0 0;
+      content: '- ';
+      margin: 0 2px 0 -11px;
+    }
+
+    @media #{$bp-lap} {
+      margin: 0 0 5px;
+
+      &::before {
+        margin: 0 8px 0 0;
+      }
     }
 
     > .c-list {
