@@ -1,0 +1,12 @@
+nav.c-navigation
+  .c-container
+    a.c-link(href="/about/#🚀") Andrew McIntee
+    if breadcrumb
+      each link, index in breadcrumb
+        | &nbsp;/&nbsp;
+        if link.active
+          a.c-link.c-link--active(href="/about/#{link.path}/#🚀") #{link.name}
+        else
+          a.c-link(href="/about/#{link.path}/#🚀") #{link.name}
+
+

@@ -1,14 +1,15 @@
+- var breadcrumb =  [{ name: 'Featured Work', path: 'work', active: false},{ name: 'Arkiver Life Journal', path: 'arkiver', active: true}];
+- var pageTitle = 'Fuck';
+
 include /includes/_head
 
-//- - var pageTitle = 'Echo Cordless Tools: Online Brand Design | Andrew McIntee';
 
 body
-  include /includes/about/_header
   style.
     .c-page { background: #faf9f7; }
     .c-wrapper--header { background: #232325 radial-gradient(#4d5256 0%, #232325 100%); }
     .c-title--large, .c-title--medium { color: #f39a26; }
-
+  include /includes/about/_navigation
   .c-page(id="🚀").c-page--has-footer
     header.c-wrapper.c-wrapper--header.u-padding-bottom-none: .c-container.c-container--centered
       h1.c-title.c-title--xlarge(style="color: #ffffff;") Arkiver Life Journal

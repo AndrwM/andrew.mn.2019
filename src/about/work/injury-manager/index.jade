@@ -1,21 +1,20 @@
+- var pageTitle = 'Echo Cordless Tools: Online Brand Design | Andrew McIntee';
+- var breadcrumb = [{ name: 'Featured Work', path: 'work', active: false}, { name: 'Employee Injury Manager', path: 'injury-manager', active: true}];
+
 include /includes/_head
 
-//- - var pageTitle = 'Echo Cordless Tools: Online Brand Design | Andrew McIntee';
-
 body
-  include /includes/about/_header
   style.
     .c-page { background: #f8fbfc; }
     .c-wrapper--header { background: #203E58 radial-gradient(#203E58 0%, #112535 100%); }
     .c-title--large, .c-title--medium { color: #159fef; }
-
+  include /includes/about/_navigation
   .c-page(id="🚀").c-page--has-footer
     header.c-wrapper.c-wrapper--header.u-padding-bottom-none: .c-container.c-container--centered
       h1.c-title.c-title--xlarge(style="color: #ffffff;") Employee Injury Manager
       h2.c-title.c-title--medium UI Design System
       h3.c-title.c-title--label.u-margin-bottom(style="color: #ffffff;") National International, 2014
       img(src="/assets/images/projects/injury-manager/hero.png", style="max-width: 900px; margin: 0 auto;")
-
     section.c-wrapper: .c-container
       h2.c-title.c-title--large On-the-Job Injuries Cost Double with Delays
       p.c-paragraph When the client first approached me about designing and implementing the user interface for a web application to help expedite the response times for remote on-the-job injuries, I was immediately interested. The problem? A majority of workers' compensation lawsuits were results of unclear policies, slow communication, and missing accountability.

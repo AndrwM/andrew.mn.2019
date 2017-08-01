@@ -6,13 +6,16 @@
   .c-list__item {
     font-size: 14px;
     line-height: 1.5;
-    display: flex;
     margin: 0 0 5px 0;
 
     &:before {
       content: "- ";
       color: $c-grey-light;
       margin: 0 8px 0 0;
+    }
+
+    > .c-list {
+      margin: 10px 0 10px 20px;
     }
   }
 }

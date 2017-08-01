@@ -1,13 +1,13 @@
+- var breadcrumb = [ { name: 'Featured Work', path: 'work', active: false}, { name: 'Echo Cordless Tools', path: 'echo', active: true} ];
 - var pageTitle = 'Echo Cordless Tools: Marketing Site Design';
 include /includes/_head
 
 body
-  include /includes/about/_header
   style.
     .c-page { background: #F2F7FA url('/assets/images/projects/echo/bg.gif'); }
     .c-wrapper--header { background: #020f1d radial-gradient(#303d4a 0%, #020f1d 100%); }
     .c-title--large, .c-title--medium { color: #E53A2D; }
-
+  include /includes/about/_navigation
   .c-page(id="🚀").c-page--has-footer
     header.c-wrapper.c-wrapper--header.u-padding-bottom-none: .c-container.c-container--centered
       h1.c-title.c-title--xlarge(style="color: #ffffff;") Echo Cordless Tools
