@@ -10,12 +10,12 @@
 
   &::before {
     background: $faded-color;
-    bottom: 5px;
+    bottom: 2%;
     content: "";
     height: 1px;
     left: 0;
     position: absolute;
-    transform: translateY(10px);
+    bottom: 0;
     transition: all 0.1s ease-in-out;
     width: 100%;
   }
@@ -25,13 +25,17 @@
     background: #ffffff;
 
     &::before {
-      transform: translateY(8px);
+      transform: translateY(2px);
       background: $c-primary;
     }
   }
 
+  &--active {
+    color: $c-primary;
+    background: #ffffff;
+  }
+
   &--focal {
-    // display: inline-block;
     font-size: 16px;
 
     &::after {

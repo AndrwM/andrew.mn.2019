@@ -4,6 +4,8 @@ html(lang="en")
 
     if pageTitle == null
       - var pageTitle = 'Andrew McIntee Is A Software Designer';
+    else
+      - var pageTitle = 'Andrew McIntee / ' + pageTitle
 
     title=pageTitle
     meta(name='description', content='A UI designer and front-end engineer living in Atlanta')

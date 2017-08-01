@@ -1,6 +1,13 @@
 .c-title {
   margin: 0 0 10px;
 
+  &__subtle {
+    font-size: 75%;
+    margin: 0 4px;
+    opacity: 0.4;
+    vertical-align: baseline;
+  }
+
   &--xlarge {
     font: 600 42px / 1.2 $ff-primary;
   }
@@ -16,7 +23,7 @@
   }
 
   &--small {
-    font: 600 18px / 1.8 $ff-primary;
+    font: 600 16px / 1.8 $ff-primary;
     letter-spacing: 0;
   }
 
