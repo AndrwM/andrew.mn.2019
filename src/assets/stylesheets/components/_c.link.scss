@@ -1,38 +1,45 @@
 .c-link {
   $faded-color: rgba($c-tertiary, 0.4);
 
-  text-decoration: none;
-  transition: all 0.5s ease-in-out;
   color: $c-grey-medium;
-  white-space: nowrap;
   position: relative;
-  transition: all 0.1s ease-in-out;
+  text-decoration: none;
+  // transition: all 0.1s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  white-space: nowrap;
 
   &::before {
     background: $faded-color;
-    bottom: 2%;
-    content: "";
+    bottom: 0;
+    content: '';
     height: 1px;
     left: 0;
     position: absolute;
-    bottom: 0;
     transition: all 0.1s ease-in-out;
     width: 100%;
   }
 
-  &:hover {
-    color: $c-primary;
+  &[href]:hover {
     background: #ffffff;
+    color: $c-primary;
 
     &::before {
-      transform: translateY(2px);
       background: $c-primary;
+      transform: translateY(2px);
     }
   }
 
+  &--arrow-l {
+    cursor: w-resize;
+  }
+
+  &--arrow-r {
+    cursor: e-resize;
+  }
+
   &--active {
-    color: $c-primary;
     background: #ffffff;
+    color: $c-primary;
   }
 
   &--focal {
@@ -45,7 +52,7 @@
       transition: all 0.1s ease-in-out;
     }
 
-    &:hover::after {
+    &[href]:hover::after {
       margin: 0 0 0 6px;
       color: $c-primary;
     }

@@ -34,5 +34,6 @@
 
   &--white { background: #ffffff; }
   &--light-blue { background: $c-light-blue linear-gradient(to bottom, #fafeff 0%, $c-light-blue 100%); }
+  // &--light-blue { background: $c-light-blue linear-gradient(to bottom, #ffffff 10%, $c-light-blue 100%); }
   &--light { background: $c-tertiary-light; }
 }

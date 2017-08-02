@@ -1,17 +1,17 @@
 .c-button {
-  font: 600 14px / 1 $ff-primary;
-  border-radius: 1000px;
-  padding: 9px 0;
-  display: inline-block;
   border: 1px solid transparent;
+  border-radius: 1000px;
   color: $c-grey-medium;
+  display: inline-block;
+  font: 600 14px / 1 $ff-primary;
+  padding: 9px 0;
   text-decoration: none;
   transition: all 0.4s ease-out;
 
   &:focus,
   &:active,
   &:hover {
-    border-color: rgba($c-tertiary, 0.4);
+    border-color: $c-light-blue;
     color: $c-primary;
     padding-left: 13px;
     padding-right: 13px;
@@ -30,7 +30,7 @@
     cursor: e-resize;
 
     &::after {
-      content: " \2192";
+      content: ' \2192';
       opacity: 0;
       transition: all 0.1s ease-in-out;
     }
@@ -48,7 +48,7 @@
     &:focus,
     &:active,
     &:hover {
-      color: $c-tertiary;
+      // color: darken($c-light-blue, 30%);
     }
   }
 }
