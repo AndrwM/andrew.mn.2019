@@ -1,11 +1,11 @@
 .c-link {
   $faded-color: rgba($c-tertiary, 0.4);
 
+  // transition: all 0.1s ease-in-out;
   color: $c-grey-medium;
   position: relative;
   text-decoration: none;
-  // transition: all 0.1s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.1s ease-in-out;
   white-space: nowrap;
 
   &::before {
@@ -46,15 +46,23 @@
     font-size: 16px;
 
     &::after {
-      content: "\2192";
-      margin: 0 0 0 2px;
       color: $faded-color;
+      content: ' \2192';
+      margin: 0 0 0 2px;
       transition: all 0.1s ease-in-out;
     }
 
     &[href]:hover::after {
-      margin: 0 0 0 6px;
       color: $c-primary;
+      margin: 0 0 0 6px;
+    }
+  }
+
+  &--on-dark {
+    color: #ffffff;
+
+    &.c-link--active {
+      background: rgba(#ffffff, 0.2);
     }
   }
 }
