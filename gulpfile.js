@@ -50,7 +50,11 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('vendor-scripts', function() {
-  return gulp.src(mainBowerFiles('**/*.js' ,{debugging:false}))
+  // Add local vendor files as well (new release tags haven't been cut for sticky-kit.js)
+  var vendorFileList = mainBowerFiles('**/*.js' ,{debugging:false});
+  vendorFileList.push('src/assets/scripts/vendor/*.js');
+
+  return gulp.src(vendorFileList)
     .pipe($.plumber())
     .pipe(concat('vendor.js'))
     .pipe(

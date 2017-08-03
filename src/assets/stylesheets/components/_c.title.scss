@@ -1,5 +1,6 @@
 .c-title {
   margin: 0 0 10px;
+  word-wrap: break-word;
 
   &__subtle {
     font-size: 75%;
@@ -12,25 +13,25 @@
     font: 600 30px / 1.2 $ff-primary;
 
     @media #{$bp-lap} {
-      font: 600 44px / 1.2 $ff-primary;
+      font: 600 42px / 1.2 $ff-primary;
     }
   }
 
   &--large {
-    font: 600 26px / 1.8 $ff-primary;
+    font: 600 22px / 1.8 $ff-primary;
     letter-spacing: 0;
     margin: 0 0 20px;
 
     @media #{$bp-lap} {
-      font: 600 22px / 1.8 $ff-primary;
+      font: 600 26px / 1.8 $ff-primary;
     }
   }
 
   &--medium {
-    font: 600 20px / 1.8 $ff-primary;
+    font: 600 18px / 1.8 $ff-primary;
 
     @media #{$bp-lap} {
-      font: 600 18px / 1.8 $ff-primary;
+      font: 600 20px / 1.8 $ff-primary;
     }
   }
 

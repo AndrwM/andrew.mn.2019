@@ -1,12 +1,12 @@
-- var breadcrumb = [ { name: 'Featured Work', path: 'work', active: false}, { name: 'Echo Cordless Tools', path: 'echo', active: true} ];
+- var breadcrumb = [ { name: 'Featured Work', path: 'work', active: false}, { name: 'Echo Cordless Tools Case Study', path: 'echo', active: true} ];
 - var pageTitle = 'Echo Cordless Tools: Marketing Site Design';
 include /includes/_head
 
 body
   style.
     .c-page { background: #F2F7FA url('/assets/images/projects/echo/bg.gif'); }
-    .c-navigation { background: #E53A2D; }
-    .c-link[href]:hover { color: #E53A2D; }
+    .c-navigation { background: #18314c; }
+    .c-link[href]:hover { color: #18314c; }
     .c-wrapper--header { background: #020f1d radial-gradient(#303d4a 0%, #020f1d 100%); }
     .c-title--large, .c-title--medium { color: #E53A2D; }
   include /includes/about/_navigation
@@ -24,37 +24,37 @@ body
 
       img(src='/assets/images/projects/echo/existing-branding.png').u-margin-top-large
 
-    section.c-wrapper.c-wrapper--slim(js-project-feature): .c-container: .c-grid.c-grid--rev
-      div(class="c-grid__cell 2/5--lap  1/3--desk", js-project-feature__description)
-        h3.c-title.c-title--medium Existing Brand Marketing
-        p.c-paragraph.c-paragraph--sans.c-paragraph--medium In addition the to the brand assets, these are samples of the existing packaging and web marketing assets.
+    section.c-wrapper.c-wrapper--slim: .c-container: .c-grid
       div(class="c-grid__cell 3/5--lap  2/3--desk")
         img(src='/assets/images/projects/echo/feature-packaging.jpg')
+      div(class="c-grid__cell 2/5--lap  1/3--desk", js-sticky-aside)
+        h3.c-title.c-title--medium Existing Brand Marketing
+        p.c-paragraph.c-paragraph--sans.c-paragraph--medium In addition the to the brand assets, these are samples of the existing packaging and web marketing assets.
 
     section.c-wrapper: .c-container
       h2.c-title.c-title--large The Highest Battery Capacity Yet&mdash;Launched at a Break-Neck Pace
       p.c-paragraph This project ran at a drop-dead sprint because it was imperative that the online marketing materials launch simultaneously with the retail product rollout. Midnight oil was burned; we were able to launch the site two weeks early to allow for additional testing before the product became publicly available.
 
-    section.c-wrapper.c-wrapper--slim(js-project-feature): .c-container: .c-grid.c-grid--rev
-      div(class="c-grid__cell 2/5--lap  1/3--desk", js-project-feature__description)
-        h3.c-title.c-title--medium About The Product
-        p.c-paragraph.c-paragraph--sans.c-paragraph--medium Showcasing the voltage and consumer-warranty promise was paramount. We were able to strike a cohesive balance featuring the product, while also satisfying legal and marketing concerns.
+    section.c-wrapper.c-wrapper--slim: .c-container: .c-grid
       div(class="c-grid__cell 3/5--lap  2/3--desk")
         .c-browser: img.c-browser__content(src='/assets/images/projects/echo/feature-detail.jpg')
+      div(class="c-grid__cell 2/5--lap  1/3--desk", js-sticky-aside)
+        h3.c-title.c-title--medium About The Product
+        p.c-paragraph.c-paragraph--sans.c-paragraph--medium Showcasing the voltage and consumer-warranty promise was paramount. We were able to strike a cohesive balance featuring the product, while also satisfying legal and marketing concerns.
 
-    section.c-wrapper.c-wrapper--slim(js-project-feature): .c-container: .c-grid.c-grid--rev
-      div(class="c-grid__cell 2/5--lap  1/3--desk", js-project-feature__description)
-        h3.c-title.c-title--medium Homepage
-        p.c-paragraph.c-paragraph--sans.c-paragraph--medium The homepage serves as a directory for accessing all tools as well as promoting the product brand.
+    section.c-wrapper.c-wrapper--slim: .c-container: .c-grid
       div(class="c-grid__cell 3/5--lap  2/3--desk")
         .c-browser: img.c-browser__content(src='/assets/images/projects/echo/feature-index.jpg')
+      div(class="c-grid__cell 2/5--lap  1/3--desk", js-sticky-aside)
+        h3.c-title.c-title--medium Homepage
+        p.c-paragraph.c-paragraph--sans.c-paragraph--medium The homepage serves as a directory for accessing all tools as well as promoting the product brand.
     
-    section.c-wrapper.c-wrapper--slim(js-project-feature): .c-container: .c-grid.c-grid--rev
-      div(class="c-grid__cell 2/5--lap  1/3--desk", js-project-feature__description)
-        h3.c-title.c-title--medium Registration
-        p.c-paragraph.c-paragraph--sans.c-paragraph--medium The ability for a user to register his/her product following purchase was imperative for the legal department. I worked closely to meld their requirements into a functional and aesthetically pleasing registration dashboard.
+    section.c-wrapper.c-wrapper--slim: .c-container: .c-grid
       div(class="c-grid__cell 3/5--lap  2/3--desk")
         .c-browser: img.c-browser__content(src='/assets/images/projects/echo/feature-registration.jpg')
+      div(class="c-grid__cell 2/5--lap  1/3--desk", js-sticky-aside)
+        h3.c-title.c-title--medium Registration
+        p.c-paragraph.c-paragraph--sans.c-paragraph--medium The ability for a user to register his/her product following purchase was imperative for the legal department. I worked closely to meld their requirements into a functional and aesthetically pleasing registration dashboard.
 
   div(style="position: fixed; bottom: 0; right: 0; left: 0; z-index: -1;")
     include /includes/about/_footer

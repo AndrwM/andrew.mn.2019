@@ -4,11 +4,22 @@
   color: #efd7ce;
   font: 500 14px / 1.8 $ff-primary;
   left: 0;
-  padding: 0.6vh 6%;
+  opacity: 0.97;
+  padding: 1vh 6%;
   position: fixed;
   right: 0;
   top: 0;
+  transition: transform 0.5s ease-in-out,
+              padding 0.1s ease-in-out;
   width: 100%;
   z-index: 99999;
-  opacity: 0.97;
+
+  // &--not-top {
+  //   padding-bottom: 0.6vh;
+  //   padding-top: 0.6vh;
+  // }
+
+  &--unpinned { transform: translateY(-100%); }
+
+  &--bottom { transform: translateY(0); }
 }

@@ -5,6 +5,11 @@
   max-width: 640px;
   padding: 0;
 
+  &--smallest {
+    font-size: 12px;
+    margin: 0 0 10px;
+  }
+
   &--small {
     font-size: 14px;
     margin: 0 0 10px;
