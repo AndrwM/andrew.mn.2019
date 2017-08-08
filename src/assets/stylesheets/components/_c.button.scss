@@ -4,19 +4,20 @@
   color: $c-grey-medium;
   display: inline-block;
   font: 600 14px / 1 $ff-primary;
-  padding: 9px 0;
+  padding: 10px 0;
   text-decoration: none;
   transition: all 0.4s ease-out;
 
   &:focus,
   &:active,
   &:hover {
-    border-color: $c-light-blue;
+    border-color: rgba($c-primary, 0.2);
     color: $c-primary;
-    padding-left: 13px;
-    padding-right: 13px;
+    padding-left: 16px;
+    padding-right: 16px;
     transition: all 0.05s linear;
-    margin-left: -13px;
+    margin-left: -16px;
+    // background: $c-light-blue;
   }
 
   &:focus,
@@ -31,7 +32,7 @@
 
     &::after {
       content: ' \2192';
-      opacity: 0;
+      opacity: 0.4;
       transition: all 0.1s ease-in-out;
     }
 

@@ -23,4 +23,11 @@
   &--sans {
     font-family: $ff-primary;
   }
+
+  &--quote {
+    color: #727779;
+    font-family: $ff-primary;
+    font-size: 16px;
+    font-style: italic;
+  }
 }

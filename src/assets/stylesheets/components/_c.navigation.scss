@@ -1,5 +1,5 @@
 .c-navigation {
-  background: $c-primary;
+  background: transparent linear-gradient(to left, $c-primary 0%, adjust-hue($c-primary, 15%) 100%);
   box-sizing: border-box;
   color: #efd7ce;
   font: 500 14px / 1.8 $ff-primary;
@@ -9,8 +9,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  transition: transform 0.5s ease-in-out,
-              padding 0.1s ease-in-out;
+  transition: transform 0.3s ease-in;
   width: 100%;
   z-index: 99999;
 
@@ -19,7 +18,10 @@
   //   padding-top: 0.6vh;
   // }
 
-  &--unpinned { transform: translateY(-100%); }
+  &--unpinned {
+    transform: translateY(-100%);
+    transition: transform 0.8s ease-out;
+  }
 
   &--bottom { transform: translateY(0); }
 }
