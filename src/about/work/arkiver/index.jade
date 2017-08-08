@@ -1,5 +1,5 @@
 - var breadcrumb =  [{ name: 'Featured Work', path: 'work', active: false},{ name: 'Arkiver Life Journal Case Study', path: 'arkiver', active: true}];
-- var pageTitle = 'Fuck';
+- var pageTitle = 'Arkiver Life Journal Case Study';
 
 include /includes/_head
 
@@ -7,7 +7,7 @@ include /includes/_head
 body
   style.
     .c-page { background: #faf9f7; }
-    .c-navigation { background: #f39a26; }
+    .c-navigation { background: transparent linear-gradient(to left, #f39a26 0%, #ffa73b 100%); }
     .c-link[href]:hover { color: #f39a26; }
     .c-link[href]:hover::before { background: #f39a26; }
     .c-wrapper--header { background: #232325 radial-gradient(#4d5256 0%, #232325 100%); }
@@ -18,12 +18,16 @@ body
       h1.c-title.c-title--xlarge(style="color: #ffffff;") Arkiver Life Journal
       h2.c-title.c-title--medium UI Design
       h3.c-title.c-title--label.u-margin-bottom-large(style="color: #ffffff;") National International, 2014
-
       img(src='/assets/images/projects/arkiver/hero.png', style="max-width: 1100px; margin: 0 auto;")
-
     section.c-wrapper: .c-container
       h2.c-title.c-title--large Take Back Control of Your Digital Moments
       p.c-paragraph The founders of Arkiver first approached me to provide creative direction and user interface mockups to iterate on their existing user interface. The app was simple in concept. Give users storage for all their internet content (moments) scattered across various social media sites. My job was to prototype how one of these moments would operate across all screen sizes—providing a consistent experience with any device.
+      blockquote.c-box.u-margin-none(class="2/5--lap")
+        .c-paragraph.c-paragraph--quote I highly recommend Andrew to others needing top quality design work done. Andrew was able to incorporate a powerful set of features in a beautiful and simple user experience. He is open to alternative ways of approaching design problems which is not always a quality found in other designers. As well as being very talented, Andrew is very personable which is why I continue to use him for projects as they arise.
+        footer.c-citation
+          img(src='/assets/images/projects/arkiver/logan.jpg').c-citation--photo
+          .c-citation--author Logan Metcalfe, CEO
+
 
     section.c-wrapper.c-wrapper--slim: .c-container: .c-grid
       div(class="c-grid__cell 3/5--lap  2/3--desk")

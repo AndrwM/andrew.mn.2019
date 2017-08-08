@@ -1,15 +1,17 @@
 'use strict';
 
 $(window).load(function() {
-console.log('cool init')
+   console.log('%c🚀 Interested in what\'s going on under the hood?', 'color: #6a5ef5');
+   console.log('%c   Studio@Andrew.mn', 'font-weight: bold;');
+
   $("[js-sticky-aside]").stick_in_parent({
     offset_top: 100,
   });
 
   var headroom  = new Headroom($("[js-navigation]")[0], {
     tolerance: {
-      down: 5,
-      up: 20
+      down: 3,
+      up: 10
     },
     classes: {
       initial: "c-navigation",
