@@ -11,7 +11,7 @@
 
     &::before {
       color: $c-grey-light;
-      content: '- ';
+      content: '✨';
       margin: 0 2px 0 -11px;
     }
 
@@ -27,4 +27,6 @@
       margin: 10px 0 10px 20px;
     }
   }
+
+  &--rocket .c-list__item::before { content: '🚀' }
 }
