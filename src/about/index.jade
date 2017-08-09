@@ -1,5 +1,7 @@
 include /includes/_head
-    
-body: .c-page
-  include /includes/about/_bio
-  include /includes/_closing-scripts
+- var breadcrumbRoot = true;
+body
+  include /includes/about/_navigation
+  .c-page
+    include /includes/about/_bio
+    include /includes/_closing-scripts

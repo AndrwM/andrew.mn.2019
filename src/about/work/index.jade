@@ -1,22 +1,24 @@
-- var breadcrumb =  [{ name: 'Work', path: 'work', active: true}];
+- var breadcrumb =  [{ name: 'Featured Work', path: 'work', active: true}];
 
 include /includes/_head
     
 body
   include /includes/about/_navigation
   .c-page(id="🚀")
-    header.c-wrapper.u-padding-bottom-none: .c-container
+    header.c-wrapper.c-wrapper--light-purple.u-padding-bottom-large.u-margin-bottom: .c-container
       h1.c-title.c-title--large <a class="c-link c-link--arrow-l u-margin-right-smallest" href="/about/#🚀">Andrew McIntee</a>
-        span.c-title__subtle Work
-      p.c-paragraph I've designed and built web products since 2010&mdash;it began with custom MySpace themes and now I design/build full-stack applications. (Thanks MySpace Tom.) I have had the privalege of working with well known brands such as The Home Depot, The Outdoor Channel, U By Kotex, Ridgid Tools, and Auburn University, to name a few. For more information on my experience and skillsets see <a class="c-link" href="/about/resume/#🚀">my resume</a>.
+        span.c-title__subtle <span class="u-subtler">/</span> Featured Work
+      //- p.c-paragraph I've designed and built web products since 2010&mdash;it began with custom MySpace themes and now I design/build full-stack applications.
+      p.c-paragraph I have had the privalege of working with brands such as The Home Depot, U By Kotex, The Outdoor Channel, and others. For more information on my experience and skillset see <a class="c-link" href="/about/resume/#🚀">my resume</a>.
+        
     section.c-wrapper: .c-container
       .c-grid
         div(class="c-grid__cell 4/7--desk")
           img(src="/assets/images/projects/newline/preview1.png")
-        div(class="c-grid__cell 3/7--desk")
+        div(class="c-grid__cell 3/7--desk", js-sticky-aside)
           h3.c-title.c-title--medium.u-margin-top.u-margin-bottom-none Newline Education Platform <span class="c-title__subtle">2015 &ndash; 2017</span>
           h4.c-title.c-title--smallest.u-margin-bottom-small UI Design System, Front-End Engineering, RoR Development
-          p.c-paragraph.c-paragraph--sans.c-paragraph--medium Newline is the course-work software of The Iron Yard. I worked with fellow designer <a href="#" class="c-link">Jeremiah</a> to bring a fun and interactive online classroom experience to over X,XXX students and a administrative system to over 160 employees. Features I worked on include interactive code blocks, programming assessments with a lightweight browser IDE, intructor content creation, student management, record keeping, and student-instructor messaging.
+          p.c-paragraph.c-paragraph--sans.c-paragraph--medium Newline is the course-work software of The Iron Yard. I worked with fellow designer <a href="#" class="c-link">Jeremiah</a> to bring a fun and interactive online classroom experience to over 10,000 students and an administrative &amp; content-creation system to over 160 employees. I lead design &amp; on include interactive code blocks, programming assessments with a lightweight browser IDE, intructor content creation, student management, record keeping, and student-instructor messaging.
 
           p.c-paragraph.c-paragraph--sans.c-paragraph--medium From the ground-up we designed, built, and documented a CSS component system with over 50 elements. It allowed the anyone on the team quickly assemble a view. In addition to authoring the design system, I worked in the engineering team and built the front-end for a in-browser IDE and help messaging system.
           div.c-button.c-button--disabled Case Study Coming Summer 2017
@@ -35,7 +37,7 @@ body
     section.c-wrapper: .c-container: .c-grid
       div(class="c-grid__cell 4/7--desk")
         .c-browser: .c-browser__content: img(src="/assets/images/projects/injury-manager/mock-injury.jpg")
-      div(class="c-grid__cell 3/7--desk")
+      div(class="c-grid__cell 3/7--desk", js-sticky-aside)
         h3.c-title.c-title--medium.u-margin-top.u-margin-bottom-none Employee Injury Manager <span class="c-title__subtle">2014</span>
         h4.c-title.c-title--smallest.u-margin-bottom-small UI Design System
         p.c-paragraph.c-paragraph--sans.c-paragraph--medium A majority of workers' compensation lawsuits were results of unclear policies, slow communication, and missing accountability. My client was building a SAAS employee injury management platform to solve the problem. I was brought in as a UX consultant to do design the flow of the application and create a UI design system.
@@ -44,7 +46,7 @@ body
     section.c-wrapper: .c-container: .c-grid.c-grid--rev
       div(class="c-grid__cell 4/7--desk")
         img(src="/assets/images/projects/arkiver/hero.png")
-      div(class="c-grid__cell 3/7--desk")
+      div(class="c-grid__cell 3/7--desk", js-sticky-aside)
         h3.c-title.c-title--medium.u-margin-top.u-margin-bottom-none Arkiver Life Journal <span class="c-title__subtle">2013 &ndash; 2014</span>
         h4.c-title.c-title--smallest.u-margin-bottom-small UI Design
         p.c-paragraph.c-paragraph--sans.c-paragraph--medium I began working with Arkiver when they needed to redesign their filtering interface and several other key views. Following our initial engagement, the founders of Arkiver loved the work and I continued working with them on a retainer basis for 2 years. Through the life of our engagement I designed their user onboarding flow, in-app sharing flow and assisted with the front-end development alongside their engineers.
@@ -53,19 +55,34 @@ body
     section.c-wrapper: .c-container: .c-grid
       div(class="c-grid__cell 4/7--desk")
         .c-browser(style="height:580px;"): .c-browser__content: img(src="/assets/images/projects/echo/feature-detail.jpg")
-      div(class="c-grid__cell 3/7--desk")
+      div(class="c-grid__cell 3/7--desk", js-sticky-aside)
         h3.c-title.c-title--medium.u-margin-top.u-margin-bottom-none Echo Cordless Tools <span class="c-title__subtle">2015</span>
         h4.c-title.c-title--smallest.u-margin-bottom-small Marketing Site Design, Front-End Engineering
-        p.c-paragraph.c-paragraph--sans.c-paragraph--medium In 2015 I was contracted by TTI North America's in house design agency, Torque Creative, to create an interactive marketing website to showcase a new line of all-electric tools. This project was particularly special to me because Torque gave me access to their in-house photography division. I had autonomy to art-direct the imagery of the products I needed to complete the project.
+        p.c-paragraph.c-paragraph--sans.c-paragraph--medium In 2015 I was contracted by TTI North America's in-house design agency, Torque Creative, to create an interactive marketing website to showcase a new line of all-electric tools. This project was particularly special to me because Torque gave me access to their in-house photography division. I had autonomy to art-direct the imagery of the products I needed to complete the project.
         a(href="echo#🚀").c-button.c-button--arrow-r Read The Case Study
 
     section.c-wrapper.u-padding-bottom-none: .c-container: .c-grid.c-grid--rev
       div(class="c-grid__cell 4/7--desk")
         .c-browser: .c-browser__content: img(src="/assets/images/projects/depends/preview1.jpg")
-      div(class="c-grid__cell 3/7--desk")
+      div(class="c-grid__cell 3/7--desk", js-sticky-aside)
         h3.c-title.c-title--medium.u-margin-top.u-margin-bottom-none Depends Canada <span class="c-title__subtle">2013</span>
         h4.c-title.c-title--smallest Front-End Engineering
-        p.c-paragraph.c-paragraph--sans.c-paragraph--medium While working for Organic, Inc. I had the oportunity to lead the engineering for a brand new marketing website for the Canadian division of Depends adult incontenence products. In addition to leading the engineering of this project, I also oversaw how American and French language translations were implementented and how they affected the design.
+        p.c-paragraph.c-paragraph--sans.c-paragraph--medium While working for Organic, Inc., I had the oportunity to lead the engineering for a brand new marketing website for the Canadian division of Depends adult incontenence products. In addition, I also oversaw how American and French language translations were implementented and managed their effect on the design specifications.
+
+    section.c-wrapper.u-padding-bottom-none: .c-container
+      .c-grid.c-grid--middle.c-grid--small.c-grid--center.u-subtler
+        div(class="c-grid__cell 1/4 1/6--hand 1/8--lap 1/13--desk"): img(src="/assets/images/logo-ryobi.png")
+        div(class="c-grid__cell 1/4 1/6--hand 1/8--lap 1/13--desk"): img(src="/assets/images/logo-depend.png")
+        div(class="c-grid__cell 1/4 1/6--hand 1/8--lap 1/13--desk"): img(src="/assets/images/logo-echo.png")
+        div(class="c-grid__cell 1/4 1/6--hand 1/8--lap 1/13--desk"): img(src="/assets/images/logo-pullups.png")
+        div(class="c-grid__cell 1/4 1/6--hand 1/8--lap 1/13--desk"): img(src="/assets/images/logo-stok.png")
+        div(class="c-grid__cell 1/4 1/6--hand 1/8--lap 1/13--desk"): img(src="/assets/images/logo-ridgid.png")
+        div(class="c-grid__cell 1/4 1/6--hand 1/8--lap 1/13--desk"): img(src="/assets/images/logo-outdoor.png")
+        div(class="c-grid__cell 1/4 1/6--hand 1/8--lap 1/13--desk"): img(src="/assets/images/logo-clemson.png")
+        div(class="c-grid__cell 1/4 1/6--hand 1/8--lap 1/13--desk"): img(src="/assets/images/logo-auburn.png")
+        div(class="c-grid__cell 1/4 1/6--hand 1/8--lap 1/13--desk"): img(src="/assets/images/logo-nfl.png")
+        div(class="c-grid__cell 1/4 1/6--hand 1/8--lap 1/13--desk"): img(src="/assets/images/logo-tiy.png")
+        div(class="c-grid__cell 1/4 1/6--hand 1/8--lap 1/13--desk"): img(src="/assets/images/logo-ubyk.png")
 
   include /includes/about/_footer
   include /includes/_closing-scripts

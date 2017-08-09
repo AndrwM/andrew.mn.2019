@@ -3,11 +3,12 @@
 
 include /includes/_head
 
-
 body
   style.
     .c-page { background: #faf9f7; }
     .c-navigation { background: transparent linear-gradient(to left, #f39a26 0%, #ffa73b 100%); }
+    .c-navigation .c-link { color: #ffffff; }
+    .c-navigation .c-link--active { background: rgba(255, 255, 255, 0.2); }
     .c-link[href]:hover { color: #f39a26; }
     .c-link[href]:hover::before { background: #f39a26; }
     .c-wrapper--header { background: #232325 radial-gradient(#4d5256 0%, #232325 100%); }
@@ -17,7 +18,7 @@ body
     header.c-wrapper.c-wrapper--header.u-padding-bottom-none: .c-container.c-container--centered
       h1.c-title.c-title--xlarge(style="color: #ffffff;") Arkiver Life Journal
       h2.c-title.c-title--medium UI Design
-      h3.c-title.c-title--label.u-margin-bottom-large(style="color: #ffffff;") National International, 2014
+      h3.c-title.c-title--label.u-margin-bottom-large(style="color: #ffffff;") Agency: National International, 2014
       img(src='/assets/images/projects/arkiver/hero.png', style="max-width: 1100px; margin: 0 auto;")
     section.c-wrapper: .c-container
       h2.c-title.c-title--large Take Back Control of Your Digital Moments

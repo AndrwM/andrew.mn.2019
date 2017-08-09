@@ -1,9 +1,9 @@
 .c-button {
   border: 1px solid transparent;
   border-radius: 1000px;
-  color: $c-grey-medium;
+  color: $c-primary;
   display: inline-block;
-  font: 600 14px / 1 $ff-primary;
+  font: 500 14px / 1 $ff-primary;
   padding: 10px 0;
   text-decoration: none;
   transition: all 0.4s ease-out;
@@ -27,23 +27,37 @@
     color: #ffffff;
   }
 
-  &--arrow-r {
-    cursor: e-resize;
+  &--arrow-r,
+  &--arrow-l {
 
+    &::before,
     &::after {
-      content: ' \2192';
       opacity: 0.4;
       transition: all 0.1s ease-in-out;
     }
 
     &:focus::after,
     &:active::after,
-    &:hover::after {
+    &:hover::after,
+    &:focus::before,
+    &:active::before,
+    &:hover::before {
       opacity: 1;
     }
   }
 
-  &--disabled {
+  &--arrow-r {
+    cursor: e-resize;
+    &::after { content: '  \21e2'; }
+  }
+
+  &--arrow-l {
+    cursor: w-resize;
+    &::before { content: '\21e0  '; }
+  }
+
+  &--disabled,
+  [disabled] {
     cursor: not-allowed;
 
     &:focus,
@@ -51,5 +65,9 @@
     &:hover {
       // color: darken($c-light-blue, 30%);
     }
+  }
+
+  &--large {
+    font: 400 16px / 1 $ff-primary;
   }
 }

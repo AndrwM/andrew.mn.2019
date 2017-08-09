@@ -3,9 +3,10 @@
   word-wrap: break-word;
 
   &__subtle {
-    font-size: 75%;
+    font-size: 65%;
+    font-weight: 400;
     margin: 0 4px;
-    opacity: 0.4;
+    opacity: 0.5;
     vertical-align: baseline;
   }
 
@@ -23,8 +24,10 @@
     margin: 0 0 20px;
 
     @media #{$bp-lap} {
-      font: 600 28px / 1.8 $ff-primary;
+      font: 600 32px / 1.8 $ff-primary;
+      .c-title__subtle { font-size: 50%; }
     }
+
   }
 
   &--medium {
@@ -47,9 +50,9 @@
 
   &--label {
     display: block;
-    font: 600 10px / 1.2 $ff-primary;
+    font: 500 10px / 1.2 $ff-primary;
     letter-spacing: 1px;
-    opacity: .70;
+    opacity: .7;
     text-transform: uppercase;
     white-space: nowrap;
   }

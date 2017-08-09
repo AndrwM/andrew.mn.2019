@@ -21,6 +21,11 @@ img {
   width: 100%;
 }
 
+::selection {
+  background: rgba(lighten($c-primary, 30%), 0.7);
+  color: $c-primary;
+}
+
 //---------------------- Components
 @import './bower_components/avalanche-css/avalanche';
 @import 'components/c.browser';
@@ -41,51 +46,4 @@ img {
 @import 'utilities/u.spacing';
 @import 'utilities/u.highlight';
 @import 'utilities/u.subtle';
-
-//---------------------- Garbage
-.navigation {
-  @include clearfix;
-  margin: 0;
-  padding: 0;
-
-  &__item {
-    float: right;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  &__.c-link {
-    color: $c-primary;
-    display: block;
-    font: 500 16px / 1.8 $ff-primary;
-    margin: 0 20px;
-    padding: 15px 0;
-    text-decoration: none;
-
-    :first-child & {
-      margin-left: 0;
-    }
-
-    &--active,
-    &:hover,
-    &:active,
-    &:focus {
-      color: $c-grey-medium;
-    }
-  }
-}
-
-.image {
-  // padding: 40px 0 0 40px;
-  // border-radius: $border-radius;
-  // background: $c-light-blue;
-  // margin: 0 0 60px;
-  // overflow: hidden;
-  // height: 400px;
-  // position: relative;
-
-  // img {
-  //   width: calc(100% - 40px);
-  // }
-}
+@import 'utilities/u.color';

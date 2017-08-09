@@ -1,13 +1,19 @@
 //----------------- Breakpoints & Thangz
 $av-namespace: "c-grid";
 $av-gutter: 80px;
-$av-widths: (1,2,3,4,5,6,7);
+$av-widths: (1,2,3,4,5,6,7,8,9,10,11,12,13,14);
 $av-enable-grid-rev: true;
+$av-enable-grid-middle: true;
+$av-enable-grid-middle: true;
+$av-enable-grid-center: true;
+$av-enable-grid-small:  true;
 
-$bp-lap: "screen and (min-width: 901px)";
-$bp-desk: "screen and (min-width: 1201px)";
+$bp-hand: "(min-width: 501px)";
+$bp-lap: "(min-width: 901px)";
+$bp-desk: "(min-width: 1201px)";
 
 $av-breakpoints: (
+  "hand":   $bp-hand,
   "lap":    $bp-lap,
   "desk":   $bp-desk,
 );
@@ -17,7 +23,7 @@ $font-size: 20px;
 
 //----------------- Colors
 $c-tertiary-dark: #69615d;
-$c-tertiary-light: #fbf6f4;
+$c-tertiary-light: #fff9f6;
 $c-tertiary: #e1c6bc;
 $c-dark: #3f3c46;
 
@@ -40,5 +46,5 @@ $c-grey-extralight: #f8fdff;
 $c-system: #fafafa;
 
 //----------------- Type Mixins
-$ff-primary: Graphik, sans-serif;
+$ff-primary: "Graphik", sans-serif;
 $ff-secondary: "ff-meta-serif-web-pro", Georgia, "Times New Roman", serif;
