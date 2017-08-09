@@ -1,13 +1,18 @@
 .c-wrapper {
   margin: 0;
   padding: 60px 6%;
+  position: relative;
 
   @media #{$bp-lap} { padding: 80px 6%; }
   @media #{$bp-desk} { padding: 140px 6%; }
 
   &--header {
     padding-top: 120px;
-    @media #{$bp-lap} { padding-top: 140px; }
+
+    @media #{$bp-lap} {
+      padding-bottom: 100px;
+      padding-top: 140px;
+    }
   }
 
   &--footer {
@@ -38,4 +43,16 @@
   &--light-blue { background: $c-light-blue linear-gradient(to bottom, #f9fbf9 0%, $c-light-blue 100%); }
   &--light-purple { background: #faf6ff linear-gradient(to bottom, #fffeff 0%, #f3f4ff 100%); }
   &--light { background: $c-tertiary-light; }
+
+  &--masked::after {
+    @media #{$bp-lap} {
+      background: transparent url('/assets/images/c-wrapper-mask.svg') no-repeat center bottom;
+      bottom: -1px;
+      content: '';
+      height: 25px;
+      left: 0;
+      position: absolute;
+      right: 0;
+    }
+  }
 }
