@@ -26,6 +26,15 @@ img {
   color: $c-primary;
 }
 
+[js-breakpoint] {
+  display: none;
+  position: relative;
+  z-index: 0;
+
+  @media #{$bp-lap} { z-index: 1; }
+  @media #{$bp-desk} { z-index: 2; }
+}
+
 //---------------------- Components
 @import './bower_components/avalanche-css/avalanche';
 @import 'components/c.browser';

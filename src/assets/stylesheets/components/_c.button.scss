@@ -1,6 +1,6 @@
 .c-button {
   border: 1px solid transparent;
-  border-radius: 1000px;
+  border-radius: 2rem 2.80rem;
   color: $c-primary;
   display: inline-block;
   font: 500 14px / 1 $ff-primary;
@@ -13,18 +13,17 @@
   &:hover {
     border-color: rgba($c-primary, 0.2);
     color: $c-primary;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 17px;
+    padding-right: 17px;
     transition: all 0.05s linear;
-    margin-left: -16px;
-    // background: $c-light-blue;
+    margin-left: -17px;
   }
 
   &:focus,
   &:active {
-    background: $c-primary;
-    border-color: $c-primary;
-    color: #ffffff;
+    background: rgba($c-primary, 0.04);
+    // border-color: rgba($c-primary, 0.4);
+    color: darken($c-primary, 10%);
   }
 
   &--arrow-r,
@@ -33,7 +32,7 @@
     &::before,
     &::after {
       opacity: 0.4;
-      transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in;
     }
 
     &:focus::after,
