@@ -6,9 +6,8 @@
   @media #{$bp-desk} { padding: 140px 6%; }
 
   &--header {
-    min-height: 300px;
-    padding-bottom: 70px;
-    padding-top: 170px;
+    padding-top: 120px;
+    @media #{$bp-lap} { padding-top: 140px; }
   }
 
   &--footer {
