@@ -31,7 +31,7 @@
   }
 
   &--medium {
-    font: 600 18px / 1.8 $ff-primary;
+    font: 600 22px / 1.8 $ff-primary;
 
     @media #{$bp-lap} {
       font: 600 20px / 1.8 $ff-primary;
@@ -39,8 +39,12 @@
   }
 
   &--small {
-    font: 600 16px / 1.8 $ff-primary;
+    font: 600 18px / 1.8 $ff-primary;
     letter-spacing: 0;
+
+    @media #{$bp-lap} {
+      font: 600 16px / 1.8 $ff-primary;
+    }
   }
 
   &--smallest {

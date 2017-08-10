@@ -4,18 +4,19 @@
   list-style: none inside;
 
   .c-list__item {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
     margin: 2px 0 10px;
 
 
     &::before {
-      color: $c-grey-light;
-      content: '✨';
-      margin: 0 2px 0 -11px;
+      content: '-';
+
+      margin: 0 10px 0 -26px;
     }
 
     @media #{$bp-lap} {
+      font-size: 14px;
       margin: 0 0 5px;
 
       &::before {
@@ -29,4 +30,5 @@
   }
 
   &--rocket .c-list__item::before { content: '🚀'; }
+  &--sparkle .c-list__item::before { content: '✨'; }
 }

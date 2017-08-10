@@ -12,13 +12,13 @@ $(window).load(function() {
     return $('[js-breakpoint]').css('z-index');
   };
 
-  if ( breakpoint() > 0 ) {
+  if ( breakpoint() > 1 ) {
     $("[js-sticky-aside]").stick_in_parent({
       offset_top: 100,
     });
   }
 
-  if ( breakpoint() > 1 ) {
+  if ( breakpoint() > 0 ) {
     var headroom  = new Headroom($("[js-navigation]")[0], {
       tolerance: {
         down: 3,

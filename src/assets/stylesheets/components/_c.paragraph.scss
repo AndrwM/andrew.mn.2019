@@ -25,9 +25,15 @@
   }
 
   &--quote {
-    color: #727779;
-    font-family: $ff-primary;
-    font-size: 16px;
+    max-width: none;
+    font: 500 16px / 1.9 $ff-secondary;
     font-style: italic;
+
+    &::before {
+      content: open-quote;
+      font: 500 40px / 0 $ff-secondary;
+      margin: 0px 7px 0 -25px;
+      opacity: 0.3;
+    }
   }
 }
