@@ -1,13 +1,12 @@
 nav.c-navigation(js-navigation)
-  .c-container
-    if siteRoot
-      span.c-link.c-link--on-dark.c-link--active Andrew McIntee
-    else
-      a.c-link.c-link--on-dark.c-link--arrow-l(href="/about/#🚀") Andrew McIntee
-    if breadcrumb
-      each link, index in breadcrumb
-        | &nbsp;/&nbsp;
-        if link.active
-          span.c-link.c-link--on-dark.c-link--active #{link.name}
-        else
-          a.c-link.c-link--on-dark.c-link--arrow-l(href="/about/#{link.path}/#🚀") #{link.name}
+  if siteRoot
+    span.c-link.c-link--on-dark.c-link--active Andrew McIntee
+  else
+    a.c-link.c-link--on-dark.c-link--arrow-l(href="/about/#🚀") Andrew McIntee
+  if breadcrumb
+    each link, index in breadcrumb
+      | &nbsp;/&nbsp;
+      if link.active
+        span.c-link.c-link--on-dark.c-link--active #{link.name}
+      else
+        a.c-link.c-link--on-dark.c-link--arrow-l(href="/about/#{link.path}/#🚀") #{link.name}

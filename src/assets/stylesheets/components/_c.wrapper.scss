@@ -4,14 +4,14 @@
   position: relative;
 
   @media #{$bp-lap} { padding: 80px 6%; }
-  @media #{$bp-desk} { padding: 140px 6%; }
+  @media #{$bp-desk} { padding: 140px 9%; }
 
   &--header {
     padding-top: 120px;
 
     @media #{$bp-lap} {
       padding-bottom: 130px;
-      padding-top: 140px;
+      padding-top: 160px;
     }
   }
 

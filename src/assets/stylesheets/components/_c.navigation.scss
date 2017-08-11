@@ -6,19 +6,35 @@
   font: 500 14px / 1.8 $ff-primary;
   left: 0;
   opacity: 0.97;
-  padding: 1vh 6%;
+  padding: 0.8vh 1%;
   position: fixed;
   right: 0;
   top: 0;
   transition: transform 0.3s ease-in;
   width: 100%;
   z-index: 99999;
+  text-align: center;
+
+  @media #{$bp-hand} {
+    padding-left: 6%;
+    padding-right: 6%;
+    text-align: left;
+  }
+
+  @media #{$bp-hand} {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  // @media #{$bp-lap} {
+  //   padding-left: 6%
+  //   padding-right: 6%;
+  // }
 
   // &--not-top {
   //   padding-bottom: 0.6vh;
   //   padding-top: 0.6vh;
   // }
-
+  
   &--unpinned {
     transform: translateY(-100%);
     transition: transform 0.8s ease-out;
