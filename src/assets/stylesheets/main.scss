@@ -8,10 +8,11 @@ body {
   background: #ffffff;
   box-sizing: border-box;
   color: $c-grey-medium;
-  font: 500 18px / 1.8 $ff-primary;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
+  font: 500 18px / 1.8 $ff-primary;
   min-height: 100%;
+  overflow-x: hidden;
   width: 100%;
 }
 
