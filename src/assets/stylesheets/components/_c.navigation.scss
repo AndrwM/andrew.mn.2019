@@ -21,9 +21,10 @@
     text-align: left;
   }
 
-  @media #{$bp-hand} {
+  @media #{$bp-desk} {
     padding-left: 1%;
     padding-right: 1%;
+    font: 500 14px / 1.8 $ff-primary;
   }
   // @media #{$bp-lap} {
   //   padding-left: 6%
