@@ -1,0 +1,38 @@
+- var breadcrumb = [{ name: 'Featured Work', path: 'work', active: false}, { name: 'Newline Education Platform', path: 'injury-manager', active: true}];
+- var pageTitle = 'Newline Education Platform';
+
+include /includes/_head
+
+body
+  //- style.
+  //-   .c-page { background: #f8fbfc; }
+  //-   .c-navigation { background: transparent linear-gradient(to left, #159fef 0%, #2db2ea 100%); }
+  //-   .c-link[href]:hover { color: #159fef; }
+  //-   .c-wrapper--header { background: #203E58 radial-gradient(#203E58 0%, #112535 100%); }
+  //-   .c-title--large, .c-title--medium { color: #159fef; }
+  include /includes/about/_navigation
+  .c-page(id="🚀").c-page--has-footer
+    header.c-wrapper.c-wrapper--header.u-padding-bottom-none: .c-container.c-container--centered
+      h1.c-title.c-title--xlarge Newline Education Platform
+      h2.c-title.c-title--medium UI Design System
+      h3.c-title.c-title--label.u-margin-bottom(style="color: #ffffff;") Agency: National International, 2014
+      img(src="/assets/images/projects/injury-manager/hero.png", style="max-width: 900px; margin: 0 auto;")
+    section.c-wrapper: .c-container
+      h2.c-title.c-title--large On-the-Job Injuries Cost Double with Delays
+      p.c-paragraph When the client first approached me about designing and implementing the user interface for a web application to help expedite the response times for remote on-the-job injuries, I was immediately interested. The problem? A majority of workers' compensation lawsuits were results of unclear policies, slow communication, and missing accountability.
+      p.c-paragraph Our goal was twofold, build a platform to quickly and comprehensively alert the necessary parties when an on-the-job injury had occurred and provide a repository to save and securely share all the necessary information between physicians, managers, lawyers, human resources, insurance managers, and all other stakeholders involved.
+
+    section.c-wrapper.c-wrapper--slim: .c-container
+      div.c-carousel(js-carousel)
+        .c-carousel__item
+          img(src="/assets/images/projects/injury-manager/mock-listing.jpg")
+        .c-carousel__item
+          img(src="/assets/images/projects/injury-manager/mock-listing.jpg")
+        .c-carousel__item
+          img(src="/assets/images/projects/injury-manager/mock-listing.jpg")
+
+
+  div(style="position: fixed; bottom: 0; right: 0; left: 0; z-index: -1;")
+    include /includes/about/_footer
+
+  include /includes/_closing-scripts

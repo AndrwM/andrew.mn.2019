@@ -34,4 +34,9 @@ $(window).load(function() {
         notBottom: "c-navigation--not-bottom" }
     }).init();
   }
+
+  $('[js-carousel]').flickity({
+    cellAlign: 'left',
+    contain: true
+  });
 });

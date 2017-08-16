@@ -9,7 +9,24 @@
     "html5shiv": "~3.7.2",
     "jquery": "~2.1.4",
     "avalanche-css": "^1.2.0",
-    "headroom": "^1.0.3"
+    "headroom": "^1.0.3",
+    "flickity": "^2.0.9"
   },
-  "overrides": {}
+  "overrides": {
+    "flickity": {
+      "main": "dist/flickity.pkgd.js"
+    }
+  }
 }
+
+
+// {
+//     "overrides": {
+//         "BOWER-PACKAGE": {
+//             "main": {
+//                 "development": "file.js",
+//                 "production": "file.min.js"
+//             }
+//         }
+//     }
+// }

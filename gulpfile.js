@@ -54,6 +54,8 @@ gulp.task('vendor-scripts', function() {
   var vendorFileList = mainBowerFiles('**/*.js' ,{debugging:false});
   vendorFileList.push('src/assets/scripts/vendor/*.js');
 
+  console.log(vendorFileList);
+
   return gulp.src(vendorFileList)
     .pipe($.plumber())
     .pipe(concat('vendor.js'))
