@@ -36,6 +36,7 @@ $(window).load(function() {
   }
 
   $('[js-carousel]').flickity({
-    wrapAround: true
+    wrapAround: true,
+    draggable: false
   });
 });
