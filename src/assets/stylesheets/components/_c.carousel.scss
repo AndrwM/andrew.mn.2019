@@ -5,12 +5,14 @@
     width: 80%;
 
     @media #{$bp-lap} {
-      margin-right: 8%;
+      margin-right: 10%;
       width: 90%;
     }
   }
 
-  .flickity-viewport { overflow: visible; }
+  @media #{$bp-hand} {
+    .flickity-viewport { overflow: visible; }
+  }
 
   .flickity-page-dots {
     bottom: -40px;
@@ -30,7 +32,7 @@
   .flickity-prev-next-button {
     top: 0;
     bottom: 0;
-    width: 12%;
+    width: 9%;
     height: 100%;
     border-radius: 0;
     transform: none;
@@ -38,9 +40,8 @@
     cursor: move;
     transition: all 1s ease;  
 
+    &[disabled],
     svg {
-      width: 20px;
-      // opacity: 0.2;
       display: none;
     }
 
@@ -50,7 +51,7 @@
     }
 
     &.next {
-      background-image: linear-gradient(to left, rgba(#ffffff, 0.3) 0%, transparent 100%);
+      background-image: linear-gradient(to left, rgba(#ffffff, 0.2) 0%, transparent 100%);
       cursor: e-resize;
       right: 0;
 

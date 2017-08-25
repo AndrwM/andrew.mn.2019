@@ -33,10 +33,18 @@ $(window).load(function() {
         bottom: "c-navigation--bottom",
         notBottom: "c-navigation--not-bottom" }
     }).init();
+
+    $('[js-carousel]').flickity({
+      draggable: false
+      prevNextButtons: true
+    });
   }
 
-  $('[js-carousel]').flickity({
-    wrapAround: true,
-    draggable: false
-  });
+  if ( breakpoint() == 0 ) {
+    console.log('fsa')
+    $('[js-carousel]').flickity({
+      draggable: true,
+      prevNextButtons: false
+    });
+  }
 });
