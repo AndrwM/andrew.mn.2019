@@ -35,13 +35,12 @@ $(window).load(function() {
     }).init();
 
     $('[js-carousel]').flickity({
-      draggable: false
+      draggable: false,
       prevNextButtons: true
     });
   }
 
   if ( breakpoint() == 0 ) {
-    console.log('fsa')
     $('[js-carousel]').flickity({
       draggable: true,
       prevNextButtons: false
