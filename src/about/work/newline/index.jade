@@ -5,10 +5,9 @@ include /includes/_head
 
 body
   style.
-    .c-page { background: #f0f5f8; }
     .c-navigation { background: transparent linear-gradient(to left, #39d79f 0%, #24d2da 100%); }
     .c-link[href]:hover { color: #159fef; }
-    .c-wrapper--header { background: #16262b; }
+    .c-wrapper--header { background: #632ef3; }
     .c-title--large, .c-title--medium { color: #39d79f; }
   include /includes/about/_navigation
   .c-page(id="🚀").c-page--has-footer
@@ -16,9 +15,41 @@ body
       h1.c-title.c-title--xlarge(style="color: #ffffff;") Newline Education Platform
       h2.c-title.c-title--medium UI Design System, Front-End Engineering, RoR Development
       h3.c-title.c-title--label.u-margin-bottom(style="color: #ffffff;") Agency: National International, 2014
-      img(src="/assets/images/projects/injury-manager/hero.png", style="max-width: 900px; margin: 0 auto;")
+      img(src="/assets/images/projects/injury-manager/hero.png", style="max-width: 900px; margin: 0 auto -80px;")
+
     section.c-wrapper: .c-container
-      h2.c-title.c-title--large About The Project
+      h2.c-title.c-title--large About The Project, Table Of Contents
+      p.c-paragraph This serves to document my work during time at The Iron Yard during between 2015 to 2017
+
+    section.c-wrapper: .c-container
+      h2.c-title.c-title--large Version v0
+      p.c-paragraph.u-margin-bottom-large When the client first approached me about designing and implementing the user interface for a web application to help expedite the response times for remote on-the-job injuries, I was immediately interested. The problem? A majority of workers' compensation lawsuits were results of unclear policies, slow communication, and missing accountability.
+      img(src="/assets/images/projects/newline/mock-v0.png")
+
+    section.c-wrapper: .c-container: .c-grid.c-grid--small
+      div(class="c-grid__cell 1/2--desk")
+        h2.c-title.c-title--large V1, building a hybrid classroom/online experience
+        p.c-paragraph When the client first approached me about designing and implementing the user interface for a web application to help expedite the response times for remote on-the-job injuries, I was immediately interested. The problem? A majority of workers' compensation lawsuits were results of unclear policies, slow communication, and missing accountability.
+        p.c-paragraph Our goal was twofold, build a platform to quickly and comprehensively alert the necessary parties when an on-the-job injury had occurred and provide a repository to save and securely share all the necessary information between physicians, managers, lawyers, human resources, insurance managers, and all other stakeholders involved.
+        p.c-paragraph Our goal was twofold, build a platform to quickly and comprehensively alert the necessary parties when an on-the-job injury had occurred and provide a repository to save and securely share all the necessary information between physicians, managers, lawyers, human resources, insurance managers, and all other stakeholders involved.
+      div(class="c-grid__cell 1/2--desk")
+        img(src="/assets/images/projects/newline/whiteboard.jpg" style=" max-width: 670px; transform: rotate3d(-1, 1, 0, -34deg);")
+
+    section.c-wrapper.c-wrapper--full
+      .c-carousel(js-carousel)
+        .c-carousel__item
+          img(src="/assets/images/projects/newline/wireframe-v1-1.png")
+        .c-carousel__item
+          img(src="/assets/images/projects/newline/wireframe-v1-2.png")
+        .c-carousel__item
+          img(src="/assets/images/projects/newline/wireframe-v1-3.png")
+        .c-carousel__item
+          img(src="/assets/images/projects/newline/wireframe-v1-4.png")
+        .c-carousel__item
+          img(src="/assets/images/projects/newline/wireframe-v1-5.png")
+
+    section.c-wrapper: .c-container
+      h2.c-title.c-title--large Result
       p.c-paragraph When the client first approached me about designing and implementing the user interface for a web application to help expedite the response times for remote on-the-job injuries, I was immediately interested. The problem? A majority of workers' compensation lawsuits were results of unclear policies, slow communication, and missing accountability.
       p.c-paragraph Our goal was twofold, build a platform to quickly and comprehensively alert the necessary parties when an on-the-job injury had occurred and provide a repository to save and securely share all the necessary information between physicians, managers, lawyers, human resources, insurance managers, and all other stakeholders involved.
 
@@ -26,21 +57,47 @@ body
       .c-carousel(js-carousel)
         .c-carousel__item
           .c-browser: .c-browser--content
-            img(src="/assets/images/projects/injury-manager/mock-listing.jpg")
+            img(src="/assets/images/projects/newline/mock-v1-1.png")
         .c-carousel__item
           .c-browser: .c-browser--content
-            img(src="/assets/images/projects/injury-manager/mock-listing.jpg")
+            img(src="/assets/images/projects/newline/mock-v1-2.png")
         .c-carousel__item
           .c-browser: .c-browser--content
-            img(src="/assets/images/projects/injury-manager/mock-listing.jpg")
+            img(src="/assets/images/projects/newline/mock-v1-3.png")
+        .c-carousel__item
+          .c-browser: .c-browser--content
+            img(src="/assets/images/projects/newline/mock-v1-4.png")
 
     section.c-wrapper: .c-container
-      h2.c-title.c-title--large Process
+      h2.c-title.c-title--large Rebrand To Newline, Building A Design System
       p.c-paragraph When the client first approached me about designing and implementing the user interface for a web application to help expedite the response times for remote on-the-job injuries, I was immediately interested. The problem? A majority of workers' compensation lawsuits were results of unclear policies, slow communication, and missing accountability.
       p.c-paragraph Our goal was twofold, build a platform to quickly and comprehensively alert the necessary parties when an on-the-job injury had occurred and provide a repository to save and securely share all the necessary information between physicians, managers, lawyers, human resources, insurance managers, and all other stakeholders involved.
 
     section.c-wrapper: .c-container
-      h2.c-title.c-title--large Result
+      h2.c-title.c-title--large Rebrand To Newline, Building A Design System
+      p.c-paragraph When the client first approached me about designing and implementing the user interface for a web application to help expedite the response times for remote on-the-job injuries, I was immediately interested. The problem? A majority of workers' compensation lawsuits were results of unclear policies, slow communication, and missing accountability.
+
+    section.c-wrapper.c-wrapper--full.c-wrapper--light-blue
+      .c-carousel(js-carousel)
+        .c-carousel__item(style="max-width: 400px; padding-right: 80px")
+          h2.c-title.c-title--medium.u-margin-top-large Guided Code Lessons
+          p.c-paragraph.c-paragraph--sans.c-paragraph--medium When the client first approached me about designing and implementing the user interface for a web application to help expedite the response times for remote on-the-job injuries, I was immediately interested. The problem? A majority of workers' compensation lawsuits were results of unclear policies, slow communication, and missing accountability.
+          p.c-paragraph.c-paragraph--sans.c-paragraph--medium Our goal was twofold, build a platform to quickly and comprehensively alert the necessary parties when an on-the-job injury had occurred and provide a repository to save and securely share all the necessary information between physicians, managers, lawyers, human resources, insurance managers, and all other stakeholders involved.
+        .c-carousel__item
+          .c-browser: .c-browser--content
+            img(src="/assets/images/projects/newline/guides-start.png")
+        .c-carousel__item
+          .c-browser: .c-browser--content
+            img(src="/assets/images/projects/newline/guides-standard.png")
+        .c-carousel__item
+          .c-browser: .c-browser--content
+            img(src="/assets/images/projects/newline/guides-inspect.png")
+        .c-carousel__item
+          .c-browser: .c-browser--content
+            img(src="/assets/images/projects/newline/guides-end.png")
+
+    section.c-wrapper: .c-container
+      h2.c-title.c-title--large Resolution, stats, and team pictures
       p.c-paragraph When the client first approached me about designing and implementing the user interface for a web application to help expedite the response times for remote on-the-job injuries, I was immediately interested. The problem? A majority of workers' compensation lawsuits were results of unclear policies, slow communication, and missing accountability.
       p.c-paragraph Our goal was twofold, build a platform to quickly and comprehensively alert the necessary parties when an on-the-job injury had occurred and provide a repository to save and securely share all the necessary information between physicians, managers, lawyers, human resources, insurance managers, and all other stakeholders involved.
 

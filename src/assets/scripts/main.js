@@ -35,15 +35,24 @@ $(window).load(function() {
     }).init();
 
     $('[js-carousel]').flickity({
-      draggable: false,
-      prevNextButtons: true
+      draggable: true,
+      prevNextButtons: false,
+      cellAlign: 'left',
+      // groupCells: true,
+      selectedAttraction: 0.2,
+      friction: 1.5,
+      dragThreshold: 1,
     });
   }
 
   if ( breakpoint() == 0 ) {
-    $('[js-carousel]').flickity({
-      draggable: true,
-      prevNextButtons: false
-    });
+    //     $('[js-carousel]').flickity({
+    //   draggable: true,
+    //   prevNextButtons: false,
+    //   cellAlign: 'left',
+    //   groupCells: true,
+    //   selectedAttraction: 0.2,
+    //   friction: 0.8
+    // });
   }
 });

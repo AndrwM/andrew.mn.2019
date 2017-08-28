@@ -1,11 +1,12 @@
 .c-carousel {
+
   &__item {
-    margin-right: 5%;
-    max-width: 1000px;
+    margin-left: 5%;
+    max-width: 1200px;
     width: 80%;
 
     @media #{$bp-lap} {
-      margin-right: 10%;
+      margin-left: 4%;
       width: 90%;
     }
   }
@@ -15,58 +16,61 @@
   }
 
   .flickity-page-dots {
-    bottom: -40px;
+    bottom: -45px;
 
     .dot {
-      height: 7px;
-      width: 7px;
-      margin: 0 7px;
-      opacity: 0.2;
-      transition: opacity 0.2s ease;
-      background: $c-primary;
+      height: 4px;
+      width: 4px;
+      margin: 0 8px;
+      opacity: 0.1;
+      transition: all 0.3s ease;
+      background: #000000;
 
-      &.is-selected { opacity: 1; }
-    }
-  }
-
-  .flickity-prev-next-button {
-    top: 0;
-    bottom: 0;
-    width: 9%;
-    height: 100%;
-    border-radius: 0;
-    transform: none;
-    background: transparent;
-    cursor: move;
-    transition: all 1s ease;  
-
-    &[disabled],
-    svg {
-      display: none;
-    }
-
-    &:active,
-    &:hover {
-      opacity: 0;
-    }
-
-    &.next {
-      background-image: linear-gradient(to left, rgba(#ffffff, 0.2) 0%, transparent 100%);
-      cursor: e-resize;
-      right: 0;
-
-      svg {
-        left: auto;
-        right: 20px;
+      &.is-selected {
+        transform: scale(1.8);
+        opacity: 0.3;
       }
     }
-
-    &.previous {
-      background-image: linear-gradient(to right, rgba(#ffffff, 0.3) 0%, transparent 100%);
-      cursor: w-resize;
-      left: 0;
-
-      svg { left: 20px; }
-    }
   }
+
+  // .flickity-prev-next-button {
+  //   top: 0;
+  //   bottom: 0;
+  //   width: 9%;
+  //   height: 100%;
+  //   border-radius: 0;
+  //   transform: none;
+  //   background: transparent;
+  //   cursor: move;
+  //   transition: all 1s ease;  
+
+  //   &[disabled],
+  //   svg {
+  //     display: none;
+  //   }
+
+  //   &:active,
+  //   &:hover {
+  //     opacity: 0;
+  //   }
+
+  //   &.next {
+  //     background-image: linear-gradient(to left, rgba(#ffffff, 0.2) 0%, transparent 100%);
+  //     cursor: e-resize;
+  //     right: 0;
+
+  //     svg {
+  //       left: auto;
+  //       right: 20px;
+  //     }
+  //   }
+
+  //   &.previous {
+  //     background-image: linear-gradient(to right, rgba(#ffffff, 0.3) 0%, transparent 100%);
+  //     cursor: w-resize;
+  //     left: 0;
+
+  //     svg { left: 20px; }
+  //   }
+  // }
 }
