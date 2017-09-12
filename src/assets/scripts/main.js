@@ -39,8 +39,8 @@ $(window).load(function() {
       prevNextButtons: false,
       cellAlign: 'left',
       // groupCells: true,
-      selectedAttraction: 0.2,
-      friction: 1.5,
+      selectedAttraction: 0.1,
+      friction: 0.8,
       dragThreshold: 1,
     });
   }
