@@ -2,7 +2,6 @@
 
   &__item {
     margin-left: 5%;
-    max-width: 1200px;
     width: 80%;
 
     @media #{$bp-lap} {
@@ -31,6 +30,10 @@
         opacity: 0.3;
       }
     }
+  }
+
+  &--on-dark .flickity-page-dots .dot {
+    background: #ffffff;
   }
 
   // .flickity-prev-next-button {
