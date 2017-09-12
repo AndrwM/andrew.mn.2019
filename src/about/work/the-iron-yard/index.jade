@@ -1,0 +1,74 @@
+- var breadcrumb = [{ name: 'Featured Work', path: 'work', active: false}, { name: 'TheIronYard.com', path: 'injury-manager', active: true}];
+- var pageTitle = 'Newline Education Platform';
+
+include /includes/_head
+
+body
+  style.
+    .c-page { background: #f5f8fa; }
+    .c-navigation { background: #202f37; }
+    .c-link[href]:hover { color: #4ec4cf; }
+    .c-wrapper--header { background: #202f37; }
+    .c-title--large, .c-title--medium { color: #4ec4cf; }
+  include /includes/about/_navigation
+  .c-page(id="🚀").c-page--has-footer
+    header.c-wrapper.c-wrapper--header.u-padding-bottom-none: .c-container.c-container--centered.u-animate-in
+      h1.c-title.c-title--xlarge(style="color: #ffffff;") TheIronYard.com
+      h2.c-title.c-title--medium Marketing Design, UI Design System, Front-End Engineering
+      h3.c-title.c-title--label.u-margin-bottom(style="color: #ffffff;") Agency: National International, 2014
+      img(src="/assets/images/projects/injury-manager/hero.png", style="max-width: 900px;")
+
+    section.c-wrapper.c-wrapper--slim: .c-container: .c-grid
+      div(class="c-grid__cell 3/5--lap  2/3--desk")
+        .c-browser: img.c-browser__content(src="/assets/images/projects/the-iron-yard/1.png")
+      div(class="c-grid__cell 2/5--lap  1/3--desk", js-sticky-aside)
+        h3.c-title.c-title--medium Homepage
+        p.c-paragraph.c-paragraph--sans.c-paragraph--medium lipsum
+
+    section.c-wrapper.c-wrapper--slim: .c-container: .c-grid
+      div(class="c-grid__cell 3/5--lap  2/3--desk")
+        .c-browser: img.c-browser__content(src="/assets/images/projects/the-iron-yard/1.5.png")
+      div(class="c-grid__cell 2/5--lap  1/3--desk", js-sticky-aside)
+        h3.c-title.c-title--medium Main Menu
+        p.c-paragraph.c-paragraph--sans.c-paragraph--medium lipsum
+
+    section.c-wrapper.c-wrapper--slim: .c-container: .c-grid
+      div(class="c-grid__cell 3/5--lap  2/3--desk")
+        .c-browser: img.c-browser__content(src="/assets/images/projects/the-iron-yard/2.png")
+      div(class="c-grid__cell 2/5--lap  1/3--desk", js-sticky-aside)
+        h3.c-title.c-title--medium Corp Training
+        p.c-paragraph.c-paragraph--sans.c-paragraph--medium lipsum
+
+    section.c-wrapper.c-wrapper--slim: .c-container: .c-grid
+      div(class="c-grid__cell 3/5--lap  2/3--desk")
+        .c-browser: img.c-browser__content(src="/assets/images/projects/the-iron-yard/3.png")
+      div(class="c-grid__cell 2/5--lap  1/3--desk", js-sticky-aside)
+        h3.c-title.c-title--medium About
+        p.c-paragraph.c-paragraph--sans.c-paragraph--medium lipsum
+
+    section.c-wrapper.c-wrapper--slim: .c-container: .c-grid
+      div(class="c-grid__cell 3/5--lap  2/3--desk")
+        .c-browser: img.c-browser__content(src="/assets/images/projects/the-iron-yard/4.png")
+      div(class="c-grid__cell 2/5--lap  1/3--desk", js-sticky-aside)
+        h3.c-title.c-title--medium Locations
+        p.c-paragraph.c-paragraph--sans.c-paragraph--medium lipsum
+
+    section.c-wrapper.c-wrapper--slim: .c-container: .c-grid
+      div(class="c-grid__cell 3/5--lap  2/3--desk")
+        .c-browser: img.c-browser__content(src="/assets/images/projects/the-iron-yard/5.png")
+      div(class="c-grid__cell 2/5--lap  1/3--desk", js-sticky-aside)
+        h3.c-title.c-title--medium Initiatives
+        p.c-paragraph.c-paragraph--sans.c-paragraph--medium lipsum
+
+    section.c-wrapper.c-wrapper--slim: .c-container: .c-grid
+      div(class="c-grid__cell 3/5--lap  2/3--desk")
+        .c-browser: img.c-browser__content(src="/assets/images/projects/the-iron-yard/6.png")
+      div(class="c-grid__cell 2/5--lap  1/3--desk", js-sticky-aside)
+        h3.c-title.c-title--medium Jobs
+        p.c-paragraph.c-paragraph--sans.c-paragraph--medium lipsum
+
+
+  div(style="position: fixed; bottom: 0; right: 0; left: 0; z-index: -1;")
+    include /includes/about/_footer
+
+  include /includes/_closing-scripts
