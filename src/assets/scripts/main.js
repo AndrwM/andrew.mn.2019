@@ -19,20 +19,31 @@ $(window).load(function() {
   }
 
   if ( breakpoint() > 0 ) {
-    var headroom  = new Headroom($("[js-navigation]")[0], {
-      tolerance: {
-        down: 3,
-        up: 10
-      },
-      classes: {
-        initial: "c-navigation",
-        pinned: "c-navigation--pinned",
-        unpinned: "c-navigation--unpinned",
-        top: "c-navigation--top",
-        notTop: "c-navigation--not-top",
-        bottom: "c-navigation--bottom",
-        notBottom: "c-navigation--not-bottom" }
-    }).init();
+    // var headroom  = new Headroom($("[js-navigation]")[0], {
+    //   tolerance: {
+    //     down: 3,
+    //     up: 10
+    //   },
+    //   classes: {
+    //     initial: "c-navigation",
+    //     pinned: "c-navigation--pinned",
+    //     unpinned: "c-navigation--unpinned",
+    //     top: "c-navigation--top",
+    //     notTop: "c-navigation--not-top",
+    //     bottom: "c-navigation--bottom",
+    //     notBottom: "c-navigation--not-bottom" }
+    // }).init();
+
+    // $('[js-navigation]').midnight();
+
+    $('[js-navigation]').midnight({
+      // The class that wraps each header. Used as a clipping mask.
+      headerClass: 'midnightHeader',
+      // The class that wraps the contents of each header. Also used as a clipping mask.
+      innerClass: 'c-navigation__container',
+      // The class used by the default header (useful when adding multiple headers with different markup).
+      defaultClass: 'default'
+    });
 
     $('[js-carousel]').flickity({
       draggable: true,

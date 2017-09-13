@@ -6,13 +6,11 @@ include /includes/_head
 body
   style.
     .c-page { background: #f5f8fa; }
-    .c-navigation { background: #202f37; }
-    .c-link[href]:hover { color: #4ec4cf; }
     .c-wrapper--header { background: #202f37; }
     .c-title--large, .c-title--medium { color: #4ec4cf; }
   include /includes/about/_navigation
   .c-page(id="🚀").c-page--has-footer
-    header.c-wrapper.c-wrapper--header.u-padding-bottom-none: .c-container.c-container--centered.u-animate-in
+    header.c-wrapper.c-wrapper--header.u-padding-bottom-none(data-midnight="on-dark"): .c-container.c-container--centered.u-animate-in
       h1.c-title.c-title--xlarge(style="color: #ffffff;") TheIronYard.com
       h2.c-title.c-title--medium Marketing Design, UI Design System, Front-End Engineering
       h3.c-title.c-title--label.u-margin-bottom(style="color: #ffffff;") Agency: National International, 2014

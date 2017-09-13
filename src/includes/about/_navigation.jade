@@ -1,12 +1,25 @@
+//- nav.c-navigation(js-navigation)
+//-   if siteRoot
+//-     span.c-link.c-link--on-dark.c-link--active Andrew McIntee
+//-   else
+//-     a.c-link.c-link--on-dark.c-link--arrow-l(href="/about/#🚀") Andrew McIntee
+//-   if breadcrumb
+//-     each link, index in breadcrumb
+//-       | &nbsp;/&nbsp;
+//-       if link.active
+//-         span.c-link.c-link--on-dark.c-link--active #{link.name}
+//-       else
+//-         a.c-link.c-link--on-dark.c-link--arrow-l(href="/about/#{link.path}/#🚀") #{link.name}
+
 nav.c-navigation(js-navigation)
   if siteRoot
-    span.c-link.c-link--on-dark.c-link--active Andrew McIntee
+    span.c-navigation__breadcrumb-link.c-navigation__breadcrumb-link--static Andrew McIntee
   else
-    a.c-link.c-link--on-dark.c-link--arrow-l(href="/about/#🚀") Andrew McIntee
+    a.c-navigation__breadcrumb-link(href="/about/#🚀") Andrew McIntee
   if breadcrumb
     each link, index in breadcrumb
       | &nbsp;/&nbsp;
       if link.active
-        span.c-link.c-link--on-dark.c-link--active #{link.name}
+        span.c-navigation__breadcrumb-link.c-navigation__breadcrumb-link--static #{link.name}
       else
-        a.c-link.c-link--on-dark.c-link--arrow-l(href="/about/#{link.path}/#🚀") #{link.name}
+        a.c-navigation__breadcrumb-link(href="/about/#{link.path}/#🚀") #{link.name}

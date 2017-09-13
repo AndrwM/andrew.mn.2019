@@ -5,13 +5,11 @@ include /includes/_head
 
 body
   style.
-    .c-navigation { background: transparent linear-gradient(to left, #39d79f 0%, #24d2da 100%); }
-    .c-link[href]:hover { color: #159fef; }
     .c-wrapper--header { background: #2d74da; }
     .c-title--large, .c-title--medium { color: #39d79f; }
   include /includes/about/_navigation
   .c-page(id="🚀").c-page--has-footer
-    header.c-wrapper.c-wrapper--header.u-padding-bottom-none: .c-container.c-container--centered.u-animate-in
+    header(data-midnight="on-dark").c-wrapper.c-wrapper--header.u-padding-bottom-none: .c-container.c-container--centered.u-animate-in
       h1.c-title.c-title--xlarge(style="color: #ffffff;") Newline Education Platform
       h2.c-title.c-title--medium UI Design System, Front-End Engineering, RoR Development
       .c-browser(style="max-width: 900px; margin: 60px auto -80px; overflow: visible;")
@@ -61,7 +59,7 @@ body
           h3.c-title.c-title--small.u-margin-top About Wireframe
           p.c-paragraph.c-paragraph--sans.c-paragraph--medium.u-margin-bottom-none When the client first approached me about designing and implementing the user interface for a web application to help expedite the response times for remote on-the-job injuries, I was immediately interested.
 
-    section.c-wrapper.c-wrapper--full.c-wrapper(style="background: #171f23;"): .c-container
+    section.c-wrapper.c-wrapper--full.c-wrapper(style="background: #171f23;", data-midnight="on-dark"): .c-container
       .c-carousel.c-carousel--on-dark(js-carousel)
         .c-carousel__item(style="max-width:500px; padding-right: 80px")
           h2.c-title.c-title--medium.u-margin-top-large Process + Concepts Based On Wireframes
@@ -82,8 +80,8 @@ body
 
     section.c-wrapper: .c-container
       h2.c-title.c-title--large Rebrand To Newline, Building A Design System
-      .c-grid.c-grid--large
-        div(class="c-grid__cell 2/5--desk", js-sticky-aside)
+      .c-grid
+        div(class="c-grid__cell 2/5--desk")
           p.c-paragraph.c-paragraph--sans.c-paragraph--medium When the client first approached me about designing and implementing the user interface for a web application to help expedite the response times for remote on-the-job injuries, I was immediately interested. The problem? A majority of workers' compensation lawsuits were results of unclear policies, slow communication, and missing accountability.
           p.c-paragraph.c-paragraph--sans.c-paragraph--medium Our goal was twofold, build a platform to quickly and comprehensively alert the necessary parties when an on-the-job injury had occurred and provide a repository to save and securely share all the necessary information between physicians, managers, lawyers, human resources, insurance managers, and all other stakeholders involved.
           p.c-paragraph.c-paragraph--sans.c-paragraph--medium NEED: BRAND + DESIGN SYSTEM + REFINISHED V1 SYSTEM
@@ -91,7 +89,7 @@ body
           img(src="/assets/images/projects/newline/v2-components.png", style="max-width: 880px;").u-margin-top-small
 
 
-    section.c-wrapper(style="background: #171f23;"): .c-container
+    section.c-wrapper(style="background: #171f23;", data-midnight="on-dark"): .c-container
       .c-carousel.c-carousel--on-dark(js-carousel)
         .c-carousel__item(style="max-width:500px; padding-right: 80px")
           h2.c-title.c-title--medium.u-margin-top-large Feature Concept, Guided Code Lessons
