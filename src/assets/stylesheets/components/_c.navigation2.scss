@@ -65,7 +65,6 @@
     }
 
     &--static {
-      background: rgba(#ffffff, 0.8);
       cursor: default;
 
       &::after { opacity: 0; }
@@ -81,6 +80,10 @@
 
   .c-navigation__breadcrumb-link {
     color: white;
+
+    &:hover {
+      // background: rgba(#ffffff, 0.1);
+    }
 
      &::after {
       background: #ffffff;

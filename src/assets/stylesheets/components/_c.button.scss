@@ -29,6 +29,7 @@
     color: darken($c-primary, 10%);
   }
 
+  &--arrow-remote,
   &--arrow-r,
   &--arrow-l {
 
@@ -56,6 +57,11 @@
   &--arrow-l {
     cursor: w-resize;
     &::before { content: '\21e0  '; }
+  }
+
+  &--arrow-remote {
+    cursor: ne-resize;
+    &::after { content: ' \2934'; }
   }
 
   &--disabled,

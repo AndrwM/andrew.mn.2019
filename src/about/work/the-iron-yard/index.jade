@@ -6,62 +6,72 @@ include /includes/_head
 body
   style.
     .c-page { background: #f5f8fa; }
-    .c-wrapper--header { background: #202f37; }
-    .c-title { color: #4ec4cf; }
+    .c-wrapper--header { background: #192329; overflow: hidden; }
+    .c-title--large, .c-title--medium { color: #4ec4cf; }
   include /includes/about/_navigation
-  .c-page.c-page--has-footer
-    header.c-wrapper.c-wrapper--header.u-padding-bottom-none(data-midnight="on-dark"): .c-container.c-container--centered.u-animate-in
-      h1.c-title.c-title--xlarge(style="color: #ffffff;") TheIronYard.com
-      h2.c-title.c-title--small Marketing Design, UI Design System, Front-End Engineering
-      img(src="/assets/images/projects/injury-manager/hero.png", style="max-width: 900px;")
+  .c-page.c-page--has-footer.u-padding-bottom-large
+    header.c-wrapper.c-wrapper--header(data-midnight="on-dark")
+      video(class="c-wrapper__video-background", preload="none", autoplay="", muted="", loop="")
+        source(src="/assets/images/projects/the-iron-yard/homepage-v1.mp4", type="video/mp4")
+      .c-container.c-container--centered(style="position: relative;").u-animate-in
+        h1.c-title.c-title--xlarge(style="color: #ffffff;") TheIronYard.com
+        h2.c-title.c-title--small(style="color: #485671;") Marketing Design, UI Design System, Front-End Engineering
+      //- .c-browser(style="max-width: 900px; max-height: 500px; margin: 60px auto 0px;")
+      //-   .c-browser--content: img(src="/assets/images/projects/the-iron-yard/1.png")
+      //- img(src="/assets/images/projects/injury-manager/hero.png", style="max-width: 900px;")
+
+    section.c-wrapper: .c-container
+      h2.c-title.c-title--large A New Mini-Site for an Innovative, New Product Line
+      p.c-paragraph For over 60 years Echo has been a leader in the commercial power and outdoor tool market. I was thrilled to be selected to lead the web branding and interactive development initiative for a groundbreaking new line of high-powered, 58-volt outdoor tools. Throughout the project, I worked closely with Echo; their exclusive retailer, The Home Depot; and manufacturing partner, Torque Creative/TTI North America. There were multiple brand and marketing stakeholders that presented challenging constraints with regard to placement and size of existing brand logo marks. I worked with the existing Echo brand assets below.
+      a(href="http://theironyard.com", target="_blank").c-button.c-button--arrow-remote Live Site
 
     section.c-wrapper.c-wrapper--slim: .c-container: .c-grid
       div(class="c-grid__cell 3/5--lap  2/3--desk")
         .c-browser: img.c-browser__content(src="/assets/images/projects/the-iron-yard/1.png")
       div(class="c-grid__cell 2/5--lap  1/3--desk", js-sticky-aside)
-        h3.c-title.c-title--medium Homepage
+        h3.c-title.c-title--small Homepage
         p.c-paragraph.c-paragraph--sans.c-paragraph--medium lipsum
 
     section.c-wrapper.c-wrapper--slim: .c-container: .c-grid
       div(class="c-grid__cell 3/5--lap  2/3--desk")
         .c-browser: img.c-browser__content(src="/assets/images/projects/the-iron-yard/1.5.png")
       div(class="c-grid__cell 2/5--lap  1/3--desk", js-sticky-aside)
-        h3.c-title.c-title--medium Main Menu
+        h3.c-title.c-title--small Main Menu
         p.c-paragraph.c-paragraph--sans.c-paragraph--medium lipsum
 
     section.c-wrapper.c-wrapper--slim: .c-container: .c-grid
       div(class="c-grid__cell 3/5--lap  2/3--desk")
         .c-browser: img.c-browser__content(src="/assets/images/projects/the-iron-yard/2.png")
       div(class="c-grid__cell 2/5--lap  1/3--desk", js-sticky-aside)
-        h3.c-title.c-title--medium Corp Training
+        h3.c-title.c-title--small Corp Training
         p.c-paragraph.c-paragraph--sans.c-paragraph--medium lipsum
 
     section.c-wrapper.c-wrapper--slim: .c-container: .c-grid
       div(class="c-grid__cell 3/5--lap  2/3--desk")
         .c-browser: img.c-browser__content(src="/assets/images/projects/the-iron-yard/3.png")
       div(class="c-grid__cell 2/5--lap  1/3--desk", js-sticky-aside)
-        h3.c-title.c-title--medium About
+        h3.c-title.c-title--small About
         p.c-paragraph.c-paragraph--sans.c-paragraph--medium lipsum
 
     section.c-wrapper.c-wrapper--slim: .c-container: .c-grid
       div(class="c-grid__cell 3/5--lap  2/3--desk")
         .c-browser: img.c-browser__content(src="/assets/images/projects/the-iron-yard/4.png")
       div(class="c-grid__cell 2/5--lap  1/3--desk", js-sticky-aside)
-        h3.c-title.c-title--medium Locations
+        h3.c-title.c-title--small Locations
         p.c-paragraph.c-paragraph--sans.c-paragraph--medium lipsum
 
     section.c-wrapper.c-wrapper--slim: .c-container: .c-grid
       div(class="c-grid__cell 3/5--lap  2/3--desk")
         .c-browser: img.c-browser__content(src="/assets/images/projects/the-iron-yard/5.png")
       div(class="c-grid__cell 2/5--lap  1/3--desk", js-sticky-aside)
-        h3.c-title.c-title--medium Initiatives
+        h3.c-title.c-title--small Initiatives
         p.c-paragraph.c-paragraph--sans.c-paragraph--medium lipsum
 
     section.c-wrapper.c-wrapper--slim: .c-container: .c-grid
       div(class="c-grid__cell 3/5--lap  2/3--desk")
         .c-browser: img.c-browser__content(src="/assets/images/projects/the-iron-yard/6.png")
       div(class="c-grid__cell 2/5--lap  1/3--desk", js-sticky-aside)
-        h3.c-title.c-title--medium Jobs
+        h3.c-title.c-title--small Jobs
         p.c-paragraph.c-paragraph--sans.c-paragraph--medium lipsum
 
 
