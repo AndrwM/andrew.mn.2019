@@ -6,18 +6,15 @@ include /includes/_head
 body
   style.
     .c-page { background: #F2F7FA url('/assets/images/projects/echo/bg.gif'); }
-    .c-navigation { background: #18314c; }
-    .c-link[href]:hover { color: #18314c; }
     .c-wrapper--header { background: #020f1d radial-gradient(#303d4a 0%, #020f1d 100%); }
-    .c-title--large, .c-title--medium { color: #E53A2D; }
+    .c-title { color: #E53A2D; }
   include /includes/about/_navigation
   .c-page.c-page--has-footer
-    header.c-wrapper.c-wrapper--header.u-padding-bottom-none: .c-container.c-container--centered.u-animate-in
+    header.c-wrapper.c-wrapper--header.u-padding-bottom-none(data-midnight="on-dark"): .c-container.c-container--centered.u-animate-in
       h1.c-title.c-title--xlarge(style="color: #ffffff;") Echo Cordless Tools
-      h2.c-title.c-title--medium Marketing Site Design
-      h3.c-title.c-title--label.u-margin-bottom-large(style="color: #ffffff;") Agency: Torque Creative, 2015
+      h2.c-title.c-title--small Marketing Site Design
 
-      img(src='/assets/images/projects/echo/hero.png', style="max-width: 1100px; margin: 0 auto;")
+      img(src='/assets/images/projects/echo/hero.png', style="max-width: 1100px; margin: 60px auto 0;")
 
     section.c-wrapper: .c-container
       h2.c-title.c-title--large A New Mini-Site for an Innovative, New Product Line

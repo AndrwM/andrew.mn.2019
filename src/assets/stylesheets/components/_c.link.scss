@@ -10,7 +10,7 @@
 
   &::before {
     background: $faded-color;
-    bottom: 0;
+    bottom: -4px;
     content: '';
     height: 1px;
     left: 0;
@@ -24,8 +24,8 @@
     color: $c-primary;
 
     &::before {
-      background: $c-primary;
-      transform: translateY(2px);
+      background: rgba($c-primary, 0.5);
+      transform: translateY(-3px);
     }
   }
 

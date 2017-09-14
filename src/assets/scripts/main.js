@@ -37,12 +37,7 @@ $(window).load(function() {
     // $('[js-navigation]').midnight();
 
     $('[js-navigation]').midnight({
-      // The class that wraps each header. Used as a clipping mask.
-      headerClass: 'midnightHeader',
-      // The class that wraps the contents of each header. Also used as a clipping mask.
       innerClass: 'c-navigation__container',
-      // The class used by the default header (useful when adding multiple headers with different markup).
-      defaultClass: 'default'
     });
 
     $('[js-carousel]').flickity({

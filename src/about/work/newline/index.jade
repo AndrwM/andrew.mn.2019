@@ -5,13 +5,13 @@ include /includes/_head
 
 body
   style.
-    .c-wrapper--header { background: #2d74da; }
-    .c-title--large, .c-title--medium { color: #39d79f; }
+    .c-wrapper--header { background: #2d74da radial-gradient(#71c5f5 0%, #2d9bda 100%); }
+    .c-title--large, .c-title--medium { color: #43d6a0; }
   include /includes/about/_navigation
   .c-page.c-page--has-footer
     header(data-midnight="on-dark").c-wrapper.c-wrapper--header.u-padding-bottom-none: .c-container.c-container--centered.u-animate-in
       h1.c-title.c-title--xlarge(style="color: #ffffff;") Newline Education Platform
-      h2.c-title.c-title--medium UI Design System, Front-End Engineering, RoR Development
+      h2.c-title.c-title--small(style="color: #3d85af;") UI Design System, Front-End Engineering, RoR Development
       .c-browser(style="max-width: 900px; margin: 60px auto -80px; overflow: visible;")
         .c-browser--content: img(src="/assets/images/projects/newline/v2-5.png")
       //- img(src="/assets/images/projects/injury-manager/hero.png", style="max-width: 900px; margin: 0 auto -80px;")
@@ -78,15 +78,15 @@ body
           .c-browser(style="max-height: 80vh"): .c-browser--content
             img(src="/assets/images/projects/newline/mock-v1-4.png")
 
-    section.c-wrapper: .c-container
-      h2.c-title.c-title--large Rebrand To Newline, Building A Design System
+    section.c-wrapper(style="background: #f5f8fa;"): .c-container
+      h2.c-title.c-title--large.u-margin-bottom-large Rebrand To Newline, Building A Design System
       .c-grid
-        div(class="c-grid__cell 2/5--desk")
+        div(class="c-grid__cell 2/7--desk")
           p.c-paragraph.c-paragraph--sans.c-paragraph--medium When the client first approached me about designing and implementing the user interface for a web application to help expedite the response times for remote on-the-job injuries, I was immediately interested. The problem? A majority of workers' compensation lawsuits were results of unclear policies, slow communication, and missing accountability.
           p.c-paragraph.c-paragraph--sans.c-paragraph--medium Our goal was twofold, build a platform to quickly and comprehensively alert the necessary parties when an on-the-job injury had occurred and provide a repository to save and securely share all the necessary information between physicians, managers, lawyers, human resources, insurance managers, and all other stakeholders involved.
           p.c-paragraph.c-paragraph--sans.c-paragraph--medium NEED: BRAND + DESIGN SYSTEM + REFINISHED V1 SYSTEM
-        div(class="c-grid__cell 3/5--desk")
-          img(src="/assets/images/projects/newline/v2-components.png", style="max-width: 880px;").u-margin-top-small
+        div(class="c-grid__cell 5/7--desk")
+          img(src="/assets/images/projects/newline/v2-components.png", style="max-width: 880px;")
 
 
     section.c-wrapper(style="background: #171f23;", data-midnight="on-dark"): .c-container

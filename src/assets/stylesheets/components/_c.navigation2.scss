@@ -1,7 +1,19 @@
 .c-navigation {
   z-index: 99999;
+  opacity: 1;
+  animation: 2s ease fade;
   font: 500 14px / 1.8 $ff-primary;
+  position: fixed;
+  color: rgba($c-grey-medium, 0.2);
 
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
   .c-navigation__container {
     padding: 1vh 1%;
@@ -54,7 +66,7 @@
 }
 
 .c-navigation .on-dark .c-navigation__container {
-  color: rgba(#ffffff, 1);
+  color: rgba(#ffffff, 0.3);
   background: transparent;
 
   .c-navigation__breadcrumb-link {
