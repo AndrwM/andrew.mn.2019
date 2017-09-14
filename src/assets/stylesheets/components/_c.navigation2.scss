@@ -4,7 +4,16 @@
   animation: 2s ease fade;
   font: 500 14px / 1.8 $ff-primary;
   position: fixed;
+  padding: 1vh 1%;
+  box-sizing: border-box;
+  width: 100%;
+  background: rgba(#ffffff, 0.95);
   color: rgba($c-grey-medium, 0.2);
+
+  @media #{$bp-lap} {
+    padding: 0;
+    background: transparent;
+  }
 
   @keyframes fade {
     from {
@@ -16,6 +25,7 @@
   }
 
   .c-navigation__container {
+    background: rgba(#ffffff, 0.95);
     padding: 1vh 1%;
     box-sizing: border-box;
     color: rgba($c-grey-medium, 0.2);
