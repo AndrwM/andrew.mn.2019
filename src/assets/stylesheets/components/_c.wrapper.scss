@@ -16,8 +16,10 @@
   }
 
   &--full {
-    padding-left: 9%;
-    padding-right: 9%;
+    @media #{$bp-desk} {
+      padding-left: 9%;
+      padding-right: 9%;
+    }
   }
 
   &--footer {

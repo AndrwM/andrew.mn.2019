@@ -27,44 +27,48 @@ body
     //-     h2.c-title.c-title--medium.u-margin-top The Iron Yard Online, Version Zero
     //-     p.c-paragraph.c-paragraph--sans.c-paragraph--medium.u-margin-bottom-none When the client first approached me about designing and implementing the user interface for a web application to help expedite the response times for remote on-the-job injuries, I was immediately interested.
 
-    section.c-wrapper(style="padding-top: 200px"): .c-container: .c-grid
-      div(class="c-grid__cell 1/2--desk")
-        h2.c-title.c-title--large V1, building a hybrid classroom/online experience, talk about goals and vision shift
-        p.c-paragraph When the client first approached me about designing and implementing the user interface for a web application to help expedite the response times for remote on-the-job injuries, I was immediately interested. The problem? A majority of workers' compensation lawsuits were results of unclear policies, slow communication, and missing accountability.
-        p.c-paragraph Our goal was twofold, build a platform to quickly and comprehensively alert the necessary parties when an on-the-job injury had occurred and provide a repository to save and securely share all the necessary information between physicians, managers, lawyers, human resources, insurance managers, and all other stakeholders involved.
-        p.c-paragraph Our goal was twofold, build a platform to quickly and comprehensively alert the necessary parties when an on-the-job injury had occurred and provide a repository to save and securely share all the necessary information between physicians, managers, lawyers, human resources, insurance managers, and all other stakeholders involved.
-      div(class="c-grid__cell 1/2--desk")
-        img(src="/assets/images/projects/newline/whiteboard.jpg" style="max-width: 500px;").u-margin-top
+    section.c-wrapper(style="padding-top: 180px"): .c-container
+      h2.c-title.c-title--large.u-margin-bottom Building an online supplement to The Iron Yard's immersive classroom.
+      .c-grid
+        div(class="c-grid__cell 1/2--desk")
+          p.c-paragraph The original Newline Education Platform began as "The Iron Yard Online", an online supplement to The Iron Yard's immersive classroom. The Iron Yard was a high-intensiity, immersive programming trade school with 15 locations accross US. I worked for The Iron Yard from 2015 through 2017. As a product designer, I shaped the user-flow and feel of the application as directed by the company leadership's vision.
+          //- h2.c-title.c-title--small The Iron Yard Online, version 1
+          p.c-paragraph The goal of The Iron Yard Online was to provide a centralized store of all class materials. Having a single application and store of all class content allowed us to gurantee the same quality classroom experience to all 15 campuses. In addition, having a central store of all student information all in one application allowed the company to create quality assurance models and run analytics on current and previous classrooms. The data, used to determine the health of campuses and classrooms quater-over-quarter, became invaluable to the company leadership through my time there.
+          //- h2.c-title.c-title--small Crafting the initial concepts
+          p.c-paragraph Fellow product designer, Jeremiah and I, along with direction from the company's CTO Mason Stewart whiteboarded the initial concepts and iterated them into high-fidelity wireframes.
+        div(class="c-grid__cell 1/2--desk")
+          img(src="/assets/images/projects/newline/whiteboard.jpg" style="max-width: 550px;")
 
     section.c-wrapper.c-wrapper--full.u-padding-top
       .c-carousel(js-carousel)
         .c-carousel__item(style="max-width: 800px;")
           img(src="/assets/images/projects/newline/wireframe-v1-1.png")
-          h3.c-title.c-title--small.u-margin-top About Wireframe
-          p.c-paragraph.c-paragraph--sans.c-paragraph--medium.u-margin-bottom-none When the client first approached me about designing and implementing the user interface for a web application to help expedite the response times for remote on-the-job injuries, I was immediately interested.
+          h3.c-title.c-title--small.u-margin-top Dashboard &amp; Onboarding
+          p.c-paragraph.c-paragraph--sans.c-paragraph--medium.u-margin-bottom-none The dashboard (left) displays the top-level stats for the student and their assigned course-work and the onboarding flow (right) steps the student through choosing a programming focus.
         .c-carousel__item(style="max-width: 800px;")
           img(src="/assets/images/projects/newline/wireframe-v1-2.png")
-          h3.c-title.c-title--small.u-margin-top About Wireframe
-          p.c-paragraph.c-paragraph--sans.c-paragraph--medium.u-margin-bottom-none When the client first approached me about designing and implementing the user interface for a web application to help expedite the response times for remote on-the-job injuries, I was immediately interested.
+          h3.c-title.c-title--small.u-margin-top Learning Paths, a collection of Units
+          p.c-paragraph.c-paragraph--sans.c-paragraph--medium.u-margin-bottom-none Each class at The Iron Yard routed a each student down Learning Paths (left), a collection of Units (right) with a primary learning objective. Each Unit contains lessons and assessments.
         .c-carousel__item(style="max-width: 800px;")
           img(src="/assets/images/projects/newline/wireframe-v1-3v2.png")
-          h3.c-title.c-title--small.u-margin-top About Wireframe
-          p.c-paragraph.c-paragraph--sans.c-paragraph--medium.u-margin-bottom-none When the client first approached me about designing and implementing the user interface for a web application to help expedite the response times for remote on-the-job injuries, I was immediately interested.
-        .c-carousel__item(style="max-width: 800px;")
-          img(src="/assets/images/projects/newline/wireframe-v1-4.png")
-          h3.c-title.c-title--small.u-margin-top About Wireframe
-          p.c-paragraph.c-paragraph--sans.c-paragraph--medium.u-margin-bottom-none When the client first approached me about designing and implementing the user interface for a web application to help expedite the response times for remote on-the-job injuries, I was immediately interested.
+          h3.c-title.c-title--small.u-margin-top Lessons
+          p.c-paragraph.c-paragraph--sans.c-paragraph--medium.u-margin-bottom-none Lessons included live coding Exercises and a collapsible wayfinding sidebar to allow the student to jump between lessons.
         .c-carousel__item(style="max-width: 800px;")
           img(src="/assets/images/projects/newline/wireframe-v1-5.png")
-          h3.c-title.c-title--small.u-margin-top About Wireframe
-          p.c-paragraph.c-paragraph--sans.c-paragraph--medium.u-margin-bottom-none When the client first approached me about designing and implementing the user interface for a web application to help expedite the response times for remote on-the-job injuries, I was immediately interested.
+          h3.c-title.c-title--small.u-margin-top Assessments
+          p.c-paragraph.c-paragraph--sans.c-paragraph--medium The first concepts for Assessments. Each Assessment contained multiple choice, short answer, and code Exercises. Code Exercises were run and evaluated in real-time on our remote cluster of headless virtual machines. I played a key role here in building the front-end for the UI.
+          p.c-paragraph.c-paragraph--sans.c-paragraph--medium.u-margin-bottom-none I played a key role here in building the front-end for the UI.
+        .c-carousel__item(style="max-width: 800px;")
+          img(src="/assets/images/projects/newline/wireframe-v1-4.png")
+          h3.c-title.c-title--small.u-margin-top Additional views
+          p.c-paragraph.c-paragraph--sans.c-paragraph--medium.u-margin-bottom-none Additional views we worked on included instrcutor to student chat, one-off Units for students who wanted to learn a specific focus outside the scope of a Path, and homework feedback.
 
     section.c-wrapper.c-wrapper--full.c-wrapper(style="background: #171f23;", data-midnight="on-dark"): .c-container
       .c-carousel.c-carousel--on-dark(js-carousel)
         .c-carousel__item(style="max-width:500px; padding-right: 80px")
-          h2.c-title.c-title--medium.u-margin-top-large Process + Concepts Based On Wireframes
-          p.c-paragraph.c-paragraph--sans.c-paragraph--medium When the client first approached me about designing and implementing the user interface for a web application to help expedite the response times for remote on-the-job injuries, I was immediately interested. The problem? A majority of workers' compensation lawsuits were results of unclear policies, slow communication, and missing accountability.
-          p.c-paragraph.c-paragraph--sans.c-paragraph--medium Our goal was twofold, build a platform to quickly and comprehensively alert the necessary parties when an on-the-job injury had occurred and provide a repository to save and securely share all the necessary information between physicians, managers, lawyers, human resources, insurance managers, and all other stakeholders involved.
+          h2.c-title.c-title--medium.u-margin-top-large The Iron Yard Online
+          p.c-paragraph.c-paragraph--sans.c-paragraph--medium Informed by The Iron Yard brand and our wireframes we cooked up this.
+          //- p.c-paragraph.c-paragraph--sans.c-paragraph--medium Our goal was twofold, build a platform to quickly and comprehensively alert the necessary parties when an on-the-job injury had occurred and provide a repository to save and securely share all the necessary information between physicians, managers, lawyers, human resources, insurance managers, and all other stakeholders involved.
         .c-carousel__item(style="max-width: 1200px;")
           .c-browser(style="max-height: 80vh;"): .c-browser--content
             img(src="/assets/images/projects/newline/mock-v1-1.png")
