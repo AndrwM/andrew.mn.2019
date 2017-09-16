@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="46px" viewBox="0 0 120 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>button/is-large</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="120" height="46" rx="23"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(0.000000, -65.000000)">
+            <g id="button/is-large" transform="translate(0.000000, 65.000000)">
+                <g id="mixin/shape/rounded">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="mask"></g>
+                    <g id="mixin/fill/white" mask="url(#mask-2)" fill-rule="evenodd" fill="#FFFFFF">
+                        <g transform="translate(0.000000, -1.210526)" id="box">
+                            <rect x="0" y="0" width="120" height="50"></rect>
+                        </g>
+                    </g>
+                    <g id="mixin/border/grey" mask="url(#mask-2)" stroke="#DEE6E8" stroke-width="1">
+                        <rect id="Rectangle" x="0.5" y="0.5" width="119" height="45" rx="22.5"></rect>
+                    </g>
+                </g>
+                <g id="text/button/is-large/dark" transform="translate(22.000000, 15.000000)" font-size="14" font-family="Lato-Bold, Lato" fill="#3B494E" font-weight="bold">
+                    <text id="Button-Text">
+                        <tspan x="-2.383" y="14">Large Button</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

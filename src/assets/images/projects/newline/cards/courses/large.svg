@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="888px" height="108px" viewBox="0 0 888 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>cards/courses/large</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4,0 L876,0 L876,-4.4408921e-16 C878.209139,-8.49901461e-16 880,1.790861 880,4 L880,100 L0,100 L0,4 L-4.4408921e-16,4 C-7.1463071e-16,1.790861 1.790861,-3.82769592e-17 4,-4.4408921e-16 Z" id="path-1"></path>
+        <filter x="-0.8%" y="-5.0%" width="101.6%" height="114.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.06 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="114" height="30" rx="15"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1.000000, -313.000000)">
+            <g id="cards/courses/large" transform="translate(-3.000000, 315.000000)">
+                <g id="cards/shapes/large/rounded-top" transform="translate(8.000000, 0.000000)">
+                    <g id="card">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <path stroke="#DEE6E8" stroke-width="1" d="M0.5,99.5 L879.5,99.5 L879.5,4 C879.5,2.06700338 877.932997,0.5 876,0.5 L4,0.5 C2.06700338,0.5 0.5,2.06700338 0.5,4 L0.5,99.5 Z"></path>
+                    </g>
+                </g>
+                <g id="button/is-small/right-icon" transform="translate(750.000000, 35.000000)">
+                    <g id="mixin/shape/rounded">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="mask"></g>
+                        <g id="mixin/fill/white" mask="url(#mask-4)" fill-rule="evenodd" fill="#FFFFFF">
+                            <g transform="translate(0.000000, -0.789474)" id="box">
+                                <rect x="0" y="0" width="114" height="32"></rect>
+                            </g>
+                        </g>
+                        <g id="mixin/border/grey" mask="url(#mask-4)" stroke="#DEE6E8" stroke-width="1">
+                            <rect id="Rectangle" x="0.5" y="0.5" width="113" height="29" rx="14.5"></rect>
+                        </g>
+                    </g>
+                    <g id="text/button/is-small/dark" transform="translate(14.000000, 8.000000)" font-size="11" font-family="Lato-Bold, Lato" fill="#3B494E" font-weight="bold">
+                        <text id="Button-Text">
+                            <tspan x="4.45375" y="11">Start Activity</tspan>
+                        </text>
+                    </g>
+                    <g id="text/button/symbol" transform="translate(90.060000, 9.000000)" font-size="11" font-family="LucidaGrande-Bold, Lucida Grande" fill="#3B494E" font-weight="bold">
+                        <text id="⇢">
+                            <tspan x="0.409090909" y="11">⇢</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="icons/projects/weekly" transform="translate(29.000000, 36.000000)" fill-rule="nonzero" fill="#43D6A0">
+                    <path d="M21.4124532,6.88418979 L19.7372841,8.55935888 C19.5399267,8.75671622 19.2194184,8.75671622 19.0220611,8.55935888 L16.1864308,5.72293921 C15.9890735,5.52479244 15.9890735,5.20586298 16.1864308,5.00850564 L17.8615999,3.33333655 C18.3052592,2.88888782 19.0244294,2.88888782 19.4688781,3.33333655 L21.4124532,5.27612219 C21.8561125,5.71978149 21.8561125,6.43974106 21.4124532,6.88418979 L21.4124532,6.88418979 Z M15.5785702,6.33001038 C15.3812129,6.13265304 15.061494,6.13265304 14.8641367,6.33001038 L5.58834172,15.6058053 C5.39098438,15.8031627 5.39019495,16.1228815 5.58834172,16.3210283 L8.4247614,19.157448 C8.62211874,19.3548053 8.94183763,19.3548053 9.13919497,19.157448 L18.4149899,9.88165305 C18.6123472,9.68429571 18.6123472,9.3637874 18.4149899,9.16643006 L15.5785702,6.33001038 L15.5785702,6.33001038 Z M5.05074033,16.9983587 C4.90311704,16.8507354 4.66313052,16.8507354 4.5147178,16.9983587 C4.40656598,17.1065105 3.06058893,21.135758 3.01006545,21.2802235 C2.9469111,21.5541555 3.19084477,21.7980892 3.46477676,21.7349348 C3.60924233,21.6852008 7.63848976,20.3384343 7.74664158,20.2302825 C7.8950543,20.0818698 7.8950543,19.8426727 7.74664158,19.6942599 L5.05074033,16.9983587 L5.05074033,16.9983587 Z" id="assignment-color"></path>
+                </g>
+                <g id="text/course/projects/weekly" transform="translate(68.000000, 28.000000)" font-size="9" font-family="Lato-Bold, Lato" letter-spacing="1" fill="#43D6A0" font-weight="bold">
+                    <text id="COURSE-TYPE-TEXT">
+                        <tspan x="0" y="9">COURSE TYPE TEX</tspan>
+                        <tspan x="93.0795" y="9">T</tspan>
+                    </text>
+                </g>
+                <g id="text/headers/subhead" transform="translate(68.000000, 46.000000)" font-size="16" font-family="Lato-Bold, Lato" letter-spacing="0.400000006" fill="#3B494E" font-weight="bold">
+                    <text id="Course-Content-Title">
+                        <tspan x="1.13694268" y="16">The Lesson Title Goes Here</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
