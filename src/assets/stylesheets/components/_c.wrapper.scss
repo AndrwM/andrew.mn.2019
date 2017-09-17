@@ -2,6 +2,7 @@
   margin: 0;
   padding: 60px 6%;
   position: relative;
+  overflow-x: hidden;
 
   @media #{$bp-lap} { padding: 80px 6%; }
   @media #{$bp-desk} { padding: 140px 9%; }
