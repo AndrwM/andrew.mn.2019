@@ -20,6 +20,6 @@ nav.c-navigation(js-navigation)
     each link, index in breadcrumb
       | &nbsp;/&nbsp;
       if link.active
-        span.c-navigation__breadcrumb-link.c-navigation__breadcrumb-link--static #{link.name}
+        span.c-navigation__breadcrumb-link.c-navigation__breadcrumb-link--static.u-hide-palm #{link.name}
       else
-        a.c-navigation__breadcrumb-link(href="/about/#{link.path}/#🚀") #{link.name}
+        a.c-navigation__breadcrumb-link(href="/about/#{link.path}/#🚀").u-hide-palm #{link.name}
