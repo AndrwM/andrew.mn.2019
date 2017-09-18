@@ -3,7 +3,7 @@
   // background: transparent linear-gradient(to left, #f5f5ff 0%, #fefdff 100%);
   box-sizing: border-box;
   color: #efd7ce;
-  font: 500 14px / 1.8 $ff-primary;
+  font: 400 14px / 1.8 $ff-primary;
   left: 0;
   opacity: 0.97;
   padding: 0.8vh 1%;
@@ -24,7 +24,7 @@
   @media #{$bp-desk} {
     padding-left: 1%;
     padding-right: 1%;
-    font: 500 14px / 1.8 $ff-primary;
+    font: 400 14px / 1.8 $ff-primary;
   }
   // @media #{$bp-lap} {
   //   padding-left: 6%
