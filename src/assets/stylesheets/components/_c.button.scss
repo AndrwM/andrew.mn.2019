@@ -3,13 +3,13 @@
   border-radius: 2rem 2.80rem;
   color: $c-primary;
   display: inline-block;
-  font: 400 16px / 1 $ff-primary;
+  font: 500 16px / 1 $ff-primary;
   padding: 10px 0;
   text-decoration: none;
   transition: all 0.4s ease-out;
 
   @media #{$bp-lap} {
-    font: 400 15px / 1 $ff-primary;
+    font: 500 15px / 1 $ff-primary;
   }
 
   &:focus,
