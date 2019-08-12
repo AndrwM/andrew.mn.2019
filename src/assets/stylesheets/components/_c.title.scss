@@ -1,0 +1,68 @@
+.c-title {
+  margin: 0 0 10px;
+  word-wrap: break-word;
+
+  &__subtle {
+    font-size: 65%;
+    font-weight: 400;
+    margin: 0 4px;
+    opacity: 0.5;
+    vertical-align: baseline;
+  }
+
+  &--xlarge {
+    font: 400 30px / 1.2 $ff-primary;
+
+    @media #{$bp-lap} {
+      font: 400 42px / 1.2 $ff-primary;
+    }
+  }
+
+  &--large {
+    font: 400 22px / 1.8 $ff-primary;
+    letter-spacing: 0;
+    margin: 0 0 20px;
+
+    @media #{$bp-lap} {
+      font: 400 32px / 1.8 $ff-primary;
+      .c-title__subtle { font-size: 50%; }
+    }
+
+  }
+
+  &--medium {
+    font: 400 22px / 1.8 $ff-primary;
+
+    @media #{$bp-lap} {
+      font: 400 20px / 1.8 $ff-primary;
+    }
+  }
+
+  &--small {
+    font: 400 18px / 1.8 $ff-primary;
+    letter-spacing: 0;
+
+    @media #{$bp-lap} {
+      font: 400 16px / 1.8 $ff-primary;
+    }
+  }
+
+  &--smallest {
+    font: 400 14px / 1.8 $ff-primary;
+    letter-spacing: 0;
+  }
+
+  &--label {
+    display: block;
+    font: 400 10px / 1.2 $ff-primary;
+    letter-spacing: 1px;
+    opacity: .7;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  &--flush {
+    margin: 0;
+    padding: 0;
+  }
+}

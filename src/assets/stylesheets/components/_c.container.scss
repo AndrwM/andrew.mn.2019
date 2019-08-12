@@ -1,0 +1,11 @@
+.c-container {
+  @include clearfix;
+  margin: auto;
+  max-width: 1400px;
+
+  // &--small {
+  //   900px;
+  // }
+
+  &--centered { text-align: center; }
+}

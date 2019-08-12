@@ -1,0 +1,39 @@
+.c-paragraph {
+  color: #434551;
+  font: 400 20px / 1.8 $ff-secondary;
+  margin: 0 0 25px;
+  max-width: 640px;
+  padding: 0;
+
+  &--smallest {
+    font-size: 12px;
+    margin: 0 0 10px;
+  }
+
+  &--small {
+    font-size: 14px;
+    margin: 0 0 10px;
+  }
+
+  &--medium {
+    color: #727779;
+    font-size: 16px;
+  }
+
+  &--sans {
+    font-family: $ff-primary;
+  }
+
+  &--quote {
+    max-width: none;
+    font: 500 18px / 1.9 $ff-secondary;
+    font-style: italic;
+
+    &::before {
+      content: open-quote;
+      font: 500 40px / 0 $ff-secondary;
+      margin: 0px 7px 0 -25px;
+      opacity: 0.3;
+    }
+  }
+}

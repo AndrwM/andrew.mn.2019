@@ -1,0 +1,68 @@
+.c-link {
+  $faded-color: rgba($c-tertiary, 0.4);
+
+  // transition: all 0.1s ease-in-out;
+  color: $c-grey-medium;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+  white-space: nowrap;
+
+  &::before {
+    background: $faded-color;
+    bottom: -4px;
+    content: '';
+    height: 1px;
+    left: 0;
+    position: absolute;
+    transition: all 0.1s ease-in-out;
+    width: 100%;
+  }
+
+  &[href]:hover {
+    background: #ffffff;
+    color: $c-primary;
+
+    &::before {
+      background: rgba($c-primary, 0.5);
+      transform: translateY(-3px);
+    }
+  }
+
+  &--arrow-l {
+    cursor: w-resize;
+  }
+
+  &--arrow-r {
+    cursor: e-resize;
+  }
+
+  &--active {
+    background: #ffffff;
+    color: $c-primary;
+  }
+
+  &--focal {
+    font-size: 16px;
+
+    &::after {
+      color: $faded-color;
+      content: ' \2192';
+      margin: 0 0 0 2px;
+      transition: all 0.1s ease-in-out;
+    }
+
+    &[href]:hover::after {
+      color: $c-primary;
+      margin: 0 0 0 6px;
+    }
+  }
+
+  &--on-dark {
+    color: #ffffff;
+
+    &.c-link--active {
+      background: rgba(#ffffff, 0.2);
+    }
+  }
+}

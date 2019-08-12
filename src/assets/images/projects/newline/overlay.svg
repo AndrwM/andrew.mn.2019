@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="523px" height="343px" viewBox="0 0 523 343" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>overlay</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M500,25.0294373 L500,4 C500,1.790861 498.209139,1.75761024e-13 496,1.44773082e-13 L496,1.42108547e-13 L4,1.42108547e-13 L4,1.42108547e-13 C1.790861,1.42514359e-13 -2.705415e-16,1.790861 0,4 L0,4 L0,327 C2.705415e-16,329.209139 1.790861,331 4,331 L4,331 L496,331 C498.209139,331 500,329.209139 500,327 L500,327 L500,48.9705627 L511.970563,37 L500,25.0294373 Z" id="path-1"></path>
+        <filter x="-1.8%" y="-2.7%" width="103.5%" height="105.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="18.0000007" height="18.0000007" rx="3.60000014"></rect>
+        <rect id="path-4" x="29.7000012" y="0" width="18.0000007" height="18.0000007" rx="3.60000014"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-368.000000, -492.000000)">
+            <g id="overlay" transform="translate(374.000000, 498.000000)">
+                <g id="Combined-Shape">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <path stroke="#DEE6E8" stroke-width="1" d="M511.263456,37 L499.5,25.236544 L499.5,4 C499.5,2.06700338 497.932997,0.5 496,0.5 L4,0.5 C2.06700338,0.5 0.5,2.06700338 0.5,4 L0.5,327 C0.5,328.932997 2.06700338,330.5 4,330.5 L496,330.5 C497.932997,330.5 499.5,328.932997 499.5,327 L499.5,48.763456 L511.263456,37 Z"></path>
+                </g>
+                <rect id="Rectangle-13" fill="#E1E1E1" x="487" y="78" width="4" height="199" rx="2"></rect>
+                <rect id="Rectangle-13-Copy" fill="#B4B4B4" x="487" y="92" width="4" height="179" rx="2"></rect>
+                <text id="Break-Through-Self-D" font-family="Lato-Bold, Lato" font-size="16" font-weight="bold" line-spacing="26" letter-spacing="0.166666672" fill="#262F37">
+                    <tspan x="28" y="56">Break Through Self Doubt and Fear</tspan>
+                </text>
+                <rect id="Rectangle-17-Copy-3" fill="#DEE6E8" x="30" y="70" width="440" height="1"></rect>
+                <rect id="Rectangle-17" fill="#333D50" opacity="0.100000001" x="95.0632823" y="94" width="59.0410292" height="22" rx="4"></rect>
+                <rect id="Rectangle-17-Copy-2" fill="#333D50" opacity="0.100000001" x="291.018776" y="119" width="76.0528512" height="22" rx="4"></rect>
+                <text id="Using-the-random-fun" font-family="Lato-Regular, Lato" font-size="14" font-weight="normal" line-spacing="24.5">
+                    <tspan x="30.0208623" y="106" fill="#262F37">Using the   </tspan>
+                    <tspan x="99.3908623" y="106" font-family="SourceCodePro-Bold, Source Code Pro" font-weight="bold" fill="#333D50">random</tspan>
+                    <tspan x="149.790862" y="106" fill="#262F37">   function, array indexes, multiple parameters, and </tspan>
+                    <tspan x="30.0208623" y="130.5" fill="#262F37">string concatenation, write a madlibs cool   </tspan>
+                    <tspan x="295.698862" y="130.5" font-family="SourceCodePro-Bold, Source Code Pro" font-weight="bold" fill="#333D50">function</tspan>
+                    <tspan x="362.898862" y="130.5" fill="#262F37">   that returns a </tspan>
+                    <tspan x="30.0208623" y="155" fill="#262F37">string of the following pattern.</tspan>
+                </text>
+                <text id="Nulla-vitae-elit-lib" font-family="Lato-Regular, Lato" font-size="14" font-weight="normal" line-spacing="24.5" fill="#262F37">
+                    <tspan x="30.0208623" y="196">Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at </tspan>
+                    <tspan x="30.0208623" y="220.5">lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor </tspan>
+                    <tspan x="30.0208623" y="245">auctor.</tspan>
+                </text>
+                <text id="Task-1/4" font-family="Lato-Medium, Lato" font-size="12" font-weight="400" letter-spacing="0.124999993" fill="#656D78">
+                    <tspan x="28" y="30">Task 1/4</tspan>
+                </text>
+                <g id="keyboard_shortcut-copy" transform="translate(422.000000, 288.000000)">
+                    <g id="Rectangle-19">
+                        <use fill="#F0F5F8" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <rect stroke="#BBC2C4" stroke-width="0.900000036" x="0.450000018" y="0.450000018" width="17.1000007" height="17.1000007" rx="3.60000014"></rect>
+                    </g>
+                    <g id="Rectangle-19-Copy">
+                        <use fill="#F0F5F8" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        <rect stroke="#BBC2C4" stroke-width="0.900000036" x="30.1500012" y="0.450000018" width="17.1000007" height="17.1000007" rx="3.60000014"></rect>
+                    </g>
+                    <text id="⌘" font-family="LucidaGrande-Bold, Lucida Grande" font-size="11" font-weight="bold" fill="#262F37">
+                        <tspan x="3.50000018" y="12.8000001">⌘</tspan>
+                    </text>
+                    <text id="P" font-family="Lato-Bold, Lato" font-size="11" font-weight="bold" fill="#262F37">
+                        <tspan x="35.1000014" y="12.7000001">P</tspan>
+                    </text>
+                    <text id="+" font-family="Lato-Bold, Lato" font-size="10.8000004" font-weight="bold" fill="#262F37">
+                        <tspan x="20.7000008" y="12.8000001">+</tspan>
+                    </text>
+                </g>
+                <text id="Toggle-Visibility" opacity="0.5" font-family="Lato-Regular, Lato" font-size="12" font-weight="normal" fill="#262F37">
+                    <tspan x="329" y="302">Toggle Visibility</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
