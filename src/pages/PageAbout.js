@@ -17,7 +17,7 @@ class PageAbout extends Component {
                 <h2 className="c-title c-title--small u-margin-top-small">Navigation</h2>
                 <ul className="c-list c-list--rocket">
                   <li className="c-list__item">
-                    <Link to="/work" className="c-link c-link--arrow-r u-hi">Case Studies</Link>
+                    <Link to="/case-studies" className="c-link c-link--arrow-r u-hi">Case Studies</Link>
                   </li>
                   <li className="c-list__item">
                     <Link to="/resume" className="c-link c-link--arrow-r">Resumé</Link>
