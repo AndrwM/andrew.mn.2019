@@ -34,7 +34,6 @@ class Breadcrumb extends Component {
   }
 
   render() {
-    console.log(this.props)
     return (
       <nav className="c-navigation">
         <div className="c-navigation__container">

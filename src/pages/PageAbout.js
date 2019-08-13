@@ -34,8 +34,9 @@ class PageAbout extends Component {
               </div>
             </div>
             <p className="c-paragraph c-paragraph--sans c-paragraph--small">
-              <span className="c-emoji">📬</span>&nbsp; Contact me at
-              <a className="c-link" href="mailto:studio@andrew.mn">Studio@Andrew.mn</a> or by phone at
+              <span className="c-emoji">📬</span>&nbsp; Contact me at&nbsp;
+              <a className="c-link" href="mailto:studio@andrew.mn">Studio@Andrew.mn</a>
+              &nbsp;or by phone at&nbsp;
               <a className="c-link" href="mailto:studio@andrew.mn">(864) 915 0648</a>.
             </p>
           </div>

@@ -1,13 +1,13 @@
 .u-animate-in {
   @keyframes animate-in {
-    from {
-      transform: translateY(5px);
+    0% {
+      transform: translateY(8px);
       opacity: 0;
     }
-    to {
+    100% {
       transform: translateY(0);
       opacity: 1;
     }
   }
-  animation: 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) animate-in;
+  animation: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) animate-in;
 }
