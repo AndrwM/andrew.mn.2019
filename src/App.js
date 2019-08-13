@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { HashRouter, Router, Route, Link } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 
 import PageAbout from "./pages/PageAbout";
 import PageResume from "./pages/PageResume";
@@ -12,8 +12,10 @@ class App extends Component {
   render() {
     return (
       <HashRouter>
-        <Route exact path="/" component={PageAbout}/>
-        <Route exact path="/resume" component={PageResume}/>
+        <Switch>
+          <Route exact path="/" component={PageAbout} />
+          <Route exact path="/resume" component={PageResume} />
+        </Switch>
       </HashRouter>
     );
   }
