@@ -1,17 +1,17 @@
 @font-face {
   font-family: "Graphik";
-  font-style:normal;
-  font-weight:300;
+  font-style: normal;
+  font-weight: 300;
   src: local('Graphik'),
        local('Graphik-Light'),
-       url('/assets/fonts/Graphik-Light-Web.woff') format('woff');
+       local('Graphik-Light-Web');
 }
 
 @font-face {
-  font-family:"Graphik";
-  font-style:normal;
-  font-weight:400;
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 400;
   src: local('Graphik'),
        local('Graphik-Regular'),
-       url('/assets/fonts/Graphik-Regular-Web.woff') format('woff');
+       local('Graphik-Regular-Web');
 }
