@@ -17,7 +17,12 @@ class PartialFooter extends Component {
     }
 
     return (
-      <div>
+      <div style={{position: "fixed", bottom: 0, right: 0, left: 0, zIndex: -1}}>
+        <style dangerouslySetInnerHTML={{__html: `
+          .c-page {
+            margin-bottom: 450px;
+          }
+        `}} />
         <section className="c-wrapper u-padding-top">
           <div className="c-container">
             {

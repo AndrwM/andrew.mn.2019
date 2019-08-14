@@ -6,7 +6,7 @@
   font: 500 16px / 1 $ff-primary;
   padding: 10px 0;
   text-decoration: none;
-  transition: all 0.4s ease-out;
+  transition: all 0.5s ease;
 
   @media #{$bp-lap} {
     font: 500 15px / 1 $ff-primary;
@@ -15,12 +15,32 @@
   &:focus,
   &:active,
   &:hover {
+    @keyframes bobble {
+      0% {
+        border-radius: 2rem 2.80rem;
+        transform: scaleY(1);
+      }
+      25% {
+        border-radius: 1.80rem 2rem;
+        transform: scaleY(1.15);
+      }
+      70% {
+        border-radius: 2.80rem 2rem 2rem;
+        transform: scaleY(0.9);
+      }
+      100% {
+        border-radius: 2rem 2.80rem;
+        transform: scaleY(1);
+      }
+    }
+
     border-color: rgba($c-primary, 0.2);
     color: $c-primary;
     padding-left: 17px;
     padding-right: 17px;
     transition: all 0.05s linear;
     margin-left: -17px;
+    animation: 4.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) bobble infinite;
   }
 
   &:focus,

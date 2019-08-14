@@ -9,13 +9,27 @@
   }
 
   &__background {
+    @keyframes float {
+      0% {
+        transform: scaleY(1);
+      }
+      50% {
+        transform: scaleY(0.96);
+      }
+      100% {
+        transform: scaleY(1);
+      }
+    }
+
     content: "";
+    transform-origin: top;
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     background: $c-light-blue linear-gradient(to bottom, #f9fbf9 0%, $c-light-blue 100%);
-    transition: all 0.7s ease;
+    transition: all 2s ease;
+    animation: 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) float infinite;
   }
 
   &__content {
