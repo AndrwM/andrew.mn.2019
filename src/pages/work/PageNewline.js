@@ -1,24 +1,29 @@
 import React, { Component } from "react";
 
+import WithPage from "../../components/WithPage";
+
 class PageNewline extends Component {
   componentDidMount() {
     this.props.setAppState({
-      headerContent: false
+      headerContent: this.renderHeader()
     });
+  }
+
+  renderHeader() {
+    return (
+      <React.Fragment>
+        <h1 className="c-title c-title--xlarge">Newline Education Platform</h1>
+        <h2 className="c-title c-title--small">UI Design System, Front-End Engineering, RoR Development</h2>
+        <div className="c-browser">
+          <div className="c-browser--content"><img src="/assets/images/projects/newline/v2-5.png" /></div>
+        </div>
+      </React.Fragment>
+    );
   }
 
   render() {
     return (
       <React.Fragment>
-        <header className="c-wrapper c-wrapper--header u-padding-bottom-none">
-          <div className="c-container c-container--centered u-animate-in">
-            <h1 className="c-title c-title--xlarge">Newline Education Platform</h1>
-            <h2 className="c-title c-title--small">UI Design System, Front-End Engineering, RoR Development</h2>
-            <div className="c-browser">
-              <div className="c-browser--content"><img src="/assets/images/projects/newline/v2-5.png" /></div>
-            </div>
-          </div>
-        </header>
         <section className="c-wrapper">
           <div className="c-container">
             <h2 className="c-title c-title--large u-margin-bottom">Building an online supplement to The Iron Yard's immersive classroom.</h2>
@@ -44,4 +49,4 @@ class PageNewline extends Component {
   }
 }
 
-export default PageNewline;
+export default WithPage(PageNewline);

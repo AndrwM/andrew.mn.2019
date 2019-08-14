@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { throwStatement } from "@babel/types";
+
+import WithPage from "../components/WithPage";
 
 class PageAbout extends Component {
   componentDidMount() {
@@ -53,4 +54,4 @@ class PageAbout extends Component {
   }
 }
 
-export default PageAbout;
+export default WithPage(PageAbout);

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { HashRouter, Switch, Route } from "react-router-dom";
-import AnimateHeight from 'react-animate-height';
 
 // --- Pages
 import PageAbout from "./pages/PageAbout";
@@ -15,8 +14,8 @@ import PartialFooter from "./pages/partials/PartialFooter";
 import Breadcrumb from "./components/Breadcrumb";
 
 // --- Assets
-import "./assets/fonts/Graphik-Regular-Web.woff"
-import "./assets/fonts/Graphik-Light-Web.woff"
+// import "./assets/fonts/Graphik-Regular-Web.woff"
+// import "./assets/fonts/Graphik-Light-Web.woff"
 import "./assets/stylesheets/main.scss";
 
 class App extends Component {
@@ -50,10 +49,10 @@ class App extends Component {
   renderHeader(){
     return(
       <header className="c-header" ref={this.refHeader}>
-          <div className="c-header__background" style={{height: this.state.headerHeight}} />
-          <div className="c-header__content">
-            {this.state.headerContent}
-          </div>
+        <div className="c-header__background" style={{height: this.state.headerHeight}} />
+        <div className="c-header__content">
+          {this.state.headerContent}
+        </div>
       </header>
     );
   }

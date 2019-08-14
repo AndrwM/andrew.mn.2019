@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import WithPage from "../components/WithPage";
 import CaseStudyPreview from "../components/CaseStudyPreview";
 
 class PageWorkIndex extends Component {
@@ -35,4 +36,4 @@ class PageWorkIndex extends Component {
   }
 }
 
-export default PageWorkIndex;
+export default WithPage(PageWorkIndex);

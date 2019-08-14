@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import WithPage from "../components/WithPage";
+
 class PageResume extends Component {
   componentDidMount() {
     this.props.setAppState({
@@ -179,4 +181,4 @@ class PageResume extends Component {
   }
 }
 
-export default PageResume;
+export default WithPage(PageResume);
