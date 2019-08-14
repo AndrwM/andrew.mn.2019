@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 
 class PageNewline extends Component {
+  componentDidMount() {
+    this.props.setAppState({
+      headerContent: false
+    });
+  }
+
   render() {
     return (
       <React.Fragment>

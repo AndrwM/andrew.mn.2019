@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { HashRouter, Switch, Route } from "react-router-dom";
+import AnimateHeight from 'react-animate-height';
 
 // --- Pages
 import PageAbout from "./pages/PageAbout";
@@ -22,10 +23,18 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      header: false
+      headerContent: false,
+      headerHeight: 0
     };
 
     this.setAppState = this.setAppState.bind(this);
+    this.refHeader = React.createRef();
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if (prevState.headerContent != this.state.headerContent){
+      this.setState({ headerHeight: this.refHeader.current.clientHeight })
+    }
   }
 
   setAppState(newState){
@@ -38,11 +47,22 @@ class App extends Component {
     );
   }
 
+  renderHeader(){
+    return(
+      <header className="c-header" ref={this.refHeader}>
+          <div className="c-header__background" style={{height: this.state.headerHeight}} />
+          <div className="c-header__content">
+            {this.state.headerContent}
+          </div>
+      </header>
+    );
+  }
+
   render() {
     return (
       <HashRouter>
         <Breadcrumb />
-        {this.state.header}
+        {this.renderHeader()}
         <Switch>
           {this.page("/", PageAbout)}
           {this.page("/resume", PageResume)}
