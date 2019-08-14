@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import WithPage from "../../components/WithPage";
+import imageNewline from '../../assets/images/projects/newline/v2-5.png';
 
 class PageNewline extends Component {
   componentDidMount() {
@@ -15,7 +16,7 @@ class PageNewline extends Component {
         <h1 className="c-title c-title--xlarge">Newline Education Platform</h1>
         <h2 className="c-title c-title--small">UI Design System, Front-End Engineering, RoR Development</h2>
         <div className="c-browser">
-          <div className="c-browser--content"><img src="/assets/images/projects/newline/v2-5.png" /></div>
+          <div className="c-browser__content"><img src={imageNewline} /></div>
         </div>
       </React.Fragment>
     );

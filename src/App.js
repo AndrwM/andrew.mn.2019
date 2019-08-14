@@ -31,9 +31,11 @@ class App extends Component {
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
-
     // Set Header Height When New Content Is Rendered
-    if (prevState.headerContent !== this.state.headerContent){
+    if (
+        prevState.headerContent !== this.state.headerContent &&
+        prevState.headerHeight === this.state.headerHeight
+      ){
       this.setState({ headerHeight: this.refHeader.current.clientHeight })
     }
   }
