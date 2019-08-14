@@ -1,6 +1,6 @@
 .c-paragraph {
   color: #434551;
-  font: 400 20px / 1.8 $ff-secondary;
+  font: 400 24px / 1.6 $ff-secondary;
   margin: 0 0 25px;
   max-width: 640px;
   padding: 0;
@@ -35,5 +35,17 @@
       margin: 0px 7px 0 -25px;
       opacity: 0.3;
     }
+  }
+
+  &--large {
+    color: #2c2d35;
+    font: 400 34px / 1.6 $ff-secondary;
+    max-width: 980px;
+  }
+
+  &--xlarge {
+    color: #2c2d35;
+    font: 400 45px / 1.4 $ff-secondary;
+    max-width: none;
   }
 }

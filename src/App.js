@@ -4,7 +4,7 @@ import { HashRouter, Switch, Route } from "react-router-dom";
 // --- Pages
 import PageAbout from "./pages/PageAbout";
 import PageResume from "./pages/PageResume";
-import PageWorkIndex from "./pages/PageWorkIndex";
+import PageCaseStudyIndex from "./pages/PageCaseStudyIndex";
 import PageNewline from "./pages/work/PageNewline";
 
 // --- Partials
@@ -14,8 +14,8 @@ import PartialFooter from "./pages/partials/PartialFooter";
 import Breadcrumb from "./components/Breadcrumb";
 
 // --- Assets
-// import "./assets/fonts/Graphik-Regular-Web.woff"
-// import "./assets/fonts/Graphik-Light-Web.woff"
+import "./assets/fonts/Graphik-Regular-Web.woff"
+import "./assets/fonts/Graphik-Light-Web.woff"
 import "./assets/stylesheets/main.scss";
 
 class App extends Component {
@@ -31,7 +31,9 @@ class App extends Component {
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
-    if (prevState.headerContent != this.state.headerContent){
+
+    // Set Header Height When New Content Is Rendered
+    if (prevState.headerContent !== this.state.headerContent){
       this.setState({ headerHeight: this.refHeader.current.clientHeight })
     }
   }
@@ -40,9 +42,9 @@ class App extends Component {
     this.setState(newState);
   }
 
-  page(path, _Component) {
+  page(path, PageComponent) {
     return(
-      <Route exact path={path} render={() => <_Component setAppState={this.setAppState} />} />
+      <Route exact path={path} render={() => <PageComponent setAppState={this.setAppState} />} />
     );
   }
 
@@ -65,7 +67,7 @@ class App extends Component {
         <Switch>
           {this.page("/", PageAbout)}
           {this.page("/resume", PageResume)}
-          {this.page("/case-studies", PageWorkIndex)}
+          {this.page("/case-studies", PageCaseStudyIndex)}
           {this.page("/case-studies/newline", PageNewline)}
         </Switch>
         <Route path="/:subpage" component={PartialFooter} />

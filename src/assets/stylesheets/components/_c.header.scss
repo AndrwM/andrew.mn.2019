@@ -2,10 +2,9 @@
   margin: 0;
   padding: 120px 6% 60px;
   position: relative;
-  padding-top: 120px;
 
   @media #{$bp-lap} {
-    padding: 160px 9% 130px;
+    padding: 160px 9% 100px;
   }
 
   &__background {
@@ -28,7 +27,7 @@
     right: 0;
     left: 0;
     background: $c-light-blue linear-gradient(to bottom, #f9fbf9 0%, $c-light-blue 100%);
-    transition: all 2s ease;
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     animation: 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) float infinite;
   }
 
@@ -53,5 +52,4 @@
     bottom: -1px;
     background-size: cover
   }
-
 }

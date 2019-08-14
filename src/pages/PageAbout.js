@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 import WithPage from "../components/WithPage";
+import Navigation from "../components/Navigation";
 
 class PageAbout extends Component {
   componentDidMount() {
@@ -13,44 +14,66 @@ class PageAbout extends Component {
   renderHeader() {
     return (
       <React.Fragment>
-        <p className="c-paragraph">Hello!
-          <span className="u-subtle">—</span> My name is Andrew McIntee. I’m an Atlanta-based software designer specializing in UI design &amp; front-end engineering. I enjoy working with positive people who sweat the small details and share the same passion for pragmatic and thoughtful design.
+        <h1 className="c-title c-title--large">
+          Good Afternoon&nbsp;
+          <span className="u-subtler" style={{fontWeight: 100}}>—</span>
+        </h1>
+        <p className="c-paragraph c-paragraph--xlarge">
+        My name is Andrew McIntee.
+        <br/>
+        I’m a product designer &amp; web engineer specializing in design systems.
         </p>
-        <p className="c-paragraph">Beginning November 2017, I am available for contract engagements.<br/>Full-time opportunites are warmly welcomed.
-        </p>
-        <div className="c-grid u-margin-vertical">
-          <div className="c-grid__cell 1/3--lap">
-            <h2 className="c-title c-title--small u-margin-top-small">Navigation</h2>
-            <ul className="c-list c-list--rocket">
-              <li className="c-list__item">
-                <Link to="/case-studies" className="c-link c-link--arrow-r u-hi">Case Studies</Link>
-              </li>
-              <li className="c-list__item">
-                <Link to="/resume" className="c-link c-link--arrow-r">Resumé</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="c-grid__cell 2/3--lap">
-            <h2 className="c-title c-title--small u-margin-top-small">Currently…</h2>
-            <ul className="c-list c-list--sparkle">
-              <li className="c-list__item">Building an open source, lightweight IDE with React</li>
-              <li className="c-list__item">Building a cryptocurrency trading bot in Ruby</li>
-              <li className="c-list__item">Designing a marketing site for a freelance collective</li>
-            </ul>
-          </div>
+        <div className="u-margin-top-large">
+          <Navigation />
         </div>
-        <p className="c-paragraph c-paragraph--sans c-paragraph--small">
-          <span className="c-emoji">📬</span>&nbsp; Contact me at&nbsp;
-          <a className="c-link" href="mailto:studio@andrew.mn">Studio@Andrew.mn</a>
-          &nbsp;or by phone at&nbsp;
-          <a className="c-link" href="mailto:studio@andrew.mn">(864) 915 0648</a>.
-        </p>
       </React.Fragment>
     );
   }
 
   render() {
-    return("");
+    return(
+      <section className="c-wrapper c-wrapper--slimmest u-padding-vertical-large">
+        <div className="c-container">
+          <h2 className="c-title c-title--small u-margin-top-small">Biography</h2>
+          <p className="c-paragraph c-paragraph--large">
+            I have over 8 years of experience in software development and most recently lead my product team.
+          </p>
+          <p className="c-paragraph">
+            Hello! — My name is Andrew McIntee. I’m a digital product designer & web-engineer who specializes in building & nurturing design systems.
+            I have been a remote-worker for over 4 years.
+          </p>
+          <p className="c-paragraph">
+          Engineering chops
+          </p>
+          <p className="c-paragraph">
+          With my engineering experience and design experience my expertise is sitting on engineering team as an engineer’s designer or on a design team as a designer’s engineer. A liaison between two core assets of a software development company, having consistently jumped between both roles in my career.
+          </p>
+          <p className="c-paragraph">
+          I worked for Division Of Labor
+          </p>
+          <p className="c-paragraph">
+          Previously, I lead design and UI systems at [Division Of Labor](http://www.divisionoflabor.xyz/) and I’m a partner at [Coindex Fund](http://coindex.fund/) , a cryptocurrency management service.
+          Prior to this, I worked as a senior software designer at [The Iron Yard](https://newline.theironyard.com/) ,
+          ran a freelance UI agency, and engineered brand experiences at [Organic](http://organic.com/) .
+          </p>
+          <p className="c-paragraph">
+          At the moment, I am based between the Southeast United States and Mexico City while I focus my efforts towards studying Spanish.
+          </p>
+          <p className="c-paragraph">
+          Following my sabbatical, I am looking to join a medium-sized startup company. To continue nurturing an excellent software experiences, connecting: UI connecting, usability testing, engineering execution, design documentation, and company processes to create a culture of user experience excellence. In the interim, I am available for UI design or front-end engineering consulting engagements.
+          </p>
+          <p className="c-paragraph">
+          Unfortunately some of my past work is not available publicly. If you would like to see my portfolio, please email me.
+          </p>
+          <p className="c-paragraph c-paragraph--sans c-paragraph--small">
+            <span className="c-emoji">📬</span>&nbsp; Contact me at&nbsp;
+            <a className="c-link" href="mailto:studio@andrew.mn">Studio@Andrew.mn</a>
+            &nbsp;or by phone at&nbsp;
+            <a className="c-link" href="mailto:studio@andrew.mn">(864) 915 0648</a>.
+          </p>
+        </div>
+      </section>
+    );
   }
 }
 

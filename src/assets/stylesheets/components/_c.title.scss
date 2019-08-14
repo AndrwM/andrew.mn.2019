@@ -19,12 +19,13 @@
   }
 
   &--large {
-    font: 400 22px / 1.8 $ff-primary;
+    font: 400 22px / 1.4 $ff-primary;
     letter-spacing: 0;
-    margin: 0 0 20px;
+    margin: 0 0 10px;
+    color: #6a5ef5;
 
     @media #{$bp-lap} {
-      font: 400 32px / 1.8 $ff-primary;
+      font: 400 34px / 1.4 $ff-primary;
       .c-title__subtle { font-size: 50%; }
     }
 

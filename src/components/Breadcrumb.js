@@ -6,7 +6,11 @@ class Breadcrumb extends Component {
   _name(name, url) {
     switch (url) {
       case "/":
-        return "Andrew McIntee";
+        if (this.props.location.pathname === "/") {
+          return "";
+        } else {
+          return "Andrew McIntee"
+        }
       default:
         return name;
     }
