@@ -6,15 +6,19 @@ import imageNewline from '../../assets/images/projects/newline/v2-5.png';
 class PageNewline extends Component {
   componentDidMount() {
     this.props.setAppState({
-      headerContent: this.renderHeader()
+      headerContent: this.renderHeader(),
+      headerHeight: "60vh"
     });
   }
 
   renderHeader() {
     return (
       <React.Fragment>
-        <h1 className="c-title c-title--xlarge">Newline Education Platform</h1>
-        <h2 className="c-title c-title--small">UI Design System, Front-End Engineering, RoR Development</h2>
+        <h1 className="c-title c-title--xlarge">
+          Newline Education Platform
+          <span className="c-title__subtle">2015 – 2017</span>
+        </h1>
+        <h2 className="c-title c-title--small u-padding-bottom">UI Design System, Front-End Engineering, RoR Development</h2>
         <div className="c-browser">
           <div className="c-browser__content"><img src={imageNewline} /></div>
         </div>

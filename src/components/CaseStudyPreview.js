@@ -15,7 +15,6 @@ class CaseStudyPreview extends Component {
             <div className="c-grid__cell 3/7--desk">
               <h3 className="c-title c-title--medium u-margin-bottom-none">
                 {this.props.title}
-                &nbsp;
                 <span className="c-title__subtle">{this.props.timePeriod}</span>
               </h3>
               <h4 className="c-title c-title--smallest u-margin-bottom-small">{this.props.type}</h4>

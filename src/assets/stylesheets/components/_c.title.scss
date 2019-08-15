@@ -2,19 +2,25 @@
   margin: 0 0 10px;
   word-wrap: break-word;
 
-  &__subtle {
+  .c-title__subtle {
     font-size: 65%;
     font-weight: 400;
-    margin: 0 4px;
+    margin: 0 8px;
     opacity: 0.5;
     vertical-align: baseline;
   }
 
   &--xlarge {
     font: 400 30px / 1.2 $ff-primary;
+    color: #6a5ef5;
 
     @media #{$bp-lap} {
       font: 400 42px / 1.2 $ff-primary;
+    }
+
+    .c-title__subtle {
+      font-size: 14px;
+      color: #333;
     }
   }
 
