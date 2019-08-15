@@ -26,6 +26,9 @@ class App extends Component {
       headerHeight: 0
     };
 
+    console.log('%c🚀 Interested in what\'s going on under the hood?', 'color: #6a5ef5');
+    console.log('%c   Studio@Andrew.mn', 'font-weight: bold;');
+
     this.setAppState = this.setAppState.bind(this);
     this.refHeader = React.createRef();
   }

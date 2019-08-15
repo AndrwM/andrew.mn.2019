@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import WithPage from "../../components/WithPage";
+import SliderLarge from "../../components/SliderLarge";
 import imageNewline from '../../assets/images/projects/newline/v2-5.png';
 
 class PageNewline extends Component {
@@ -42,6 +43,7 @@ class PageNewline extends Component {
             </div>
           </div>
         </section>
+        <SliderLarge />
         <section className="c-wrapper c-wrapper--light-blue">
           <div className="c-container">
             <h2 className="c-title c-title--large">Learn To Code, Change Your Career</h2>
