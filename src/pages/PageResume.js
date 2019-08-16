@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import WithPage from "../components/WithPage";
+import Reveal from "../components/Reveal";
 
 class PageResume extends Component {
   componentDidMount() {
@@ -23,25 +24,27 @@ class PageResume extends Component {
       <React.Fragment>
         <section className="c-wrapper c-wrapper--slimmest u-padding-top-large">
           <div className="c-container">
-            <h2 className="c-title c-title--medium u-margin-bottom-small">Experience</h2>
-            <div className="c-grid">
-              <div className="c-grid__cell 1/6--lap">
-                <h3 className="c-title c-title--label u-margin-top-smallest">2015 – 2017</h3>
+            <Reveal>
+              <h2 className="c-title c-title--medium u-margin-bottom-small">Experience</h2>
+              <div className="c-grid">
+                <div className="c-grid__cell 1/6--lap">
+                  <h3 className="c-title c-title--label u-margin-top-smallest">2015 – 2017</h3>
+                </div>
+                <div className="c-grid__cell 5/6--lap">
+                  <h3 className="c-title c-title--small u-margin-bottom-none">The Iron Yard</h3>
+                  <h4 className="c-title c-title--smallest">Senior Product Designer</h4>
+                  <ul className="c-list">
+                    <li className="c-list__item">Led design, development &amp; launch of The Iron Yard's new marketing site</li>
+                    <li className="c-list__item">Led specification, design, and front-end development of custom admissions software</li>
+                    <li className="c-list__item">Designed, built, and maintained modular design systems for each: online marketing site, student classroom application, and internal tooling</li>
+                    <li className="c-list__item">Conducted student user-behavior studies to test design assumptions and solve usability issues</li>
+                    <li className="c-list__item">Wrote application feature tests to ensure the stability of key user flows and UI components</li>
+                    <li className="c-list__item">Built accessibility features to support student learning disabilities</li>
+                    <li className="c-list__item">Worked remotely</li>
+                  </ul>
+                </div>
               </div>
-              <div className="c-grid__cell 5/6--lap">
-                <h3 className="c-title c-title--small u-margin-bottom-none">The Iron Yard</h3>
-                <h4 className="c-title c-title--smallest">Senior Product Designer</h4>
-                <ul className="c-list">
-                  <li className="c-list__item">Led design, development &amp; launch of The Iron Yard's new marketing site</li>
-                  <li className="c-list__item">Led specification, design, and front-end development of custom admissions software</li>
-                  <li className="c-list__item">Designed, built, and maintained modular design systems for each: online marketing site, student classroom application, and internal tooling</li>
-                  <li className="c-list__item">Conducted student user-behavior studies to test design assumptions and solve usability issues</li>
-                  <li className="c-list__item">Wrote application feature tests to ensure the stability of key user flows and UI components</li>
-                  <li className="c-list__item">Built accessibility features to support student learning disabilities</li>
-                  <li className="c-list__item">Worked remotely</li>
-                </ul>
-              </div>
-            </div>
+            </Reveal>
           </div>
         </section>
         <section className="c-wrapper c-wrapper--slimmest">

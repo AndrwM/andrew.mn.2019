@@ -40,15 +40,15 @@ class App extends Component {
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
-    // Set Header Height When New Header Content Is Rendered If A Height Has Not Been Provided
-    if (
-      prevState.headerContent !== this.state.headerContent &&
-      prevState.headerHeight === this.state.headerHeight
-    ){
-      this.setState({
-        headerKey: this.state.headerKey + 1,
-        headerHeight: this.refHeader.current.clientHeight
-      });
+    // When New Header Content Is Rendered:
+    // - Force React to repaint header to trigger css animation
+    // - Set header height dynamically if a new height has not been provided
+    if (prevState.headerContent !== this.state.headerContent){
+      this.setState({headerKey: this.state.headerKey + 1});
+
+      if (prevState.headerHeight === this.state.headerHeight){
+        this.setState({headerHeight: this.refHeader.current.clientHeight});
+      }
     }
   }
 

@@ -41,10 +41,6 @@
 
   &--medium {
     font: 400 22px / 1.8 $ff-primary;
-
-    @media #{$bp-lap} {
-      font: 400 20px / 1.8 $ff-primary;
-    }
   }
 
   &--small {

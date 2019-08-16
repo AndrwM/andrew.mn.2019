@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Reveal from '../components/Reveal';
 
 import WithPage from "../components/WithPage";
 import Navigation from "../components/Navigation";
@@ -41,33 +42,49 @@ class PageAbout extends Component {
           <p className="c-paragraph c-paragraph--large">
             I have over 8 years of experience in software development and most recently lead my product team.
           </p>
-          <p className="c-paragraph">
-            Hello! — My name is Andrew McIntee. I’m a digital product designer & web-engineer who specializes in building & nurturing design systems.
-            I have been a remote-worker for over 4 years.
-          </p>
-          <p className="c-paragraph">
-          Engineering chops
-          </p>
-          <p className="c-paragraph">
-          With my engineering experience and design experience my expertise is sitting on engineering team as an engineer’s designer or on a design team as a designer’s engineer. A liaison between two core assets of a software development company, having consistently jumped between both roles in my career.
-          </p>
-          <p className="c-paragraph">
-          I worked for Division Of Labor
-          </p>
-          <p className="c-paragraph">
-          Previously, I lead design and UI systems at [Division Of Labor](http://www.divisionoflabor.xyz/) and I’m a partner at [Coindex Fund](http://coindex.fund/) , a cryptocurrency management service.
-          Prior to this, I worked as a senior software designer at [The Iron Yard](https://newline.theironyard.com/) ,
-          ran a freelance UI agency, and engineered brand experiences at [Organic](http://organic.com/) .
-          </p>
-          <p className="c-paragraph">
-          At the moment, I am based between the Southeast United States and Mexico City while I focus my efforts towards studying Spanish.
-          </p>
-          <p className="c-paragraph">
-          Following my sabbatical, I am looking to join a medium-sized startup company. To continue nurturing an excellent software experiences, connecting: UI connecting, usability testing, engineering execution, design documentation, and company processes to create a culture of user experience excellence. In the interim, I am available for UI design or front-end engineering consulting engagements.
-          </p>
-          <p className="c-paragraph">
-          Unfortunately some of my past work is not available publicly. If you would like to see my portfolio, please email me.
-          </p>
+          <Reveal>
+            <p className="c-paragraph">
+              Hello! — My name is Andrew McIntee. I’m a digital product designer & web-engineer who specializes in building & nurturing design systems.
+              I have been a remote-worker for over 4 years.
+            </p>
+          </Reveal>
+          <Reveal>
+            <p className="c-paragraph">
+            Engineering chops
+            </p>
+          </Reveal>
+          <Reveal>
+            <p className="c-paragraph">
+            With my engineering experience and design experience my expertise is sitting on engineering team as an engineer’s designer or on a design team as a designer’s engineer. A liaison between two core assets of a software development company, having consistently jumped between both roles in my career.
+            </p>
+          </Reveal>
+          <Reveal>
+            <p className="c-paragraph">
+            I worked for Division Of Labor
+            </p>
+          </Reveal>
+          <Reveal>
+            <p className="c-paragraph">
+            Previously, I lead design and UI systems at [Division Of Labor](http://www.divisionoflabor.xyz/) and I’m a partner at [Coindex Fund](http://coindex.fund/) , a cryptocurrency management service.
+            Prior to this, I worked as a senior software designer at [The Iron Yard](https://newline.theironyard.com/) ,
+            ran a freelance UI agency, and engineered brand experiences at [Organic](http://organic.com/) .
+            </p>
+          </Reveal>
+          <Reveal>
+            <p className="c-paragraph">
+            At the moment, I am based between the Southeast United States and Mexico City while I focus my efforts towards studying Spanish.
+            </p>
+          </Reveal>
+          <Reveal>
+            <p className="c-paragraph">
+            Following my sabbatical, I am looking to join a medium-sized startup company. To continue nurturing an excellent software experiences, connecting: UI connecting, usability testing, engineering execution, design documentation, and company processes to create a culture of user experience excellence. In the interim, I am available for UI design or front-end engineering consulting engagements.
+            </p>
+          </Reveal>
+          <Reveal>
+            <p className="c-paragraph">
+            Unfortunately some of my past work is not available publicly. If you would like to see my portfolio, please email me.
+            </p>
+          </Reveal>
         </div>
       </section>
       <section className="c-wrapper c-wrapper--slimmest u-padding-vertical-large">
