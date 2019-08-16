@@ -21,7 +21,9 @@ class PageAbout extends Component {
         <p className="c-paragraph c-paragraph--xlarge">
         My name is Andrew McIntee.
         <br/>
-        I’m a product designer &amp; web engineer specializing in design systems.
+        I am a product designer &amp; web engineer
+        <br/>
+        specializing in design systems.
         </p>
         <div className="u-margin-top-large">
           <Navigation />
@@ -32,6 +34,7 @@ class PageAbout extends Component {
 
   render() {
     return(
+      <React.Fragment>
       <section className="c-wrapper c-wrapper--slimmest u-padding-vertical-large">
         <div className="c-container">
           <h2 className="c-title c-title--small u-margin-top-small">Biography</h2>
@@ -65,6 +68,10 @@ class PageAbout extends Component {
           <p className="c-paragraph">
           Unfortunately some of my past work is not available publicly. If you would like to see my portfolio, please email me.
           </p>
+        </div>
+      </section>
+      <section className="c-wrapper c-wrapper--slimmest u-padding-vertical-large">
+        <div className="c-container">
           <p className="c-paragraph c-paragraph--sans c-paragraph--small">
             <span className="c-emoji">📬</span>&nbsp; Contact me at&nbsp;
             <a className="c-link" href="mailto:studio@andrew.mn">Studio@Andrew.mn</a>
@@ -73,6 +80,7 @@ class PageAbout extends Component {
           </p>
         </div>
       </section>
+      </React.Fragment>
     );
   }
 }

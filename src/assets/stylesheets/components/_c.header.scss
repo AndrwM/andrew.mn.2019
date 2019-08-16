@@ -40,7 +40,7 @@
     left: 0;
     background: $c-light-blue linear-gradient(to bottom, #f9fbf9 0%, $c-light-blue 100%);
     transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    animation: 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) float infinite;
+    animation: 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) float infinite;
 
     &::after {
       background-image: url("../../images/c-wrapper-mask.svg");

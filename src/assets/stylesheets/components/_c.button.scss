@@ -3,13 +3,13 @@
   border-radius: 2rem 2.80rem;
   color: $c-primary;
   display: inline-block;
-  font: 500 16px / 1 $ff-primary;
+  font: 500 16px / 1.4 $ff-primary;
   padding: 10px 0;
   text-decoration: none;
   transition: all 0.5s ease;
 
   @media #{$bp-lap} {
-    font: 500 18px / 1 $ff-primary;
+    font: 400 18px / 1.4 $ff-primary;
   }
 
   &:focus,
@@ -43,7 +43,6 @@
     animation: 4.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) bobble infinite;
   }
 
-  &:focus,
   &:active {
     background: rgba($c-primary, 0.04);
     color: darken($c-primary, 10%);
@@ -59,10 +58,8 @@
       transition: all 0.1s ease-in;
     }
 
-    &:focus::after,
     &:active::after,
     &:hover::after,
-    &:focus::before,
     &:active::before,
     &:hover::before {
       opacity: 1;

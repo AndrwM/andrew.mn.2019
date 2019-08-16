@@ -19,8 +19,11 @@ class PageCaseStudyIndex extends Component {
           Case Studies
         </h1>
         <p className="c-paragraph c-paragraph--large">
-          I have had the privilege of working with brands such as The Home Depot, U By Kotex, The Outdoor Channel, and others. For more information on my experience and skillset check out <a className="c-link" href="/about/resume/#🚀">my resumé</a>.
+          For more information on my experience and skillset check out <a className="c-link" href="/about/resume/#🚀">my resumé</a>.
         </p>
+        {/* <p className="c-paragraph c-paragraph--large">
+          I have had the privilege of working with brands such as The Home Depot, U By Kotex, The Outdoor Channel, and others. For more information on my experience and skillset check out <a className="c-link" href="/about/resume/#🚀">my resumé</a>.
+        </p> */}
       </React.Fragment>
     );
   }

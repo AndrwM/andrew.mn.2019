@@ -67,7 +67,7 @@ class App extends Component {
   render() {
     return (
       <HashRouter>
-        <Breadcrumb />
+        <Route path="/:subpage" component={Breadcrumb} />
         {this.renderHeader()}
         <Switch>
           {this.page("/", PageAbout)}
