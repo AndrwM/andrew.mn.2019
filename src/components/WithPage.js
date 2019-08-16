@@ -1,15 +1,11 @@
 import React, { Component } from "react";
 
-function WithPage(WrappedComponent) {
+function WithPage(PageComponent) {
   return class extends Component {
     // constructor(props){
     //   super(props);
     //   this.state = { ready: false };
     // }
-
-    componentDidMount() {
-      window.scrollTo(0, 0);
-    }
 
     // pageImages(imageArray){
     //   this.props.pictures.forEach((picture) => {
@@ -18,9 +14,13 @@ function WithPage(WrappedComponent) {
     // });
     // }
 
+    componentDidMount() {
+      window.scrollTo(0, 0);
+    }
+
     render() {
       return(
-        <WrappedComponent
+        <PageComponent
           {...this.props}
         />
       );

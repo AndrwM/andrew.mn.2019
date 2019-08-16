@@ -18,28 +18,37 @@ import "./assets/fonts/Graphik-Regular-Web.woff"
 import "./assets/fonts/Graphik-Light-Web.woff"
 import "./assets/stylesheets/main.scss";
 
+
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      headerContent: false,
-      headerHeight: 0
+      headerContent: null,
+      headerHeight: null,
+      headerKey: 0,
     };
 
-    console.log('%c🚀 Interested in what\'s going on under the hood?', 'color: #6a5ef5');
-    console.log('%c   Studio@Andrew.mn', 'font-weight: bold;');
+    this.routes = [
+      { path: "/", PageComponent: PageAbout },
+      { path: "/resume", PageComponent: PageResume },
+      { path: "/case-studies", PageComponent: PageCaseStudyIndex },
+      { path: "/case-studies/newline", PageComponent: PageNewline },
+    ];
 
     this.setAppState = this.setAppState.bind(this);
     this.refHeader = React.createRef();
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
-    // Set Header Height When New Content Is Rendered
+    // Set Header Height When New Header Content Is Rendered If A Height Has Not Been Provided
     if (
-        prevState.headerContent !== this.state.headerContent &&
-        prevState.headerHeight === this.state.headerHeight
-      ){
-      this.setState({ headerHeight: this.refHeader.current.clientHeight })
+      prevState.headerContent !== this.state.headerContent &&
+      prevState.headerHeight === this.state.headerHeight
+    ){
+      this.setState({
+        headerKey: this.state.headerKey + 1,
+        headerHeight: this.refHeader.current.clientHeight
+      });
     }
   }
 
@@ -47,21 +56,21 @@ class App extends Component {
     this.setState(newState);
   }
 
-  page(path, PageComponent) {
-    return(
-      <Route exact path={path} render={() => <PageComponent setAppState={this.setAppState} />} />
-    );
-  }
-
   renderHeader(){
     return(
       <header className="c-header" ref={this.refHeader}>
         <div className="c-header__background" style={{height: this.state.headerHeight}} />
-        <div className="c-header__content">
-          {this.state.headerContent}
-        </div>
+        <div className="c-header__content" key={this.state.headerKey} children={this.state.headerContent} />
       </header>
     );
+  }
+
+  renderPage(){
+    return this.routes.map(({ path, PageComponent }) => (
+      <Route exact key={path} path={path} render={() =>
+        <PageComponent setAppState={this.setAppState} />
+      }/>
+    ))
   }
 
   render() {
@@ -69,12 +78,7 @@ class App extends Component {
       <HashRouter>
         <Route path="/:subpage" component={Breadcrumb} />
         {this.renderHeader()}
-        <Switch>
-          {this.page("/", PageAbout)}
-          {this.page("/resume", PageResume)}
-          {this.page("/case-studies", PageCaseStudyIndex)}
-          {this.page("/case-studies/newline", PageNewline)}
-        </Switch>
+        {this.renderPage()}
         <Route path="/:subpage" component={PartialFooter} />
       </HashRouter>
     );
