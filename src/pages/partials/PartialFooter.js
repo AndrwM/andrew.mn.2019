@@ -23,7 +23,7 @@ class PartialFooter extends Component {
             margin-bottom: 450px;
           }
         `}} />
-        <section className="c-wrapper u-padding-top">
+        <section className="c-wrapper">
           <div className="c-container">
             {
               parentPage &&
@@ -33,7 +33,7 @@ class PartialFooter extends Component {
                 children={`Back to ${parentPage.name}`}
               />
             }
-            <p className="c-title--smallest u-margin-vertical-smallest"><span className="c-emoji">🎉</span>&nbsp;&nbsp;Thanks&nbsp;for&nbsp;visiting. Have&nbsp;a&nbsp;great&nbsp;day.<span className="u-subtle u-margin-left-smallest"><a href="mailto:Studio@Andrew.mn" className="c-link">Studio@Andrew.mn</a></span></p>
+            <p className="c-title--smallest u-margin-vertical-smallest"><span className="c-emoji">🎉</span>&nbsp;&nbsp;Thanks&nbsp;for&nbsp;visiting. Have&nbsp;a&nbsp;great&nbsp;day. &mdash; <a href="mailto:Studio@Andrew.mn" className="c-link">Studio@Andrew.mn</a></p>
             <p className="c-paragraph--small u-margin-vertical-smallest">&nbsp; © Andrew McIntee 2019.</p>
             <p className="c-paragraph--small u-margin-top-smallest"><span className="u-subtler u-margin-left-smallest">v3.0.0</span></p>
           </div>
