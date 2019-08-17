@@ -29,7 +29,7 @@ class PartialFooter extends Component {
               parentPage &&
               <Link
                 to={parentPage.url}
-                className="c-button c-button--arrow-l c-button--large u-margin-bottom"
+                className="c-button c-button--arrow-l u-margin-bottom"
                 children={`Back to ${parentPage.name}`}
               />
             }
