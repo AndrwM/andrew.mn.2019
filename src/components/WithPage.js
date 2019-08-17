@@ -15,8 +15,8 @@ function WithPage(PageComponent) {
           />
         );
       } else {
-        alert("You don't have permission to view this page");
-        return(<Redirect to="/"/>);
+        alert("Hi there! 👋 This page is coming soon, thanks for visiting!");
+        return <Redirect to="/"/>
       }
     }
   };

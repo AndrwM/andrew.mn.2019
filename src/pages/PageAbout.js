@@ -12,11 +12,21 @@ class PageAbout extends Component {
     });
   }
 
+  _greeting(){
+    const date = new Date();
+    const hour = date.getHours()
+    if (hour > 19) { return "Good Evening" } else
+    if (hour > 12) { return "Good Afternoon" } else
+    if (hour > 4) { return "Good Morning" } else
+    { return "Good Day" };
+  }
+
   renderHeader() {
     return (
       <React.Fragment>
         <h1 className="c-title c-title--large">
-          Good Afternoon&nbsp;
+          {this._greeting()}
+          &nbsp;
           <span className="u-subtler" style={{fontWeight: 100}}>—</span>
         </h1>
         <p className="c-paragraph c-paragraph--xlarge">
