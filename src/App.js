@@ -23,16 +23,17 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
+      authorized: false,
       headerContent: null,
       headerHeight: null,
       headerKey: 0,
     };
 
     this.routes = [
-      { path: "/", PageComponent: PageAbout },
-      { path: "/resume", PageComponent: PageResume },
-      { path: "/case-studies", PageComponent: PageCaseStudyIndex },
-      { path: "/case-studies/newline", PageComponent: PageNewline },
+      { path: "/", PageComponent: PageAbout, isPublic: true },
+      { path: "/resume", PageComponent: PageResume, isPublic: true },
+      { path: "/case-studies", PageComponent: PageCaseStudyIndex, isPublic: false },
+      { path: "/case-studies/newline", PageComponent: PageNewline, isPublic: false },
     ];
 
     this.setAppState = this.setAppState.bind(this);
@@ -66,9 +67,9 @@ class App extends Component {
   }
 
   renderPage(){
-    return this.routes.map(({ path, PageComponent }) => (
+    return this.routes.map(({ path, PageComponent, isPublic }) => (
       <Route exact key={path} path={path} render={() =>
-        <PageComponent setAppState={this.setAppState} />
+        <PageComponent setAppState={this.setAppState} authorized={this.state.authorized ? true : isPublic} />
       }/>
     ))
   }

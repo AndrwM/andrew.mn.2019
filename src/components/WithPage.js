@@ -1,29 +1,23 @@
 import React, { Component } from "react";
+import { Redirect } from "react-router-dom";
 
 function WithPage(PageComponent) {
   return class extends Component {
-    // constructor(props){
-    //   super(props);
-    //   this.state = { ready: false };
-    // }
-
-    // pageImages(imageArray){
-    //   this.props.pictures.forEach((picture) => {
-    //     const img = new Image();
-    //     img.src = picture.fileName;
-    // });
-    // }
-
     componentDidMount() {
       window.scrollTo(0, 0);
     }
 
     render() {
-      return(
-        <PageComponent
-          {...this.props}
-        />
-      );
+      if (this.props.authorized) {
+        return(
+          <PageComponent
+            {...this.props}
+          />
+        );
+      } else {
+        alert("You don't have permission to view this page");
+        return(<Redirect to="/"/>);
+      }
     }
   };
 }
