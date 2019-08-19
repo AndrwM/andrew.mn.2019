@@ -40,31 +40,11 @@ class PageCaseStudyIndex extends Component {
     );
   }
 
-  buttonArchive(){
-    if (!this.state.showArchive) {
-      return (
-        <div className="c-container u-padding-vertical-large">
-          <a className="c-button" onClick={() => this.setState({ showArchive: true })}>
-            2017 &mdash; 2014 Archive
-          </a>
-        </div>
-      );
-    }
-  }
-
   renderArchive() {
     if (this.state.showArchive) {
       return (
         <React.Fragment>
           <CaseStudy2ColLayout caseStudyPreviews={[
-            <CaseStudyPreview
-            context="2col"
-            title="Newline Education Platform"
-            timePeriod="2015 – 2017"
-            type="UI Design System, Front-End Engineering, RoR Development"
-            image={imageNewline}
-            url="/case-studies/newline"
-            description={["Newline is the course-work software of The Iron Yard. I worked with fellow designer <a href='https://dribbble.com/jeremiah' className='c-link' target='_blank'>Jeremiah</a> to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system."]} />,
             <CaseStudyPreview
               context="2col"
               title="TheIronYard.com"
@@ -72,9 +52,7 @@ class PageCaseStudyIndex extends Component {
               type="UI System Designer, Front-End Engineer"
               image={imageTiy}
               url={false}
-              description={["I designed and led the development of the new TheIronYard.com. The previous iteration of the company's website had dragged to a halt both in codebase update time and page-load due to technical debt accrued since the original launch in 2013. The Iron Yard marketing department brought me in to spearhead the development of a custom front-end CSS framework. This project was a burn and rebuild-from-the-ground-up type of project.","Following launch, the website bounce rate decreased 28.67% and the average session improved by 18.26%. Conversions of visitor to admissions lead increased by 98%!"]} />
-          ]} />
-          <CaseStudy2ColLayout caseStudyPreviews={[
+              description={["I designed and led the development of the new TheIronYard.com. The previous iteration of the company's website had dragged to a halt both in codebase update time and page-load due to technical debt accrued since the original launch in 2013. The Iron Yard marketing department brought me in to spearhead the development of a custom front-end CSS framework. This project was a burn and rebuild-from-the-ground-up type of project.","Following launch, the website bounce rate decreased 28.67% and the average session improved by 18.26%. Conversions of visitor to admissions lead increased by 98%!"]} />,
             <CaseStudyPreview
               context="2col"
               title="Echo Cordless Tools"
@@ -83,15 +61,7 @@ class PageCaseStudyIndex extends Component {
               image={imageEcho}
               url={false}
               description={["In 2015 I was contracted by TTI North America's in-house design agency, Torque Creative, to create an interactive marketing website to showcase a new line of all-electric tools. This project was particularly special to me because Torque gave me access to their in-house photography division. I had autonomy to art-direct the imagery of the products I needed to complete the project."]} />,
-            <CaseStudyPreview
-              context="2col"
-              title="Employee Injury Manager"
-              timePeriod="2014"
-              type="Lead UI-Designer, Front-End Engineer"
-              image={imageInjuryManager}
-              url={false}
-              description={["A majority of workers' compensation lawsuits were results of unclear policies, slow communication, and missing accountability. My client was building a SAAS employee injury management platform to solve the problem. I was brought in as a UX consultant to do design the flow of the application and create a UI design system."]} />
-          ]} />
+            ]} />
           <CaseStudy2ColLayout caseStudyPreviews={[
             <CaseStudyPreview
               context="2col"
@@ -118,17 +88,43 @@ class PageCaseStudyIndex extends Component {
   render() {
     return (
       <React.Fragment>
-      <CaseStudyPreview
+        <CaseStudyPreview
           title="Newline Education Platform"
           timePeriod="2015 – 2017"
           type="UI Design System, Front-End Engineering, RoR Development"
           image={imageNewline}
           url="/case-studies/newline"
           description={["Newline is the course-work software of The Iron Yard. I worked with fellow designer <a href='https://dribbble.com/jeremiah' className='c-link' target='_blank'>Jeremiah</a> to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system."]} />
-          {this.buttonArchive()}
-          {this.renderArchive()}
+        <div className="c-wrapper u-border-bottom">
+          <div className="c-container">
+            <h2 class="c-title c-title--small">
+              More Work
+            </h2>
+            <p class="c-paragraph">
+            While working for Organic, Inc., I had the opportunity to lead the engineering for a brand new marketing website for the Canadian division of Depends adult incontinence products.
+            </p>
+            {
+              !this.state.showArchive &&
+              <a className="c-button" onClick={() => this.setState({ showArchive: true })} children="😇 See More Work" />
+            }
+          </div>
+        </div>
+        {this.renderArchive()}
       </React.Fragment>
     );
+  }
+
+  bullshitImNotShowing() {
+    return(
+      <CaseStudyPreview
+        context="2col"
+        title="Employee Injury Manager"
+        timePeriod="2014"
+        type="Lead UI-Designer, Front-End Engineer"
+        image={imageInjuryManager}
+        url={false}
+        description={["A majority of workers' compensation lawsuits were results of unclear policies, slow communication, and missing accountability. My client was building a SAAS employee injury management platform to solve the problem. I was brought in as a UX consultant to do design the flow of the application and create a UI design system."]} />
+    )
   }
 }
 

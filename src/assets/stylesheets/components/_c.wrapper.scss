@@ -1,10 +1,10 @@
 .c-wrapper {
   margin: 0;
-  padding: 60px 6%;
+  padding: 60px 6vw;
   position: relative;
 
-  @media #{$bp-lap} { padding: 80px 6%; }
-  @media #{$bp-desk} { padding: 140px 9%; }
+  @media #{$bp-lap} { padding: 80px 6vw; }
+  @media #{$bp-desk} { padding: 140px 9vw; }
 
   &--header {
     padding-top: 120px;

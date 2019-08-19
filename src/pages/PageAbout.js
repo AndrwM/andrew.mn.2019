@@ -48,10 +48,12 @@ class PageAbout extends Component {
       <React.Fragment>
       <section className="c-wrapper c-wrapper--slimmest u-padding-vertical-large">
         <div className="c-container">
-          <h2 className="c-title c-title--small u-margin-top-small">Biography</h2>
-          <p className="c-paragraph c-paragraph--large">
-            I have over 8 years of experience in software development and most recently lead my product team.
-          </p>
+          <Reveal>
+            <h2 className="c-title c-title--small u-margin-top-small">Biography</h2>
+            <p className="c-paragraph c-paragraph--large">
+              I have over 8 years of experience in software development and most recently lead my product team.
+            </p>
+          </Reveal>
           <Reveal>
             <p className="c-paragraph">
               Hello! — My name is Andrew McIntee. I’m a digital product designer & web-engineer who specializes in building & nurturing design systems.

@@ -14,9 +14,8 @@ class CaseStudyPreview extends Component {
         </h3>
         <h4 className="c-title c-title--smallest u-margin-bottom-small">{this.props.type}</h4>
         {this.props.description && this.props.description.map((paragraph, index) => (
-            <p key={index} className="c-paragraph c-paragraph--sans c-paragraph--medium" dangerouslySetInnerHTML={{__html: paragraph}} />
+          <p key={index} className="c-paragraph c-paragraph--sans c-paragraph--medium" dangerouslySetInnerHTML={{__html: paragraph}} />
         ))}
-        {this.props.url && <Link to={this.props.url} className="c-button c-button--small c-button--arrow-r">Read The Case Study</Link>}
       </React.Fragment>
     );
   }
@@ -28,27 +27,35 @@ class CaseStudyPreview extends Component {
           <div className="u-padding-bottom">
             <Reveal>
               {this.renderContent()}
+              {this.props.url && <Link to={this.props.url} className="c-button c-button--small c-button--arrow-r">Read The Case Study</Link>}
             </Reveal>
           </div>
-          <div className="c-browser" style={{maxHeight: "360px", marginTop: "auto"}}>
-            <div className="c-browser__content"><img src={this.props.image}/></div>
+          <div className="u-margin-top-auto">
+            <Reveal>
+              <div className="c-browser" style={{maxHeight: "360px"}}>
+                <div className="c-browser__content"><img src={this.props.image}/></div>
+              </div>
+            </Reveal>
           </div>
         </React.Fragment>
       );
     } else {
       return (
-        <div className="u-border-bottom" style={{overflow: "hidden"}}>
+        <div className="c-wrapper c-wrapper--flush u-border-bottom" style={{overflow: "hidden"}}>
           <div className="c-container">
-            <div className="c-grid c-grid--large c-grid--bottom">
-              <div className="c-grid__cell u-6/12 u-padding-vertical-large">
-                {this.renderContent()}
-              </div>
-              <div className="c-grid__cell u-6/12 c-grid__cell--pull-right">
-                <div className="c-browser u-margin-top-large">
-                  <div className="c-browser__content"><img src={this.props.image}/></div>
+            <Reveal>
+              <div className="c-grid c-grid--large c-grid--bottom">
+                <div className="c-grid__cell u-6/12 u-padding-vertical-large">
+                  {this.renderContent()}
+                  {this.props.url && <Link to={this.props.url} className="c-button c-button--arrow-r">Read The Case Study</Link>}
+                </div>
+                <div className="c-grid__cell u-6/12 c-grid__cell--pull-right">
+                  <div className="c-browser u-margin-top-large">
+                    <div className="c-browser__content"><img src={this.props.image}/></div>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Reveal>
           </div>
         </div>
       );

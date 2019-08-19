@@ -8,14 +8,14 @@ class Reveal extends Component {
       //   {/* <div>I am {this.state.visible ? 'visible' : 'invisible'}</div> */}
       //   {this.props.children}
       // </VisibilitySensor>
-      <VisibilitySensor>
-      {({ isVisible }) => {
-        return (
-          <div className={`u-reveal ${isVisible ? "u-reveal--active" : ""}`}>
-            {this.props.children}
-          </div>
-        );
-      }}
+      <VisibilitySensor partialVisibility={true}>
+        {({ isVisible }) => {
+          return (
+            <div className={`u-reveal ${isVisible ? "u-reveal--active" : ""}`}>
+              {this.props.children}
+            </div>
+          );
+        }}
     </VisibilitySensor>
     );
   }

@@ -23,7 +23,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      authorized: false,
+      authorized: true,
       headerContent: null,
       headerHeight: null,
       headerKey: 0,
@@ -42,8 +42,8 @@ class App extends Component {
 
   componentDidUpdate(prevProps, prevState, snapshot) {
     // When New Header Content Is Rendered:
-    // - Force React to repaint header to trigger css animation
-    // - Set header height dynamically if a new height has not been provided
+    // - Force React to repaint header with a new `key` to trigger css animation
+    // - Set header bg height dynamically if a new height has not been provided
     if (prevState.headerContent !== this.state.headerContent){
       this.setState({headerKey: this.state.headerKey + 1});
 

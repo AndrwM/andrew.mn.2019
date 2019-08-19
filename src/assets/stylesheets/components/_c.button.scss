@@ -100,4 +100,12 @@
       font: 400 15px / 1.4 $ff-primary;
     }
   }
+
+  &--xlarge {
+    font: 400 18px / 1.4 $ff-primary;
+
+    @media #{$bp-lap} {
+      font: 400 22px / 2 $ff-primary;
+    }
+  }
 }
