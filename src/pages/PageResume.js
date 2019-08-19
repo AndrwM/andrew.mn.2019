@@ -6,7 +6,8 @@ import Reveal from "../components/Reveal";
 class PageResume extends Component {
   componentDidMount() {
     this.props.setAppState({
-      headerContent: this.renderHeader()
+      headerContent: this.renderHeader(),
+      headerBg: "#fcf1ff"
     });
   }
 

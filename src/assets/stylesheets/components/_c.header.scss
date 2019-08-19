@@ -27,11 +27,8 @@
       0% {
         background-position: 0vw bottom;
       }
-      50% {
-        background-position: 100vw bottom;
-      }
       100% {
-        background-position: 0vw bottom;
+        background-position: 100vw bottom;
       }
     }
 
@@ -41,8 +38,8 @@
     top: 0;
     right: 0;
     left: 0;
-    background: $c-light-blue linear-gradient(to bottom, #f9fbf9 0%, $c-light-blue 100%);
-    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    background: $c-light-blue linear-gradient(to bottom, rgba(#ffffff, 0.8) 0%, rgba(#ffffff, 0) 100%);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     animation: 8s cubic-bezier(0.25, 0.46, 0.45, 0.94) float infinite;
 
     &::after {

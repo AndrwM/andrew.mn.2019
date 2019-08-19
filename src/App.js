@@ -24,9 +24,12 @@ class App extends Component {
     super(props);
     this.state = {
       authorized: true,
+
+      // Header Settings
       headerContent: null,
       headerHeight: null,
       headerKey: 0,
+      headerBg: "#f1f9fc",
     };
 
     this.routes = [
@@ -60,7 +63,7 @@ class App extends Component {
   renderHeader(){
     return(
       <header className="c-header" ref={this.refHeader}>
-        <div className="c-header__background" style={{height: this.state.headerHeight}} />
+        <div className="c-header__background" style={{height: this.state.headerHeight, backgroundColor: this.state.headerBg}} />
         <div className="c-header__content" key={this.state.headerKey} children={this.state.headerContent} />
       </header>
     );

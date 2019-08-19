@@ -8,7 +8,8 @@ import Navigation from "../components/Navigation";
 class PageAbout extends Component {
   componentDidMount() {
     this.props.setAppState({
-      headerContent: this.renderHeader()
+      headerContent: this.renderHeader(),
+      headerBg: "#f1f9fc"
     });
   }
 
