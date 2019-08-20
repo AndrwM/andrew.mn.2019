@@ -38,7 +38,7 @@ class PageAbout extends Component {
         specializing in design systems.
         </p>
         <div className="c-grid c-grid--auto c-grid--large u-margin-top-large">
-          <div className="c-grid__cell">
+          <div className="c-grid__cell u-1/6">
             <Navigation />
           </div>
           <div className="c-grid__cell">
@@ -57,7 +57,7 @@ class PageAbout extends Component {
   render() {
     return(
       <React.Fragment>
-      <section className="c-wrapper c-wrapper--slimmest u-padding-vertical-large">
+      <section className="c-wrapper c-wrapper--slimmest u-padding-vertical-large" id="about">
         <div className="c-container">
           <Reveal>
             <h2 className="c-title c-title--small u-margin-top-small">Biography</h2>
@@ -118,7 +118,7 @@ class PageAbout extends Component {
       <section className="c-wrapper c-wrapper--slimmest u-padding-vertical-large">
         <div className="c-container">
           <p className="c-paragraph c-paragraph--sans c-paragraph--small">
-            <span className="c-emoji">📬</span>&nbsp; Contact me at&nbsp;
+            <span class="c-emoji c-emoji--in-margin">📬</span>&nbsp; Contact me at&nbsp;
             <a className="c-link" href="mailto:studio@andrew.mn">Studio@Andrew.mn</a>
             &nbsp;or by phone at&nbsp;
             <a className="c-link" href="mailto:studio@andrew.mn">(864) 915 0648</a>.

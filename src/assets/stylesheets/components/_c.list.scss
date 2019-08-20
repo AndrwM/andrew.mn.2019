@@ -33,6 +33,6 @@
     font-size: 16px;
   }
 
-  &--rocket .c-list__item::before { content: '🚀'; font-size: 120%; vertical-align: middle; }
-  &--sparkle .c-list__item::before { content: '✨'; font-size: 120%; vertical-align: middle; }
+  &--rocket .c-list__item::before { content: '🚀'; font-size: 120%; vertical-align: middle; margin: 0px 10px 5px -32px; }
+  &--sparkle .c-list__item::before { content: '✨'; font-size: 120%; vertical-align: middle; margin: 0px 10px 5px -32px; }
 }

@@ -5,7 +5,7 @@ import CaseStudyPreview from "../components/CaseStudyPreview";
 import CaseStudy2ColLayout from "../components/CaseStudy2ColLayout";
 
 import imageNewline from "../assets/images/projects/newline/v2-5.png";
-import imageConnectHero from "../assets/images/projects/connect-hero/slide3.png";
+import imageConnectHero from "../assets/images/projects/connect-hero/cover.png";
 import imageHelix from "../assets/images/projects/helix/front.png";
 import imageTiy from "../assets/images/projects/tiy/preview1.jpg";
 import imageEcho from "../assets/images/projects/echo/feature-detail.jpg";

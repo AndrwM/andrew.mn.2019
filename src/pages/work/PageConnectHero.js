@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import WithPage from "../../components/WithPage";
 import SliderLarge from "../../components/SliderLarge";
 
+import cover from '../../assets/images/projects/connect-hero/cover.png';
 import slide1 from '../../assets/images/projects/connect-hero/slide1.png';
 import slide2 from '../../assets/images/projects/connect-hero/slide2.png';
 import slide3 from '../../assets/images/projects/connect-hero/slide3.png';
@@ -32,7 +33,7 @@ class PageNewline extends Component {
           </div>
           <div className="c-grid__cell u-3/7">
             <div className="c-browser" style={{maxWidth: 700}}>
-              <div className="c-browser__content"><img src={slide3} /></div>
+              <div className="c-browser__content"><img src={cover} /></div>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 class Navigation extends Component {
   render() {
@@ -15,7 +16,7 @@ class Navigation extends Component {
           </li>
           {this.props.context !== "no-about-link" &&
             <li className="c-list__item">
-              <Link to="/case-studies" className="c-link c-link--arrow-d u-hi">About <span className="u-subtler" children="("/>↓<span className="u-subtler" children=")"/></Link>
+              <HashLink smooth to="/#about" className="c-link c-link--arrow-d u-hi">About <span className="u-subtler" children="("/>↓<span className="u-subtler" children=")"/></HashLink>
             </li>
             }
         </ul>
