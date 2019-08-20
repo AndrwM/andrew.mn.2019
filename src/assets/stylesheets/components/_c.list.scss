@@ -29,6 +29,10 @@
     }
   }
 
-  &--rocket .c-list__item::before { content: '🚀'; }
-  &--sparkle .c-list__item::before { content: '✨'; }
+  &--large .c-list__item {
+    font-size: 16px;
+  }
+
+  &--rocket .c-list__item::before { content: '🚀'; font-size: 120%; vertical-align: middle; }
+  &--sparkle .c-list__item::before { content: '✨'; font-size: 120%; vertical-align: middle; }
 }

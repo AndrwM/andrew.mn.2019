@@ -37,6 +37,10 @@
     cursor: e-resize;
   }
 
+  &--arrow-d {
+    cursor: s-resize;
+  }
+
   &--active {
     background: #ffffff;
     color: $c-primary;

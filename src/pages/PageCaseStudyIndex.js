@@ -91,6 +91,19 @@ class PageCaseStudyIndex extends Component {
   render() {
     return (
       <React.Fragment>
+        <div className="c-wrapper">
+          <div className="c-container">
+            <h2 class="c-title c-title--small">
+            Product Design &amp; Programming
+            </h2>
+            <p class="c-paragraph">
+            While working for Organic, Inc., I had the opportunity to lead the engineering for a brand new marketing website for the Canadian division of Depends adult incontinence products.
+            </p>
+            <p class="c-paragraph">
+            While working for Organic, Inc., I had the opportunity to lead the engineering for a brand new marketing website for the Canadian division of Depends adult incontinence products.
+            </p>
+          </div>
+        </div>
         <CaseStudyPreview
           title="College Admissions Portal"
           timePeriod="2018"

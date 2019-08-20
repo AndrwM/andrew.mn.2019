@@ -37,8 +37,18 @@ class PageAbout extends Component {
         <br/>
         specializing in design systems.
         </p>
-        <div className="u-margin-top-large">
-          <Navigation />
+        <div className="c-grid c-grid--auto c-grid--large u-margin-top-large">
+          <div className="c-grid__cell">
+            <Navigation />
+          </div>
+          <div className="c-grid__cell">
+            <h2 className="c-title c-title--small u-margin-top-small">Currently…</h2>
+            <ul className="c-list c-list--large c-list--sparkle">
+              <li className="c-list__item">Building an open source, lightweight IDE with React</li>
+              <li className="c-list__item">Building a cryptocurrency trading bot in Ruby</li>
+              <li className="c-list__item">Designing a marketing site for a freelance collective</li>
+            </ul>
+          </div>
         </div>
       </React.Fragment>
     );
@@ -92,6 +102,11 @@ class PageAbout extends Component {
             <p className="c-paragraph">
             Following my sabbatical, I am looking to join a medium-sized startup company. To continue nurturing an excellent software experiences, connecting: UI connecting, usability testing, engineering execution, design documentation, and company processes to create a culture of user experience excellence. In the interim, I am available for UI design or front-end engineering consulting engagements.
             </p>
+          </Reveal>
+          <Reveal>
+            <div class="u-padding-vertical">
+              <Navigation context="no-about-link" />
+            </div>
           </Reveal>
           <Reveal>
             <p className="c-paragraph">
