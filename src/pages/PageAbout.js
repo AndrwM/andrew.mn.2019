@@ -72,6 +72,16 @@ class PageAbout extends Component {
             </p>
           </Reveal>
           <Reveal>
+            <div className="u-padding-vertical-small">
+              <h2 className="c-title c-title--small u-margin-top-small">Design Experience</h2>
+              <ul className="c-list c-list--large c-list--glove">
+                <li className="c-list__item">Building an open source, lightweight IDE with React</li>
+                <li className="c-list__item">Building a cryptocurrency trading bot in Ruby</li>
+                <li className="c-list__item">Designing a marketing site for a freelance collective</li>
+              </ul>
+            </div>
+          </Reveal>
+          <Reveal>
             <p className="c-paragraph">
             Engineering chops
             </p>
@@ -85,6 +95,16 @@ class PageAbout extends Component {
             <p className="c-paragraph">
             I worked for Division Of Labor
             </p>
+          </Reveal>
+          <Reveal>
+            <div className="u-padding-vertical-small">
+              <h2 className="c-title c-title--small u-margin-top-small">Programming Experience</h2>
+              <ul className="c-list c-list--large c-list--measure">
+                <li className="c-list__item">Building an open source, lightweight IDE with React</li>
+                <li className="c-list__item">Building a cryptocurrency trading bot in Ruby</li>
+                <li className="c-list__item">Designing a marketing site for a freelance collective</li>
+              </ul>
+            </div>
           </Reveal>
           <Reveal>
             <p className="c-paragraph">
@@ -104,7 +124,7 @@ class PageAbout extends Component {
             </p>
           </Reveal>
           <Reveal>
-            <div class="u-padding-vertical">
+            <div class="u-padding-vertical-small">
               <Navigation context="no-about-link" />
             </div>
           </Reveal>

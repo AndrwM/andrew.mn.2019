@@ -35,4 +35,6 @@
 
   &--rocket .c-list__item::before { content: '🚀'; font-size: 120%; vertical-align: middle; margin: 0px 10px 5px -32px; }
   &--sparkle .c-list__item::before { content: '✨'; font-size: 120%; vertical-align: middle; margin: 0px 10px 5px -32px; }
+  &--glove .c-list__item::before { content: '🧤'; font-size: 140%; vertical-align: middle; margin: 0px 10px 5px -32px; }
+  &--measure .c-list__item::before { content: '📐'; font-size: 120%; vertical-align: middle; margin: 0px 10px 5px -32px; }
 }
