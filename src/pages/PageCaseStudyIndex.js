@@ -4,8 +4,10 @@ import WithPage from "../components/WithPage";
 import CaseStudyPreview from "../components/CaseStudyPreview";
 import CaseStudy2ColLayout from "../components/CaseStudy2ColLayout";
 
-import imageTiy from "../assets/images/projects/tiy/preview1.jpg";
 import imageNewline from "../assets/images/projects/newline/v2-5.png";
+import imageConnectHero from "../assets/images/projects/connect-hero/slide3.png";
+import imageHelix from "../assets/images/projects/helix/front.png";
+import imageTiy from "../assets/images/projects/tiy/preview1.jpg";
 import imageEcho from "../assets/images/projects/echo/feature-detail.jpg";
 import imageInjuryManager from "../assets/images/projects/injury-manager/mock-injury.jpg";
 import imageArkiver from "../assets/images/projects/arkiver/preview.png";
@@ -21,7 +23,7 @@ class PageCaseStudyIndex extends Component {
   componentDidMount() {
     this.props.setAppState({
       headerContent: this.renderHeader(),
-      headerBg: "#f1ffe5"
+      headerBg: "#f1f9fc"
     });
   }
 
@@ -89,6 +91,20 @@ class PageCaseStudyIndex extends Component {
   render() {
     return (
       <React.Fragment>
+        <CaseStudyPreview
+          title="College Admissions Portal"
+          timePeriod="2018"
+          type="UI Design System Lead"
+          image={imageHelix}
+          url="/case-studies/college-admissions-portal"
+          description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
+        <CaseStudyPreview
+          title="Connect Hero"
+          timePeriod="2018"
+          type="Design Lead, Wireframes"
+          image={imageConnectHero}
+          url="/case-studies/connect-hero"
+          description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
         <CaseStudyPreview
           title="Newline Education Platform"
           timePeriod="2015 – 2017"

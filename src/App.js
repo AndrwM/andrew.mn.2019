@@ -6,6 +6,8 @@ import PageAbout from "./pages/PageAbout";
 import PageResume from "./pages/PageResume";
 import PageCaseStudyIndex from "./pages/PageCaseStudyIndex";
 import PageNewline from "./pages/work/PageNewline";
+import PageHelix from "./pages/work/PageHelix";
+import PageConnectHero from "./pages/work/PageConnectHero";
 
 // --- Partials
 import PartialFooter from "./pages/partials/PartialFooter";
@@ -37,6 +39,8 @@ class App extends Component {
       { path: "/resume", PageComponent: PageResume, isPublic: true },
       { path: "/case-studies", PageComponent: PageCaseStudyIndex, isPublic: false },
       { path: "/case-studies/newline", PageComponent: PageNewline, isPublic: false },
+      { path: "/case-studies/college-admissions-portal", PageComponent: PageHelix, isPublic: false },
+      { path: "/case-studies/connect-hero", PageComponent: PageConnectHero, isPublic: false },
     ];
 
     this.setAppState = this.setAppState.bind(this);

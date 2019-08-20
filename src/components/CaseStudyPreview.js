@@ -44,7 +44,7 @@ class CaseStudyPreview extends Component {
         <div className="c-wrapper c-wrapper--flush u-border-bottom" style={{overflow: "hidden"}}>
           <div className="c-container">
             <Reveal>
-              <div className="c-grid c-grid--large c-grid--bottom">
+              <div className="c-grid c-grid--large c-grid--middle">
                 <div className="c-grid__cell u-6/12 u-padding-vertical-large">
                   {this.renderContent()}
                   {this.props.url && <Link to={this.props.url} className="c-button c-button--arrow-r">Read The Case Study</Link>}

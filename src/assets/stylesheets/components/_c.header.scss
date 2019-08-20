@@ -28,7 +28,7 @@
         background-position: 0vw bottom;
       }
       100% {
-        background-position: 100vw bottom;
+        background-position: 200vw bottom;
       }
     }
 
@@ -52,8 +52,8 @@
       background-position: 0% bottom;
       height: 25px;
       bottom: -1px;
-      background-size: 100vw;
-      animation: 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) float-mask infinite;
+      background-size: 200vw;
+      animation: 10s cubic-bezier(0.25, 0.46, 0.45, 0.94) float-mask infinite;
     }
   }
 

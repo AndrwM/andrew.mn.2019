@@ -45,7 +45,7 @@
   }
 
   &--small {
-    font: 500 14px / 1.8 $ff-primary;
+    font: 400 16px / 1.8 $ff-primary;
     letter-spacing: 0;
 
     @media #{$bp-lap} {
@@ -54,7 +54,7 @@
   }
 
   &--smallest {
-    font: 500 14px / 1.8 $ff-primary;
+    font: 400 15px / 1.8 $ff-primary;
     letter-spacing: 0;
     opacity: 0.9;
   }
