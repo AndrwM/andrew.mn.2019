@@ -15,15 +15,15 @@ class PageNewline extends Component {
     this.props.setAppState({
       headerContent: this.renderHeader(),
       headerHeight: "60vh",
-      headerBg: "#dee8f8"
+      headerBg: "#f2fce9"
     });
   }
 
   renderHeader() {
     return (
       <React.Fragment>
-        <div className="c-grid">
-          <div className="c-grid__cell u-4/7">
+        <div className="c-grid c-grid--large">
+          <div className="c-grid__cell u-3/7">
             <h1 className="c-title c-title--xlarge u-margin-top">
               College Admissions Portal
               <span className="c-title__subtle">2018</span>
@@ -31,7 +31,7 @@ class PageNewline extends Component {
             <h2 className="c-title c-title--small u-padding-bottom">Design Lead, Wireframes</h2>
             <p className="c-paragraph">A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team.</p>
           </div>
-          <div className="c-grid__cell u-3/7">
+          <div className="c-grid__cell u-4/7">
             <div className="c-browser" style={{maxWidth: 700}}>
               <div className="c-browser__content"><img src={cover} /></div>
             </div>
@@ -51,7 +51,7 @@ class PageNewline extends Component {
           </div>
         </section>
         <SliderLarge
-          background="#e8e8e8"
+          background="#f2fce9"
           slides={[
           <React.Fragment>
             <h2 className="c-title c-title--medium u-margin-top-large">On-Brand Software Design System</h2>

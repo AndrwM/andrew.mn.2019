@@ -38,7 +38,7 @@
     top: 0;
     right: 0;
     left: 0;
-    background: $c-light-blue linear-gradient(to bottom, rgba(#ffffff, 0.8) 0%, rgba(#ffffff, 0) 100%);
+    background: $c-light-blue linear-gradient(to bottom, rgba(#ffffff, 0.8) 0%, rgba(241, 255, 249, 0.5) 50%, rgba(#ffffff, 0) 100%);
     transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     animation: 8s cubic-bezier(0.25, 0.46, 0.45, 0.94) float infinite;
 
