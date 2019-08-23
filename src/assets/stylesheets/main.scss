@@ -66,3 +66,19 @@ img {
 @import "utilities/u.width";
 @import "utilities/u.reveal";
 @import "utilities/u.border";
+
+.OVERRIDE-about-lockup-1 {
+  background-image: url("../images/about-lockup-2019/1.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 300px;
+}
+
+.OVERRIDE-about-lockup-2 {
+  background-image: url("../images/about-lockup-2019/2.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 370px;
+}

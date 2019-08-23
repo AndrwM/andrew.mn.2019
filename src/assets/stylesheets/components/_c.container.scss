@@ -1,7 +1,7 @@
 .c-container {
   @include clearfix;
   margin: auto;
-  // max-width: 1500px;
+  max-width: $page-max-width;
 
   // &--small {
   //   900px;

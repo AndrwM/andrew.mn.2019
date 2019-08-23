@@ -17,10 +17,10 @@ class PartialFooter extends Component {
     }
 
     return (
-      <div style={{position: "fixed", bottom: 0, right: 0, left: 0, zIndex: -1}}>
+      <div style={{position: "fixed", bottom: 0, right: 0, left: 0, zIndex: -1, height: "100vh", background: "#f1f9fc linear-gradient(to bottom, #f9fbf9 0%, #f1f9fc 100%)", display: "flex", alignItems: "flex-end"}}>
         <style dangerouslySetInnerHTML={{__html: `
           .c-page {
-            margin-bottom: 450px;
+            margin-bottom: 100vh;
           }
         `}} />
         <section className="c-wrapper">

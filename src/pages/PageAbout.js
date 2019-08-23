@@ -47,9 +47,9 @@ class PageAbout extends Component {
           <div className="c-grid__cell">
             <h2 className="c-title c-title--small u-margin-top-small">Currently…</h2>
             <ul className="c-list c-list--large c-list--sparkle">
-              <li className="c-list__item">Building an open source, lightweight IDE with React</li>
-              <li className="c-list__item">Building a cryptocurrency trading bot in Ruby</li>
-              <li className="c-list__item">Designing a marketing site for a freelance collective</li>
+              <li className="c-list__item">Based out of the southeast United States &amp; Mexico City</li>
+              <li className="c-list__item">Taking a professional sabbatical to learn spanish in a intensive format</li>
+              <li className="c-list__item">Assisting with Milan Fashion Week &amp; taking scuba diving lessons</li>
             </ul>
           </div>
         </div>
@@ -61,11 +61,11 @@ class PageAbout extends Component {
     return(
       <React.Fragment>
       <section className="c-wrapper c-wrapper--slimmest u-padding-vertical-large" id="about">
-        <div className="c-container">
+        <div className="c-container OVERRIDE-about-lockup-1">
           <Reveal>
-            <h2 className="c-title c-title--small u-margin-top-small">Biography</h2>
+            <h2 className="c-title c-title--small u-margin-top-small">About Me</h2>
             <p className="c-paragraph c-paragraph--large">
-              I have over 8 years of experience in software development and most recently lead my product team.
+              I have over 8 years of industry experience and most recently lead design &amp; front-end engineering on my product team.
             </p>
           </Reveal>
           <Reveal>
@@ -73,12 +73,6 @@ class PageAbout extends Component {
               Hello! — My name is Andrew McIntee. I’m a digital product designer & web-engineer who specializes in building & nurturing design systems.
               I have been a remote-worker for over 4 years.
             </p>
-          </Reveal>
-          <Reveal>
-            <div className="u-padding-vertical-small">
-              <h2 className="c-title c-title--small u-margin-top-small">Design Experience</h2>
-              <ExperienceDesign />
-            </div>
           </Reveal>
           <Reveal>
             <p className="c-paragraph">
@@ -90,17 +84,20 @@ class PageAbout extends Component {
             With my engineering experience and design experience my expertise is sitting on engineering team as an engineer’s designer or on a design team as a designer’s engineer. A liaison between two core assets of a software development company, having consistently jumped between both roles in my career.
             </p>
           </Reveal>
-          <Reveal>
-            <p className="c-paragraph">
-            I worked for Division Of Labor
-            </p>
-          </Reveal>
-          <Reveal>
-            <div className="u-padding-vertical-small">
+        </div>
+        <div className="c-container">
+          <div className="c-grid c-grid--flush u-padding-top u-padding-bottom-small u-margin-vertical">
+            <div className="c-grid__cell u-1/2">
+              <h2 className="c-title c-title--small u-margin-top-small">Design Experience</h2>
+              <ExperienceDesign />
+            </div>
+            <div className="c-grid__cell u-1/2">
               <h2 className="c-title c-title--small u-margin-top-small">Programming Experience</h2>
               <ExperienceEngineering />
             </div>
-          </Reveal>
+          </div>
+        </div>
+        <div className="c-container OVERRIDE-about-lockup-2">
           <Reveal>
             <p className="c-paragraph">
             Previously, I lead design and UI systems at [Division Of Labor](http://www.divisionoflabor.xyz/) and I’m a partner at [Coindex Fund](http://coindex.fund/) , a cryptocurrency management service.
@@ -137,6 +134,9 @@ class PageAbout extends Component {
             <a className="c-link" href="mailto:studio@andrew.mn">Studio@Andrew.mn</a>
             &nbsp;or by phone at&nbsp;
             <a className="c-link" href="mailto:studio@andrew.mn">(864) 915 0648</a>.
+          </p>
+          <p className="c-paragraph c-paragraph--sans c-paragraph--small">
+            Do you fancy LinkedIn? <a className="c-link" href="#">I have that too</a>.
           </p>
         </div>
       </section>

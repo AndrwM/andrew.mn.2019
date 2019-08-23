@@ -145,7 +145,7 @@ class PageCaseStudyIndex extends Component {
           image={imageNewline}
           url="/case-studies/newline"
           description={["Newline is the course-work software of The Iron Yard. I worked with fellow designer <a href='https://dribbble.com/jeremiah' className='c-link' target='_blank'>Jeremiah</a> to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system."]} />
-        <div className="c-wrapper u-padding-bottom">
+        <div className="c-wrapper">
           <div className="c-container">
             <h2 class="c-title c-title--small">
               More Work
@@ -155,7 +155,7 @@ class PageCaseStudyIndex extends Component {
             </p>
             {
               !this.state.showArchive &&
-              <a className="c-button c-button--arrow-d" onClick={() => this.setState({ showArchive: true })} children="See More Work" />
+              <a className="c-button" onClick={() => this.setState({ showArchive: true })} children="See More Work" />
             }
           </div>
         </div>
