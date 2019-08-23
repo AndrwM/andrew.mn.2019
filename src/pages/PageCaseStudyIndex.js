@@ -90,26 +90,34 @@ class PageCaseStudyIndex extends Component {
           <div className="c-container">
             <h2 className="c-title c-title--small">Design &amp; Programming Experience</h2>
             <p class="c-paragraph">
-              While working for Organic, Inc., I had the opportunity to lead the engineering for a brand new marketing website for the Canadian division of Depends adult incontinence products.
+              Throughout my career I routinely switch-hit between UI design, front-end engineering, and some back-end engineering as well.
             </p>
-            <div className="c-grid c-grid--flush u-padding-top u-padding-bottom-small u-margin-vertical u-border-horizontal">
+            <p class="c-paragraph">
+              While I’m not an expert in back-end development, as a self-taught professional I’m no stranger to digging in further down the tech-stack than is expected of me to build-out infrastructure necessary to support the UI I’m implementing. Whether its spinning up databases, writing queries, building models or controllers, etc &mdash; I have even built my own Elixir+Phoenix and RoR personal projects from scratch before. This has left me with a well-rounded set of skills especially suited for smaller development teams where some responsibilities can be ambiguous between dsiciplines.
+            </p>
+            <div className="c-grid c-grid--flush u-padding-top u-padding-bottom-small u-margin-vertical u-border-bottom">
               <div className="c-grid__cell u-1/2">
                 <ul className="c-list c-list--large c-list--glove">
-                  <li className="c-list__item">Building an open source, lightweight IDE with React</li>
-                  <li className="c-list__item">Building a cryptocurrency trading bot in Ruby</li>
-                  <li className="c-list__item">Designing a marketing site for a freelance collective</li>
+                  <li className="c-list__item">Wireframing, Style Guides, Interactive Mockups, Pitch Decks</li>
+                  <li className="c-list__item">Design Systems Development &amp; Documentation, Animation</li>
+                  <li className="c-list__item">Usability Testing, Accessability (dyslexia, color-blindness, etc), User Support</li>
+                  <li className="c-list__item">Visual Design, Marketing Strategy, A/B Testing, Software Analytics</li>
                 </ul>
               </div>
               <div className="c-grid__cell u-1/2">
                 <ul className="c-list c-list--large c-list--measure">
-                  <li className="c-list__item">Building an open source, lightweight IDE with React</li>
-                  <li className="c-list__item">Building a cryptocurrency trading bot in Ruby</li>
-                  <li className="c-list__item">Designing a marketing site for a freelance collective</li>
+                  <li className="c-list__item">HTML/Jade/Mustache/JSX, React/Redux, Angular</li>
+                  <li className="c-list__item">CSS Organization Strategies: BEM, Atomic, Web Components...</li>
+                  <li className="c-list__item">Ruby On Rails, Elixir+Phoenix, Node, PHP</li>
+                  <li className="c-list__item">Tooling &amp; Testing: Webpack (&hellip;and predecessors like Gulp), Rspec/Capybara, Jest/Enzyme</li>
                 </ul>
               </div>
             </div>
             <p class="c-paragraph">
-              While working for Organic, Inc., I had the opportunity to lead the engineering for a brand new marketing website for the Canadian division of Depends adult incontinence products.
+              Below you’ll find a collection of software projects I have participated in, in some-type of leadership capacity. Prior to my experience of 6 years in software development, I worked within the marketing world at national agencies as cross-disciplinary visual designer &amp; web developer.
+            </p>
+            <p class="c-paragraph">
+              From time-to-time I still do marketing work for the software companies that I have been under employ with–it’s a vertical I’m very comfortable working and leading projects in. Please reach out if you’re interested in marketing samples&hellip;and now, do enjoy!
             </p>
           </div>
         </section>
