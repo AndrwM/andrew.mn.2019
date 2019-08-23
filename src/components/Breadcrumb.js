@@ -1,16 +1,24 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import withBreadcrumbs from "react-router-breadcrumbs-hoc";
+import Routes from "../Routes";
 
 class Breadcrumb extends Component {
-  _name(name, url) {
-    switch (url) {
-      case "/":
-        return "Andrew McIntee";
-      default:
-        return name;
-    }
-  }
+  // _formatName(string) {
+  //   console.log(string)
+  //   return(string.replace(/_/g, ' ').replace(/(?: |\b)(\w)/g, function(key) {
+  //     return key.toUpperCase()
+  //   }));
+  // }
+
+  // _name(name, url) {
+  //   switch (url) {
+  //     case "/":
+  //       return "Andrew McIntee";
+  //     default:
+  //       return this._formatName(name);
+  //   }
+  // }
 
   renderLink(name, url) {
     return (
@@ -18,7 +26,7 @@ class Breadcrumb extends Component {
         <Link
           className="c-navigation__breadcrumb-link"
           to={url}
-          children={this._name(name, url)}
+          children={name}
         />
         &nbsp;/&nbsp;
       </React.Fragment>
@@ -28,7 +36,7 @@ class Breadcrumb extends Component {
   renderTitle(name, url) {
     return (
       <div className="c-navigation__breadcrumb-link c-navigation__breadcrumb-link--static">
-        {this._name(name, url)}
+        {name}
       </div>
     );
   }
@@ -52,4 +60,4 @@ class Breadcrumb extends Component {
   }
 }
 
-export default withBreadcrumbs()(Breadcrumb)
+export default withBreadcrumbs(Routes)(Breadcrumb)

@@ -1,14 +1,6 @@
 import React, { Component } from "react";
 import { HashRouter, Switch, Route } from "react-router-dom";
-
-// --- Pages
-import PageAbout from "./pages/PageAbout";
-import PageResume from "./pages/PageResume";
-import PageCaseStudyIndex from "./pages/PageCaseStudyIndex";
-import PageNewline from "./pages/work/PageNewline";
-import PageHelix from "./pages/work/PageHelix";
-import PageConnectHero from "./pages/work/PageConnectHero";
-import PageCoindex from "./pages/work/PageCoindex";
+import Routes from "./Routes";
 
 // --- Partials
 import PartialFooter from "./pages/partials/PartialFooter";
@@ -20,7 +12,6 @@ import Breadcrumb from "./components/Breadcrumb";
 import "./assets/fonts/Graphik-Regular-Web.woff"
 import "./assets/fonts/Graphik-Light-Web.woff"
 import "./assets/stylesheets/main.scss";
-
 
 class App extends Component {
   constructor(props){
@@ -35,15 +26,6 @@ class App extends Component {
       headerBg: "#f1f9fc",
     };
 
-    this.routes = [
-      { path: "/", PageComponent: PageAbout, isPublic: true },
-      { path: "/resume", PageComponent: PageResume, isPublic: true },
-      { path: "/case-studies", PageComponent: PageCaseStudyIndex, isPublic: false },
-      { path: "/case-studies/newline", PageComponent: PageNewline, isPublic: false },
-      { path: "/case-studies/college-admissions-portal", PageComponent: PageHelix, isPublic: false },
-      { path: "/case-studies/connect-hero", PageComponent: PageConnectHero, isPublic: false },
-      { path: "/case-studies/coindex", PageComponent: PageCoindex, isPublic: false },
-    ];
 
     this.setAppState = this.setAppState.bind(this);
     this.refHeader = React.createRef();
@@ -76,7 +58,7 @@ class App extends Component {
   }
 
   renderPage(){
-    return this.routes.map(({ path, PageComponent, isPublic }) => (
+    return Routes.map(({ path, PageComponent, isPublic }) => (
       <Route exact key={path} path={path} render={() =>
         <PageComponent setAppState={this.setAppState} authorized={this.state.authorized ? true : isPublic} />
       }/>
