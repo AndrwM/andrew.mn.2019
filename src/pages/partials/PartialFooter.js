@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import withBreadcrumbs from "react-router-breadcrumbs-hoc";
+import Routes from "../../Routes";
 
 class PartialFooter extends Component {
   render() {
@@ -44,4 +45,4 @@ class PartialFooter extends Component {
   }
 }
 
-export default withBreadcrumbs()(PartialFooter);
+export default withBreadcrumbs(Routes)(PartialFooter);
