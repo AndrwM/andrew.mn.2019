@@ -5,7 +5,7 @@ class PageCaseStudy2ColLayout extends Component {
     let isFirst = (index === 0);
     return (
       <div className={`c-grid__cell u-1/2 ${isFirst ? "" : "u-border-left"}`}
-        style={{display: "flex", flexDirection: "column", padding: isFirst ? "15vh 6vw 0 0" : "15vh 0 0 6vw"}}>
+        style={{display: "flex", flexDirection: "column", padding: isFirst ? "10vh 6vw 0 0" : "10vh 0 0 6vw"}}>
         {caseStudyComponent}
       </div>
     )

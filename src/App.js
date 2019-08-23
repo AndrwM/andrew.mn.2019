@@ -8,6 +8,7 @@ import PageCaseStudyIndex from "./pages/PageCaseStudyIndex";
 import PageNewline from "./pages/work/PageNewline";
 import PageHelix from "./pages/work/PageHelix";
 import PageConnectHero from "./pages/work/PageConnectHero";
+import PageCoindex from "./pages/work/PageCoindex";
 
 // --- Partials
 import PartialFooter from "./pages/partials/PartialFooter";
@@ -41,6 +42,7 @@ class App extends Component {
       { path: "/case-studies/newline", PageComponent: PageNewline, isPublic: false },
       { path: "/case-studies/college-admissions-portal", PageComponent: PageHelix, isPublic: false },
       { path: "/case-studies/connect-hero", PageComponent: PageConnectHero, isPublic: false },
+      { path: "/case-studies/coindex", PageComponent: PageCoindex, isPublic: false },
     ];
 
     this.setAppState = this.setAppState.bind(this);

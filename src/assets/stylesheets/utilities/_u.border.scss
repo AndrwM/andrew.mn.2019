@@ -1,16 +1,16 @@
-// .u-border-light {
-//   $border-value: 1px solid $c-border-light !important;
+.u-border-dark {
+  $border-value: 1px solid rgba(#999fa5, 0.5) !important;
 
-//   &-horizontal {
-//     border-top: $border-value;
-//     border-bottom: $border-value;
-//   }
+  &-horizontal {
+    border-top: $border-value;
+    border-bottom: $border-value;
+  }
 
-//   &-left { border-left: $border-value; }
-//   &-right { border-right: $border-value; }
-//   &-bottom { border-bottom: $border-value; }
-//   &-top { border-top: $border-value; }
-// }
+  &-left { border-left: $border-value; }
+  &-right { border-right: $border-value; }
+  &-bottom { border-bottom: $border-value; }
+  &-top { border-top: $border-value; }
+}
 
 .u-border {
   $border-value: 1px solid #F4F4F4 !important;

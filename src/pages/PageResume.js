@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { HashLink } from "react-router-hash-link";
 
 import WithPage from "../components/WithPage";
 import Reveal from "../components/Reveal";
@@ -14,8 +15,8 @@ class PageResume extends Component {
   renderHeader() {
     return (
       <React.Fragment>
-        <h1 className="c-title c-title--large">Resumé</h1>
-        <p className="c-paragraph">I can plug and play as either a UI designer or front-end engineer on teams but I'm most comfortable as a hybrid of both: where I'm designing and prototyping new features and then executing to tested, production code with any necessary back-end integrations.</p>
+        <h1 className="c-title c-title--xlarge">Resumé 👋</h1>
+        {/* <p className="c-paragraph">I can plug and play as either a UI designer or front-end engineer on teams but I'm most comfortable as a hybrid of both: where I'm designing and prototyping new features and then executing to tested, production code with any necessary back-end integrations.</p> */}
       </React.Fragment>
     );
   }
@@ -23,17 +24,74 @@ class PageResume extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="c-wrapper c-wrapper--slimmest u-padding-top-large">
+        <section className="c-wrapper">
+          <div className="c-container">
+            <h2 className="c-title c-title--small">Full-Time Remote Worker Going On 6 Years &mdash; What I'm Looking For In My Next Opportunity&hellip;</h2>
+            <p class="c-paragraph">
+              While working for Organic, Inc., I had the opportunity to lead the engineering for a brand new marketing website for the Canadian division of Depends adult incontinence products.
+            </p>
+            <p class="c-paragraph">
+              While working for Organic, Inc., I had the opportunity to lead the engineering for a brand new marketing website for the Canadian division of Depends adult incontinence products.
+            </p>
+            <HashLink smooth to="#professional-experience" className="c-button c-button--arrow-d">Professional Experience</HashLink>
+          </div>
+        </section>
+        <section className="c-wrapper c-wrapper--slimmest u-border-top u-padding-top-large" id="professional-experience">
           <div className="c-container">
             <Reveal>
-              <h2 className="c-title c-title--medium u-margin-bottom-small">Experience</h2>
+              <h2 className="c-title c-title--medium u-margin-vertical">Professional Experience</h2>
+            </Reveal>
+            <div className="c-grid">
+              <div className="c-grid__cell 1/6--lap">
+                <h3 className="c-title c-title--label u-margin-top-smallest">2017 – 2019</h3>
+              </div>
+              <div className="c-grid__cell 5/6--lap">
+                <h3 className="c-title c-title--small u-margin-bottom-none">Division Of Labor Product Agency</h3>
+                <h4 className="c-title c-title--smallest">Lead Product Designer &amp; Sr. Front-End Engineer</h4>
+                <ul className="c-list u-margin-bottom-smallest">
+                  <li className="c-list__item">Responsible for all design systems, design processes, and front-end UI implementations accross all projects</li>
+                  <li className="c-list__item">Lead wireframes, hi-fidelity UI comps, front-end engineering, and direct user feedback for all software projects</li>
+                  <li className="c-list__item">Built our own in-house design system and front-end react library</li>
+                  <li className="c-list__item">Interfaced directly with our clients as the design director</li>
+                  <li className="c-list__item">Developed front-end engineering best practices and documention</li>
+                  <li className="c-list__item">Nurtured software design systems accross changing marketing or engineering requirements</li>
+                  <li className="c-list__item">Represented the design department as one of the 3 primary disciplines of the 17 employee company, next to engineering &amp; marketing</li>
+                  <li className="c-list__item">Deployed features in Elixir/Phoenix, React/Redux SPA, and Ruby On Rails enviroments</li>
+                  <li className="c-list__item">Worked 100% remotely</li>
+                </ul>
+                <p className="c-paragraph c-paragraph--sans c-paragraph--smallest u-subtle">Clients: BMW, FlatIron Code School, South Carolina Dept. Of Commerce</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="c-wrapper c-wrapper--slimmest">
+          <div className="c-container">
+            <div className="c-grid">
+              <div className="c-grid__cell 1/6--lap">
+                <h3 className="c-title c-title--label u-margin-top-smallest">2017 - 2018</h3>
+              </div>
+              <div className="c-grid__cell 5/6--lap">
+                <h3 className="c-title c-title--small u-margin-bottom-none">Coindex Blockchain Trading Platform</h3>
+                <h4 className="c-title c-title--smallest">Co-Founder, Director of Product Design</h4>
+                <ul className="c-list u-margin-bottom-smallest">
+                  <li className="c-list__item">YCombinator top 15 applicant</li>
+                  <li className="c-list__item">Responsible for all product design &amp; UI engineering</li>
+                  <li className="c-list__item">Responsible for all marketing visual design &amp; web development</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="c-wrapper c-wrapper--slimmest">
+          <div className="c-container">
+            <Reveal>
               <div className="c-grid">
                 <div className="c-grid__cell 1/6--lap">
                   <h3 className="c-title c-title--label u-margin-top-smallest">2015 – 2017</h3>
                 </div>
                 <div className="c-grid__cell 5/6--lap">
                   <h3 className="c-title c-title--small u-margin-bottom-none">The Iron Yard</h3>
-                  <h4 className="c-title c-title--smallest">Senior Product Designer</h4>
+                  <h4 className="c-title c-title--smallest">Sr. Product Designer</h4>
                   <ul className="c-list">
                     <li className="c-list__item">Led design, development &amp; launch of The Iron Yard's new marketing site</li>
                     <li className="c-list__item">Led specification, design, and front-end development of custom admissions software</li>
@@ -94,7 +152,7 @@ class PageResume extends Component {
               </div>
               <div className="c-grid__cell 5/6--lap">
                 <h3 className="c-title c-title--small u-margin-bottom-none">Organic</h3>
-                <h4 className="c-title c-title--smallest">Senior User Interface Developer</h4>
+                <h4 className="c-title c-title--smallest">Sr. User Interface Developer</h4>
                 <ul className="c-list">
                   <li className="c-list__item">Led interactive development for Depend Canada brand marketing website</li>
                   <li className="c-list__item">Led interactive development for Depend Underwearness Campaign video streaming player</li>

@@ -50,6 +50,7 @@
   }
 
   &--arrow-remote,
+  &--arrow-d,
   &--arrow-r,
   &--arrow-l {
 
@@ -65,6 +66,11 @@
     &:hover::before {
       opacity: 1;
     }
+  }
+
+  &--arrow-d {
+    cursor: s-resize;
+    &::after { content: '  ↓'; }
   }
 
   &--arrow-r {

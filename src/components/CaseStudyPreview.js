@@ -20,8 +20,20 @@ class CaseStudyPreview extends Component {
     );
   }
 
+  renderPreview(){
+    if (this.props.context && this.props.context.includes("no-browser") ) {
+      return ( <img src={this.props.image} className="u-margin-top-large" style={{borderRadius: "4px 4px 0 0" }} /> );
+    } else {
+    return (
+      <div className="c-browser u-margin-top-large">
+        <div className="c-browser__content"><img src={this.props.image}/></div>
+      </div>
+    );
+    }
+  }
+
   render() {
-    if (this.props.context === "2col") {
+    if ( this.props.context && this.props.context.includes("2col") ) {
       return (
         <React.Fragment>
           <div className="u-padding-bottom">
@@ -41,18 +53,16 @@ class CaseStudyPreview extends Component {
       );
     } else {
       return (
-        <div className="c-wrapper c-wrapper--flush u-border-bottom" style={{overflow: "hidden"}}>
+        <div className="c-wrapper c-wrapper--slimmest u-padding-bottom-none u-border-bottom" style={{overflow: "hidden"}}>
           <div className="c-container">
             <Reveal>
-              <div className="c-grid c-grid--large c-grid--middle">
+              <div className="c-grid c-grid--flush c-grid--middle">
                 <div className="c-grid__cell u-6/12 u-padding-vertical-large">
                   {this.renderContent()}
                   {this.props.url && <Link to={this.props.url} className="c-button c-button--arrow-r">Read The Case Study</Link>}
                 </div>
                 <div className="c-grid__cell u-6/12 c-grid__cell--pull-right">
-                  <div className="c-browser u-margin-top-large">
-                    <div className="c-browser__content"><img src={this.props.image}/></div>
-                  </div>
+                  {this.renderPreview()}
                 </div>
               </div>
             </Reveal>

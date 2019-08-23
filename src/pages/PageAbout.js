@@ -37,6 +37,7 @@ class PageAbout extends Component {
         <br/>
         specializing in design systems.
         </p>
+        <div className="c-notice u-margin-top" children="Pardon the dust! This site is in *active* development." />
         <div className="c-grid c-grid--auto c-grid--large u-margin-top-large">
           <div className="c-grid__cell u-1/6">
             <Navigation />
