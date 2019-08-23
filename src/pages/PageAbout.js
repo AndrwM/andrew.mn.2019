@@ -4,6 +4,8 @@ import Reveal from '../components/Reveal';
 
 import WithPage from "../components/WithPage";
 import Navigation from "../components/Navigation";
+import ExperienceDesign from "./partials/ExperienceDesign";
+import ExperienceEngineering from "./partials/ExperienceEngineering";
 
 class PageAbout extends Component {
   componentDidMount() {
@@ -75,11 +77,7 @@ class PageAbout extends Component {
           <Reveal>
             <div className="u-padding-vertical-small">
               <h2 className="c-title c-title--small u-margin-top-small">Design Experience</h2>
-              <ul className="c-list c-list--large c-list--glove">
-                <li className="c-list__item">Building an open source, lightweight IDE with React</li>
-                <li className="c-list__item">Building a cryptocurrency trading bot in Ruby</li>
-                <li className="c-list__item">Designing a marketing site for a freelance collective</li>
-              </ul>
+              <ExperienceDesign />
             </div>
           </Reveal>
           <Reveal>
@@ -100,11 +98,7 @@ class PageAbout extends Component {
           <Reveal>
             <div className="u-padding-vertical-small">
               <h2 className="c-title c-title--small u-margin-top-small">Programming Experience</h2>
-              <ul className="c-list c-list--large c-list--measure">
-                <li className="c-list__item">Building an open source, lightweight IDE with React</li>
-                <li className="c-list__item">Building a cryptocurrency trading bot in Ruby</li>
-                <li className="c-list__item">Designing a marketing site for a freelance collective</li>
-              </ul>
+              <ExperienceEngineering />
             </div>
           </Reveal>
           <Reveal>

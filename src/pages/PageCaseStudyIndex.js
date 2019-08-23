@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import WithPage from "../components/WithPage";
 import CaseStudyPreview from "../components/CaseStudyPreview";
 import CaseStudy2ColLayout from "../components/CaseStudy2ColLayout";
+import ExperienceDesign from "./partials/ExperienceDesign";
+import ExperienceEngineering from "./partials/ExperienceEngineering";
 
 import imageNewline from "../assets/images/projects/newline/v2-5.png";
 import imageCoindex from "../assets/images/projects/coindex/1.png";
@@ -97,20 +99,10 @@ class PageCaseStudyIndex extends Component {
             </p>
             <div className="c-grid c-grid--flush u-padding-top u-padding-bottom-small u-margin-vertical u-border-bottom">
               <div className="c-grid__cell u-1/2">
-                <ul className="c-list c-list--large c-list--glove">
-                  <li className="c-list__item">Wireframing, Style Guides, Interactive Mockups, Pitch Decks</li>
-                  <li className="c-list__item">Design Systems Development &amp; Documentation, Animation</li>
-                  <li className="c-list__item">Usability Testing, Accessability (dyslexia, color-blindness, etc), User Support</li>
-                  <li className="c-list__item">Visual Design, Marketing Strategy, A/B Testing, Software Analytics</li>
-                </ul>
+                <ExperienceDesign />
               </div>
               <div className="c-grid__cell u-1/2">
-                <ul className="c-list c-list--large c-list--measure">
-                  <li className="c-list__item">HTML/Jade/Mustache/JSX, React/Redux, Angular</li>
-                  <li className="c-list__item">CSS Organization Strategies: BEM, Atomic, Web Components...</li>
-                  <li className="c-list__item">Ruby On Rails, Elixir+Phoenix, Node, PHP</li>
-                  <li className="c-list__item">Tooling &amp; Testing: Webpack (&hellip;and predecessors like Gulp), Rspec/Capybara, Jest/Enzyme</li>
-                </ul>
+                <ExperienceEngineering />
               </div>
             </div>
             <p class="c-paragraph">
