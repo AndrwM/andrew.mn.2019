@@ -3,21 +3,18 @@ import Flickity from 'react-flickity-component'
 import 'flickity/dist/flickity.min.css';
 
 class SliderLarge extends React.Component {
-  componentDidMount = () => {
-    this.flickity.on('settle', () => {
-      console.log(`current index is ${this.flickity.selectedIndex}`)
-    });
-  }
-
   render() {
       return (
-        <div class="c-wrapper c-wrapper--full" style={{background: this.props.background}}>
-          <div class="c-container">
+        <div
+          className="c-wrapper c-wrapper--full"
+          style={{background: this.props.background}}>
+          <div className="c-container">
             <Flickity
               flickityRef={c => this.flickity = c}
               className={"c-carousel"}
               elementType={"section"}
-              disableImagesLoaded={true}
+              disableImagesLoaded={false}
+              static
               options={{
                 draggable: true,
                 prevNextButtons: false,
@@ -27,9 +24,8 @@ class SliderLarge extends React.Component {
                 dragThreshold: 1
             }}>
             {this.props.slides.map((content, index) =>
-              <div className="c-carousel__item" key={index}>
-                {content}
-              </div>
+              <img className="c-carousel__item" src={content} key={index} />
+
             )}
           </Flickity>
         </div>

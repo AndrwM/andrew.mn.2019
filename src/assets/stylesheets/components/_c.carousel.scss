@@ -2,11 +2,11 @@
 
   &__item {
     margin-left: 5%;
-    width: 80%;
+    width: 70vw;
 
     @media #{$bp-lap} {
       margin-left: 4%;
-      width: 90%;
+      width: 70vw;
     }
   }
 
