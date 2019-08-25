@@ -42,7 +42,7 @@ class CaseStudyPreview extends Component {
               {this.props.url && <Link to={this.props.url} className="c-button c-button--small c-button--arrow-r">Read The Case Study</Link>}
             </Reveal>
           </div>
-          <div className="u-margin-top-auto">
+          <div className="u-margin-top-auto" style={{overflow: "hidden", margin: "0 -20px", padding: "0 20px"}}>
             <Reveal>
               <div className="c-browser" style={{maxHeight: "360px"}}>
                 <div className="c-browser__content"><img src={this.props.image}/></div>
