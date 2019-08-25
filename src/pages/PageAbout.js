@@ -6,6 +6,7 @@ import WithPage from "../components/WithPage";
 import Navigation from "../components/Navigation";
 import ExperienceDesign from "./partials/ExperienceDesign";
 import ExperienceEngineering from "./partials/ExperienceEngineering";
+import Brands from "./partials/Brands";
 
 class PageAbout extends Component {
   componentDidMount() {
@@ -18,16 +19,16 @@ class PageAbout extends Component {
   _greeting(){
     const date = new Date();
     const hour = date.getHours()
-    if (hour > 19) { return "Good Evening" } else
-    if (hour > 12) { return "Good Afternoon" } else
-    if (hour > 4) { return "Good Morning" } else
+    if (hour > 19) { return "Good evening" } else
+    if (hour > 12) { return "Good afternoon" } else
+    if (hour > 4) { return "Good morning" } else
     { return "Good Day" };
   }
 
   renderHeader() {
     return (
       <React.Fragment>
-        <h1 className="c-title c-title--large">
+        <h1 className="c-title c-title--large" style={{textTransform: "capitalize"}}>
           {this._greeting()}
           &nbsp;
           <span className="u-subtler" style={{fontWeight: 100}}>—</span>
@@ -47,7 +48,7 @@ class PageAbout extends Component {
           <div className="c-grid__cell">
             <h2 className="c-title c-title--small u-margin-top-small">Currently…</h2>
             <ul className="c-list c-list--large c-list--sparkle">
-              <li className="c-list__item">Based out of the southeast United States &amp; Mexico City</li>
+              <li className="c-list__item">Based out of the Southeast United States &amp; Mexico City</li>
               <li className="c-list__item">Taking a professional sabbatical to learn spanish in a intensive format</li>
               <li className="c-list__item">Assisting with Milan Fashion Week &amp; taking scuba diving lessons</li>
             </ul>
@@ -70,76 +71,105 @@ class PageAbout extends Component {
           </Reveal>
           <Reveal>
             <p className="c-paragraph">
-              Hello! — My name is Andrew McIntee. I’m a digital product designer & web-engineer who specializes in building & nurturing design systems.
-              I have been a remote-worker for over 4 years.
+              My name is Andrew McIntee. I’m a digital product designer &amp; web-engineer who specializes in building &amp; nurturing design systems.
+              <br/>I have also been a remote-worker for over 4 years.
             </p>
           </Reveal>
           <Reveal>
             <p className="c-paragraph">
-            Engineering chops
+              Currently my focus is on design systems and the engineering powering user interfaces, and I work with product teams and startups to create efficient and seamless software user experiences. In addition to design and front-end engineering, I also dive onto the server-level to build out modeling or functionality to support the interface needs.
             </p>
           </Reveal>
           <Reveal>
             <p className="c-paragraph">
-            With my engineering experience and design experience my expertise is sitting on engineering team as an engineer’s designer or on a design team as a designer’s engineer. A liaison between two core assets of a software development company, having consistently jumped between both roles in my career.
+              Having jumped between both design &amp; front-end engineering,
+              I am most effective sitting on engineering team as an engineer’s designer or on a design team as a designer’s engineer; a liaison between two core assets of a software development company.
+            </p>
+          </Reveal>
+          <Reveal>
+            <p className="c-paragraph">
+              At the moment, I am based between the Southeast United States and Mexico City while I focus my efforts towards studying Spanish.
             </p>
           </Reveal>
         </div>
         <div className="c-container">
-          <div className="c-grid c-grid--flush u-padding-top u-padding-bottom-small u-margin-vertical">
-            <div className="c-grid__cell u-1/2">
-              <h2 className="c-title c-title--small u-margin-top-small">Design Experience</h2>
-              <ExperienceDesign />
+          <Reveal>
+            <div className="c-grid c-grid--flush u-padding-top u-padding-bottom-small u-margin-vertical">
+              <div className="c-grid__cell u-1/2">
+                <h2 className="c-title c-title--small u-margin-top-small">Design Experience</h2>
+                <ExperienceDesign />
+              </div>
+              <div className="c-grid__cell u-1/2">
+                <h2 className="c-title c-title--small u-margin-top-small">Programming Experience</h2>
+                <ExperienceEngineering />
+              </div>
             </div>
-            <div className="c-grid__cell u-1/2">
-              <h2 className="c-title c-title--small u-margin-top-small">Programming Experience</h2>
-              <ExperienceEngineering />
-            </div>
-          </div>
+          </Reveal>
         </div>
-        <div className="c-container OVERRIDE-about-lockup-2">
+        <div className="c-container OVERRIDE-about-lockup-2 u-padding-bottom-large">
           <Reveal>
+            <h2 className="c-title c-title--small u-margin-top-small">Experience</h2>
             <p className="c-paragraph">
-            Previously, I lead design and UI systems at [Division Of Labor](http://www.divisionoflabor.xyz/) and I’m a partner at [Coindex Fund](http://coindex.fund/) , a cryptocurrency management service.
-            Prior to this, I worked as a senior software designer at [The Iron Yard](https://newline.theironyard.com/) ,
-            ran a freelance UI agency, and engineered brand experiences at [Organic](http://organic.com/) .
+            Most recently, I lead the creation and execution of design systems at Division Of Labor, a digital product development agency. There we partnered with alpha-stage startups to design and build their MVP products.
             </p>
           </Reveal>
           <Reveal>
             <p className="c-paragraph">
-            At the moment, I am based between the Southeast United States and Mexico City while I focus my efforts towards studying Spanish.
+              Previous to this one of the original was a co-founders of Coindex Labs. As design director for Coindex Labs, I oversaw all user interface design, marketing visual design, and engineered prototypes of our crypotocurrency trading platform interface.
             </p>
           </Reveal>
           <Reveal>
             <p className="c-paragraph">
-            Following my sabbatical, I am looking to join a medium-sized startup company. To continue nurturing an excellent software experiences, connecting: UI connecting, usability testing, engineering execution, design documentation, and company processes to create a culture of user experience excellence. In the interim, I am available for UI design or front-end engineering consulting engagements.
+              From 2015-'17, I worked as a senior software designer at The Iron Yard (now sold) working on the LMS product team.
             </p>
           </Reveal>
           <Reveal>
-            <div class="u-padding-vertical-small">
+            <p className="c-paragraph">
+              Prior to that, I ran a small UI design studio that designed user interfaces with product agencies &amp; startups and worked for international brands as a design engineer in a few big-name digital marketing agencies.
+            </p>
+          </Reveal>
+          <Reveal>
+            <p className="c-paragraph">
+              I am looking to join a medium-sized startup company. To continue nurturing an excellent software experiences, connecting: UI connecting, usability testing, engineering execution, design documentation, and company processes to create a culture of user experience excellence. In the interim, I am available for UI design or front-end engineering consulting engagements.
+            </p>
+          </Reveal>
+          <Reveal>
+            <div className="u-padding-vertical-small u-padding-top u-margin-top u-border-top">
               <Navigation context="no-about-link" />
             </div>
           </Reveal>
           <Reveal>
             <p className="c-paragraph">
-            Unfortunately some of my past work is not available publicly. If you would like to see my portfolio, please email me.
+              Due to privacy restrictions, some of my work is not available publicly. If you would like to see engineering samples: <Link to="/case-studies" className="c-link">Studio@Andrew.mn</Link>.
+            </p>
+          </Reveal>
+          <Reveal>
+            <p className="c-paragraph">
+              Thanks for visiting!
+            </p>
+          </Reveal>
+          <Reveal>
+            <p className="c-paragraph c-paragraph--sans c-paragraph--medium">
+              <span className="u-subtler">&mdash;</span>&nbsp; Andrew McIntee
             </p>
           </Reveal>
         </div>
       </section>
-      <section className="c-wrapper c-wrapper--slimmest u-padding-vertical-large">
+      <section className="c-wrapper c-wrapper--slim">
         <div className="c-container">
-          <p className="c-paragraph c-paragraph--sans c-paragraph--small">
-            <span class="c-emoji c-emoji--in-margin">📬</span>&nbsp; Contact me at&nbsp;
-            <a className="c-link" href="mailto:studio@andrew.mn">Studio@Andrew.mn</a>
-            &nbsp;or by phone at&nbsp;
-            <a className="c-link" href="mailto:studio@andrew.mn">(864) 915 0648</a>.
-          </p>
-          <p className="c-paragraph c-paragraph--sans c-paragraph--small">
-            Do you fancy LinkedIn? <a className="c-link" href="#">I have that too</a>.
-          </p>
+          <Reveal>
+            <Brands />
+          </Reveal>
         </div>
       </section>
+      {/* <section className="c-wrapper c-wrapper--slimmest u-padding-vertical-large u-border-top">
+        <div className="c-container">
+          <p className="c-title--smallest u-margin-vertical-smallest">
+              <span className="c-emoji c-emoji--in-margin">🎉</span>&nbsp;&nbsp;Have&nbsp;a&nbsp;great&nbsp;day. &mdash; <a href="mailto:Studio@Andrew.mn" className="c-link">Studio@Andrew.mn</a></p>
+            <p className="c-paragraph--small u-margin-vertical-smallest">&nbsp; Copyright Andrew McIntee 2019.</p>
+            <p className="c-paragraph--small u-margin-top-smallest">&nbsp; <span className="u-subtler u-margin-left-smallest">In respect of your privacy, this website does not use trackers or cookies :)</span></p>
+        </div>
+      </section> */}
       </React.Fragment>
     );
   }

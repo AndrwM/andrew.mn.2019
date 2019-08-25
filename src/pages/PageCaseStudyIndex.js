@@ -91,10 +91,10 @@ class PageCaseStudyIndex extends Component {
         <section className="c-wrapper u-padding-bottom-none">
           <div className="c-container">
             <h2 className="c-title c-title--small">Design &amp; Programming Experience</h2>
-            <p class="c-paragraph">
+            <p className="c-paragraph">
               Throughout my career I routinely switch-hit between UI design, front-end engineering, and some back-end engineering as well.
             </p>
-            <p class="c-paragraph">
+            <p className="c-paragraph">
               While I’m not an expert in back-end development, as a self-taught professional I’m no stranger to digging in further down the tech-stack than is expected of me to build-out infrastructure necessary to support the UI I’m implementing. Whether its spinning up databases, writing queries, building models or controllers, etc &mdash; I have even built my own Elixir+Phoenix and RoR personal projects from scratch before. This has left me with a well-rounded set of skills especially suited for smaller development teams where some responsibilities can be ambiguous between dsiciplines.
             </p>
             <div className="c-grid c-grid--flush u-padding-top u-padding-bottom-small u-margin-vertical u-border-bottom">
@@ -105,10 +105,10 @@ class PageCaseStudyIndex extends Component {
                 <ExperienceEngineering />
               </div>
             </div>
-            <p class="c-paragraph">
+            <p className="c-paragraph">
               Below you’ll find a collection of software projects I have participated in, in some-type of leadership capacity. Prior to my experience of 6 years in software development, I worked within the marketing world at national agencies as cross-disciplinary visual designer &amp; web developer.
             </p>
-            <p class="c-paragraph">
+            <p className="c-paragraph">
               From time-to-time I still do marketing work for the software companies that I have been under employ with–it’s a vertical I’m very comfortable working and leading projects in. Please reach out if you’re interested in marketing samples&hellip;and now, do enjoy!
             </p>
           </div>
@@ -147,10 +147,10 @@ class PageCaseStudyIndex extends Component {
           description={["Newline is the course-work software of The Iron Yard. I worked with fellow designer <a href='https://dribbble.com/jeremiah' className='c-link' target='_blank'>Jeremiah</a> to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system."]} />
         <div className="c-wrapper">
           <div className="c-container">
-            <h2 class="c-title c-title--small">
+            <h2 className="c-title c-title--small">
               More Work
             </h2>
-            <p class="c-paragraph">
+            <p className="c-paragraph">
             While working for Organic, Inc., I had the opportunity to lead the engineering for a brand new marketing website for the Canadian division of Depends adult incontinence products.
             </p>
             {

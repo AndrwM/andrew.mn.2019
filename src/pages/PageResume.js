@@ -27,14 +27,14 @@ class PageResume extends Component {
         <section className="c-wrapper">
           <div className="c-container">
             <h2 className="c-title c-title--small">Full-Time Remote Worker Going On 4 Years</h2>
-            <p class="c-paragraph">
+            <p className="c-paragraph">
               I have been working full-time in the web development, marketing design, or digital product space for the past 9 years; of those, 4 of them have been full-time remote. Most recently I was lead _for all_ of the user experience, design, and front-end at my most recent company, a 17-employee digital product agency.
             </p>
-            <p class="c-paragraph">
+            <p className="c-paragraph">
               In my time within the digital product space, I have had the privalage of being mentored by seniors and have also had the opportunity to pay it back through web engineering workshops and mentoring the juniors below me.
             </p>
             <h2 className="c-title c-title--small u-margin-top">What I'm Looking For In My Next Opportunity&hellip;</h2>
-            <p class="c-paragraph">
+            <p className="c-paragraph">
               I'm looking to join a small to medium sized digital product agency or software product where I can continue honing my skillset towards the career-path of being a product owner; responsible for all design, engineering, or both. My preference is to work on a geographically distributed team with team members who also find they are the most productive when they routinely change their working enviroment.
             </p>
             <HashLink smooth to="#professional-experience" className="c-button c-button--arrow-d">Professional Experience</HashLink>

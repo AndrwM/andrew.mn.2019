@@ -57,11 +57,11 @@ class CaseStudyPreview extends Component {
           <div className="c-container">
             <Reveal>
               <div className="c-grid c-grid--flush c-grid--middle">
-                <div className="c-grid__cell u-6/12 u-padding-vertical-large">
+                <div className="c-grid__cell u-6/12--lap u-padding-vertical-large u-padding-right-small">
                   {this.renderContent()}
                   {this.props.url && <Link to={this.props.url} className="c-button c-button--arrow-r">Read The Case Study</Link>}
                 </div>
-                <div className="c-grid__cell u-6/12 c-grid__cell--pull-right">
+                <div className="c-grid__cell u-6/12--lap c-grid__cell--pull-right">
                   {this.renderPreview()}
                 </div>
               </div>

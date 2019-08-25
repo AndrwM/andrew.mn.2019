@@ -18,8 +18,8 @@ class SliderLarge extends React.Component {
 
   render() {
       return (
-        <div class="c-wrapper c-wrapper--full c-wrapper">
-          <div class="c-container">
+        <div className="c-wrapper c-wrapper--full c-wrapper">
+          <div className="c-container">
             <Flickity
               flickityRef={c => this.flickity = c}
               className={"c-carousel"}
