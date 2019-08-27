@@ -14,7 +14,7 @@ class CaseStudyPreview extends Component {
         </h3>
         <h4 className="c-title c-title--smallest u-margin-bottom-small">{this.props.type}</h4>
         {this.props.description && this.props.description.map((paragraph, index) => (
-          <p key={index} className="c-paragraph c-paragraph--sans c-paragraph--medium" dangerouslySetInnerHTML={{__html: paragraph}} />
+          <p key={index} className="c-paragraph c-paragraph--medium" dangerouslySetInnerHTML={{__html: paragraph}} />
         ))}
       </React.Fragment>
     );
@@ -39,7 +39,7 @@ class CaseStudyPreview extends Component {
           <div className="u-padding-bottom">
             <Reveal>
               {this.renderContent()}
-              {this.props.url && <Link to={this.props.url} className="c-button c-button--small c-button--arrow-r">Read The Case Study</Link>}
+              {this.props.url && <Link to={this.props.url} className="c-button c-button--arrow-r">Read The Case Study</Link>}
             </Reveal>
           </div>
           <div className="u-margin-top-auto" style={{overflow: "hidden", margin: "0 -20px", padding: "0 20px"}}>

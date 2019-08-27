@@ -1,11 +1,7 @@
 .c-header {
   margin: 0;
-  padding: 120px 6% 60px;
   position: relative;
 
-  @media #{$bp-lap} {
-    padding: 160px 9% 100px;
-  }
 
   &__background {
     @keyframes float {
@@ -38,9 +34,10 @@
     top: 0;
     right: 0;
     left: 0;
-    background: $c-light-blue linear-gradient(to bottom, rgba(#ffffff, 0.8) 0%, rgba(241, 255, 249, 0.5) 50%, rgba(#ffffff, 0) 100%);
+    background: $c-light-blue linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(#ffffff, 0) 100%);
     transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     animation: 8s cubic-bezier(0.25, 0.46, 0.45, 0.94) float infinite;
+    will-change: transform, background-color, height;
 
     &::after {
       background-image: url("../../images/c-wrapper-mask.svg");
@@ -54,6 +51,7 @@
       bottom: -1px;
       background-size: 200vw;
       animation: 10s cubic-bezier(0.25, 0.46, 0.45, 0.94) float-mask infinite;
+      will-change: background-position;
     }
   }
 
@@ -62,6 +60,16 @@
     margin: 0 auto;
     z-index: +1;
     position: relative;
+    padding: 120px 6% 60px;
+
+    @media #{$bp-lap} {
+      padding: 160px 9% 60px;
+    }
+
+    &:empty {
+      padding: 0;
+      min-height: 100px;
+    }
 
     & > * {
       @keyframes fade-in {

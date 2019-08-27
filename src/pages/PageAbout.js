@@ -130,7 +130,7 @@ class PageAbout extends Component {
           </Reveal>
           <Reveal>
             <p className="c-paragraph">
-              I am looking to join a medium-sized startup company. To continue nurturing an excellent software experiences, connecting: UI connecting, usability testing, engineering execution, design documentation, and company processes to create a culture of user experience excellence. In the interim, I am available for UI design or front-end engineering consulting engagements.
+              Moving forward, I am looking to join a medium-sized startup company. To continue nurturing an excellent software experiences, connecting: UI connecting, usability testing, engineering execution, design documentation, and company processes to create a culture of user experience excellence. In the interim, I am available for UI design or front-end engineering consulting engagements.
             </p>
           </Reveal>
           <Reveal>
@@ -149,7 +149,7 @@ class PageAbout extends Component {
             </p>
           </Reveal>
           <Reveal>
-            <p className="c-paragraph c-paragraph--sans c-paragraph--medium">
+            <p className="c-paragraph c-paragraph--sans-medium">
               <span className="u-subtler">&mdash;</span>&nbsp; Andrew McIntee
             </p>
           </Reveal>

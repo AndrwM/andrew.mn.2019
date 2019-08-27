@@ -8,15 +8,13 @@ class PageResume extends Component {
   componentDidMount() {
     this.props.setAppState({
       headerContent: this.renderHeader(),
-      headerBg: "#f1f9fc"
+      headerBg: "#fef5f0"
     });
   }
 
   renderHeader() {
     return (
       <React.Fragment>
-        <h1 className="c-title c-title--xlarge">Resumé 👋</h1>
-        {/* <p className="c-paragraph">I can plug and play as either a UI designer or front-end engineer on teams but I'm most comfortable as a hybrid of both: where I'm designing and prototyping new features and then executing to tested, production code with any necessary back-end integrations.</p> */}
       </React.Fragment>
     );
   }
@@ -26,7 +24,10 @@ class PageResume extends Component {
       <React.Fragment>
         <section className="c-wrapper">
           <div className="c-container">
-            <h2 className="c-title c-title--small">Full-Time Remote Worker Going On 4 Years</h2>
+            <h2 className="c-title c-title--small">Resume</h2>
+            <p className="c-paragraph c-paragraph--large">
+            Product designer &amp; web engineer of 9 years&hellip;<br/>Remote worker going on 4.
+            </p>
             <p className="c-paragraph">
               I have been working full-time in the web development, marketing design, or digital product space for the past 9 years; of those, 4 of them have been full-time remote. Most recently I was lead _for all_ of the user experience, design, and front-end at my most recent company, a 17-employee digital product agency.
             </p>
@@ -63,7 +64,7 @@ class PageResume extends Component {
                   <li className="c-list__item">Deployed features in Elixir/Phoenix, React/Redux SPA, and Ruby On Rails enviroments</li>
                   <li className="c-list__item">Worked 100% remotely</li>
                 </ul>
-                <p className="c-paragraph c-paragraph--sans c-paragraph--smallest u-subtle">Clients: BMW, FlatIron Code School, South Carolina Dept. Of Commerce</p>
+                <p className="c-paragraph c-paragraph--sans-smallest u-subtle">Clients: BMW, FlatIron Code School, South Carolina Dept. Of Commerce</p>
               </div>
             </div>
           </div>
@@ -125,7 +126,7 @@ class PageResume extends Component {
                   <li className="c-list__item">Leveraged extensive industry network to build a team of freelance engineers and designers</li>
                   <li className="c-list__item">Consulted with clients to develop strategies for meeting business goals with design</li>
                 </ul>
-                <p className="c-paragraph c-paragraph--sans c-paragraph--smallest u-subtle">Clients: Clemson University,  NFL,  The Iron Yard,  Auburn University</p>
+                <p className="c-paragraph c-paragraph--sans-smallest u-subtle">Clients: Clemson University,  NFL,  The Iron Yard,  Auburn University</p>
               </div>
             </div>
           </div>
@@ -142,7 +143,7 @@ class PageResume extends Component {
                 <ul className="c-list">
                   <li className="c-list__item">Led online creative direction for new Echo Cordless power tool line marketing site</li>
                   <li className="c-list__item">Designed and engineered interactive, mobile-responsive eBlast campaigns for national brands</li>
-                  <p className="c-paragraph c-paragraph--sans c-paragraph--smallest u-subtle">Clients: The Home Depot,  Echo Cordless,  Ridgid,  Ryobi Tools,  Stōk Grills</p>
+                  <p className="c-paragraph c-paragraph--sans-smallest u-subtle">Clients: The Home Depot,  Echo Cordless,  Ridgid,  Ryobi Tools,  Stōk Grills</p>
                 </ul>
               </div>
             </div>
@@ -162,7 +163,7 @@ class PageResume extends Component {
                   <li className="c-list__item">Led interactive development for Depend Underwearness Campaign video streaming player</li>
                   <li className="c-list__item">Developed engaging, mobile-responsive marketing websites for national brands</li>
                   <li className="c-list__item">Worked remotely</li>
-                  <p className="c-paragraph c-paragraph--sans c-paragraph--smallest u-subtle">Clients: U By Kotex,  Depend USA,  Depend Underwearness,  Depend Canada, Huggies Pull-Ups</p>
+                  <p className="c-paragraph c-paragraph--sans-smallest u-subtle">Clients: U By Kotex,  Depend USA,  Depend Underwearness,  Depend Canada, Huggies Pull-Ups</p>
                 </ul>
               </div>
             </div>
@@ -219,16 +220,16 @@ class PageResume extends Component {
             </div>
           </div>
         </section>
-        <section className="c-wrapper c-wrapper--slim c-wrapper--light">
+        <section className="c-wrapper c-wrapper--slim c-wrapper--light u-padding-top-large">
           <div className="c-container">
             <h2 className="c-title c-title--medium u-margin-bottom-small">Speaking</h2>
             <div className="u-margin-bottom">
               <h3 className="c-title c-title--small u-margin-bottom-none">Clemson University 2016 <span className="u-subtler">—</span> Guest Lecturer (Graphic Communications Department)</h3>
-              <p className="c-paragraph c-paragraph--sans c-paragraph--small">I led a crash course on Javascript basics, jQuery, and the basics of debugging code to teach the class how to create a primitive budgeting calculator.</p>
+              <p className="c-paragraph c-paragraph--sans-small">I led a crash course on Javascript basics, jQuery, and the basics of debugging code to teach the class how to create a primitive budgeting calculator.</p>
             </div>
             <div className="u-margin-bottom">
               <h3 className="c-title c-title--small u-margin-bottom-none">The Iron Yard 2014 &amp; 2015 <span className="u-subtler">—</span> Regular Guest Lecturer</h3>
-              <p className="c-paragraph c-paragraph--sans c-paragraph--small">Prior to working for The Iron Yard, I was a regular lecturer for their User Interface Design and Front-End Engineering classes in Austin,&nbsp;TX&nbsp;and Greenville, SC. I spoke on:</p>
+              <p className="c-paragraph c-paragraph--sans-small">Prior to working for The Iron Yard, I was a regular lecturer for their User Interface Design and Front-End Engineering classes in Austin,&nbsp;TX&nbsp;and Greenville, SC. I spoke on:</p>
               <ul className="c-list c-list--small">
                 <li className="c-list__item">Importance Of Design Systems</li>
                 <li className="c-list__item">Developer &amp; Designer Relations: How To Effectively Communicate</li>
@@ -237,7 +238,7 @@ class PageResume extends Component {
             </div>
             <div className="u-margin-bottom">
               <h3 className="c-title c-title--small u-margin-bottom-none">Clemson University 2014 <span className="u-subtler">—</span> Design Mentor (Startup Weekend Program)</h3>
-              <p className="c-paragraph c-paragraph--sans c-paragraph--small u-margin-bottom-none">I taught collegiate startup companies user experience principles during my participation in the Clemson University Startup Weekend hackathon.</p>
+              <p className="c-paragraph c-paragraph--sans-small u-margin-bottom-none">I taught collegiate startup companies user experience principles during my participation in the Clemson University Startup Weekend hackathon.</p>
             </div>
           </div>
         </section>

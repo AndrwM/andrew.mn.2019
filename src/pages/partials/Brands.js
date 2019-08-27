@@ -10,11 +10,16 @@ import clemson from "../../assets/images/logo-clemson.png";
 import auburn from "../../assets/images/logo-auburn.png";
 import tiy from "../../assets/images/logo-tiy.png";
 import ubyk from "../../assets/images/logo-ubyk.png";
+import bmw from "../../assets/images/logo-bmw.png";
+import sc from "../../assets/images/logo-sc.png";
+import flatiron from "../../assets/images/logo-flatiron.png";
 
 class Brands extends Component {
   render() {
     return (
-      <div class="c-grid c-grid--middle c-grid--center c-grid--small u-subtler">
+      <div class="c-grid c-grid--middle u-subtle">
+        <div class="c-grid__cell u-1/4 u-1/6--hand u-1/8--lap u-1/14--desk"><img src={bmw} style={{width: "70%", margin: "auto"}} /></div>
+        <div class="c-grid__cell u-1/4 u-1/6--hand u-1/8--lap u-1/14--desk"><img src={flatiron} /></div>
         <div class="c-grid__cell u-1/4 u-1/6--hand u-1/8--lap u-1/14--desk"><img src={ryobi} /></div>
         <div class="c-grid__cell u-1/4 u-1/6--hand u-1/8--lap u-1/14--desk"><img src={depend} /></div>
         <div class="c-grid__cell u-1/4 u-1/6--hand u-1/8--lap u-1/14--desk"><img src={echo} /></div>

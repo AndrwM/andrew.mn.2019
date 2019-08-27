@@ -12,11 +12,11 @@
 
   &--xlarge {
     font: 400 30px / 1.2 $ff-primary;
-    color: #6a5ef5;
+    // color: #6a5ef5;
     // color: #508897;
 
     @media #{$bp-lap} {
-      font: 400 42px / 1.2 $ff-primary;
+      font: 400 40px / 1.2 $ff-primary;
     }
 
     .c-title__subtle {
@@ -28,7 +28,7 @@
   &--large {
     font: 400 22px / 1.4 $ff-primary;
     letter-spacing: 0;
-    margin: 0 0 10px;
+    margin: 0 0 $s-regular;
     color: #6a5ef5;
     // color: #508897;
 
@@ -40,8 +40,8 @@
   }
 
   &--medium {
-    font: 400 24px / 1.8 $ff-primary;
-    color: #6a5ef5;
+    font: 400 26px / 1.8 $ff-primary;
+    // color: #6a5ef5;
   }
 
   &--small {
@@ -54,7 +54,7 @@
   }
 
   &--smallest {
-    font: 400 15px / 1.8 $ff-primary;
+    font: 400 16px / 1.8 $ff-primary;
     letter-spacing: 0;
     opacity: 0.9;
   }

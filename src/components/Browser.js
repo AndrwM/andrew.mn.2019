@@ -35,9 +35,9 @@ class SliderLarge extends React.Component {
             }}>
             <div className="c-carousel__item">
               <h2 className="c-title c-title--medium u-margin-top-large">On-Brand Software Design System</h2>
-              <p className="c-paragraph c-paragraph--sans c-paragraph--medium">Maintaining consistency with The Iron Yard's brand aesthetic was very important in building the version 1. The grey-oriented, responsible-feeling brand at this point, in early 2016, the company had over 3 years of equity invested.</p>
-              <p className="c-paragraph c-paragraph--sans c-paragraph--medium">We began by designing prototypes of a few pages based on the wireframes that everyone on our team had agreed on. After a few prototypes of different pages, that categorically had different user goals, we felt that we were comfortable with the sub-brand we had created. From there we began breaking the layouts apart into elements that could all be designed individually and then reassembled. Our new design system.</p>
-              <p className="c-paragraph c-paragraph--sans c-paragraph--medium">The pages to the right are several of the prototype pages that we developed in building the design system for The Iron Yard Online.</p>
+              <p className="c-paragraph c-paragraph--sans-medium">Maintaining consistency with The Iron Yard's brand aesthetic was very important in building the version 1. The grey-oriented, responsible-feeling brand at this point, in early 2016, the company had over 3 years of equity invested.</p>
+              <p className="c-paragraph c-paragraph--sans-medium">We began by designing prototypes of a few pages based on the wireframes that everyone on our team had agreed on. After a few prototypes of different pages, that categorically had different user goals, we felt that we were comfortable with the sub-brand we had created. From there we began breaking the layouts apart into elements that could all be designed individually and then reassembled. Our new design system.</p>
+              <p className="c-paragraph c-paragraph--sans-medium">The pages to the right are several of the prototype pages that we developed in building the design system for The Iron Yard Online.</p>
             </div>
             <div className="c-carousel__item">
               <img src={imageNewline} />

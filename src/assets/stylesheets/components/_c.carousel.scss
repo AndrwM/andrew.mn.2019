@@ -3,6 +3,8 @@
   &__item {
     margin-left: 5%;
     width: 70vw;
+    border-radius: 4px;
+    box-shadow: 0 4px 18px -6px rgba(#000000, 0.1);
 
     @media #{$bp-lap} {
       margin-left: 4%;

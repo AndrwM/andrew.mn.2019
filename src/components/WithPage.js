@@ -7,7 +7,7 @@ function WithPage(PageComponent) {
       window.scrollTo(0, 0);
     }
 
-    render() {
+    renderContent() {
       if (this.props.authorized) {
         return(
           <PageComponent
@@ -19,7 +19,11 @@ function WithPage(PageComponent) {
         return <Redirect to="/"/>
       }
     }
-  };
+
+    render() {
+      return this.renderContent();
+    }
+  }
 }
 
 export default WithPage;

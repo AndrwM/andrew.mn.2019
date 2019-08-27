@@ -12,9 +12,9 @@ import slide5 from '../../assets/images/projects/connect-hero/slide5.png';
 
 class PageNewline extends Component {
   componentDidMount() {
+    console.log('WITH CASE');
     this.props.setAppState({
       headerContent: this.renderHeader(),
-      headerHeight: "60vh",
       headerBg: "#f2fce9"
     });
   }
@@ -22,21 +22,41 @@ class PageNewline extends Component {
   renderHeader() {
     return (
       <React.Fragment>
-        <div className="c-grid c-grid--large">
-          <div className="c-grid__cell u-3/7">
-            <h1 className="c-title c-title--xlarge u-margin-top">
+      <div className="u-border-dark-bottom u-margin-bottom u-padding-bottom">
+        <div className="c-grid">
+          <div className="c-grid__cell u-3/5">
+            <h1 className="c-title c-title--xlarge">
               College Admissions Portal
               <span className="c-title__subtle">2018</span>
             </h1>
-            <h2 className="c-title c-title--small u-padding-bottom">Design Lead, Wireframes</h2>
-            <p className="c-paragraph">A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team.</p>
+            <p className="c-paragraph c-paragraph--sans-medium">Full-Time Employed</p>
+            <p className="c-paragraph">In 2015 I was contracted by TTI North America's in-house design agency, Torque Creative, to create an interactive marketing website to showcase a new line of all-electric tools. This project was particularly special to me because Torque gave me access to their in-house photography division. I had autonomy to art-direct the imagery of the products I needed to complete the project.</p>
           </div>
-          <div className="c-grid__cell u-4/7">
+          <div className="c-grid__cell u-2/5">
             <div className="c-browser" style={{maxWidth: 700}}>
               <div className="c-browser__content"><img src={cover} /></div>
             </div>
           </div>
         </div>
+      </div>
+      <div className="c-grid">
+        <div className="c-grid__cell u-1/5">
+          <h2 className="c-title c-title--small">Type</h2>
+          <p className="c-paragraph c-paragraph--sans-medium">Full-Time Employed</p>
+        </div>
+        <div className="c-grid__cell u-1/5">
+          <h2 className="c-title c-title--small">In Partnership With</h2>
+          <p className="c-paragraph c-paragraph--sans-medium">Team</p>
+        </div>
+        <div className="c-grid__cell u-1/5">
+          <h2 className="c-title c-title--small">In Partnership With</h2>
+          <p className="c-paragraph c-paragraph--sans-medium">Team</p>
+        </div>
+        <div className="c-grid__cell c-grid__cell--pull-right u-2/5">
+          <h2 className="c-title c-title--small">In Association With&hellip;</h2>
+          <p className="c-paragraph c-paragraph--sans-medium">Division Of Labor Product Agency</p>
+        </div>
+      </div>
       </React.Fragment>
     );
   }
@@ -44,32 +64,27 @@ class PageNewline extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="c-wrapper u-padding-top-none">
+        <section className="c-wrapper">
           <div className="c-container">
-            <h2 className="c-title c-title--large u-margin-bottom">Building an online supplement to The Iron Yard's immersive classroom.</h2>
+            <h2 className="c-title c-title--small">The Brief</h2>
+            <h2 className="c-paragraph c-paragraph--large">Building an online supplement to The Iron Yard's immersive classroom.</h2>
             <p className="c-paragraph">The original Newline Education Platform began as "The Iron Yard Online", an online supplement to The Iron Yard's immersive classroom. The Iron Yard was a high-intensity, immersive programming trade school with 15 locations across US. I worked for The Iron Yard from 2015 through 2017.</p>
           </div>
         </section>
         <SliderLarge
           background="#f2fce9"
           slides={[
-          <React.Fragment>
-            <h2 className="c-title c-title--medium u-margin-top-large">On-Brand Software Design System</h2>
-            <p className="c-paragraph c-paragraph--sans c-paragraph--medium">Maintaining consistency with The Iron Yard's brand aesthetic was very important in building the version 1. The grey-oriented, responsible-feeling brand at this point, in early 2016, the company had over 3 years of equity invested.</p>
-            <p className="c-paragraph c-paragraph--sans c-paragraph--medium">We began by designing prototypes of a few pages based on the wireframes that everyone on our team had agreed on. After a few prototypes of different pages, that categorically had different user goals, we felt that we were comfortable with the sub-brand we had created. From there we began breaking the layouts apart into elements that could all be designed individually and then reassembled. Our new design system.</p>
-            <p className="c-paragraph c-paragraph--sans c-paragraph--medium">The pages to the right are several of the prototype pages that we developed in building the design system for The Iron Yard Online.</p>
-          </React.Fragment>,
-          <img src={slide1} />,
-          <img src={slide2} />,
-          <img src={slide3} />,
-          <img src={slide4} />,
-          <img src={slide5} />,
+            slide1,
+            slide2,
+            slide3,
+            slide4,
+            slide5,
         ]} />
-        <section className="c-wrapper c-wrapper--light-blue">
+        <section className="c-wrapper">
           <div className="c-container">
-            <h2 className="c-title c-title--large">Learn To Code, Change Your Career</h2>
+            <h2 className="c-title c-title--small">Special Thanks To&hellip;</h2>
             <p className="c-paragraph">In addition to the above, I also built custom interfaces for the Bootstrap-based administrative &amp; content-creation system used by course-writers, campus operations, and admissions. I led user interface design for the lightweight in-browser IDE, administrative course manager, student manager, and student-to-instructor messaging.</p>
-            <p className="c-paragraph">It was a pleasure working with the Product team at The Iron Yard. During my time there we were able to bring a fun and interactive online classroom experience to over 10,000 students. Much love to everyone involved.</p><a href="http://newline.theironyard.com" target="_blank" className="c-button c-button--arrow-remote">Newline Lives On Here (Invite-Only)</a>
+            <p className="c-paragraph">It was a pleasure working with the Product team at The Iron Yard. During my time there we were able to bring a fun and interactive online classroom experience to over 10,000 students. Much love to everyone involved.</p>
           </div>
         </section>
       </React.Fragment>

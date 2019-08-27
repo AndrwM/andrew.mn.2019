@@ -14,6 +14,7 @@ body {
   min-height: 100%;
   overflow-x: hidden;
   width: 100%;
+  margin: 0;
 }
 
 img {
@@ -55,6 +56,7 @@ img {
 @import "components/c.carousel";
 @import "components/c.grid";
 @import "components/c.notice";
+@import "components/c.loading";
 
 //---------------------- Utilities
 @import "utilities/u.spacing";

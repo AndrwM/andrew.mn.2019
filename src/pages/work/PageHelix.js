@@ -50,7 +50,8 @@ class PageNewline extends Component {
       <React.Fragment>
         <section className="c-wrapper u-padding-top-none">
           <div className="c-container">
-            <h2 className="c-title c-title--large u-margin-bottom">Building an online supplement to The Iron Yard's immersive classroom.</h2>
+            <h2 className="c-title c-title--small">About The Project</h2>
+            <h2 className="c-paragraph c-paragraph--large">Building an online supplement to The Iron Yard's immersive classroom.</h2>
             <p className="c-paragraph">The original Newline Education Platform began as "The Iron Yard Online", an online supplement to The Iron Yard's immersive classroom. The Iron Yard was a high-intensity, immersive programming trade school with 15 locations across US. I worked for The Iron Yard from 2015 through 2017.</p>
             <img src={image1} />
           </div>
