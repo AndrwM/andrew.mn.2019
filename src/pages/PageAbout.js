@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Reveal from '../components/Reveal';
 
 import WithPage from "../components/WithPage";
+import Reveal from '../components/Reveal';
 import Navigation from "../components/Navigation";
 import ExperienceDesign from "./partials/ExperienceDesign";
 import ExperienceEngineering from "./partials/ExperienceEngineering";

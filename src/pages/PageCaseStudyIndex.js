@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 import WithPage from "../components/WithPage";
+import Reveal from '../components/Reveal';
 import CaseStudyPreview from "../components/CaseStudyPreview";
 import CaseStudy2ColLayout from "../components/CaseStudy2ColLayout";
 import ExperienceDesign from "./partials/ExperienceDesign";
@@ -88,7 +90,7 @@ class PageCaseStudyIndex extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="c-wrapper u-padding-bottom-none">
+        <section className="c-wrapper u-padding-bottom">
           <div className="c-container">
             <h2 className="c-title c-title--small">Case Studies</h2>
             <p className="c-paragraph c-paragraph--large">
@@ -97,11 +99,13 @@ class PageCaseStudyIndex extends Component {
             <p className="c-paragraph">
               While I’m not an expert in back-end development, as a self-taught professional I’m no stranger to digging in further down the tech-stack than is expected of me to build-out infrastructure necessary to support the UI I’m implementing. Whether its spinning up databases, writing queries, building models or controllers, etc &mdash; I have even built my own Elixir+Phoenix and RoR personal projects from scratch before. This has left me with a well-rounded set of skills especially suited for smaller development teams where some responsibilities can be ambiguous between dsiciplines.
             </p>
-            <div className="c-grid c-grid--flush u-padding-top u-padding-bottom-small u-margin-vertical u-border-bottom">
+            <div className="c-grid c-grid--flush u-padding-top u-padding-bottom-small u-margin-bottom-large u-border-bottom">
               <div className="c-grid__cell u-1/2">
+                <h2 className="c-title c-title--small u-margin-top-small">Design Experience</h2>
                 <ExperienceDesign />
               </div>
               <div className="c-grid__cell u-1/2">
+                <h2 className="c-title c-title--small u-margin-top-small">Programming Experience</h2>
                 <ExperienceEngineering />
               </div>
             </div>
@@ -147,16 +151,20 @@ class PageCaseStudyIndex extends Component {
           description={["Newline is the course-work software of The Iron Yard. I worked with fellow designer <a href='https://dribbble.com/jeremiah' className='c-link' target='_blank'>Jeremiah</a> to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system."]} />
         <div className="c-wrapper">
           <div className="c-container">
-            <h2 className="c-title c-title--small">
-              More Work
-            </h2>
-            <p className="c-paragraph">
-            While working for Organic, Inc., I had the opportunity to lead the engineering for a brand new marketing website for the Canadian division of Depends adult incontinence products.
-            </p>
-            {
+            <Reveal>
+              <h2 className="c-title c-title--small">
+                More Work
+              </h2>
+            </Reveal>
+            <Reveal>
+              <p className="c-paragraph">
+                Due to privacy restrictions, some of my work is not available publicly. If you would like to see engineering or marketing samples: <Link to="/case-studies" className="c-link">Studio@Andrew.mn</Link>.
+              </p>
+          </Reveal>
+            {/*
               !this.state.showArchive &&
               <a className="c-button" onClick={() => this.setState({ showArchive: true })} children="See More Work" />
-            }
+            */}
           </div>
         </div>
         {this.renderArchive()}
