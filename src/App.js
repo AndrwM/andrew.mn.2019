@@ -3,7 +3,7 @@ import { HashRouter, Switch, Route } from "react-router-dom";
 import Routes from "./Routes";
 
 // --- Partials
-import PartialFooter from "./pages/partials/PartialFooter";
+import Footer from "./pages/partials/Footer";
 
 // --- Components
 import Breadcrumb from "./components/Breadcrumb";
@@ -71,7 +71,7 @@ class App extends Component {
         <Route path="/:subpage" component={Breadcrumb} />
         {this.renderHeader()}
         {this.renderPage()}
-        <Route path="/:subpage" component={PartialFooter} />
+        <Route path="/:subpage" component={Footer} />
       </HashRouter>
     );
   }

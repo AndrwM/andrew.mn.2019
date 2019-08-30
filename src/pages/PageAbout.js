@@ -21,7 +21,8 @@ class PageAbout extends Component {
     const hour = date.getHours()
     if (hour > 19) { return "Good evening" } else
     if (hour > 12) { return "Good afternoon" } else
-    if (hour > 4) { return "Good morning" } else
+    if (hour > 3)  { return "Good morning" } else
+    if (hour >= 0) { return "Good evening" } else
     { return "Good Day" };
   }
 
@@ -149,7 +150,7 @@ class PageAbout extends Component {
             </p>
           </Reveal>
           <Reveal>
-            <p className="c-paragraph c-paragraph--sans-medium">
+            <p className="c-paragraph c-paragraph--sans-medium OVERRIDE-signature">
               <span className="u-subtler">&mdash;</span>&nbsp; Andrew McIntee
             </p>
           </Reveal>

@@ -8,6 +8,7 @@ import CaseStudy2ColLayout from "../components/CaseStudy2ColLayout";
 import ExperienceDesign from "./partials/ExperienceDesign";
 import ExperienceEngineering from "./partials/ExperienceEngineering";
 
+import imageNewlinePreview from "../assets/images/projects/newline/2019-folio-preview.jpg";
 import imageNewline from "../assets/images/projects/newline/v2-5.png";
 import imageCoindex from "../assets/images/projects/coindex/1.png";
 import imageConnectHero from "../assets/images/projects/connect-hero/cover.png";
@@ -28,7 +29,7 @@ class PageCaseStudyIndex extends Component {
   componentDidMount() {
     this.props.setAppState({
       headerContent: this.renderHeader(),
-      headerBg: "#f1f0ff"
+      headerBg: "#ebf5ff"
     });
   }
 
@@ -51,10 +52,10 @@ class PageCaseStudyIndex extends Component {
               context={["2col"]}
               title="TheIronYard.com"
               timePeriod="2017"
-              type="UI System Designer, Front-End Engineer"
+              type="UI Design System, Front-End Engineering, RoR Development"
               image={imageTiy}
               url={false}
-              description={["I designed and led the development of the new TheIronYard.com. The previous iteration of the company's website had dragged to a halt both in codebase update time and page-load due to technical debt accrued since the original launch in 2013. The Iron Yard marketing department brought me in to spearhead the development of a custom front-end CSS framework. This project was a burn and rebuild-from-the-ground-up type of project.","Following launch, the website bounce rate decreased 28.67% and the average session improved by 18.26%. Conversions of visitor to admissions lead increased by 98%!"]} />,
+              description={["Newline is the course-work software of The Iron Yard. I on the product team to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system.", "From the ground-up we designed, built, and documented a CSS component system with over 50 elements. It allowed anyone on the team to quickly assemble a view. In addition to authoring the design system, I worked with the engineering team in building the front-end for an in-browser IDE and student messaging system."]} />,
             <CaseStudyPreview
               context={["2col"]}
               title="Echo Cordless Tools"
@@ -118,37 +119,54 @@ class PageCaseStudyIndex extends Component {
           </div>
         </section>
         <CaseStudyPreview
-          title="College Admissions Portal"
-          timePeriod="2018"
-          type="UI Design System Lead"
-          image={imageHelix}
-          url="/case-studies/college-admissions-portal"
-          description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
-        <CaseStudy2ColLayout caseStudyPreviews={[
-          <CaseStudyPreview
-            context={["no-browser", "2col"]}
-            title="Coindex Blockchain Trading Platform"
-            timePeriod="2018"
-            type="Co-Founder, Chief Design Officer"
-            image={imageCoindex}
-            url="/case-studies/coindex"
-            description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />,
-          <CaseStudyPreview
-            context="2col"
-            title="Connect Hero"
-            timePeriod="2018"
-            type="Design Lead, Wireframes"
-            image={imageConnectHero}
-            url="/case-studies/connect-hero"
-            description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />,
-        ]} />
-        <CaseStudyPreview
+          backgroundStyle={{
+            backgroundImage: `url(${imageNewlinePreview})`,
+            position: "absolute",
+            backgroundSize: "100%",
+            backgroundRepeat: "no-repeat",
+            bottom: 0,
+            height: "100%",
+            width: "130%",
+            right: "-17%",
+          }}
           title="Newline Education Platform"
           timePeriod="2015 – 2017"
           type="UI Design System, Front-End Engineering, RoR Development"
           image={imageNewline}
           url="/case-studies/newline"
-          description={["Newline is the course-work software of The Iron Yard. I worked with fellow designer <a href='https://dribbble.com/jeremiah' className='c-link' target='_blank'>Jeremiah</a> to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system."]} />
+          description={["Newline is the course-work software of The Iron Yard. I on the product team to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system.", "From the ground-up we designed, built, and documented a CSS component system with over 50 elements. It allowed anyone on the team to quickly assemble a view. In addition to authoring the design system, I worked with the engineering team in building the front-end for an in-browser IDE and student messaging system."]} />
+        <section className="c-wrapper c-wrapper--flush u-border-bottom">
+          <div className="c-container-2col">
+            <div className="c-container-2col__item">
+              <CaseStudyPreview
+                context="2col"
+                title="College Admissions Portal"
+                timePeriod="2018"
+                type="UI Design System Lead"
+                image={imageHelix}
+                url="/case-studies/college-admissions-portal"
+                description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
+            </div>
+            <div className="c-container-2col__item">
+              <CaseStudyPreview
+                context="2col"
+                title="Connect Hero"
+                timePeriod="2018"
+                type="Design Lead, Wireframes"
+                image={imageConnectHero}
+                url="/case-studies/connect-hero"
+                description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
+            </div>
+          </div>
+        </section>
+        <CaseStudyPreview
+          context={["no-browser"]}
+          title="Coindex Blockchain Trading Platform"
+          timePeriod="2018"
+          type="Co-Founder, Chief Design Officer"
+          image={imageCoindex}
+          url="/case-studies/coindex"
+          description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
         <div className="c-wrapper">
           <div className="c-container">
             <Reveal>

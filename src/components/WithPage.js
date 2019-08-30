@@ -10,9 +10,11 @@ function WithPage(PageComponent) {
     renderContent() {
       if (this.props.authorized) {
         return(
-          <PageComponent
-            {...this.props}
-          />
+          <div className="u-animate-in">
+            <PageComponent
+              {...this.props}
+            />
+          </div>
         );
       } else {
         alert("Hi there! 👋 This page is coming soon, thanks for visiting!");

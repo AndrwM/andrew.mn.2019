@@ -242,6 +242,16 @@ class PageResume extends Component {
             </div>
           </div>
         </section>
+        <section className="c-wrapper c-wrapper--slim c-wrapper--white u-padding-top-large">
+          <div className="c-container">
+            <h2 className="c-title c-title--medium u-margin-bottom-small">Contact Info</h2>
+            <div className="u-margin-bottom">
+              <h3 className="c-title c-title--small u-margin-bottom-none">Andrew McIntee</h3>
+              <p className="c-paragraph c-paragraph--sans-small">Digital Product Designer &amp; Frontend Engineer</p>
+              <p className="c-paragraph c-paragraph--sans-small">Studio@Andrew.mn</p>
+            </div>
+          </div>
+        </section>
       </React.Fragment>
     );
   }

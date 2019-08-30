@@ -1,0 +1,35 @@
+.c-container-2col {
+  @include clearfix;
+  margin: auto;
+  max-width: $page-max-width;
+  display: flex;
+  flex-flow: row;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+
+  .c-container-2col__item {
+    flex: 0 1 auto;
+    box-sizing: border-box;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    &:nth-child(1) {
+      padding: 10vh 6vw 0px 0px;
+    }
+
+    &:nth-child(2) {
+      border-left: 1px solid $c-border;
+      padding: 10vh 0px 0px 6vw
+    }
+  }
+
+  // margin: 0;
+  // padding: 60px 6vw;
+  // position: relative;
+
+  // @media #{$bp-lap} { padding: 80px 6vw; }
+  // @media #{$bp-desk} { padding: 140px 9vw; }
+
+}

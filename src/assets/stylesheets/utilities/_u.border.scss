@@ -13,7 +13,7 @@
 }
 
 .u-border {
-  $border-value: 1px solid #F4F4F4 !important;
+  $border-value: 1px solid $c-border !important;
   border: $border-value;
 
   &-horizontal {
