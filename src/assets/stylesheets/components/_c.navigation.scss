@@ -10,11 +10,12 @@
   box-sizing: border-box;
   width: 100%;
   color: rgba($c-grey-medium, 0.2);
-  transition: background 0.2s ease-in-out;
+  transition: background 0.25s cubic-bezier(0.35, 0.46, 0.45, 1);
   background: transparent;
 
   &:hover {
     background: var(--theme);
+    .c-navigation__top { opacity: 1;}
   }
 
   @media #{$bp-lap} {
@@ -38,6 +39,7 @@
     color: rgba($c-grey-medium, 0.2);
   }
 
+  %c-navigation__breadcrumb-link,
   .c-navigation__breadcrumb-link {
     font: 400 15px / 1.8 $ff-primary;
     color: $c-grey-medium;
@@ -74,6 +76,13 @@
 
       &:hover::after { bottom: 0; opacity: 0; }
     }
+  }
+
+  .c-navigation__top {
+    @extend %c-navigation__breadcrumb-link;
+    opacity: 0;
+    cursor: n-resize;
+    float: right;
   }
 }
 
