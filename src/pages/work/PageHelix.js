@@ -19,7 +19,7 @@ class PageNewline extends Component {
     this.props.setAppState({
       headerContent: this.renderHeader(),
       headerHeight: "60vh",
-      headerBg: "#dee8f8"
+      headerBg: "#c6e0ff"
     });
   }
 

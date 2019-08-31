@@ -9,13 +9,52 @@
   padding: 0;
   box-sizing: border-box;
   width: 100%;
-  color: rgba($c-grey-medium, 0.2);
-  transition: background 0.25s cubic-bezier(0.35, 0.46, 0.45, 1);
+  color: rgba(#000000, 0.2);
   background: transparent;
 
-  &:hover {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     background: var(--theme);
-    .c-navigation__top { opacity: 1;}
+    transition: background-color 0.25s cubic-bezier(0.35, 0.46, 0.45, 1), height 0.15s cubic-bezier(0.35, 0.46, 0.45, 1);
+    opacity: 0.95;
+    z-index: -1;
+    height: 0;
+    will-change: height;
+    z-index: $z-3;
+  }
+
+  &::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    // background: linear-gradient(to top, transparent 40%, #000000 100%);
+    background: linear-gradient(to top, transparent 40%, darken($c-primary, 30%) 100%);
+    transition: all 0.25s cubic-bezier(0.35, 0.46, 0.45, 1);
+    opacity: 0;
+    will-change: opacity;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: $z-2;
+  }
+
+  &:hover {
+    &::before {
+      height: 100%;
+    }
+    &::after {
+      opacity: 0.2;
+      visibility: visible;
+    }
   }
 
   @media #{$bp-lap} {
@@ -33,13 +72,13 @@
   }
 
   .c-navigation__container {
-    // background: rgba(#ffffff, 0.9);
-    padding: 1.5vh 1.5vw 1.5vh;
+    position: relative;
+    padding: 2vh 1.5vw;
     box-sizing: border-box;
     color: rgba($c-grey-medium, 0.2);
+    z-index: $z-4;
   }
 
-  %c-navigation__breadcrumb-link,
   .c-navigation__breadcrumb-link {
     font: 400 15px / 1.8 $ff-primary;
     color: $c-grey-medium;
@@ -75,34 +114,6 @@
       &::after { opacity: 0; }
 
       &:hover::after { bottom: 0; opacity: 0; }
-    }
-  }
-
-  .c-navigation__top {
-    @extend %c-navigation__breadcrumb-link;
-    opacity: 0;
-    cursor: n-resize;
-    float: right;
-  }
-}
-
-.c-navigation .on-dark .c-navigation__container {
-  color: rgba(#ffffff, 0.3);
-  background: transparent;
-
-  .c-navigation__breadcrumb-link {
-    color: white;
-
-    &:hover {
-      // background: rgba(#ffffff, 0.1);
-    }
-
-     &::after {
-      background: #ffffff;
-    }
-
-    &--static {
-      background: rgba(#ffffff, 0.1);
     }
   }
 }

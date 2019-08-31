@@ -68,12 +68,11 @@ class App extends Component {
   render() {
     return (
       <HashRouter>
-        <Route path="/:subpage" render={() =>
-        <Breadcrumb themeColor={this.state.headerBg} />
-        }/>
+        <div className="c-notice" children="Pardon the dust! This site is in *active* development." />
+        <Route path="/:subpage" render={() => <Breadcrumb themeColor={this.state.headerBg}/>} />
         {this.renderHeader()}
         {this.renderPage()}
-        <Route path="/:subpage" component={Footer} />
+        <Route path="/:subpage" render={() => <Footer themeColor={this.state.headerBg}/>} />
       </HashRouter>
     );
   }

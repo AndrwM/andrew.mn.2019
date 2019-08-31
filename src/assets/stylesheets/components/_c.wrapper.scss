@@ -1,7 +1,9 @@
 .c-wrapper {
+  width: 100vw;
   margin: 0;
   padding: 60px 6vw;
   position: relative;
+  box-sizing: border-box;
 
   @media #{$bp-lap} { padding: 80px 6vw; }
   @media #{$bp-desk} { padding: 140px 8vw; }

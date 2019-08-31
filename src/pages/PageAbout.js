@@ -41,7 +41,6 @@ class PageAbout extends Component {
         <br/>
         specializing in design systems.
         </p>
-        <div className="c-notice u-margin-top" children="Pardon the dust! This site is in *active* development." />
         <div className="c-grid c-grid--auto c-grid--large u-margin-top-large">
           <div className="c-grid__cell u-1/6">
             <Navigation />
@@ -49,9 +48,9 @@ class PageAbout extends Component {
           <div className="c-grid__cell">
             <h2 className="c-title c-title--small u-margin-top-small">Currently…</h2>
             <ul className="c-list c-list--large c-list--sparkle">
-              <li className="c-list__item">Based out of the Southeast United States &amp; Mexico City</li>
+              <li className="c-list__item">Based out of the Atlanta &amp; Mexico City</li>
               <li className="c-list__item">Taking a professional sabbatical to learn spanish in a intensive format</li>
-              <li className="c-list__item">Assisting with Milan Fashion Week &amp; taking scuba diving lessons</li>
+              <li className="c-list__item">In the short term, assisting with Milan Fashion Week &amp; scuba diving</li>
             </ul>
           </div>
         </div>
@@ -89,7 +88,7 @@ class PageAbout extends Component {
           </Reveal>
           <Reveal>
             <p className="c-paragraph">
-              At the moment, I am based between the Southeast United States and Mexico City while I focus my efforts towards studying Spanish.
+              At the moment, I am based between the Atlanta and Mexico City while I focus my efforts towards studying Spanish.
             </p>
           </Reveal>
         </div>

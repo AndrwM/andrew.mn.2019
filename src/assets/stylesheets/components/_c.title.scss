@@ -16,12 +16,11 @@
     // color: #508897;
 
     @media #{$bp-lap} {
-      font: 400 76px / 1.2 $ff-display;
+      font: 300 76px / 1.2 $ff-display;
     }
 
     .c-title__subtle {
-      font-size: 14px;
-      color: #333;
+      font-size: 28px;
     }
   }
 

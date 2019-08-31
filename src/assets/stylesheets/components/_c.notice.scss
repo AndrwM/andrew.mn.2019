@@ -21,12 +21,16 @@
     }
   }
 
-  border: 2px solid #6a5ef5;
+  display: none;
+  background: #6a5ef5;
   border-radius: 2rem 2.80rem;
   color: $c-grey-dark;
-  display: inline-block;
   font: 400 18px / 3 $ff-primary;
   padding: 0 $s-regular;
-  margin: 0 - $s-regular;
   animation: 4.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) bobble infinite;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  color: #ffffff;
+  right: 10px;
 }
