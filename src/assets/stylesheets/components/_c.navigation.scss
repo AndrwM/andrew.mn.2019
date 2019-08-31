@@ -1,4 +1,6 @@
 .c-navigation {
+  $border-height: 4px;
+
   z-index: 99999;
   opacity: 1;
   animation: 2s ease fade;
@@ -8,6 +10,12 @@
   box-sizing: border-box;
   width: 100%;
   color: rgba($c-grey-medium, 0.2);
+  transition: background 0.2s ease-in-out;
+  background: transparent;
+
+  &:hover {
+    background: var(--theme);
+  }
 
   @media #{$bp-lap} {
     padding: 0;
@@ -25,15 +33,9 @@
 
   .c-navigation__container {
     // background: rgba(#ffffff, 0.9);
-    padding: 1.5vh 1.5vw;
+    padding: 1.5vh 1.5vw 1.5vh;
     box-sizing: border-box;
     color: rgba($c-grey-medium, 0.2);
-    transition: background 0.2s ease-in-out;
-    background: transparent;
-
-    &:hover {
-      // background: rgba(#ffffff, 0.95);
-    }
   }
 
   .c-navigation__breadcrumb-link {

@@ -68,7 +68,9 @@ class App extends Component {
   render() {
     return (
       <HashRouter>
-        <Route path="/:subpage" component={Breadcrumb} />
+        <Route path="/:subpage" render={() =>
+        <Breadcrumb themeColor={this.state.headerBg} />
+        }/>
         {this.renderHeader()}
         {this.renderPage()}
         <Route path="/:subpage" component={Footer} />

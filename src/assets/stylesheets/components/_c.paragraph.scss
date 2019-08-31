@@ -19,6 +19,13 @@
     color: rgba(#000000, 0.65);
     font-size: 20px;
     max-width: 570px;
+    font: 400 20px / 1.55 $ff-secondary;
+  }
+
+  &--sans-large {
+    font-family: $ff-primary;
+    color: #727779;
+    font-size: 18px;
   }
 
   &--sans-medium {

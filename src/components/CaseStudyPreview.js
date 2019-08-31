@@ -12,7 +12,11 @@ class CaseStudyPreview extends Component {
           {this.props.title}
           <span className="c-title__subtle">{this.props.timePeriod}</span>
         </h3>
-        <h4 className="c-title c-title--smallest u-margin-bottom-small">{this.props.type}</h4>
+        <h4 className="c-title c-title--smallest u-margin-bottom-small">
+          {this.props.role}
+          <span className="u-subtler" children="&#160;&#160;/&#160;&#160;" />
+          <span className="u-subtle" children={`${this.props.type}`} />
+        </h4>
         {this.props.description && this.props.description.map((paragraph, index) => (
           <p key={index} className="c-paragraph c-paragraph--medium" dangerouslySetInnerHTML={{__html: paragraph}} />
         ))}
@@ -46,7 +50,7 @@ class CaseStudyPreview extends Component {
           </div>
           <div className="u-margin-top-auto" style={{overflow: "hidden", margin: "-20px -20px 0 -20px", padding: "20px 20px 0 20px"}}>
             <Reveal>
-              <div className="c-browser" style={{maxHeight: "430px"}}>
+              <div className="c-browser" style={{maxHeight: "350px"}}>
                 <div className="c-browser__content"><img src={this.props.image}/></div>
               </div>
             </Reveal>
@@ -55,13 +59,16 @@ class CaseStudyPreview extends Component {
       );
     } else {
       return (
-        <div className="c-wrapper c-wrapper--slimmest u-padding-bottom-none u-border-bottom">
+        <div className="c-wrapper c-wrapper--slim u-padding-bottom-none u-border-bottom">
           <div className="c-container">
             <Reveal>
               <div className="c-grid c-grid--flush c-grid--bottom">
                 <div className="c-grid__cell u-6/12--lap u-padding-vertical-large u-padding-right-large">
                   {this.renderContent()}
-                  {this.props.url && <Link to={this.props.url} className="c-button c-button--arrow-r">Read The Case Study</Link>}
+                  {this.props.url ?
+                    <Link to={this.props.url} className="c-button c-button--arrow-r">{this.props.cta || "Read The Case Study"}</Link> :
+                   <p className="c-paragraph c-paragraph--sans-medium u-margin-top">{this.props.cta}</p>
+                  }
                 </div>
                 <div className="c-grid__cell u-6/12--lap c-grid__cell--pull-right" style={{position: "relative"}}>
                   {this.props.backgroundStyle && <div style={this.props.backgroundStyle} />}

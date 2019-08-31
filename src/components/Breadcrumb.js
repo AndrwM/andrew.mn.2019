@@ -43,7 +43,7 @@ class Breadcrumb extends Component {
 
   render() {
     return (
-      <nav className="c-navigation">
+      <nav className="c-navigation" style={{"--theme": this.props.themeColor}}>
         <div className="c-navigation__container">
           {this.props.breadcrumbs.map(({ breadcrumb, match }, index) => (
             <React.Fragment key={index}>

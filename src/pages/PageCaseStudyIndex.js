@@ -8,6 +8,7 @@ import CaseStudy2ColLayout from "../components/CaseStudy2ColLayout";
 import ExperienceDesign from "./partials/ExperienceDesign";
 import ExperienceEngineering from "./partials/ExperienceEngineering";
 
+import imageOffsite from "../assets/images/projects/offsite/cover1.png";
 import imageNewlinePreview from "../assets/images/projects/newline/2019-folio-preview.jpg";
 import imageNewline from "../assets/images/projects/newline/v2-5.png";
 import imageCoindex from "../assets/images/projects/coindex/1.png";
@@ -126,8 +127,27 @@ class PageCaseStudyIndex extends Component {
             backgroundRepeat: "no-repeat",
             bottom: 0,
             height: "100%",
-            width: "130%",
-            right: "-17%",
+            width: "126%",
+            right: "-16%"
+          }}
+          title="OffSite Ad Platform"
+          timePeriod="2018 – 2019"
+          role="Lead Designer"
+          type="Design System, React Engineering, RoR Development"
+          image={imageOffsite}
+          url={false}
+          cta="Case study coming September 2019."
+          description={["Newline is the course-work software of The Iron Yard. I on the product team to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system.", "From the ground-up we designed, built, and documented a CSS component system with over 50 elements. It allowed anyone on the team to quickly assemble a view. In addition to authoring the design system, I worked with the engineering team in building the front-end for an in-browser IDE and student messaging system."]} />
+        <CaseStudyPreview
+          backgroundStyle={{
+            backgroundImage: `url(${imageNewlinePreview})`,
+            position: "absolute",
+            backgroundSize: "100%",
+            backgroundRepeat: "no-repeat",
+            bottom: 0,
+            height: "104%",
+            width: "123%",
+            right: "-15.5%"
           }}
           title="Newline Education Platform"
           timePeriod="2015 – 2017"
@@ -142,7 +162,7 @@ class PageCaseStudyIndex extends Component {
                 context="2col"
                 title="College Admissions Portal"
                 timePeriod="2018"
-                type="UI Design System Lead"
+                type="Lead Designer: Design Systems"
                 image={imageHelix}
                 url="/case-studies/college-admissions-portal"
                 description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
@@ -152,7 +172,8 @@ class PageCaseStudyIndex extends Component {
                 context="2col"
                 title="Connect Hero"
                 timePeriod="2018"
-                type="Design Lead, Wireframes"
+                role="Lead Designer"
+                type="Wireframes"
                 image={imageConnectHero}
                 url="/case-studies/connect-hero"
                 description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
@@ -163,10 +184,18 @@ class PageCaseStudyIndex extends Component {
           context={["no-browser"]}
           title="Coindex Blockchain Trading Platform"
           timePeriod="2018"
-          type="Co-Founder, Chief Design Officer"
+          type="Co-Founder, Director Of Design & Frontend Engineering"
           image={imageCoindex}
           url="/case-studies/coindex"
           description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
+        <CaseStudyPreview
+          context={[]}
+          title="Depends Canada"
+          timePeriod="2013"
+          type="Lead Frontend Engineer"
+          image={imageDependsCanada}
+          url={false}
+          description={["While working for Organic, Inc., I had the opportunity to lead the engineering for a brand new marketing website for the Canadian division of Depends adult incontinence products. In addition, I also oversaw how American and French language translations were implemented and managed their effect on the design specifications."]} />
         <div className="c-wrapper">
           <div className="c-container">
             <Reveal>

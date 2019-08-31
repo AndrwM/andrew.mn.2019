@@ -29,34 +29,22 @@ class PageNewline extends Component {
             Newline Education Platform
             <span className="c-title__subtle">2015 – 2017</span>
           </h1>
-          <p className="c-paragraph c-paragraph--sans-medium">UI Design System, Front-End Engineering, RoR Development</p>
-          <div className="c-grid">
-            <div className="c-grid__cell u-3/5">
-              <p className="c-paragraph">Newline is the course-work software of The Iron Yard. I on the product team to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system.
-              </p>
-              <p className="c-paragraph">From the ground-up we designed, built, and documented a CSS component system with over 50 elements. It allowed anyone on the team to quickly assemble a view. In addition to authoring the design system, I worked with the engineering team in building the front-end for an in-browser IDE and student messaging system.</p>
-            </div>
-            <div className="c-grid__cell u-2/5">
-              <div className="c-browser" style={{maxWidth: 700}}>
-                <div className="c-browser__content"><img src={imageNewline} /></div>
-              </div>
-            </div>
-          </div>
+          <p className="c-paragraph c-paragraph--sans-large">UI Design System, Front-End Engineering, RoR Development</p>
         </div>
-        <div className="c-grid">
-          <div className="c-grid__cell u-1/5">
-            <h2 className="c-title c-title--small">Role</h2>
-            <p className="c-paragraph c-paragraph--sans-medium">Sr. Product Designer</p>
+        <div className="c-grid c-grid--stretch">
+          <div className="c-grid__cell">
+            <h2 className="c-title c-title--small">In Association With</h2>
+            <p className="c-paragraph c-paragraph--sans-medium">The Iron Yard Product Team</p>
           </div>
-          <div className="c-grid__cell u-1/5">
+          <div className="c-grid__cell">
+            <h2 className="c-title c-title--small">Responsible For</h2>
+            <p className="c-paragraph c-paragraph--sans-medium">The Iron Yard's Product Team</p>
+          </div>
+          <div className="c-grid__cell">
             <h2 className="c-title c-title--small">Project Length</h2>
             <p className="c-paragraph c-paragraph--sans-medium">2 Years</p>
           </div>
-          <div className="c-grid__cell u-1/5">
-            <h2 className="c-title c-title--small">In Association With&hellip;</h2>
-            <p className="c-paragraph c-paragraph--sans-medium">The Iron Yard's Product Team</p>
-          </div>
-          <div className="c-grid__cell c-grid__cell--pull-right u-2/5">
+          <div className="c-grid__cell">
             <h2 className="c-title c-title--small">I Delivered</h2>
             <p className="c-paragraph c-paragraph--sans-medium">User Research, UI Comps, Design System, JS &amp; Ruby code.</p>
           </div>

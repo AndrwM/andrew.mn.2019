@@ -43,9 +43,7 @@ class PageResume extends Component {
         </section>
         <section className="c-wrapper c-wrapper--slimmest u-border-top u-padding-top-large" id="professional-experience">
           <div className="c-container">
-            <Reveal>
-              <h2 className="c-title c-title--medium u-margin-vertical">Professional Experience</h2>
-            </Reveal>
+            <h2 className="c-title c-title--medium u-margin-vertical">Professional Experience</h2>
             <div className="c-grid">
               <div className="c-grid__cell 1/6--lap">
                 <h3 className="c-title c-title--label u-margin-top-smallest">2017 – 2019</h3>
@@ -89,26 +87,24 @@ class PageResume extends Component {
         </section>
         <section className="c-wrapper c-wrapper--slimmest">
           <div className="c-container">
-            <Reveal>
-              <div className="c-grid">
-                <div className="c-grid__cell 1/6--lap">
-                  <h3 className="c-title c-title--label u-margin-top-smallest">2015 – 2017</h3>
-                </div>
-                <div className="c-grid__cell 5/6--lap">
-                  <h3 className="c-title c-title--small u-margin-bottom-none">The Iron Yard</h3>
-                  <h4 className="c-title c-title--smallest">Sr. Product Designer</h4>
-                  <ul className="c-list">
-                    <li className="c-list__item">Led design, development &amp; launch of The Iron Yard's new marketing site</li>
-                    <li className="c-list__item">Led specification, design, and front-end development of custom admissions software</li>
-                    <li className="c-list__item">Designed, built, and maintained modular design systems for each: online marketing site, student classroom application, and internal tooling</li>
-                    <li className="c-list__item">Conducted student user-behavior studies to test design assumptions and solve usability issues</li>
-                    <li className="c-list__item">Wrote application feature tests to ensure the stability of key user flows and UI components</li>
-                    <li className="c-list__item">Built accessibility features to support student learning disabilities</li>
-                    <li className="c-list__item">Worked remotely</li>
-                  </ul>
-                </div>
+            <div className="c-grid">
+              <div className="c-grid__cell 1/6--lap">
+                <h3 className="c-title c-title--label u-margin-top-smallest">2015 – 2017</h3>
               </div>
-            </Reveal>
+              <div className="c-grid__cell 5/6--lap">
+                <h3 className="c-title c-title--small u-margin-bottom-none">The Iron Yard</h3>
+                <h4 className="c-title c-title--smallest">Sr. Product Designer</h4>
+                <ul className="c-list">
+                  <li className="c-list__item">Led design, development &amp; launch of The Iron Yard's new marketing site</li>
+                  <li className="c-list__item">Led specification, design, and front-end development of custom admissions software</li>
+                  <li className="c-list__item">Designed, built, and maintained modular design systems for each: online marketing site, student classroom application, and internal tooling</li>
+                  <li className="c-list__item">Conducted student user-behavior studies to test design assumptions and solve usability issues</li>
+                  <li className="c-list__item">Wrote application feature tests to ensure the stability of key user flows and UI components</li>
+                  <li className="c-list__item">Built accessibility features to support student learning disabilities</li>
+                  <li className="c-list__item">Worked remotely</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
         <section className="c-wrapper c-wrapper--slimmest">
@@ -248,7 +244,10 @@ class PageResume extends Component {
             <div className="u-margin-bottom">
               <h3 className="c-title c-title--small u-margin-bottom-none">Andrew McIntee</h3>
               <p className="c-paragraph c-paragraph--sans-small">Digital Product Designer &amp; Frontend Engineer</p>
-              <p className="c-paragraph c-paragraph--sans-small">Studio@Andrew.mn</p>
+              <p className="c-paragraph c-paragraph--sans-small">
+                <a href="mailto:Studio@Andrew.mn" className="c-link u-margin-right-small">Studio@Andrew.mn</a>
+                <a href="https://www.linkedin.com/in/AndrewMcIntee/" target="_blank" className="c-link">Linkedin</a>
+              </p>
             </div>
           </div>
         </section>
