@@ -1,9 +1,17 @@
 .c-paragraph {
   color: #434551;
-  font: 400 24px / 1.65 $ff-secondary;
+  font: 400 16px / 1.65 $ff-secondary;
   margin: 0 0 25px;
   max-width: 680px;
   padding: 0;
+
+  @media #{$bp-hand} { font: 400 18px / 1.65 $ff-secondary; }
+  @media #{$bp-lap} { font: 400 24px / 1.65 $ff-secondary; }
+
+  br {
+    display: none;
+    @media #{$bp-desk} { display: inline; }
+  }
 
   &--smallest {
     font-size: 12px;
@@ -19,7 +27,9 @@
     color: rgba(#000000, 0.65);
     font-size: 20px;
     max-width: 570px;
-    font: 400 20px / 1.55 $ff-secondary;
+    font: 400 16px / 1.55 $ff-secondary;
+    @media #{$bp-lap} { font: 400 18px / 1.55 $ff-secondary; }
+    @media #{$bp-desk} { font: 400 20px / 1.55 $ff-secondary; }
   }
 
   &--sans-large {
@@ -62,9 +72,16 @@
 
   &--large {
     color: #2c2d35;
-    font: 400 44px / 1.4 $ff-display;
+    font: 400 28px / 1.4 $ff-display;
     max-width: 980px;
     margin: 0 0 45px;
+
+    @media #{$bp-lap} {
+      font: 400 34px / 1.4 $ff-display;
+    }
+    @media #{$bp-desk} {
+      font: 400 44px / 1.4 $ff-display;
+    }
   }
 
   &--xlarge {

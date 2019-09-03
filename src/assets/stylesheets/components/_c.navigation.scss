@@ -24,8 +24,9 @@
     opacity: 0.95;
     z-index: -1;
     height: 0;
-    will-change: height;
+    will-change: height, background-position;
     z-index: $z-3;
+    // @include wave;
   }
 
   &::after {
@@ -37,9 +38,9 @@
     bottom: 0;
     width: 100vw;
     height: 100vh;
-    // background: linear-gradient(to top, transparent 40%, #000000 100%);
-    background: linear-gradient(to top, transparent 40%, darken($c-primary, 30%) 100%);
-    transition: all 0.25s cubic-bezier(0.35, 0.46, 0.45, 1);
+    background: linear-gradient(to top, transparent 20%, #ffffff 90%);
+    // background: linear-gradient(to top, transparent 40%, darken($c-primary, 30%) 100%);
+    transition: all 0.2s cubic-bezier(0.35, 0.46, 0.45, 1);
     opacity: 0;
     will-change: opacity;
     visibility: hidden;
@@ -51,8 +52,10 @@
     &::before {
       height: 100%;
     }
+
     &::after {
-      opacity: 0.2;
+      // transition: all 0.4ss cubic-bezier(0.35, 0.46, 0.45, 1);
+      opacity: 1;
       visibility: visible;
     }
   }
@@ -73,10 +76,12 @@
 
   .c-navigation__container {
     position: relative;
-    padding: 2vh 1.5vw;
     box-sizing: border-box;
     color: rgba($c-grey-medium, 0.2);
     z-index: $z-4;
+    padding: 2vh 6vw;
+
+    @media #{$bp-lap} { padding: 2vh 1.5vw; }
   }
 
   .c-navigation__breadcrumb-link {

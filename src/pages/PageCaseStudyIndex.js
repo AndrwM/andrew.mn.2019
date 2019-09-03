@@ -19,6 +19,7 @@ import imageEcho from "../assets/images/projects/echo/feature-detail.jpg";
 import imageInjuryManager from "../assets/images/projects/injury-manager/mock-injury.jpg";
 import imageArkiver from "../assets/images/projects/arkiver/preview.png";
 import imageDependsCanada from "../assets/images/projects/depends/preview1.jpg";
+import imageRge from "../assets/images/projects/rge/cover-1x.jpg";
 
 class PageCaseStudyIndex extends Component {
   constructor(props) {
@@ -99,14 +100,14 @@ class PageCaseStudyIndex extends Component {
               Throughout my career, I have switch-hit between digital&nbsp;product&nbsp;design &amp; frontend&nbsp;engineering<br/>with occasional work on the backend too.
             </p>
             <p className="c-paragraph">
-              While I’m not an expert in back-end development, as a self-taught professional I’m no stranger to digging in further down the tech-stack than is expected of me to build-out infrastructure necessary to support the UI I’m implementing. Whether its spinning up databases, writing queries, building models or controllers, etc &mdash; I have even built my own Elixir+Phoenix and RoR personal projects from scratch before. This has left me with a well-rounded set of skills especially suited for smaller development teams where some responsibilities can be ambiguous between dsiciplines.
+              While I’m not an expert in back-end development, as a self-taught professional I’m no stranger to digging in further down the tech-stack than is expected of me to build-out infrastructure necessary to support the UI I’m implementing. Whether its spinning up databases, writing queries, building models or controllers, etc &ndash; I have even built my own Elixir+Phoenix and RoR personal projects from scratch before. This has left me with a well-rounded set of skills especially suited for smaller development teams where some responsibilities can be ambiguous between dsiciplines.
             </p>
-            <div className="c-grid c-grid--flush u-padding-top u-padding-bottom-small u-margin-bottom-large u-border-bottom">
-              <div className="c-grid__cell u-1/2">
+            <div className="c-grid u-padding-top u-padding-bottom-small u-margin-bottom-large u-border-bottom">
+              <div className="c-grid__cell u-1/2--desk">
                 <h2 className="c-title c-title--small u-margin-top-small">Design Experience</h2>
                 <ExperienceDesign />
               </div>
-              <div className="c-grid__cell u-1/2">
+              <div className="c-grid__cell u-1/2--desk">
                 <h2 className="c-title c-title--small u-margin-top-small">Programming Experience</h2>
                 <ExperienceEngineering />
               </div>
@@ -120,18 +121,8 @@ class PageCaseStudyIndex extends Component {
           </div>
         </section>
         <CaseStudyPreview
-          backgroundStyle={{
-            backgroundImage: `url(${imageNewlinePreview})`,
-            position: "absolute",
-            backgroundSize: "100%",
-            backgroundRepeat: "no-repeat",
-            bottom: 0,
-            height: "100%",
-            width: "126%",
-            right: "-16%"
-          }}
           title="OffSite Ad Platform"
-          timePeriod="2018 – 2019"
+          timePeriod="2018 &ndash; 2019"
           role="Lead Designer"
           type="Design System, React Engineering, RoR Development"
           image={imageOffsite}
@@ -150,7 +141,7 @@ class PageCaseStudyIndex extends Component {
             right: "-15.5%"
           }}
           title="Newline Education Platform"
-          timePeriod="2015 – 2017"
+          timePeriod="2015 &ndash; 2017"
           type="UI Design System, Front-End Engineering, RoR Development"
           image={imageNewline}
           url="/case-studies/newline"
@@ -160,12 +151,39 @@ class PageCaseStudyIndex extends Component {
             <div className="c-container-2col__item">
               <CaseStudyPreview
                 context="2col"
+                title="Really Good Emails"
+                timePeriod="2017 &ndash; 2018"
+                role="Frontend Engineer"
+                type="Design System Development, React/Redux Engineering"
+                image={imageRge}
+                url={false}
+                cta="Case study coming soon."
+                description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
+            </div>
+            <div className="c-container-2col__item">
+              <CaseStudyPreview
+                context="2col"
                 title="College Admissions Portal"
                 timePeriod="2018"
                 type="Lead Designer: Design Systems"
                 image={imageHelix}
                 url="/case-studies/college-admissions-portal"
                 description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
+            </div>
+          </div>
+        </section>
+        <section className="c-wrapper c-wrapper--flush u-border-bottom">
+          <div className="c-container-2col">
+            <div className="c-container-2col__item">
+              <CaseStudyPreview
+                context="2col"
+                title="Depends Canada Site"
+                timePeriod="2013"
+                role="Lead Frontend Engineer"
+                type="UI Engineering on a .NET backend"
+                image={imageDependsCanada}
+                url={false}
+                description={["While working for Organic, Inc., I had the opportunity to lead the engineering for a brand new marketing website for the Canadian division of Depends adult incontinence products. In addition, I also oversaw how American and French language translations were implemented and managed their effect on the design specifications."]} />
             </div>
             <div className="c-container-2col__item">
               <CaseStudyPreview
@@ -183,19 +201,12 @@ class PageCaseStudyIndex extends Component {
         <CaseStudyPreview
           context={["no-browser"]}
           title="Coindex Blockchain Trading Platform"
-          timePeriod="2018"
-          type="Co-Founder, Director Of Design & Frontend Engineering"
+          timePeriod="2017 &ndash; 2018"
+          role="Co-Founder, Director Of Product Design"
+          type="UI Design, Prototyping, Design&nbsp;System&nbsp;Engineering"
           image={imageCoindex}
           url="/case-studies/coindex"
           description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
-        <CaseStudyPreview
-          context={[]}
-          title="Depends Canada"
-          timePeriod="2013"
-          type="Lead Frontend Engineer"
-          image={imageDependsCanada}
-          url={false}
-          description={["While working for Organic, Inc., I had the opportunity to lead the engineering for a brand new marketing website for the Canadian division of Depends adult incontinence products. In addition, I also oversaw how American and French language translations were implemented and managed their effect on the design specifications."]} />
         <div className="c-wrapper">
           <div className="c-container">
             <Reveal>

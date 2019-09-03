@@ -68,7 +68,9 @@ class App extends Component {
   render() {
     return (
       <HashRouter>
-        <div className="c-notice" children="Pardon the dust! This site is in *active* development." />
+        <div className="c-notice" >
+          <span className="c-emoji u-margin-right-tiny">🚧</span>Pardon the dust! This site is in *active* development.
+        </div>
         <Route path="/:subpage" render={() => <Breadcrumb themeColor={this.state.headerBg}/>} />
         {this.renderHeader()}
         {this.renderPage()}

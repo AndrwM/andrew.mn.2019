@@ -2,6 +2,11 @@
   margin: 0 0 10px;
   word-wrap: break-word;
 
+  br {
+    display: none;
+    @media #{$bp-desk} { display: inline; }
+  }
+
   .c-title__subtle {
     font-size: 65%;
     font-weight: 400;
@@ -43,12 +48,8 @@
   }
 
   &--small {
-    font: 400 16px / 1.8 $ff-primary;
+    font: 500 16px / 1.8 $ff-primary;
     letter-spacing: 0;
-
-    @media #{$bp-lap} {
-      font: 500 16px / 1.8 $ff-primary;
-    }
   }
 
   &--smallest {

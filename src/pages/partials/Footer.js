@@ -33,7 +33,7 @@ class PartialFooter extends Component {
                 </p>
               </div>
               <div className="c-grid__cell c-grid__cell--pull-right">
-                <p className="c-paragraph c-paragraph--sans-small u-subtler u-margin-none">This site is built by hand and with love in React.<br/>It's hosted on GitHub and typeset in Graphik &amp; Louize.<br/>Photography courtesy of Amo Amo Studio &amp; Division Of Labor.<br />© Andrew McIntee 2019, unless otherwise stated.</p>
+                <p className="c-paragraph c-paragraph--sans-small u-subtler u-margin-none">This site is built by hand and with love in React.<br/>It's hosted on GitHub and typeset in Graphik &amp; Louize.<br/>Photography courtesy of Amo Amo Studio &amp; Angela Zion.<br />© Andrew McIntee 2019, unless otherwise stated.</p>
               </div>
             </div>
             {
