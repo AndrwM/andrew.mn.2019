@@ -26,7 +26,7 @@ class PageResume extends Component {
           <div className="c-container">
             <h2 className="c-title c-title--small">Resume</h2>
             <p className="c-paragraph c-paragraph--large">
-            Product designer &amp; web engineer of 9 years&hellip;<br/>Remote worker going on 4.
+            Product designer &amp; web engineer of 9 years&hellip;<br/> Remote worker going on 4.
             </p>
             <p className="c-paragraph">
               I have been working full-time in the web development, marketing design, or digital product space for the past 9 years; of those, 4 of them have been full-time remote. Most recently I was lead _for all_ of the user experience, design, and front-end at my most recent company, a 17-employee digital product agency.
@@ -220,11 +220,11 @@ class PageResume extends Component {
           <div className="c-container">
             <h2 className="c-title c-title--medium u-margin-bottom-small">Speaking</h2>
             <div className="u-margin-bottom">
-              <h3 className="c-title c-title--small u-margin-bottom-none">Clemson University 2016 <span className="u-subtler">—</span> Guest Lecturer (Graphic Communications Department)</h3>
+              <h3 className="c-title c-title--small">Clemson University 2016 <span className="u-subtler">—</span> Guest Lecturer (Graphic Communications Department)</h3>
               <p className="c-paragraph c-paragraph--sans-small">I led a crash course on Javascript basics, jQuery, and the basics of debugging code to teach the class how to create a primitive budgeting calculator.</p>
             </div>
             <div className="u-margin-bottom">
-              <h3 className="c-title c-title--small u-margin-bottom-none">The Iron Yard 2014 &amp; 2015 <span className="u-subtler">—</span> Regular Guest Lecturer</h3>
+              <h3 className="c-title c-title--small">The Iron Yard 2014 &amp; 2015 <span className="u-subtler">—</span> Regular Guest Lecturer</h3>
               <p className="c-paragraph c-paragraph--sans-small">Prior to working for The Iron Yard, I was a regular lecturer for their User Interface Design and Front-End Engineering classes in Austin,&nbsp;TX&nbsp;and Greenville, SC. I spoke on:</p>
               <ul className="c-list c-list--small">
                 <li className="c-list__item">Importance Of Design Systems</li>
@@ -233,8 +233,8 @@ class PageResume extends Component {
               </ul>
             </div>
             <div className="u-margin-bottom">
-              <h3 className="c-title c-title--small u-margin-bottom-none">Clemson University 2014 <span className="u-subtler">—</span> Design Mentor (Startup Weekend Program)</h3>
-              <p className="c-paragraph c-paragraph--sans-small u-margin-bottom-none">I taught collegiate startup companies user experience principles during my participation in the Clemson University Startup Weekend hackathon.</p>
+              <h3 className="c-title c-title--small">Clemson University 2014 <span className="u-subtler">—</span> Design Mentor (Startup Weekend Program)</h3>
+              <p className="c-paragraph c-paragraph--sans-small">I taught collegiate startup companies user experience principles during my participation in the Clemson University Startup Weekend hackathon.</p>
             </div>
           </div>
         </section>
@@ -242,7 +242,7 @@ class PageResume extends Component {
           <div className="c-container">
             <h2 className="c-title c-title--medium u-margin-bottom-small">Contact Info</h2>
             <div className="u-margin-bottom">
-              <h3 className="c-title c-title--small u-margin-bottom-none">Andrew McIntee</h3>
+              <h3 className="c-title c-title--small">Andrew McIntee</h3>
               <p className="c-paragraph c-paragraph--sans-small">Digital Product Designer &amp; Frontend Engineer</p>
               <p className="c-paragraph c-paragraph--sans-small">
                 <a href="mailto:Studio@Andrew.mn" className="c-link u-margin-right-small">Studio@Andrew.mn</a>

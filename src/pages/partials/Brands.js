@@ -17,20 +17,20 @@ import flatiron from "../../assets/images/logo-flatiron.png";
 class Brands extends Component {
   render() {
     return (
-      <div class="c-grid c-grid--middle u-subtle">
-        <div class="c-grid__cell u-1/4 u-1/6--hand u-1/8--lap u-1/14--desk"><img src={bmw} style={{width: "70%", margin: "auto"}} /></div>
-        <div class="c-grid__cell u-1/4 u-1/6--hand u-1/8--lap u-1/14--desk"><img src={flatiron} /></div>
-        <div class="c-grid__cell u-1/4 u-1/6--hand u-1/8--lap u-1/14--desk"><img src={ryobi} /></div>
-        <div class="c-grid__cell u-1/4 u-1/6--hand u-1/8--lap u-1/14--desk"><img src={depend} /></div>
-        <div class="c-grid__cell u-1/4 u-1/6--hand u-1/8--lap u-1/14--desk"><img src={echo} /></div>
-        <div class="c-grid__cell u-1/4 u-1/6--hand u-1/8--lap u-1/14--desk"><img src={pullups} /></div>
-        <div class="c-grid__cell u-1/4 u-1/6--hand u-1/8--lap u-1/14--desk"><img src={stok} /></div>
-        <div class="c-grid__cell u-1/4 u-1/6--hand u-1/8--lap u-1/14--desk"><img src={ridgid} /></div>
-        <div class="c-grid__cell u-1/4 u-1/6--hand u-1/8--lap u-1/14--desk"><img src={outdoor} /></div>
-        <div class="c-grid__cell u-1/4 u-1/6--hand u-1/8--lap u-1/14--desk"><img src={clemson} /></div>
-        <div class="c-grid__cell u-1/4 u-1/6--hand u-1/8--lap u-1/14--desk"><img src={auburn} /></div>
-        <div class="c-grid__cell u-1/4 u-1/6--hand u-1/8--lap u-1/14--desk"><img src={tiy} /></div>
-        <div class="c-grid__cell u-1/4 u-1/6--hand u-1/8--lap u-1/14--desk"><img src={ubyk} /></div>
+      <div class="c-grid c-grid--middle c-grid--center u-subtle">
+        <div class="c-grid__cell u-1/9 u-1/13--desk"><img src={bmw} style={{width: "70%", margin: "auto"}} /></div>
+        <div class="c-grid__cell u-1/9 u-1/13--desk"><img src={flatiron} className="u-margin-horizontal-xtiny" /></div>
+        <div class="c-grid__cell u-1/9 u-1/13--desk"><img src={ryobi} className="u-margin-horizontal-xtiny" /></div>
+        <div class="c-grid__cell u-1/9 u-1/13--desk"><img src={depend} className="u-margin-horizontal-xtiny" /></div>
+        <div class="c-grid__cell u-1/9 u-1/13--desk u-hide--desk"><img src={echo} className="u-margin-horizontal-xtiny" /></div>
+        <div class="c-grid__cell u-1/9 u-1/13--desk"><img src={pullups} className="u-margin-horizontal-xtiny" /></div>
+        <div class="c-grid__cell u-1/9 u-1/13--desk"><img src={stok} className="u-margin-horizontal-xtiny" /></div>
+        <div class="c-grid__cell u-1/9 u-1/13--desk u-hide--desk"><img src={ridgid} className="u-margin-horizontal-xtiny" /></div>
+        <div class="c-grid__cell u-1/9 u-1/13--desk"><img src={outdoor} className="u-margin-horizontal-xtiny" /></div>
+        <div class="c-grid__cell u-1/9 u-1/13--desk"><img src={clemson} className="u-margin-horizontal-xtiny" /></div>
+        <div class="c-grid__cell u-1/9 u-1/13--desk u-hide--desk"><img src={auburn} className="u-margin-horizontal-xtiny" /></div>
+        <div class="c-grid__cell u-1/9 u-1/13--desk"><img src={tiy} className="u-margin-horizontal-xtiny" /></div>
+        <div class="c-grid__cell u-1/9 u-1/13--desk u-hide--desk"><img src={ubyk} className="u-margin-horizontal-xtiny" /></div>
       </div>
     );
   }

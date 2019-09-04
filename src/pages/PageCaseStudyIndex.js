@@ -97,7 +97,7 @@ class PageCaseStudyIndex extends Component {
           <div className="c-container">
             <h2 className="c-title c-title--small">Case Studies</h2>
             <p className="c-paragraph c-paragraph--large">
-              Throughout my career, I have switch-hit between digital&nbsp;product&nbsp;design &amp; frontend&nbsp;engineering<br/>with occasional work on the backend too.
+              Throughout my career, I have switch-hit between digital&nbsp;product&nbsp;design &amp; frontend&nbsp;engineering<br/> with occasional work on the backend too.
             </p>
             <p className="c-paragraph">
               While I’m not an expert in back-end development, as a self-taught professional I’m no stranger to digging in further down the tech-stack than is expected of me to build-out infrastructure necessary to support the UI I’m implementing. Whether its spinning up databases, writing queries, building models or controllers, etc &ndash; I have even built my own Elixir+Phoenix and RoR personal projects from scratch before. This has left me with a well-rounded set of skills especially suited for smaller development teams where some responsibilities can be ambiguous between dsiciplines.

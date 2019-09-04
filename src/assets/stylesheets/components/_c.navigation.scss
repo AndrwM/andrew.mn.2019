@@ -1,3 +1,8 @@
+
+// Only rollover if content is touched
+// .c-navigation {pointer-events: none;}
+// .c-navigation__container {pointer-events: all;}
+
 .c-navigation {
   $border-height: 4px;
 
@@ -19,14 +24,19 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background: var(--theme);
+    // background: var(--theme);
+    background: #ffffff;
     transition: background-color 0.25s cubic-bezier(0.35, 0.46, 0.45, 1), height 0.15s cubic-bezier(0.35, 0.46, 0.45, 1);
-    opacity: 0.95;
+    opacity: 0.99;
     z-index: -1;
     height: 0;
     will-change: height, background-position;
     z-index: $z-3;
-    // @include wave;
+    transition-delay: 0.5s;
+
+    @media #{$bp-touch} {
+      height: 100%;
+    }
   }
 
   &::after {
@@ -38,24 +48,28 @@
     bottom: 0;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to top, transparent 20%, #ffffff 90%);
-    // background: linear-gradient(to top, transparent 40%, darken($c-primary, 30%) 100%);
-    transition: all 0.2s cubic-bezier(0.35, 0.46, 0.45, 1);
+    // background: linear-gradient(to top, transparent 20%, #ffffff 90%);
+    background: linear-gradient(to top, var(--theme) 10%, rgba(darken($c-primary, 50%), 0.2) 100%);
+    transition: all 1s cubic-bezier(0.35, 0.46, 0.45, 1);
     opacity: 0;
     will-change: opacity;
     visibility: hidden;
     pointer-events: none;
     z-index: $z-2;
+    transition-delay: 0.2s;
   }
 
   &:hover {
+    color: green;
     &::before {
+      transition-delay: unset;
       height: 100%;
     }
 
     &::after {
-      // transition: all 0.4ss cubic-bezier(0.35, 0.46, 0.45, 1);
-      opacity: 1;
+      transition-delay: unset;
+      transition: all 0.8s cubic-bezier(0.35, 0.46, 0.45, 1);
+      opacity: 0.5;
       visibility: visible;
     }
   }
@@ -77,6 +91,7 @@
   .c-navigation__container {
     position: relative;
     box-sizing: border-box;
+    display: inline-block;
     color: rgba($c-grey-medium, 0.2);
     z-index: $z-4;
     padding: 2vh 6vw;

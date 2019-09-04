@@ -10,7 +10,7 @@
 
   br {
     display: none;
-    @media #{$bp-desk} { display: inline; }
+    @media #{$bp-lap} { display: inline; }
   }
 
   &--smallest {
@@ -25,10 +25,9 @@
 
   &--medium {
     color: rgba(#000000, 0.65);
-    font-size: 20px;
     max-width: 570px;
     font: 400 16px / 1.55 $ff-secondary;
-    @media #{$bp-lap} { font: 400 18px / 1.55 $ff-secondary; }
+    @media #{$bp-hand} { font: 400 18px / 1.65 $ff-secondary; }
     @media #{$bp-desk} { font: 400 20px / 1.55 $ff-secondary; }
   }
 
@@ -86,7 +85,10 @@
 
   &--xlarge {
     color: #2c2d35;
-    font: 400 60px / 1.25 $ff-display;
+    font: 400 30px / 1.25 $ff-display;
     max-width: none;
+
+    @media #{$bp-hand} { font: 400 44px / 1.25 $ff-display; }
+    @media #{$bp-lap} { font: 400 60px / 1.25 $ff-display; }
   }
 }

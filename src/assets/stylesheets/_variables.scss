@@ -1,13 +1,12 @@
 //----------------- Breakpoints & Thangz
-$bp-hand: "(min-width: 501px)";
-$bp-lap: "(min-width: 901px)";
-$bp-desk: "(min-width: 1201px)";
+$w-hand: "501px";
+$w-lap: "901px";
+$w-desk: "1101px";
 
-$av-breakpoints: (
-  "hand":   $bp-hand,
-  "lap":    $bp-lap,
-  "desk":   $bp-desk,
-);
+$bp-touch: "(hover: none) and (pointer: coarse)";
+$bp-hand: "(min-width: #{$w-hand})";
+$bp-lap: "(min-width: #{$w-lap})";
+$bp-desk: "(min-width: #{$w-desk})";
 
 $border-radius: 5px;
 $font-size: 20px;
@@ -32,6 +31,7 @@ $c-tertiary-dark: #69615d;
 $c-tertiary-light: #fff9f6;
 $c-tertiary: #e1c6bc;
 $c-dark: #3f3c46;
+$c-black: red;
 
 $c-light-blue: #f1f9fc;
 // $c-light-blue: #eefffc;

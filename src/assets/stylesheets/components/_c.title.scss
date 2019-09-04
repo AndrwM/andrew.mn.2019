@@ -1,5 +1,5 @@
 .c-title {
-  margin: 0 0 10px;
+  margin: 0 0 $s-tiny;
   word-wrap: break-word;
 
   br {
@@ -43,19 +43,28 @@
   }
 
   &--medium {
-    font: 400 30px / 1.8 $ff-display;
-    // color: #6a5ef5;
+    font: 500 22px/1 $ff-primary;
+    margin: 0 0 $s-small;
+
+    @media #{$bp-lap} {
+      margin: 0 0 $s-xtiny;
+      font: 400 30px / 1.4 $ff-display;
+    }
   }
 
   &--small {
-    font: 500 16px / 1.8 $ff-primary;
+    font: 500 16px / 1.4 $ff-primary;
     letter-spacing: 0;
   }
 
   &--smallest {
-    font: 400 16px / 1.8 $ff-primary;
+    font: 400 14px / 1.5 $ff-primary;
     letter-spacing: 0;
     opacity: 0.9;
+
+    @media #{$bp-lap} {
+      font: 400 16px / 1.8 $ff-primary;
+    }
   }
 
   &--label {

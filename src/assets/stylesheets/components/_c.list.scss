@@ -5,14 +5,15 @@
 
   .c-list__item {
     font-size: 12px;
-    line-height: 1.7;
+    line-height: 1.6;
     margin: 2px 0 10px;
+    @media #{$bp-lap} { line-height: 1.7; }
 
 
     &::before {
       content: '-';
 
-      margin: 0 10px 0 0px;
+      margin: 0 10px 0 -15px;
     }
 
     @media #{$bp-lap} {
@@ -34,8 +35,18 @@
     @media #{$bp-lap} { font-size: 16px; }
   }
 
-  &--rocket .c-list__item::before { content: '🚀'; font-size: 135%; vertical-align: middle; margin: 0px 9px 5px -33px; }
-  &--sparkle .c-list__item::before { content: '✨'; font-size: 135%; vertical-align: middle; margin: 0px 9px 5px -33px; }
-  &--glove .c-list__item::before { content: '🧤'; font-size: 135%; vertical-align: middle; margin: 0px 9px 5px -33px; }
-  &--measure .c-list__item::before { content: '📐'; font-size: 135%; vertical-align: middle; margin: 0px 9px 5px -33px; }
+  @mixin emoji-spacing {
+    font-size: 135%;
+    vertical-align: middle;
+    margin: 0px 3px 5px -24px;
+
+    @media #{$bp-lap} {
+      margin: 0px 9px 5px -33px;
+    }
+  }
+
+  &--rocket .c-list__item::before { content: '🚀'; font-size: 135%; @include emoji-spacing; }
+  &--sparkle .c-list__item::before { content: '✨'; font-size: 135%; @include emoji-spacing; }
+  &--glove .c-list__item::before { content: '🧤'; font-size: 135%; @include emoji-spacing; }
+  &--measure .c-list__item::before { content: '📐'; font-size: 135%; @include emoji-spacing; }
 }

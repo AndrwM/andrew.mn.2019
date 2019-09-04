@@ -21,19 +21,19 @@ class PartialFooter extends Component {
       <div style={{position: "fixed", bottom: 0, right: 0, left: 0, zIndex: -1, height: "100vh", background: `#f1f9fc linear-gradient(to bottom, ${this.props.themeColor} 0%, #f1f9fc 90%)`, display: "flex", alignItems: "flex-end"}}>
         <style dangerouslySetInnerHTML={{__html: `
           .c-page {
-            margin-bottom: 100vh;
+            margin-bottom: 93vh;
           }
         `}} />
         <section className="c-wrapper">
           <div className="c-container">
-            <div className="c-grid c-grid--auto c-grid--bottom">
-              <div className="c-grid__cell">
+            <div className="c-grid c-grid--bottom">
+              <div className="c-grid__cell u-1/2--lap u-2/3--desk">
                 <p className="c-paragraph c-paragraph--sans-large u-margin-none">
                   <span className="c-emoji">🎉</span>&nbsp;&nbsp;Thanks&nbsp;for&nbsp;visiting. Have&nbsp;a&nbsp;great&nbsp;day. <span className="u-subtle">&mdash;</span> <a href="mailto:Studio@Andrew.mn" className="c-link">Studio@Andrew.mn</a>
                 </p>
               </div>
-              <div className="c-grid__cell c-grid__cell--pull-right">
-                <p className="c-paragraph c-paragraph--sans-small u-subtler u-margin-none">This site is built by hand and with love in React.<br/>It's hosted on GitHub and typeset in Graphik &amp; Louize.<br/>Photography courtesy of Amo Amo Studio &amp; Angela Zion.<br />© Andrew McIntee 2019, unless otherwise stated.</p>
+              <div className="c-grid__cell u-1/2--lap u-1/3--desk">
+                <p className="c-paragraph c-paragraph--sans-small u-subtler u-margin-none">This site is built by hand and with love in React.<br/> It's hosted on GitHub and typeset in Graphik &amp; Louize.<br/> Photography courtesy of Amo Amo Studio &amp; Angela Zion.<br />© Andrew McIntee 2019, unless otherwise stated.</p>
               </div>
             </div>
             {

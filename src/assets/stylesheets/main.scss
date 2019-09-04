@@ -69,35 +69,39 @@ img {
 @import "utilities/u.width";
 @import "utilities/u.reveal";
 @import "utilities/u.border";
+@import "utilities/u.hide";
 
-.OVERRIDE-about-lockup-1 {
-  background-image: url("../images/about-lockup-2019/1.png");
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-bottom: 300px;
-}
 
-.OVERRIDE-about-lockup-2 {
-  background-image: url("../images/about-lockup-2019/2.png");
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-top: 330px;
-}
+@media #{$bp-desk} {
+  .OVERRIDE-about-lockup-1 {
+    background-image: url("../images/about-lockup-2019/1.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 300px;
+  }
 
-.OVERRIDE-sidebar-bg-1 {
-  background-image: url("../images/about-lockup-2019/sidebar-1.png");
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  background-size: 34%;
-}
+  .OVERRIDE-about-lockup-2 {
+    background-image: url("../images/about-lockup-2019/2.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 330px;
+  }
 
-.OVERRIDE-signature {
-  background-image: url("../images/signature2.png");
-  background-position: 90px 0px;
-  background-repeat: no-repeat;
-  background-size: 180px;
-  padding: 84px 0 40px;
-  margin-top: 40px;
+  .OVERRIDE-sidebar-bg-1 {
+    background-image: url("../images/about-lockup-2019/sidebar-1.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 34%;
+  }
+
+  .OVERRIDE-signature {
+    background-image: url("../images/signature2.png");
+    background-position: 90px 0px;
+    background-repeat: no-repeat;
+    background-size: 180px;
+    padding: 84px 0 40px;
+    margin-top: 40px;
+  }
 }

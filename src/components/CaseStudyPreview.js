@@ -8,7 +8,7 @@ class CaseStudyPreview extends Component {
   renderContent() {
     return(
       <React.Fragment>
-        <h3 className="c-title c-title--medium u-margin-bottom-none">
+        <h3 className="c-title c-title--medium">
           {this.props.title}
           <span className="c-title__subtle">{this.props.timePeriod}</span>
         </h3>

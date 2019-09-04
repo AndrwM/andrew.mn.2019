@@ -36,16 +36,14 @@ class PageAbout extends Component {
         </h1>
         <p className="c-paragraph c-paragraph--xlarge">
         My name is Andrew McIntee.
-        <br/>
-        I am a product designer &amp; web engineer
-        <br/>
-        specializing in design systems.
+        <br/> I am a product designer &amp; web engineer
+        <br/> specializing in design systems.
         </p>
-        <div className="c-grid c-grid--auto c-grid--large u-margin-top-large">
-          <div className="c-grid__cell u-1/6">
+        <div className="c-grid c-grid--large u-margin-top-large">
+          <div className="c-grid__cell u-1/3--lap u-1/6--desk">
             <Navigation />
           </div>
-          <div className="c-grid__cell">
+          <div className="c-grid__cell u-2/3--lap u-5/6--desk">
             <h2 className="c-title c-title--small u-margin-top-small">Currently…</h2>
             <ul className="c-list c-list--large c-list--sparkle">
               <li className="c-list__item">Based out of the Atlanta &amp; Mexico City</li>
@@ -72,7 +70,7 @@ class PageAbout extends Component {
           <Reveal>
             <p className="c-paragraph">
               My name is Andrew McIntee. I’m a digital product designer &amp; web-engineer who specializes in building &amp; nurturing design systems.
-              <br/>I have also been a remote-worker for over 4 years.
+              <br/> I have also been a remote-worker for over 4 years.
             </p>
           </Reveal>
           <Reveal>
@@ -155,7 +153,7 @@ class PageAbout extends Component {
           </Reveal>
         </div>
       </section>
-      <section className="c-wrapper c-wrapper--slim">
+      <section className="c-wrapper c-wrapper--slim u-margin-bottom">
         <div className="c-container">
           <Reveal>
             <Brands />
