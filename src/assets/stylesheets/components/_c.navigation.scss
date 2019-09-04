@@ -9,7 +9,7 @@
   z-index: 99999;
   opacity: 1;
   animation: 2s ease fade;
-  font: 400 14px / 1.8 $ff-primary;
+  font: 400 14px / 2 $ff-primary;
   position: fixed;
   padding: 0;
   box-sizing: border-box;
@@ -27,7 +27,7 @@
     // background: var(--theme);
     background: #ffffff;
     transition: background-color 0.25s cubic-bezier(0.35, 0.46, 0.45, 1), height 0.15s cubic-bezier(0.35, 0.46, 0.45, 1);
-    opacity: 0.99;
+    opacity: 1;
     z-index: -1;
     height: 0;
     will-change: height, background-position;
@@ -49,14 +49,14 @@
     width: 100vw;
     height: 100vh;
     // background: linear-gradient(to top, transparent 20%, #ffffff 90%);
-    background: linear-gradient(to top, var(--theme) 10%, rgba(darken($c-primary, 50%), 0.2) 100%);
+    background: linear-gradient(to bottom, var(--theme) 20%, rgba(#ffffff, 0.1) 100%);
     transition: all 1s cubic-bezier(0.35, 0.46, 0.45, 1);
     opacity: 0;
     will-change: opacity;
     visibility: hidden;
     pointer-events: none;
     z-index: $z-2;
-    transition-delay: 0.2s;
+    transition-delay: 0.15s;
   }
 
   &:hover {
@@ -68,8 +68,8 @@
 
     &::after {
       transition-delay: unset;
-      transition: all 0.8s cubic-bezier(0.35, 0.46, 0.45, 1);
-      opacity: 0.5;
+      transition: all 0.2s cubic-bezier(0.35, 0.46, 0.45, 1);
+      opacity: 0.9;
       visibility: visible;
     }
   }
@@ -100,7 +100,7 @@
   }
 
   .c-navigation__breadcrumb-link {
-    font: 400 15px / 1.8 $ff-primary;
+    font: 400 15px / 2 $ff-primary;
     color: $c-grey-medium;
     cursor: w-resize;
     position: relative;
@@ -129,11 +129,10 @@
     }
 
     &--static {
+      font: 500 15px / 2 $ff-primary;
       cursor: default;
 
-      &::after { opacity: 0; }
-
-      &:hover::after { bottom: 0; opacity: 0; }
+      &::after { content: none; }
     }
   }
 }
