@@ -127,16 +127,16 @@ class PageCaseStudyIndex extends Component {
           cta="Case study coming September 2019."
           description={["Newline is the course-work software of The Iron Yard. I on the product team to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system.", "From the ground-up we designed, built, and documented a CSS component system with over 50 elements. It allowed anyone on the team to quickly assemble a view. In addition to authoring the design system, I worked with the engineering team in building the front-end for an in-browser IDE and student messaging system."]} />
         <CaseStudyPreview
-          backgroundStyle={{
-            backgroundImage: `url(${imageNewlinePreview})`,
-            position: "absolute",
-            backgroundSize: "100%",
-            backgroundRepeat: "no-repeat",
-            bottom: 0,
-            height: "104%",
-            width: "123%",
-            right: "-15.5%"
-          }}
+          // backgroundStyle={{
+          //   backgroundImage: `url(${imageNewlinePreview})`,
+          //   position: "absolute",
+          //   backgroundSize: "100%",
+          //   backgroundRepeat: "no-repeat",
+          //   bottom: 0,
+          //   height: "104%",
+          //   width: "123%",
+          //   right: "-15.5%"
+          // }}
           title="Newline Education Platform"
           timePeriod="2015 &ndash; 2017"
           type="UI Design System, Front-End Engineering, RoR Development"
@@ -150,7 +150,7 @@ class PageCaseStudyIndex extends Component {
                 context={["no-browser", "2col"]}
                 title="Coindex Blockchain Trading Platform"
                 timePeriod="2017 &ndash; 2018"
-                role="Cofounder, Director Of Product Design"
+                role="Director, Product Design"
                 type="UI Design, Prototyping, Design&nbsp;System&nbsp;Engineering"
                 image={imageCoindex}
                 url="/case-studies/coindex"
@@ -182,7 +182,34 @@ class PageCaseStudyIndex extends Component {
                 description={["While working for Organic, Inc., I had the opportunity to lead the engineering for a brand new marketing website for the Canadian division of Depends adult incontinence products. In addition, I also oversaw how American and French language translations were implemented and managed their effect on the design specifications."]} />
             </div>
             <div className="c-container-2col__item">
-              <div className="c-title c-title--medium" children="Non-Profit Work" />
+              <CaseStudyPreview
+                context="2col"
+                title="Really Good Emails"
+                timePeriod="2017 &ndash; 2018"
+                role="Frontend Engineer"
+                type="Design System Development, React/Redux Engineering"
+                image={imageRge}
+                url={false}
+                cta={false}
+                description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
+            </div>
+          </div>
+        </section>
+        <section className="c-wrapper c-wrapper--flush">
+          <div className="c-container-2col">
+            <div className="c-container-2col__item">
+              <CaseStudyPreview
+                context="2col"
+                title="Connect Hero"
+                timePeriod="2018"
+                role="Lead Designer"
+                type="Wireframes"
+                image={imageConnectHero}
+                url="/case-studies/connect-hero"
+                description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
+            </div>
+            <div className="c-container-2col__item c-container-2col__item--stripe">
+              <div className="c-title c-title--medium" children="More Work" />
               <p className="c-paragraph c-paragraph--medium">
                 Due to privacy restrictions, some of my work is not available publicly. If you would like to see engineering or marketing samp.
               </p>
@@ -201,52 +228,6 @@ class PageCaseStudyIndex extends Component {
             </div>
           </div>
         </section>
-        <section className="c-wrapper c-wrapper--flush u-border-bottom">
-          <div className="c-container-2col">
-            <div className="c-container-2col__item">
-              <CaseStudyPreview
-                context="2col"
-                title="Really Good Emails"
-                timePeriod="2017 &ndash; 2018"
-                role="Frontend Engineer"
-                type="Design System Development, React/Redux Engineering"
-                image={imageRge}
-                url={false}
-                cta={false}
-                description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
-            </div>
-            <div className="c-container-2col__item c-container-2col__item--stripe">
-              <CaseStudyPreview
-                context="2col"
-                title="Connect Hero"
-                timePeriod="2018"
-                role="Lead Designer"
-                type="Wireframes"
-                image={imageConnectHero}
-                url="/case-studies/connect-hero"
-                description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
-            </div>
-          </div>
-        </section>
-        <div className="c-wrapper">
-          <div className="c-container">
-            <Reveal>
-              <h2 className="c-title c-title--small">
-                More Work
-              </h2>
-            </Reveal>
-            <Reveal>
-              <p className="c-paragraph">
-                Due to privacy restrictions, some of my work is not available publicly. If you would like to see engineering or marketing samples: <Link to="/case-studies" className="c-link">Studio@Andrew.mn</Link>.
-              </p>
-          </Reveal>
-            {/*
-              !this.state.showArchive &&
-              <a className="c-button" onClick={() => this.setState({ showArchive: true })} children="See More Work" />
-            */}
-          </div>
-        </div>
-        {this.renderArchive()}
       </React.Fragment>
     );
   }

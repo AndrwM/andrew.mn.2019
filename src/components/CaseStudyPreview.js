@@ -20,18 +20,26 @@ class CaseStudyPreview extends Component {
         {this.props.description && this.props.description.map((paragraph, index) => (
           <p key={index} className="c-paragraph c-paragraph--medium" dangerouslySetInnerHTML={{__html: paragraph}} />
         ))}
-        <div className="u-border-bottom u-border-top u-margin-vertical">
+        {(this.props.url || this.props.cta) &&
+          <div className="u-padding-bottom">
+            {this.props.url ?
+              <Link to={this.props.url} className="c-button c-button--small c-button--arrow-r">{this.props.cta || "Read The Case Study"}</Link> :
+              <p className="c-paragraph c-paragraph--sans-medium">{this.props.cta}</p>
+            }
+          </div>
+        }
+        <div className="u-border-top u-margin-bottom-small u-margin-top-auto">
           <div className="c-grid c-grid--small">
-            <div className="c-grid__cell u-1/3 u-padding-top-small u-padding-bottom-tiny">
-              <h4 className="c-title c-title--smallest u-margin-none">
+            <div className="c-grid__cell u-1/3">
+              <h4 className="c-title c-title--smallest u-margin-none u-padding-top-small">
                 Role
               </h4>
               <p className="c-paragraph c-paragraph--sans-small">
                 {this.props.role}
               </p>
             </div>
-            <div className="c-grid__cell u-2/3 u-padding-top-small u-padding-bottom-tiny u-border-left">
-              <h4 className="c-title c-title--smallest u-margin-none">
+            <div className="c-grid__cell u-2/3">
+              <h4 className="c-title c-title--smallest u-margin-none u-padding-top-small">
                 I Delivered
               </h4>
               <p className="c-paragraph c-paragraph--sans-small">
@@ -40,14 +48,6 @@ class CaseStudyPreview extends Component {
             </div>
           </div>
         </div>
-        {(this.props.url || this.props.cta) &&
-          <div className="u-padding-bottom">
-            {this.props.url ?
-              <Link to={this.props.url} className="c-button c-button--arrow-r">{this.props.cta || "Read The Case Study"}</Link> :
-              <p className="c-paragraph c-paragraph--sans-medium">{this.props.cta}</p>
-            }
-          </div>
-        }
       </React.Fragment>
     );
   }
