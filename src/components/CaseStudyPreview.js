@@ -30,7 +30,7 @@ class CaseStudyPreview extends Component {
         }
         <div className="u-border-top u-margin-bottom-small u-margin-top-auto">
           <div className="c-grid c-grid--small">
-            <div className="c-grid__cell u-1/3">
+            <div className="c-grid__cell u-1/3--lap">
               <h4 className="c-title c-title--smallest u-margin-none u-padding-top-small">
                 Role
               </h4>
@@ -38,7 +38,7 @@ class CaseStudyPreview extends Component {
                 {this.props.role}
               </p>
             </div>
-            <div className="c-grid__cell u-2/3">
+            <div className="c-grid__cell u-2/3--lap">
               <h4 className="c-title c-title--smallest u-margin-none u-padding-top-small">
                 I Delivered
               </h4>
@@ -46,31 +46,6 @@ class CaseStudyPreview extends Component {
                 {this.props.type}
               </p>
             </div>
-          </div>
-        </div>
-      </React.Fragment>
-    );
-  }
-
-  renderDetail() {
-    return(
-      <React.Fragment>
-        <div className="c-grid">
-          <div className="c-grid__cell u-1/2">
-            <h4 className="c-title c-title--small">
-              Role
-            </h4>
-            <p className="c-paragraph c-paragraph--sans-medium">
-              {this.props.role}
-            </p>
-          </div>
-          <div className="c-grid__cell u-1/2">
-            <h4 className="c-title c-title--small">
-              Technology
-            </h4>
-            <p className="c-paragraph c-paragraph--sans-medium">
-              {this.props.type}
-            </p>
           </div>
         </div>
       </React.Fragment>
@@ -108,7 +83,7 @@ class CaseStudyPreview extends Component {
           <div className="c-container">
             <Reveal>
               <div className="c-grid c-grid--flush c-grid--bottom">
-                <div className="c-grid__cell u-6/12--lap u-padding-right-large">
+                <div className="c-grid__cell u-6/12--lap">
                   {this.renderContent()}
                 </div>
                 <div className="c-grid__cell u-6/12--lap c-grid__cell--pull-right u-padding-top" style={{position: "relative"}}>

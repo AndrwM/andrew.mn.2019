@@ -31,17 +31,17 @@
   }
 
   &--large .c-list__item {
-    font-size: 12px;
+    font-size: 16px;
     @media #{$bp-lap} { font-size: 16px; }
   }
 
   @mixin emoji-spacing {
     font-size: 135%;
     vertical-align: middle;
-    margin: 0px 3px 5px -24px;
+    // margin: 0px 3px 5px -24px;
 
+    margin: 0px 9px 5px -33px;
     @media #{$bp-lap} {
-      margin: 0px 9px 5px -33px;
     }
   }
 

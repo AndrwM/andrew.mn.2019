@@ -16,7 +16,7 @@
   }
 
   &--xlarge {
-    font: 400 30px / 1.2 $ff-primary;
+    font: 400 40px / 1.2 $ff-primary;
     // color: #6a5ef5;
     // color: #508897;
 
@@ -43,12 +43,12 @@
   }
 
   &--medium {
-    font: 500 22px/1 $ff-primary;
+    // font: 400 24px / 1.4 $ff-display;
+    font: 400 30px / 1.4 $ff-display;
     margin: 0 0 $s-small;
 
     @media #{$bp-lap} {
       // margin: 0 0 $s-xtiny;
-      font: 400 30px / 1.4 $ff-display;
     }
   }
 

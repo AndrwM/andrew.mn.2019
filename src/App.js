@@ -17,13 +17,13 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      authorized: true,
-
-      // Header Settings
+      authorized: false,
+// -- Header Settings ---
       headerContent: null,
       headerHeight: null,
       headerKey: 0,
       headerBg: "#f1f9fc",
+// -- Header Settings ---
     };
 
 

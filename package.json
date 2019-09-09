@@ -1,6 +1,7 @@
 {
-  "name": "version3",
-  "version": "0.1.0",
+  "name": "Andrew McIntee – Version 3",
+  "homepage": "http://andrew.mn",
+  "version": "3.0.0",
   "private": true,
   "dependencies": {
     "node-sass": "^4.12.0",

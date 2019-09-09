@@ -26,14 +26,14 @@ class PartialFooter extends Component {
         `}} />
         <section className="c-wrapper">
           <div className="c-container">
-            <div className="c-grid c-grid--bottom">
-              <div className="c-grid__cell u-1/2--lap u-2/3--desk">
-                <p className="c-paragraph c-paragraph--sans-large u-margin-none">
-                  <span className="c-emoji">🎉</span>&nbsp;&nbsp;Thanks&nbsp;for&nbsp;visiting. Have&nbsp;a&nbsp;great&nbsp;day. <span className="u-subtle">&mdash;</span> <a href="mailto:Studio@Andrew.mn" className="c-link">Studio@Andrew.mn</a>
-                </p>
-              </div>
+            <div className="c-grid c-grid--reverse c-grid--bottom">
               <div className="c-grid__cell u-1/2--lap u-1/3--desk">
                 <p className="c-paragraph c-paragraph--sans-small u-subtler u-margin-none">This site is built by hand and with love in React.<br/> It's hosted on GitHub and typeset in Graphik &amp; Louize.<br/> Photography courtesy of Amo Amo Studio &amp; Angela Zion.<br />© Andrew McIntee 2019, unless otherwise stated.</p>
+              </div>
+              <div className="c-grid__cell u-1/2--lap u-2/3--desk">
+                <p className="c-paragraph c-paragraph--sans-large u-margin-bottom-none u-margin-top">
+                  <span className="c-emoji">🎉</span>&nbsp;&nbsp;Thanks&nbsp;for&nbsp;visiting. Have&nbsp;a&nbsp;great&nbsp;day. <span className="u-subtle">&mdash;</span> <a href="mailto:Studio@Andrew.mn" className="c-link">Studio@Andrew.mn</a>
+                </p>
               </div>
             </div>
             <div className="u-border-dark-top u-padding-top u-margin-top">
