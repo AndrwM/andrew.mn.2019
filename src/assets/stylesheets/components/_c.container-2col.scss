@@ -16,12 +16,19 @@
     flex-direction: column;
 
     &:nth-child(1) {
-      padding: 14vh 6vw 0px 0px;
+      padding: 10vh 6vw 0px 0px;
     }
 
     &:nth-child(2) {
       border-left: 1px solid $c-border;
-      padding: 14vh 0px 0px 6vw
+      padding: 10vh 0px 0px 6vw
+    }
+
+    @media #{$bp-lap} {
+      &--stripe {
+        &:nth-child(1) {background: linear-gradient(to left, #fbfbfb, transparent);}
+        &:nth-child(2) {background: linear-gradient(to right, #fbfbfb, transparent);}
+      }
     }
   }
 

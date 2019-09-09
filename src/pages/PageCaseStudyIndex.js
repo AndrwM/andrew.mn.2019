@@ -115,9 +115,6 @@ class PageCaseStudyIndex extends Component {
             <p className="c-paragraph">
               Below you’ll find a collection of software projects I have participated in, in some-type of leadership capacity. Prior to my experience of 6 years in software development, I worked within the marketing world at national agencies as cross-disciplinary visual designer &amp; web developer.
             </p>
-            <p className="c-paragraph">
-              From time-to-time I still do marketing work for the software companies that I have been under employ with–it’s a vertical I’m very comfortable working and leading projects in. Please reach out if you’re interested in marketing samples&hellip;and now, do enjoy!
-            </p>
           </div>
         </section>
         <CaseStudyPreview
@@ -159,7 +156,7 @@ class PageCaseStudyIndex extends Component {
                 url="/case-studies/coindex"
                 description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
             </div>
-            <div className="c-container-2col__item">
+            <div className="c-container-2col__item c-container-2col__item--stripe">
               <CaseStudyPreview
                 context="2col"
                 title="College Admissions Portal"
@@ -173,7 +170,7 @@ class PageCaseStudyIndex extends Component {
         </section>
         <section className="c-wrapper c-wrapper--flush u-border-bottom">
           <div className="c-container-2col">
-            <div className="c-container-2col__item">
+            <div className="c-container-2col__item c-container-2col__item--stripe">
               <CaseStudyPreview
                 context="2col"
                 title="Depends Canada Site"
@@ -215,10 +212,10 @@ class PageCaseStudyIndex extends Component {
                 type="Design System Development, React/Redux Engineering"
                 image={imageRge}
                 url={false}
-                cta="Case study coming soon."
+                cta={false}
                 description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
             </div>
-            <div className="c-container-2col__item">
+            <div className="c-container-2col__item c-container-2col__item--stripe">
               <CaseStudyPreview
                 context="2col"
                 title="Connect Hero"
