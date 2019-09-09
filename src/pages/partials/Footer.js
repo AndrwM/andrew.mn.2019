@@ -36,16 +36,28 @@ class PartialFooter extends Component {
                 <p className="c-paragraph c-paragraph--sans-small u-subtler u-margin-none">This site is built by hand and with love in React.<br/> It's hosted on GitHub and typeset in Graphik &amp; Louize.<br/> Photography courtesy of Amo Amo Studio &amp; Angela Zion.<br />© Andrew McIntee 2019, unless otherwise stated.</p>
               </div>
             </div>
-            {
-              parentPage &&
-              <div className="u-border-dark-top u-padding-top u-margin-top">
-                <Link
-                  to={parentPage.url}
-                  className="c-button c-button--xlarge c-button--arrow-l"
-                  children={`Back to ${parentPage.name}`}
-                />
+            <div className="u-border-dark-top u-padding-top u-margin-top">
+              <div className="c-grid c-grid--auto">
+                <div className="c-grid__cell">
+                  {
+                    parentPage &&
+                      <Link
+                        to={parentPage.url}
+                        className="c-button c-button--xlarge c-button--arrow-l"
+                        children={`Back to ${parentPage.name}`}
+                      />
+                    }
+                </div>
+                <div className="c-grid__cell c-grid__cell--pull-right">
+                  {/* <Link
+                    to={"#"}
+                    className="c-button c-button--xlarge c-button--arrow-r"
+                    children={`Next Case Study`}
+                    /> */}
+                </div>
               </div>
-            }
+            </div>
+
             {/* <p className="c-paragraph--small u-margin-top-smallest"><span className="u-subtler u-margin-left-smallest">In respect of your privacy, this website does not use trackers or analytics :)</span></p> */}
           </div>
         </section>

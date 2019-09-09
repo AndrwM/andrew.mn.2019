@@ -8,13 +8,14 @@ body {
   background: #ffffff;
   box-sizing: border-box;
   color: $c-grey-medium;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
   font: 400 18px / 1.8 $ff-primary;
   min-height: 100%;
   overflow-x: hidden;
   width: 100%;
   margin: 0;
+
+  // -webkit-font-smoothing: antialiased;
+  // font-smoothing: antialiased;
 }
 
 img {

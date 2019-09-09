@@ -12,7 +12,6 @@ import slide5 from '../../assets/images/projects/connect-hero/slide5.png';
 
 class PageNewline extends Component {
   componentDidMount() {
-    console.log('WITH CASE');
     this.props.setAppState({
       headerContent: this.renderHeader(),
       headerBg: "#f2fce9"
@@ -22,39 +21,29 @@ class PageNewline extends Component {
   renderHeader() {
     return (
       <React.Fragment>
-        <div className="u-border-dark-bottom u-margin-bottom u-padding-bottom">
-          <div className="c-grid">
-            <div className="c-grid__cell u-3/5">
-              <h1 className="c-title c-title--xlarge">
-                College Admissions Portal
-                <span className="c-title__subtle">2018</span>
-              </h1>
-              <p className="c-paragraph c-paragraph--sans-medium">Full-Time Employed</p>
-              <p className="c-paragraph">In 2015 I was contracted by TTI North America's in-house design agency, Torque Creative, to create an interactive marketing website to showcase a new line of all-electric tools. This project was particularly special to me because Torque gave me access to their in-house photography division. I had autonomy to art-direct the imagery of the products I needed to complete the project.</p>
-            </div>
-            <div className="c-grid__cell u-2/5">
-              <div className="c-browser" style={{maxWidth: 700}}>
-                <div className="c-browser__content"><img src={cover} /></div>
-              </div>
-            </div>
-          </div>
+        <div className="u-border-dark-bottom u-padding-bottom">
+          <h1 className="c-title c-title--xlarge">
+            Connect Hero
+            <span className="c-title__subtle">2018</span>
+          </h1>
+          <p className="c-paragraph c-paragraph--sans-large">UI Design System, Front-End Engineering, RoR Development</p>
         </div>
-        <div className="c-grid">
-          <div className="c-grid__cell u-1/5">
-            <h2 className="c-title c-title--small">Role</h2>
-            <p className="c-paragraph c-paragraph--sans-medium">Design Lead</p>
+        <div className="c-grid c-grid--stretch u-margin-top-large u-margin-bottom-tiny">
+          <div className="c-grid__cell">
+            <h2 className="c-title c-title--small">In Association With</h2>
+            <p className="c-paragraph c-paragraph--sans-medium">The Iron Yard Product Team</p>
           </div>
-          <div className="c-grid__cell u-1/5">
+          <div className="c-grid__cell">
+            <h2 className="c-title c-title--small">Responsible For</h2>
+            <p className="c-paragraph c-paragraph--sans-medium">The Iron Yard's Product Team</p>
+          </div>
+          <div className="c-grid__cell">
             <h2 className="c-title c-title--small">Project Length</h2>
-            <p className="c-paragraph c-paragraph--sans-medium">1½ Months</p>
+            <p className="c-paragraph c-paragraph--sans-medium">2 Years</p>
           </div>
-          <div className="c-grid__cell u-1/5">
+          <div className="c-grid__cell">
             <h2 className="c-title c-title--small">I Delivered</h2>
-            <p className="c-paragraph c-paragraph--sans-medium">InVision</p>
-          </div>
-          <div className="c-grid__cell c-grid__cell--pull-right u-2/5">
-            <h2 className="c-title c-title--small">In Association With&hellip;</h2>
-            <p className="c-paragraph c-paragraph--sans-medium">Division Of Labor Product Agency</p>
+            <p className="c-paragraph c-paragraph--sans-medium">User Research, UI Comps, Design System, JS &amp; Ruby code.</p>
           </div>
         </div>
       </React.Fragment>

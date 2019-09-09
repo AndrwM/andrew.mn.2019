@@ -9,6 +9,8 @@
     @media #{$bp-lap} {
       margin-left: 4%;
       width: 70vw;
+      // max-height: 70vh;
+      // overflow: scroll;
     }
   }
 
@@ -31,6 +33,18 @@
         transform: scale(1.8);
         opacity: 0.3;
       }
+    }
+  }
+
+  &--small {
+    .c-carousel__item {
+      box-shadow: none;
+      border-radius: 0;
+      max-width: 40vw;
+      margin-left: 2vw;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
     }
   }
 

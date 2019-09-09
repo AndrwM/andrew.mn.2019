@@ -150,14 +150,13 @@ class PageCaseStudyIndex extends Component {
           <div className="c-container-2col">
             <div className="c-container-2col__item">
               <CaseStudyPreview
-                context="2col"
-                title="Really Good Emails"
+                context={["no-browser", "2col"]}
+                title="Coindex Blockchain Trading Platform"
                 timePeriod="2017 &ndash; 2018"
-                role="Frontend Engineer"
-                type="Design System Development, React/Redux Engineering"
-                image={imageRge}
-                url={false}
-                cta="Case study coming soon."
+                role="Cofounder, Director Of Product Design"
+                type="UI Design, Prototyping, Design&nbsp;System&nbsp;Engineering"
+                image={imageCoindex}
+                url="/case-studies/coindex"
                 description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
             </div>
             <div className="c-container-2col__item">
@@ -186,6 +185,25 @@ class PageCaseStudyIndex extends Component {
                 description={["While working for Organic, Inc., I had the opportunity to lead the engineering for a brand new marketing website for the Canadian division of Depends adult incontinence products. In addition, I also oversaw how American and French language translations were implemented and managed their effect on the design specifications."]} />
             </div>
             <div className="c-container-2col__item">
+              Non-profit work
+            </div>
+          </div>
+        </section>
+        <section className="c-wrapper c-wrapper--flush u-border-bottom">
+          <div className="c-container-2col">
+            <div className="c-container-2col__item">
+              <CaseStudyPreview
+                context="2col"
+                title="Really Good Emails"
+                timePeriod="2017 &ndash; 2018"
+                role="Frontend Engineer"
+                type="Design System Development, React/Redux Engineering"
+                image={imageRge}
+                url={false}
+                cta="Case study coming soon."
+                description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
+            </div>
+            <div className="c-container-2col__item">
               <CaseStudyPreview
                 context="2col"
                 title="Connect Hero"
@@ -198,15 +216,6 @@ class PageCaseStudyIndex extends Component {
             </div>
           </div>
         </section>
-        <CaseStudyPreview
-          context={["no-browser"]}
-          title="Coindex Blockchain Trading Platform"
-          timePeriod="2017 &ndash; 2018"
-          role="Co-Founder, Director Of Product Design"
-          type="UI Design, Prototyping, Design&nbsp;System&nbsp;Engineering"
-          image={imageCoindex}
-          url="/case-studies/coindex"
-          description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
         <div className="c-wrapper">
           <div className="c-container">
             <Reveal>

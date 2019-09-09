@@ -45,6 +45,9 @@ class Breadcrumb extends Component {
     return (
       <nav className="c-navigation" style={{"--theme": this.props.themeColor}}>
         <div className="c-navigation__container">
+          {/* <div className="c-navigation__breadcrumb-link c-navigation__breadcrumb-link--static">
+            <span className="c-emoji" children="🙂" />&nbsp;
+          </div> */}
           {this.props.breadcrumbs.map(({ breadcrumb, match }, index) => (
             <React.Fragment key={index}>
               {index < this.props.breadcrumbs.length - 1 ? (

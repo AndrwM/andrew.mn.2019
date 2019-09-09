@@ -44,9 +44,9 @@ class PageAbout extends Component {
             <Navigation />
           </div>
           <div className="c-grid__cell u-2/3--lap u-5/6--desk">
-            <h2 className="c-title c-title--small u-margin-top-small">Currently…</h2>
+            <h2 className="c-title c-title--small u-margin-top-small">Briefly…</h2>
             <ul className="c-list c-list--large c-list--sparkle">
-              <li className="c-list__item">Based out of the Atlanta &amp; Mexico City</li>
+              <li className="c-list__item">Remote worker of over 4 years, based out of Atlanta &amp; Mexico City</li>
               <li className="c-list__item">Taking a professional sabbatical to learn spanish in a intensive format</li>
               <li className="c-list__item">In the short term, assisting with Milan Fashion Week &amp; scuba diving</li>
             </ul>

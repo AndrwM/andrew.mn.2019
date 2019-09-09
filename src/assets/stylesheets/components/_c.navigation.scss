@@ -50,7 +50,7 @@
     height: 100vh;
     // background: linear-gradient(to top, transparent 20%, #ffffff 90%);
     background: linear-gradient(to bottom, var(--theme) 20%, rgba(#ffffff, 0.1) 100%);
-    transition: all 1s cubic-bezier(0.35, 0.46, 0.45, 1);
+    transition: opacity 1s cubic-bezier(0.35, 0.46, 0.45, 1), visibility 1s cubic-bezier(0.35, 0.46, 0.45, 1);
     opacity: 0;
     will-change: opacity;
     visibility: hidden;
@@ -68,7 +68,7 @@
 
     &::after {
       transition-delay: unset;
-      transition: all 0.2s cubic-bezier(0.35, 0.46, 0.45, 1);
+      transition: opacity 0.2s cubic-bezier(0.35, 0.46, 0.45, 1), visibility 0.2s cubic-bezier(0.35, 0.46, 0.45, 1);
       opacity: 0.9;
       visibility: visible;
     }

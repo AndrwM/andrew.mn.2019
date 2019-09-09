@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Flickity from 'react-flickity-component'
 import 'flickity/dist/flickity.min.css';
 
-class SliderLarge extends React.Component {
+class SliderSmall extends React.Component {
   render() {
       return (
         <div
@@ -11,7 +11,7 @@ class SliderLarge extends React.Component {
           <div className="c-container">
             <Flickity
               flickityRef={c => this.flickity = c}
-              className={"c-carousel"}
+              className={"c-carousel c-carousel--small"}
               elementType={"section"}
               disableImagesLoaded={false}
               static
@@ -25,9 +25,8 @@ class SliderLarge extends React.Component {
             }}>
             {this.props.slides.map((content, index) =>
               <div className="c-carousel__item" key={index}>
-                <img src={content} />
+                {content}
               </div>
-
             )}
           </Flickity>
         </div>
@@ -36,4 +35,4 @@ class SliderLarge extends React.Component {
   }
 }
 
-export default SliderLarge;
+export default SliderSmall;
