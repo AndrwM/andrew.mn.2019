@@ -185,7 +185,22 @@ class PageCaseStudyIndex extends Component {
                 description={["While working for Organic, Inc., I had the opportunity to lead the engineering for a brand new marketing website for the Canadian division of Depends adult incontinence products. In addition, I also oversaw how American and French language translations were implemented and managed their effect on the design specifications."]} />
             </div>
             <div className="c-container-2col__item">
-              Non-profit work
+              <div className="c-title c-title--medium" children="Non-Profit Work" />
+              <p className="c-paragraph c-paragraph--medium">
+                Due to privacy restrictions, some of my work is not available publicly. If you would like to see engineering or marketing samp.
+              </p>
+              <div className="c-title c-title--small u-padding-top u-border-top" children="SC Codes" />
+              <p className="c-paragraph c-paragraph--sans-medium">
+                Due to privacy restrictions, some of my work is not available publicly. If you would like to see engineering or marketing samp.
+              </p>
+              <div className="c-title c-title--small u-padding-top u-border-top" children="UpState Montessori" />
+              <p className="c-paragraph c-paragraph--sans-medium">
+                Due to privacy restrictions, some of my work is not available publicly. If you would like to see engineering or marketing samp.
+              </p>
+              <div className="c-title c-title--small u-padding-top u-border-top" children="Build Carolina" />
+              <p className="c-paragraph c-paragraph--sans-medium">
+                Due to privacy restrictions, some of my work is not available publicly. If you would like to see engineering or marketing samp.
+              </p>
             </div>
           </div>
         </section>

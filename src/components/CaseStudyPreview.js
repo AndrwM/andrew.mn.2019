@@ -29,7 +29,7 @@ class CaseStudyPreview extends Component {
       return ( <img src={this.props.image} className="u-margin-top-large" style={{borderRadius: "4px 4px 0 0" }} /> );
     } else {
     return (
-      <div className="u-margin-top-large" style={{overflow: "hidden", margin: "-20px -20px 0 -20px", padding: "20px 20px 0 20px"}}>
+      <div className="u-margin-top" style={{overflow: "hidden", margin: "-20px -20px 0 -20px", padding: "20px 20px 0 20px"}}>
         <div className="c-browser">
           <div className="c-browser__content"><img src={this.props.image}/></div>
         </div>
@@ -42,12 +42,10 @@ class CaseStudyPreview extends Component {
     if ( this.props.context && this.props.context.includes("2col") ) {
       return (
         <React.Fragment>
-          <div className="u-padding-bottom">
-            <Reveal>
-              {this.renderContent()}
-              {this.props.url && <Link to={this.props.url} className="c-button c-button--arrow-r">Read The Case Study</Link>}
-            </Reveal>
-          </div>
+          <Reveal>
+            {this.renderContent()}
+            {this.props.url && <Link to={this.props.url} className="c-button c-button--arrow-r">Read The Case Study</Link>}
+          </Reveal>
           {this.props.backgroundStyle && <div style={this.props.backgroundStyle} />}
           {this.renderPreview()}
         </React.Fragment>
