@@ -1,10 +1,17 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
+import ReactGA from "react-ga";
 
 function WithPage(PageComponent) {
   return class extends Component {
+    constructor(props) {
+      super(props);
+      ReactGA.initialize("UA-147547366-1");
+    }
+
     componentDidMount() {
       window.scrollTo(0, 0);
+      ReactGA.pageview(window.location.pathname + window.location.hash);
     }
 
     renderContent() {
