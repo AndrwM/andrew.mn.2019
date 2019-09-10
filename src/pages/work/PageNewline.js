@@ -51,20 +51,20 @@ class PageNewline extends Component {
           </h1>
           <p className="c-paragraph">UI Design System, Front-End Engineering, RoR Development</p>
         </div>
-        <div className="c-grid c-grid--stretch u-margin-top-large u-margin-bottom-tiny">
-          <div className="c-grid__cell">
+        <div className="c-grid u-margin-top-large u-margin-bottom-tiny">
+          <div className="c-grid__cell u-1/2--lap 1/4--desk">
             <h2 className="c-title c-title--small">In Association With</h2>
             <p className="c-paragraph c-paragraph--sans-medium">The Iron Yard Product Team</p>
           </div>
-          <div className="c-grid__cell">
+          <div className="c-grid__cell u-1/2--lap 1/4--desk">
             <h2 className="c-title c-title--small">Responsible For</h2>
             <p className="c-paragraph c-paragraph--sans-medium">The Iron Yard's Product Team</p>
           </div>
-          <div className="c-grid__cell">
+          <div className="c-grid__cell u-1/2--lap 1/4--desk">
             <h2 className="c-title c-title--small">Project Length</h2>
             <p className="c-paragraph c-paragraph--sans-medium">2 Years</p>
           </div>
-          <div className="c-grid__cell">
+          <div className="c-grid__cell u-1/2--lap 1/4--desk">
             <h2 className="c-title c-title--small">I Delivered</h2>
             <p className="c-paragraph c-paragraph--sans-medium">User Research, UI Comps, Design System, JS &amp; Ruby code.</p>
           </div>
