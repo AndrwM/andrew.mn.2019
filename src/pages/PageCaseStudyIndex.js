@@ -67,12 +67,16 @@ class PageCaseStudyIndex extends Component {
         <CaseStudyPreview
           title="OffSite Ad Platform"
           timePeriod="2018 &ndash; 2019"
-          role="Lead Designer"
+          role="Principal Designer &amp; Lead Frontend Engineer, Remote Full-Time"
           type="Design System, React Engineering, RoR Development"
           image={imageOffsite}
           url={false}
           cta="Case study coming September 2019."
-          description={["Newline is the course-work software of The Iron Yard. I on the product team to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system.", "From the ground-up we designed, built, and documented a CSS component system with over 50 elements. It allowed anyone on the team to quickly assemble a view. In addition to authoring the design system, I worked with the engineering team in building the front-end for an in-browser IDE and student messaging system."]} />
+          description={[
+            "Working on Offsite, I was responsible for leading all:  <em> feature wireframing, design prototyping, UI design, design system engineering, frontend engineering architecture decisions, and frontend code review.</em>",
+            "It's an advertising marketplace & ad generator bolted on top of Google Ads. It allows parties to share Google Ads audiences without disclosing/touching peoples personally identifiable information.",
+            "The app exclusively uses a custom CSS/BEM-based design system and uses React to handle input and front-end validations on top of a HTML/ERB based Ruby On Rails enviroment."
+          ]} />
         <CaseStudyPreview
           // backgroundStyle={{
           //   backgroundImage: `url(${imageNewlinePreview})`,
@@ -87,6 +91,7 @@ class PageCaseStudyIndex extends Component {
           title="Newline Education Platform"
           timePeriod="2015 &ndash; 2017"
           type="UI Design System, Front-End Engineering, RoR Development"
+          role="Sr. UI Designer & Frontend Engineer, Remote Full-Time"
           image={imageNewline}
           url="/case-studies/newline"
           description={["Newline is the course-work software of The Iron Yard. I on the product team to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system.", "From the ground-up we designed, built, and documented a CSS component system with over 50 elements. It allowed anyone on the team to quickly assemble a view. In addition to authoring the design system, I worked with the engineering team in building the front-end for an in-browser IDE and student messaging system."]} />
@@ -95,20 +100,24 @@ class PageCaseStudyIndex extends Component {
             <div className="c-container-2col__item">
               <CaseStudyPreview
                 context={["no-browser", "2col"]}
-                title="Coindex, Automated Cryptocurrency Trader"
+                title="Coindex Labs, Automated Cryptocurrency Trader"
                 timePeriod="2017 &ndash; 2018"
-                role="Director, Product Design"
-                type="UI Design, Prototyping, Design&nbsp;System&nbsp;Engineering"
+                role="Director of Product Design, Part-Time"
+                type="UI Design, Prototyping, React Design&nbsp;System&nbsp;Engineering"
                 image={imageCoindex}
                 url="/case-studies/coindex"
-                description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
+                description={[
+                  "I joined Coindex Labs to lead the creation of the consumer-facing manager on top of the trading algorithm infrastructure that the company had created for their digital crypto investment fund.",
+                  "During the company's Seed Round, I served as the Director of Product."
+                ]} />
             </div>
             <div className="c-container-2col__item c-container-2col__item--stripe">
               <CaseStudyPreview
                 context="2col"
                 title="College Admissions Portal"
                 timePeriod="2018"
-                type="Lead Designer: Design Systems"
+                role="Lead UI Designer"
+                type="UI Comps, Design System Documentation For Engineering Dept."
                 image={imageHelix}
                 url="/case-studies/college-admissions-portal"
                 description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
@@ -125,9 +134,12 @@ class PageCaseStudyIndex extends Component {
                 role="Frontend Engineer"
                 type="Design System Development, React/Redux Engineering"
                 image={imageRge}
-                url={false}
-                cta={false}
-                description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
+                url="https://reallygoodemails.com"
+                cta="See The Site Live"
+                description={[
+                  "Really Good Emails is the #1 ranked design archive for marketing email designs.",
+                  "Partnered with <a href='https://fathomanddraft.com/' target='_blank' class='c-link'>Fathom & Draft</a>, I worked with their design team develop a React SPA powered by Redux. From comps, I was responsible for the React-based design system and developing all views."
+                ]} />
             </div>
             <div className="c-container-2col__item">
               {/* <CaseStudyPreview
@@ -141,13 +153,14 @@ class PageCaseStudyIndex extends Component {
                 description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} /> */}
               <CaseStudyPreview
                 context="2col"
-                title="South Carolina Dept. Of Commerce<br/>Free Online Code Platform"
+                title="South Carolina Dept. Of Commerce <br/>Free Online Code Platform"
                 timePeriod="2018"
                 role="Lead Designer"
                 type="Wireframes"
                 image={imageScCodes}
                 url="https://dashboard.sccodes.org/stats"
-                description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
+                cta="See The Stat Dashboard Today"
+                description={["I worked with SC Codes a program funded by the South Carolina Dept. Of Commerce. We built a free code education courses and an adjoining community platform with job-listings and statistics visualization. It was a a hit at the press conference and made state-wide news publications such as the <a class='c-link' target='_blank' href='https://www.postandcourier.com/business/thousands-in-sc-have-signed-up-for-free-coding-school/article_aa96deae-5d25-11e9-9c52-6b5232c2d053.html'>The Post And Courier</a>. The non-profit program grew 2,000 in the following month."]} />
             </div>
           </div>
         </section>
@@ -167,19 +180,19 @@ class PageCaseStudyIndex extends Component {
             <div className="c-container-2col__item c-container-2col__item--stripe">
               <div className="c-title c-title--medium" children="More Work" />
               <p className="c-paragraph c-paragraph--medium">
-                Due to privacy restrictions, some of my work is not available publicly. If you would like to see engineering or marketing samp.
+                Due to privacy restrictions, some of my work is not available publicly. If you would like to see engineering or marketing samples, email me at <a className="c-link" href="mailto:Studio@Andrew.Mn">Studio@Andrew.Mn</a>.
               </p>
               <div className="c-title c-title--small u-padding-top u-border-top" children="Flatiron Code School" />
               <p className="c-paragraph c-paragraph--sans-medium">
-                Due to privacy restrictions, some of my work is not available publicly. If you would like to see engineering or marketing samp.
+                I worked with Flatiron Code School to develop introductory frontend engineering classes and the platform with-which to serve them as a part of their marketing funnel.
               </p>
               <div className="c-title c-title--small u-padding-top u-border-top" children="ECHO Tools, North America" />
               <p className="c-paragraph c-paragraph--sans-medium">
-                Due to privacy restrictions, some of my work is not available publicly. If you would like to see engineering or marketing samp.
+                I was responsible for leading design and engineering for the 2015 edition of the ECHO Tools battery powered outdoor tool line.
               </p>
               <div className="c-title c-title--small u-padding-top u-border-top" children="The Outdoor Channel" />
               <p className="c-paragraph c-paragraph--sans-medium">
-                Due to privacy restrictions, some of my work is not available publicly. If you would like to see engineering or marketing samp.
+                At the beginning of my career, I built over 15 interactive Adobe Flash tv show websites with Actionscript.
               </p>
             </div>
           </div>

@@ -35,6 +35,20 @@
 
 @font-face {
   font-family: "Louize";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/Louize-RegularItalic-Web.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Louize";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Louize-Regular-Web.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Louize";
   font-style: normal;
   font-weight: 600;
   src: url("/fonts/Louize-Bold-Web.woff") format("woff");
