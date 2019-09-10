@@ -67,8 +67,8 @@ class PageCaseStudyIndex extends Component {
         <CaseStudyPreview
           title="OffSite Ad Platform"
           timePeriod="2018 &ndash; 2019"
-          role="Principal Designer &amp; Lead Frontend Engineer, Remote Full-Time"
-          type="Design System, React Engineering, RoR Development"
+          role="Principal&nbsp;Designer, Lead&nbsp;Frontend&nbsp;Engineer, Remote&nbsp;Full-Time"
+          type="Design&nbsp;System, React&nbsp;Engineering, RoR&nbsp;Development"
           image={imageOffsite}
           url={false}
           cta="Case study coming September 2019."
@@ -90,8 +90,8 @@ class PageCaseStudyIndex extends Component {
           // }}
           title="Newline Education Platform"
           timePeriod="2015 &ndash; 2017"
-          type="UI Design System, Front-End Engineering, RoR Development"
-          role="Sr. UI Designer & Frontend Engineer, Remote Full-Time"
+          type="UI&nbsp;Design&nbsp;System, Frontend&nbsp;Engineering, RoR&nbsp;Development"
+          role="Senior&nbsp;UI&nbsp;Designer & Frontend&nbsp;Engineer, Remote&nbsp;Full-Time"
           image={imageNewline}
           url="/case-studies/newline"
           description={["Newline is the course-work software of The Iron Yard. I on the product team to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system.", "From the ground-up we designed, built, and documented a CSS component system with over 50 elements. It allowed anyone on the team to quickly assemble a view. In addition to authoring the design system, I worked with the engineering team in building the front-end for an in-browser IDE and student messaging system."]} />
@@ -103,7 +103,7 @@ class PageCaseStudyIndex extends Component {
                 title="Coindex Labs, Automated Cryptocurrency Trader"
                 timePeriod="2017 &ndash; 2018"
                 role="Director of Product Design, Part-Time"
-                type="UI Design, Prototyping, React Design&nbsp;System&nbsp;Engineering"
+                type="UI Design, Prototyping, React&nbsp;Design&nbsp;System&nbsp;Engineering"
                 image={imageCoindex}
                 url="/case-studies/coindex"
                 description={[
@@ -117,7 +117,7 @@ class PageCaseStudyIndex extends Component {
                 title="College Admissions Portal"
                 timePeriod="2018"
                 role="Lead UI Designer"
-                type="UI Comps, Design System Documentation For Engineering Dept."
+                type="UI&nbsp;Comps, Design&nbsp;System&nbsp;Documentation For Engineering Dept."
                 image={imageHelix}
                 url="/case-studies/college-admissions-portal"
                 description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
@@ -132,7 +132,7 @@ class PageCaseStudyIndex extends Component {
                 title="Really Good Emails"
                 timePeriod="2017 &ndash; 2018"
                 role="Frontend Engineer"
-                type="Design System Development, React/Redux Engineering"
+                type="Design&nbsp;System&nbsp;Development, React/Redux&nbsp;Engineering"
                 image={imageRge}
                 url="https://reallygoodemails.com"
                 cta="See The Site Live"

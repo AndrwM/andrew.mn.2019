@@ -37,21 +37,17 @@ class CaseStudyPreview extends Component {
         </div>
         <div className="u-border-top u-margin-bottom-small u-margin-top-auto">
           <div className="c-grid c-grid--small">
-            <div className="c-grid__cell u-1/3--lap">
+            <div className="c-grid__cell u-1/2--lap">
               <h4 className="c-title c-title--smallest u-margin-none u-padding-top-small">
                 Role
               </h4>
-              <p className="c-paragraph c-paragraph--sans-small">
-                {this.props.role}
-              </p>
+              <p className="c-paragraph c-paragraph--sans-small" dangerouslySetInnerHTML={{__html: this.props.role}}/>
             </div>
-            <div className="c-grid__cell u-2/3--lap">
+            <div className="c-grid__cell u-1/2--lap">
               <h4 className="c-title c-title--smallest u-margin-none u-padding-top-small">
                 I Delivered
               </h4>
-              <p className="c-paragraph c-paragraph--sans-small">
-                {this.props.type}
-              </p>
+              <p className="c-paragraph c-paragraph--sans-small" dangerouslySetInnerHTML={{__html: this.props.type}}/>
             </div>
           </div>
         </div>
