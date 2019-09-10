@@ -5,11 +5,23 @@ import Reveal from "../components/Reveal";
 
 class CaseStudyPreview extends Component {
 
+  renderButton() {
+    if (this.props.url || this.props.cta) {
+      if (this.props.url && this.props.url.startsWith("http")) {
+        return <a target="_blank" href={this.props.url} className="c-button c-button--small c-button--arrow-remote">{this.props.cta || "See It Live"}</a>;
+      } else if (this.props.url) {
+        return <Link to={this.props.url} className="c-button c-button--small c-button--arrow-r">{this.props.cta || "Read The Case Study"}</Link>;
+      } else {
+        return <p className="c-paragraph c-paragraph--sans-medium">{this.props.cta}</p>;
+      }
+    }
+  }
+
   renderContent() {
     return(
       <React.Fragment>
         <h3 className="c-title c-title--medium">
-          {this.props.title}
+          <span dangerouslySetInnerHTML={{__html: this.props.title}} />
           <span className="c-title__subtle">{this.props.timePeriod}</span>
         </h3>
         {/* <h4 className="c-title c-title--smallest u-margin-bottom-small">
@@ -20,14 +32,9 @@ class CaseStudyPreview extends Component {
         {this.props.description && this.props.description.map((paragraph, index) => (
           <p key={index} className="c-paragraph c-paragraph--medium" dangerouslySetInnerHTML={{__html: paragraph}} />
         ))}
-        {(this.props.url || this.props.cta) &&
-          <div className="u-padding-bottom">
-            {this.props.url ?
-              <Link to={this.props.url} className="c-button c-button--small c-button--arrow-r">{this.props.cta || "Read The Case Study"}</Link> :
-              <p className="c-paragraph c-paragraph--sans-medium">{this.props.cta}</p>
-            }
-          </div>
-        }
+        <div className="u-padding-bottom">
+          {this.renderButton()}
+        </div>
         <div className="u-border-top u-margin-bottom-small u-margin-top-auto">
           <div className="c-grid c-grid--small">
             <div className="c-grid__cell u-1/3--lap">

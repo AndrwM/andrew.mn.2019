@@ -44,12 +44,12 @@ class PageNewline extends Component {
   renderHeader() {
     return (
       <React.Fragment>
-        <div className="u-border-dark-bottom u-padding-bottom">
+        <div className="u-border-dark-bottom">
           <h1 className="c-title c-title--xlarge">
             Newline Education Platform
             <span className="c-title__subtle">2015 – 2017</span>
           </h1>
-          <p className="c-paragraph c-paragraph--sans-large">UI Design System, Front-End Engineering, RoR Development</p>
+          <p className="c-paragraph">UI Design System, Front-End Engineering, RoR Development</p>
         </div>
         <div className="c-grid c-grid--stretch u-margin-top-large u-margin-bottom-tiny">
           <div className="c-grid__cell">
