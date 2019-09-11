@@ -1,3 +1,25 @@
+## Dem Notes
+- Ampersand situation
+- Icons for bullet points
+
+There were a lot of constraints using pathwright, we were able to find a solution to build on top of
+
+Image next to myself of work
+
+Split up programming and design experience more with custom icons for each line
+
+- Fully-remote worker, based out of Atlanta & CDMX
+- just wrapped a big project
+- Interested in working with me -- contact@
+
+Image of TIY company to show that I work for a larger company
+
+reach out cta
+
+music page, mex city page, round out myself - maybe go 1 page
+-------------------------------
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
