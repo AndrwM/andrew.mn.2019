@@ -14,8 +14,9 @@ body {
   width: 100%;
   margin: 0;
 
+  // text-rendering: optimizeLegibility;
   // -webkit-font-smoothing: antialiased;
-  // font-smoothing: antialiased;
+  font-smoothing: subpixel-antialiased;
 }
 
 img {
