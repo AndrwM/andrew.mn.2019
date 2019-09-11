@@ -47,7 +47,8 @@ class PageCaseStudyIndex extends Component {
               Throughout my career, I have switch-hit between digital&nbsp;product&nbsp;design &amp; frontend&nbsp;engineering<br/> with occasional work on the backend too.
             </p>
             <p className="c-paragraph">
-              While I’m not an expert in back-end development, as a self-taught professional I’m no stranger to digging in further down the tech-stack than is expected of me to build-out infrastructure necessary to support the UI I’m implementing. Whether its spinning up databases, writing queries, building models or controllers, etc &ndash; I have even built my own Elixir+Phoenix and RoR personal projects from scratch before. This has left me with a well-rounded set of skills especially suited for smaller development teams where some responsibilities can be ambiguous between dsiciplines.
+              {/* While I’m not an expert in back-end development, as a self-taught professional I’m no stranger to digging in further down the tech-stack than is expected of me to build-out infrastructure necessary to support the UI I’m implementing. Whether its spinning up databases, writing queries, building models or controllers, etc &ndash; I have even built my own Elixir+Phoenix and RoR personal projects from scratch before. This has left me with a well-rounded set of skills especially suited for smaller development teams where some responsibilities can be ambiguous between dsiciplines. */}
+              While I’m not an expert in back-end development, as a self-taught professional I’m no stranger to digging in further down the tech-stack than is expected of me to build-out infrastructure to support the UI I’m implementing. Whether its spinning up databases, writing queries, building models or controllers, etc., I’m not afraid of the gutsy stuff. I have even built my own Elixir+Phoenix and RoR personal projects from scratch before. This has left me with a well-rounded set of skills, especially suited for smaller development teams where people on the product team where multiple hats.
             </p>
             <div className="c-grid u-padding-top u-padding-bottom-small u-margin-bottom-large u-border-bottom">
               <div className="c-grid__cell u-1/2--desk">
@@ -60,7 +61,8 @@ class PageCaseStudyIndex extends Component {
               </div>
             </div>
             <p className="c-paragraph">
-              Below you’ll find a collection of software projects I have participated in, in some-type of leadership capacity. Prior to my experience of 6 years in software development, I worked within the marketing world at national agencies as cross-disciplinary visual designer &amp; web developer.
+              {/* Below you’ll find a collection of software projects I have participated in, in some-type of leadership capacity. Prior to my experience of 6 years in software development, I worked within the marketing world at national agencies as cross-disciplinary visual designer &amp; web developer. */}
+              Below you’ll find a collection of software projects I have played a leadership role in. Prior to my experience of 6 years in software development, I worked within the marketing world at national agencies as cross-disciplinary visual designer & web developer.
             </p>
           </div>
         </section>
@@ -94,7 +96,7 @@ class PageCaseStudyIndex extends Component {
           role="Senior&nbsp;UI&nbsp;Designer, Frontend&nbsp;Engineer, Remote&nbsp;Full-Time"
           image={imageNewline}
           url="/case-studies/newline"
-          description={["Newline is the course-work software of The Iron Yard. I on the product team to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system.", "From the ground-up we designed, built, and documented a CSS component system with over 50 elements. It allowed anyone on the team to quickly assemble a view. In addition to authoring the design system, I worked with the engineering team in building the front-end for an in-browser IDE and student messaging system."]} />
+          description={["I worked on the product team to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system.", "From the ground-up we designed, built, and documented a CSS component system with over 50 elements. It allowed anyone on the team to quickly assemble a view. In addition to authoring the design system, I worked with the engineering team in building the front-end for an in-browser IDE and student messaging system."]} />
         <section className="c-wrapper c-wrapper--flush u-border-bottom">
           <div className="c-container-2col">
             <div className="c-container-2col__item">
@@ -107,7 +109,7 @@ class PageCaseStudyIndex extends Component {
                 image={imageCoindex}
                 url="/case-studies/coindex"
                 description={[
-                  "I joined Coindex Labs to lead the creation of the consumer-facing manager on top of the trading algorithm infrastructure that the company had created for their digital crypto investment fund.",
+                  "I joined Coindex Labs to lead the creation of the consumer-facing portfolio manager that ran on top of the trading algorithm for a cryptocurrency investment fund.",
                   "During the company's Seed Round, I served as the Director of Product."
                 ]} />
             </div>

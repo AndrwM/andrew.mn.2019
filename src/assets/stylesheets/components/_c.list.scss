@@ -7,8 +7,9 @@
     font-size: 13px;
     line-height: 1.6;
     margin: 2px 0 10px;
-    @media #{$bp-lap} { line-height: 1.7; }
+    display: flex;
 
+    @media #{$bp-lap} { line-height: 1.7; }
 
     &::before {
       content: '-';
@@ -36,17 +37,18 @@
   }
 
   @mixin emoji-spacing {
-    font-size: 135%;
+    margin: 0px 4px 0 2px;
     vertical-align: middle;
-    // margin: 0px 3px 5px -24px;
 
-    margin: 0px 9px 5px -33px;
+
     @media #{$bp-lap} {
+      font-size: 135%;
+      margin: 0px 9px 5px -33px;
     }
   }
 
-  &--rocket .c-list__item::before { content: '🚀'; font-size: 135%; @include emoji-spacing; }
-  &--sparkle .c-list__item::before { content: '✨'; font-size: 135%; @include emoji-spacing; }
-  &--glove .c-list__item::before { content: '🧤'; font-size: 135%; @include emoji-spacing; }
-  &--measure .c-list__item::before { content: '📐'; font-size: 135%; @include emoji-spacing; }
+  &--rocket .c-list__item::before { content: '🚀'; @include emoji-spacing; }
+  &--sparkle .c-list__item::before { content: '✨'; @include emoji-spacing; }
+  &--glove .c-list__item::before { content: '🧤'; @include emoji-spacing; }
+  &--measure .c-list__item::before { content: '📐'; @include emoji-spacing; }
 }

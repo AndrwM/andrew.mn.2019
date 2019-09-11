@@ -25,7 +25,7 @@ class PageResume extends Component {
           <div className="c-container">
             <h2 className="c-title c-title--small">Resume</h2>
             <p className="c-paragraph c-paragraph--large">
-            Product designer &amp; web engineer of 9 years&hellip;<br/> Remote worker going on 4.
+              Product designer &amp; web engineer of 9 years&hellip;<br/> Remote worker going on 4.
             </p>
             <p className="c-paragraph">
               I have been working full-time in the web development, marketing design, or digital product space for the past 9 years; of those, 4 of them have been full-time remote. Most recently I was lead _for all_ of the user experience, design, and front-end at my most recent company, a 17-employee digital product agency.
