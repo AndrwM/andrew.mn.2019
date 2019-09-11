@@ -17,7 +17,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      authorized: true,
+      authorized: false,
 // -- Header Settings ---
       headerContent: null,
       headerHeight: null,

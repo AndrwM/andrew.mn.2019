@@ -19,10 +19,10 @@ class PageAbout extends Component {
   _greeting(){
     const date = new Date();
     const hour = date.getHours()
-    if (hour > 19) { return "Good evening" } else
+    if (hour > 19) { return "Good evening"   } else
     if (hour > 12) { return "Good afternoon" } else
-    if (hour > 3)  { return "Good morning" } else
-    if (hour >= 0) { return "Good evening" } else
+    if (hour > 3)  { return "Good morning"   } else
+    if (hour >= 0) { return "Good evening"   } else
     { return "Good Day" };
   }
 
@@ -44,11 +44,12 @@ class PageAbout extends Component {
             <Navigation />
           </div>
           <div className="c-grid__cell u-2/3--lap u-5/6--desk">
-            <h2 className="c-title c-title--small u-margin-top-small">Briefly…</h2>
+            <h2 className="c-title c-title--small u-margin-top-small">Currently…</h2>
             <ul className="c-list c-list--large c-list--sparkle">
-              <li className="c-list__item">Remote worker of over 4 years, based out of Atlanta &amp; Mexico City</li>
-              <li className="c-list__item">Taking a professional sabbatical to learn spanish in a intensive format</li>
-              <li className="c-list__item">Interviewing for my next position in the software space</li>
+              <li className="c-list__item">Fully-remote worker based out of Atlanta &amp; Mexico City.</li>
+              <li className="c-list__item">Studying Spanish &amp; assisting with Milan Fashion Week</li>
+              <li className="c-list__item">Just wrapped up a big project with Division Of Labor.</li>
+              <li className="c-list__item">Interested in working together? Contact me at <a href="mailto:studio@andrew.mn" class="c-link">Studio@Andrew.mn</a></li>
             </ul>
           </div>
         </div>
@@ -69,8 +70,7 @@ class PageAbout extends Component {
           </Reveal>
           <Reveal>
             <p className="c-paragraph">
-              My name is Andrew McIntee. I’m a digital product designer &amp; web-engineer who specializes in building &amp; nurturing design systems for software.
-              <br/> I have also been a remote-worker for over 4 years.
+              My name is Andrew McIntee. I’m a digital product designer &amp; web-engineer who specializes in building &amp; nurturing design systems for software. I have also been a remote-worker for over 4 years.
             </p>
           </Reveal>
           <Reveal>

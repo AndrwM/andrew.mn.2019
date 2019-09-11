@@ -14,8 +14,7 @@ class PageResume extends Component {
 
   renderHeader() {
     return (
-      <React.Fragment>
-      </React.Fragment>
+      <React.Fragment />
     );
   }
 
