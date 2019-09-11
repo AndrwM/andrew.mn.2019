@@ -91,7 +91,7 @@ class PageCaseStudyIndex extends Component {
           title="Newline Education Platform"
           timePeriod="2015 &ndash; 2017"
           type="UI&nbsp;Design&nbsp;System, Frontend&nbsp;Engineering, RoR&nbsp;Development"
-          role="Senior&nbsp;UI&nbsp;Designer & Frontend&nbsp;Engineer, Remote&nbsp;Full-Time"
+          role="Senior&nbsp;UI&nbsp;Designer, Frontend&nbsp;Engineer, Remote&nbsp;Full-Time"
           image={imageNewline}
           url="/case-studies/newline"
           description={["Newline is the course-work software of The Iron Yard. I on the product team to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system.", "From the ground-up we designed, built, and documented a CSS component system with over 50 elements. It allowed anyone on the team to quickly assemble a view. In addition to authoring the design system, I worked with the engineering team in building the front-end for an in-browser IDE and student messaging system."]} />
@@ -100,7 +100,7 @@ class PageCaseStudyIndex extends Component {
             <div className="c-container-2col__item">
               <CaseStudyPreview
                 context={["no-browser", "2col"]}
-                title="Coindex Labs, Automated Cryptocurrency Trader"
+                title="Coindex Labs, Automated Crypto Trader"
                 timePeriod="2017 &ndash; 2018"
                 role="Director of Product Design, Part-Time"
                 type="UI Design, Prototyping, React&nbsp;Design&nbsp;System&nbsp;Engineering"
@@ -155,8 +155,8 @@ class PageCaseStudyIndex extends Component {
                 context="2col"
                 title="South Carolina Dept. Of Commerce <br/>Free Online Code Platform"
                 timePeriod="2018"
-                role="Lead Designer"
-                type="Wireframes"
+                role="Lead&nbsp;Designer, Lead&nbsp;Frontend&nbsp;Engineer"
+                type="Wireframes, Data&nbsp;Visualization & State&nbsp;Reporting, Frontend&nbsp;Engineering"
                 image={imageScCodes}
                 url="https://dashboard.sccodes.org/stats"
                 cta="See The Stat Dashboard Today"
@@ -177,10 +177,14 @@ class PageCaseStudyIndex extends Component {
                 url={false}
                 description={["While working for Organic, Inc., I had the opportunity to lead the engineering for a brand new marketing website for the Canadian division of Depends adult incontinence products. In addition, I also oversaw how American and French language translations were implemented and managed their effect on the design specifications."]} />
             </div>
-            <div className="c-container-2col__item c-container-2col__item--stripe">
+            <div className="c-container-2col__item c-container-2col__item--stripe u-padding-bottom-large">
               <div className="c-title c-title--medium" children="More Work" />
               <p className="c-paragraph c-paragraph--medium">
                 Due to privacy restrictions, some of my work is not available publicly. If you would like to see engineering or marketing samples, email me at <a className="c-link" href="mailto:Studio@Andrew.Mn">Studio@Andrew.Mn</a>.
+              </p>
+              <div className="c-title c-title--small u-padding-top u-border-top" children="BMW" />
+              <p className="c-paragraph c-paragraph--sans-medium">
+                I worked with BMW to build the frontend UI design system for their new car delivery tracking.
               </p>
               <div className="c-title c-title--small u-padding-top u-border-top" children="Flatiron Code School" />
               <p className="c-paragraph c-paragraph--sans-medium">

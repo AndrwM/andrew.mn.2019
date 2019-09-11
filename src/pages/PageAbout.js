@@ -48,7 +48,7 @@ class PageAbout extends Component {
             <ul className="c-list c-list--large c-list--sparkle">
               <li className="c-list__item">Remote worker of over 4 years, based out of Atlanta &amp; Mexico City</li>
               <li className="c-list__item">Taking a professional sabbatical to learn spanish in a intensive format</li>
-              <li className="c-list__item">In the short term, assisting with Milan Fashion Week &amp; scuba diving</li>
+              <li className="c-list__item">Interviewing for my next position in the software space</li>
             </ul>
           </div>
         </div>
@@ -69,13 +69,13 @@ class PageAbout extends Component {
           </Reveal>
           <Reveal>
             <p className="c-paragraph">
-              My name is Andrew McIntee. I’m a digital product designer &amp; web-engineer who specializes in building &amp; nurturing design systems.
+              My name is Andrew McIntee. I’m a digital product designer &amp; web-engineer who specializes in building &amp; nurturing design systems for software.
               <br/> I have also been a remote-worker for over 4 years.
             </p>
           </Reveal>
           <Reveal>
             <p className="c-paragraph">
-              Currently my focus is on design systems and the engineering powering user interfaces, and I work with product teams and startups to create efficient and seamless software user experiences. In addition to design and front-end engineering, I also dive onto the server-level to build out modeling or functionality to support the interface needs.
+              Currently my focus is on design systems and the engineering powering user interfaces and I work with product teams and startups to create efficient and seamless software user experiences. In addition to design and front-end engineering, I also dive onto the server-level to build out modeling or functionality to support the interface needs.
             </p>
           </Reveal>
           <Reveal>
@@ -113,7 +113,7 @@ class PageAbout extends Component {
           </Reveal>
           <Reveal>
             <p className="c-paragraph">
-              Previous to this one of the original was a co-founders of Coindex Labs. As design director for Coindex Labs, I oversaw all user interface design, marketing visual design, and engineered prototypes of our crypotocurrency trading platform interface.
+              Previous to this, I served as the co-founder and director of product design at Coindex Labs.I oversaw all user interface design, marketing visual design, and engineered prototypes of our crypotocurrency trading platform interface.
             </p>
           </Reveal>
           <Reveal>
@@ -127,8 +127,9 @@ class PageAbout extends Component {
             </p>
           </Reveal>
           <Reveal>
+            <h2 className="c-title c-title--small u-margin-top-large">Moving Forward</h2>
             <p className="c-paragraph">
-              Moving forward, I am looking to join a medium-sized startup company. To continue nurturing an excellent software experiences, connecting: UI connecting, usability testing, engineering execution, design documentation, and company processes to create a culture of user experience excellence. In the interim, I am available for UI design or front-end engineering consulting engagements.
+              I am looking to join a medium-sized startup company. To continue nurturing an excellent software experiences, connecting: UI connecting, usability testing, engineering execution, design documentation, and company processes to create a culture of user experience excellence. In the interim, I am available for UI design or front-end engineering consulting engagements.
             </p>
           </Reveal>
           <Reveal>
