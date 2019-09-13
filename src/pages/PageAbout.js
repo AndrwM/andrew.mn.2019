@@ -94,12 +94,12 @@ class PageAbout extends Component {
         </div>
         <div className="c-container">
           <Reveal>
-            <div className="c-grid c-grid--flush u-padding-top u-padding-bottom-small u-margin-vertical">
-              <div className="c-grid__cell u-1/2--lap">
+            <div className="c-grid c-grid--large u-padding-top u-padding-bottom-small u-margin-vertical">
+              <div className="c-grid__cell u-1/2--desk">
                 <h2 className="c-title c-title--small u-margin-top-small">Design Experience</h2>
                 <ExperienceDesign />
               </div>
-              <div className="c-grid__cell u-1/2--lap">
+              <div className="c-grid__cell u-1/2--desk">
                 <h2 className="c-title c-title--small u-margin-top-small">Programming Experience</h2>
                 <ExperienceEngineering />
               </div>

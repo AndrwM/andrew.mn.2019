@@ -17,6 +17,20 @@ Image of TIY company to show that I work for a larger company
 reach out cta
 
 music page, mex city page, round out myself - maybe go 1 page
+venture backed software porduct
+
+
+### Notes On OffSite case study structure
+- Team
+  - Division Split off into internal product
+  - Our mission
+  - pictures
+- Wires
+  - Verifying the idea
+  - Slider
+- My Role, how we structured the styles
+  - code sample
+- Onboarding comps
 -------------------------------
 
 

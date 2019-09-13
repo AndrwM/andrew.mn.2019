@@ -4,12 +4,10 @@ import { Link } from "react-router-dom";
 import WithPage from "../components/WithPage";
 import Reveal from '../components/Reveal';
 import CaseStudyPreview from "../components/CaseStudyPreview";
-import CaseStudy2ColLayout from "../components/CaseStudy2ColLayout";
 import ExperienceDesign from "./partials/ExperienceDesign";
 import ExperienceEngineering from "./partials/ExperienceEngineering";
 
 import imageOffsite from "../assets/images/projects/offsite/cover1.png";
-import imageNewlinePreview from "../assets/images/projects/newline/2019-folio-preview.jpg";
 import imageNewline from "../assets/images/projects/newline/v2-5.png";
 import imageCoindex from "../assets/images/projects/coindex/1.png";
 import imageHelix from "../assets/images/projects/helix/front.png";
@@ -17,7 +15,12 @@ import imageDependsCanada from "../assets/images/projects/depends/preview1.jpg";
 import imageRge from "../assets/images/projects/rge/cover-1x.jpg";
 import imageScCodes from "../assets/images/projects/sccodes/cover.jpg";
 
-import imageConnectHero from "../assets/images/projects/connect-hero/cover.png";
+// import flatiron from "../assets/images/logo-flatiron.png";
+// import outdoor from "../assets/images/logo-outdoor.png";
+// import bmw from "../assets/images/logo-bmw.png";
+
+// import imageNewlinePreview from "../assets/images/projects/newline/2019-folio-preview.jpg";
+// import imageConnectHero from "../assets/images/projects/connect-hero/cover.png";
 // import imageTiy from "../assets/images/projects/tiy/preview1.jpg";
 // import imageEcho from "../assets/images/projects/echo/feature-detail.jpg";
 // import imageInjuryManager from "../assets/images/projects/injury-manager/mock-injury.jpg";

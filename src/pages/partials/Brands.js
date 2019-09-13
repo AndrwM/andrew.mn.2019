@@ -11,7 +11,6 @@ import auburn from "../../assets/images/logo-auburn.png";
 import tiy from "../../assets/images/logo-tiy.png";
 import ubyk from "../../assets/images/logo-ubyk.png";
 import bmw from "../../assets/images/logo-bmw.png";
-import sc from "../../assets/images/logo-sc.png";
 import flatiron from "../../assets/images/logo-flatiron.png";
 
 class Brands extends Component {

@@ -38,13 +38,13 @@
   }
 
   @mixin emoji-spacing {
-    margin: 0px 4px 0 2px;
+    margin: 2px 4px auto 2px;
     vertical-align: middle;
 
 
     @media #{$bp-lap} {
       font-size: 135%;
-      margin: 0px 9px 0 -33px;
+      margin: 2px 9px auto -33px;
     }
   }
 
