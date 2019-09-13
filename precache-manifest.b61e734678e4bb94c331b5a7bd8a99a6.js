@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "78137c525d4c7a0b265ea463613a1c40",
+    "revision": "fdca152abed316f1b231a0c3383c8999",
     "url": "/index.html"
   },
   {
-    "revision": "6a3abae2ecda6cbca4d8",
+    "revision": "bef528a9f070860ceb9e",
     "url": "/static/css/2.80bcc607.chunk.css"
   },
   {
-    "revision": "705afc869858f28c9762",
-    "url": "/static/css/main.146c082e.chunk.css"
+    "revision": "acfd9353d23bcbc98beb",
+    "url": "/static/css/main.5e937362.chunk.css"
   },
   {
-    "revision": "6a3abae2ecda6cbca4d8",
-    "url": "/static/js/2.2dde740e.chunk.js"
+    "revision": "bef528a9f070860ceb9e",
+    "url": "/static/js/2.312c34f6.chunk.js"
   },
   {
-    "revision": "705afc869858f28c9762",
-    "url": "/static/js/main.5913a4c5.chunk.js"
+    "revision": "acfd9353d23bcbc98beb",
+    "url": "/static/js/main.99e9c820.chunk.js"
   },
   {
     "revision": "d0717cf0d8e7b2fad83e",
@@ -38,10 +38,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8bf024682b371214bea531fd34c96a07",
     "url": "/static/media/2.8bf02468.png"
-  },
-  {
-    "revision": "5b93cefca03f350a05ecf3759f1b0d54",
-    "url": "/static/media/2019-folio-preview.5b93cefc.jpg"
   },
   {
     "revision": "4c34abf5150979864e3e504526c86ab4",
@@ -122,10 +118,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "86b51c44b659555cd2852f9ef09c2e81",
     "url": "/static/media/logo-ryobi.86b51c44.png"
-  },
-  {
-    "revision": "eb52bcc2f56fb9a1d4f138f7dacd0e0d",
-    "url": "/static/media/logo-sc.eb52bcc2.png"
   },
   {
     "revision": "cd467fccb1924e6a9925677a6f17e794",
