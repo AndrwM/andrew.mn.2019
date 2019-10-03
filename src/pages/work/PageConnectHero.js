@@ -26,7 +26,7 @@ class PageNewline extends Component {
             Connect Hero
             <span className="c-title__subtle">2018</span>
           </h1>
-          <p className="c-paragraph c-paragraph--sans-large">UI Design System, Front-End Engineering, RoR Development</p>
+          <p className="c-paragraph c-paragraph--sans-large">UI Design System, frontend Engineering, RoR Development</p>
         </div>
         <div className="c-grid c-grid--stretch u-margin-top-large u-margin-bottom-tiny">
           <div className="c-grid__cell">

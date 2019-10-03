@@ -17,7 +17,8 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      authorized: false,
+      authorized: (window.location.hostname == "localhost") ? true : false,
+      visited: [],
 // -- Header Settings ---
       headerContent: null,
       headerHeight: null,
@@ -60,7 +61,10 @@ class App extends Component {
   renderPage(){
     return Routes.map(({ path, PageComponent, isPublic }) => (
       <Route exact key={path} path={path} render={() =>
-        <PageComponent setAppState={this.setAppState} authorized={this.state.authorized ? true : isPublic} />
+        <PageComponent
+          setAppState={this.setAppState}
+          authorized={this.state.authorized ? true : isPublic}
+        />
       }/>
     ))
   }
@@ -74,7 +78,7 @@ class App extends Component {
         <Route path="/:subpage" render={() => <Breadcrumb themeColor={this.state.headerBg}/>} />
         {this.renderHeader()}
         {this.renderPage()}
-        <Route path="/:subpage" render={() => <Footer themeColor={this.state.headerBg}/>} />
+        <Footer themeColor={this.state.headerBg}/>
       </HashRouter>
     );
   }

@@ -6,7 +6,7 @@ class Navigation extends Component {
   render() {
     return (
       <React.Fragment>
-        <h2 className="c-title c-title--small u-margin-top-small">Navigation</h2>
+        <h2 className="c-title c-title--small u-margin-top-small">Explore</h2>
         <ul className="c-list c-list--large c-list--rocket">
           <li className="c-list__item">
             <Link to="/case-studies" className="c-link c-link--arrow-r u-hi">Case Studies</Link>
@@ -16,9 +16,9 @@ class Navigation extends Component {
           </li>
           {this.props.context !== "no-about-link" &&
             <li className="c-list__item">
-              <HashLink smooth to="/#about" className="c-link c-link--arrow-d u-hi">About <span className="u-subtler" children="("/>↓<span className="u-subtler" children=")"/></HashLink>
+              <HashLink smooth to="/#about" className="c-link c-link--arrow-d u-hi">About Me <span className="u-subtler" children="("/>↓<span className="u-subtler" children=")"/></HashLink>
             </li>
-            }
+          }
         </ul>
       </React.Fragment>
     );

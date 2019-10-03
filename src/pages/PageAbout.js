@@ -47,9 +47,9 @@ class PageAbout extends Component {
             <h2 className="c-title c-title--small u-margin-top-small">Currently…</h2>
             <ul className="c-list c-list--large c-list--sparkle">
               <li className="c-list__item">Fully-remote worker based out of Atlanta &amp; Mexico City.</li>
-              <li className="c-list__item">Studying Spanish &amp; assisting with Milan Fashion Week.</li>
-              <li className="c-list__item">Just wrapped up a big project a venture-backed software company.</li>
-              {/* <li className="c-list__item">Interested in working together? <span className="u-subtler">&nbsp;&ndash;&nbsp;</span> <a href="mailto:studio@andrew.mn" className="c-link">Studio@Andrew.mn</a></li> */}
+              <li className="c-list__item">Taking time to study Spanish &amp; get dive certified in Jordan.</li>
+              <li className="c-list__item">Just wrapped up a big project with a venture-backed software company.</li>
+              {/* <li className="c-list__item">Interested in working together? <span className="u-subtler">&nbsp;&ndash;&nbsp;</span> <a href="mailto:studio@Andrew.mn" className="c-link">Studio@Andrew.mn</a></li> */}
             </ul>
           </div>
         </div>
@@ -65,7 +65,7 @@ class PageAbout extends Component {
           <Reveal>
             <h2 className="c-title c-title--small u-margin-top-small">About Me</h2>
             <p className="c-paragraph c-paragraph--large">
-              I have over 8 years of industry experience and most recently lead design &amp; front-end engineering on a product team.
+              I have over 8 years of industry experience and most recently lead design &amp; frontend engineering on a product team.
             </p>
           </Reveal>
           <Reveal>
@@ -75,13 +75,13 @@ class PageAbout extends Component {
           </Reveal>
           <Reveal>
             <p className="c-paragraph">
-              {/* Currently my focus is on design systems and the engineering powering user interfaces and I work with product teams and startups to create efficient and seamless software user experiences. In addition to design and front-end engineering, I also dive onto the server-level to build out modeling or functionality to support the interface needs. */}
-              I’m fascinated by the engineering that powers user interfaces and love helping product teams and startups create seamless user experiences. I’m fully capable in design and front-end engineer, but I can also dive into the server-side to build out modeling or functionality related to interface needs.
+              {/* Currently my focus is on design systems and the engineering powering user interfaces and I work with product teams and startups to create efficient and seamless software user experiences. In addition to design and frontend engineering, I also dive onto the server-level to build out modeling or functionality to support the interface needs. */}
+              I’m fascinated by the engineering that powers user interfaces and love helping product teams and startups create seamless user experiences. I’m fully capable in design and frontend engineer, but I can also dive into the server-side to build out modeling or functionality related to interface needs.
             </p>
           </Reveal>
           <Reveal>
             <p className="c-paragraph">
-              {/* Having jumped between both design &amp; front-end engineering,
+              {/* Having jumped between both design &amp; frontend engineering,
               I am most effective sitting on engineering team as an engineer’s designer or on a design team as a designer’s engineer; a liaison between two core assets of a software development company. */}
               I can play many roles, but I’m most effective bridging the gap between engineering and design. I’m valuable both as a designer on an engineering team and as an engineer on a design team, both core assets of any software company.
             </p>
@@ -106,18 +106,18 @@ class PageAbout extends Component {
             </div>
           </Reveal>
         </div>
-        <div className="c-container OVERRIDE-about-lockup-2 u-padding-bottom-large">
+        <div className="c-container OVERRIDE-about-lockup-2">
           <Reveal>
             <h2 className="c-title c-title--small u-margin-top-small">Experience</h2>
             <p className="c-paragraph">
               {/* Most recently, I lead the creation and execution of design systems at Division Of Labor, a digital product development agency. There we partnered with alpha-stage startups to design and build their MVP products. */}
-              Most recently, I led design, front-end and user experience at a venture backed startup called OffSite. OffSite was spun out of Division of Labor, a digital product development agency where I led creation and execution of design systems for a variety of software products.
+              Most recently, I led design, frontend and user experience at a venture backed startup called OffSite. OffSite was spun out of Division of Labor, a digital product development agency where I led creation and execution of design systems for a variety of software products.
             </p>
           </Reveal>
           <Reveal>
             <p className="c-paragraph">
               {/* Previous to this, I served as the co-founder and director of product design at Coindex Labs.I oversaw all user interface design, marketing visual design, and engineered prototypes of our crypotocurrency trading platform interface. */}
-              Prior to this, I served as the co-founder and director of product design at Coindex Labs.I oversaw all user interface design, marketing visual design, and engineered prototypes of our crypotocurrency trading platform interface. We made it to the final round of selection in a recent Tech Stars New York cohort.
+              Prior to this, I served as the co-founder and director of product design at Coindex Labs. I oversaw all user interface design, marketing visual design, and engineered prototypes of our crypotocurrency trading platform interface. We made it to the final round of selection in a recent Tech Stars New York cohort.
             </p>
           </Reveal>
           <Reveal>
@@ -134,8 +134,8 @@ class PageAbout extends Component {
           <Reveal>
             <h2 className="c-title c-title--small u-margin-top-large">Moving Forward</h2>
             <p className="c-paragraph">
-              {/* I am looking to join a medium-sized startup company. To continue nurturing an excellent software experiences, connecting: UI connecting, usability testing, engineering execution, design documentation, and company processes to create a culture of user experience excellence. In the interim, I am available for UI design or front-end engineering consulting engagements. */}
-              I am looking to join a medium-sized startup company. I want to continue nurturing excellent software experiences for users, connecting: UI, usability testing, engineering execution, design documentation, and company processes to create a culture of user experience excellence. In the interim, I am available for UI design or front-end engineering consulting engagements.
+              {/* I am looking to join a medium-sized startup company. To continue nurturing an excellent software experiences, connecting: UI connecting, usability testing, engineering execution, design documentation, and company processes to create a culture of user experience excellence. In the interim, I am available for UI design or frontend engineering consulting engagements. */}
+              I am looking to join a medium-sized startup company. I want to continue nurturing excellent software experiences for users, connecting: UI, usability testing, engineering execution, design documentation, and company processes to create a culture of user experience excellence. In the interim, I am available for UI design or frontend engineering consulting engagements.
             </p>
           </Reveal>
           <Reveal>
@@ -145,7 +145,7 @@ class PageAbout extends Component {
           </Reveal>
           <Reveal>
             <p className="c-paragraph">
-              Due to privacy restrictions, some of my work is not available publicly. If you would like to see engineering samples: <Link to="/case-studies" className="c-link">Studio@Andrew.mn</Link>.
+              Due to privacy restrictions, some of my work is not available publicly. If you would like to see engineering samples: <a href="mailto:studio@Andrew.mn" className="c-link">Studio@Andrew.mn</a>.
             </p>
           </Reveal>
           <Reveal>
@@ -160,7 +160,7 @@ class PageAbout extends Component {
           </Reveal>
         </div>
       </section>
-      <section className="c-wrapper c-wrapper--slim u-margin-bottom">
+      <section className="c-wrapper c-wrapper--slimmest u-margin-bottom-large">
         <div className="c-container">
           <Reveal>
             <Brands />

@@ -23,12 +23,12 @@ class PageResume extends Component {
       <React.Fragment>
         <section className="c-wrapper">
           <div className="c-container">
-            <h2 className="c-title c-title--small">Resume</h2>
+            <h2 className="c-title c-title--small">Resumé</h2>
             <p className="c-paragraph c-paragraph--large">
-              Product designer &amp; web engineer of 9 years&hellip;<br/> Remote worker going on 4.
+              Designer &amp; web engineer of 8 years&hellip;<br/> Remote worker going on 4.
             </p>
             <p className="c-paragraph">
-              I have been working full-time in the web development, marketing design, or digital product space for the past 9 years; of those, 4 of them have been full-time remote. Most recently I was lead _for all_ of the user experience, design, and front-end at my most recent company, a 17-employee digital product agency.
+              I have been working full-time in the web development, marketing design, or digital product space for the past 8 years; of those, 4 of them have been full-time remote. Most recently I was lead _for all_ of the user experience, design, and frontend at my most recent company, a 17-employee digital product agency.
             </p>
             <p className="c-paragraph">
               In my time within the digital product space, I have had the privalage of being mentored by seniors and have also had the opportunity to pay it back through web engineering workshops and mentoring the juniors below me.
@@ -49,13 +49,13 @@ class PageResume extends Component {
               </div>
               <div className="c-grid__cell 5/6--lap">
                 <h3 className="c-title c-title--small u-margin-bottom-none">Division Of Labor Product Agency</h3>
-                <h4 className="c-title c-title--smallest">Lead Product Designer &amp; Sr. Front-End Engineer</h4>
+                <h4 className="c-title c-title--smallest">Lead Product Designer &amp; Sr. frontend Engineer</h4>
                 <ul className="c-list u-margin-bottom-smallest">
-                  <li className="c-list__item">Responsible for all design systems, design processes, and front-end UI implementations accross all projects</li>
-                  <li className="c-list__item">Lead wireframes, hi-fidelity UI comps, front-end engineering, and direct user feedback for all software projects</li>
-                  <li className="c-list__item">Built our own in-house design system and front-end react library</li>
+                  <li className="c-list__item">Responsible for all design systems, design processes, and frontend UI implementations accross all projects</li>
+                  <li className="c-list__item">Lead wireframes, hi-fidelity UI comps, frontend engineering, and direct user feedback for all software projects</li>
+                  <li className="c-list__item">Built our own in-house design system and frontend react library</li>
                   <li className="c-list__item">Interfaced directly with our clients as the design director</li>
-                  <li className="c-list__item">Developed front-end engineering best practices and documention</li>
+                  <li className="c-list__item">Developed frontend engineering best practices and documention</li>
                   <li className="c-list__item">Nurtured software design systems accross changing marketing or engineering requirements</li>
                   <li className="c-list__item">Represented the design department as one of the 3 primary disciplines of the 17 employee company, next to engineering &amp; marketing</li>
                   <li className="c-list__item">Deployed features in Elixir/Phoenix, React/Redux SPA, and Ruby On Rails enviroments</li>
@@ -95,7 +95,7 @@ class PageResume extends Component {
                 <h4 className="c-title c-title--smallest">Sr. Product Designer</h4>
                 <ul className="c-list">
                   <li className="c-list__item">Led design, development &amp; launch of The Iron Yard's new marketing site</li>
-                  <li className="c-list__item">Led specification, design, and front-end development of custom admissions software</li>
+                  <li className="c-list__item">Led specification, design, and frontend development of custom admissions software</li>
                   <li className="c-list__item">Designed, built, and maintained modular design systems for each: online marketing site, student classroom application, and internal tooling</li>
                   <li className="c-list__item">Conducted student user-behavior studies to test design assumptions and solve usability issues</li>
                   <li className="c-list__item">Wrote application feature tests to ensure the stability of key user flows and UI components</li>
@@ -226,7 +226,7 @@ class PageResume extends Component {
             <div className="u-margin-bottom">
               <h3 className="c-title c-title--small u-margin-bottom-none">The Iron Yard Code School 2014 &amp; 2015</h3>
               <h4 className="c-title c-title--smallest">Regular Guest Lecturer</h4>
-              <p className="c-paragraph c-paragraph--sans-small">Prior to working for The Iron Yard, I was a regular lecturer for their User Interface Design and Front-End Engineering classes in Austin,&nbsp;TX&nbsp;and Greenville, SC. I spoke on:</p>
+              <p className="c-paragraph c-paragraph--sans-small">Prior to working for The Iron Yard, I was a regular lecturer for their User Interface Design and frontend Engineering classes in Austin,&nbsp;TX&nbsp;and Greenville, SC. I spoke on:</p>
               <ul className="c-list c-list--small">
                 <li className="c-list__item">Importance Of Design Systems</li>
                 <li className="c-list__item">Developer &amp; Designer Relations: How To Effectively Communicate</li>

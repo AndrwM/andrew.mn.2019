@@ -28,13 +28,20 @@
     }
 
     > .c-list {
-      margin: 10px 0 10px 20px;
+      margin: 4px 0 4px 34px;
     }
   }
 
-  &--large .c-list__item {
+  &--large > .c-list__item {
     font-size: 16px;
     @media #{$bp-lap} { font-size: 16px; }
+  }
+
+  &--horizontal {
+    @media #{$bp-lap} {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   @mixin emoji-spacing {

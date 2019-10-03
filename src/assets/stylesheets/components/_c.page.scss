@@ -2,4 +2,25 @@
   background: #ffffff;
   padding: 0;
   overflow: hidden;
+
+  @media #{$bp-lap} {
+    margin-bottom: 93vh;
+  }
+
+  .c-page__footer {
+    padding: $s-regular 0;
+    background: #f1f9fc;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @media #{$bp-lap} {
+      height: 100vh;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
 }

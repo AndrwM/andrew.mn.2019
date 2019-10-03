@@ -28,10 +28,23 @@ import slider2_7 from '../../assets/images/projects/newline/v2-7.png';
 
 import imageStyleguide from '../../assets/images/projects/newline/components.png';
 
-class PageNewline extends Component {
+// OFFSITE IMAGES
+
+import imageTeamAmy from '../../assets/images/projects/offsite/team/amy.jpg';
+import imageTeamAudrey from '../../assets/images/projects/offsite/team/audrey.jpg';
+import imageTeamBenjamin from '../../assets/images/projects/offsite/team/benjamin.jpg';
+import imageTeamElizabeth from '../../assets/images/projects/offsite/team/elizabeth.jpg';
+import imageTeamEric from '../../assets/images/projects/offsite/team/eric.jpg';
+import imageTeamKara from '../../assets/images/projects/offsite/team/kara.jpg';
+import imageTeamMason from '../../assets/images/projects/offsite/team/mason.jpg';
+import imageTeamPaul from '../../assets/images/projects/offsite/team/paul.jpg';
+import imageTeamPeter from '../../assets/images/projects/offsite/team/peter.jpg';
+import imageTeamVicky from '../../assets/images/projects/offsite/team/vicky.jpg';
+
+class PageOffsite extends Component {
   constructor(props) {
     super(props);
-    this.color = "#d2e8f1";
+    this.color = "#f8f1ff";
   }
 
   componentDidMount() {
@@ -46,8 +59,8 @@ class PageNewline extends Component {
       <React.Fragment>
         <div className="u-border-dark-bottom">
           <h1 className="c-title c-title--xlarge">
-            Newline Education Platform
-            <span className="c-title__subtle">2015 – 2017</span>
+              OffSite Ad Platform
+            <span className="c-title__subtle">2018 – 2019</span>
           </h1>
           <p className="c-paragraph">UI Design System, frontend Engineering, RoR Development</p>
         </div>
@@ -62,7 +75,7 @@ class PageNewline extends Component {
           </div>
           <div className="c-grid__cell u-1/2--lap u-1/4--desk">
             <h2 className="c-title c-title--small">Project Length</h2>
-            <p className="c-paragraph c-paragraph--sans-medium">2 Years</p>
+            <p className="c-paragraph c-paragraph--sans-medium">1½ Years</p>
           </div>
           <div className="c-grid__cell u-1/2--lap u-1/4--desk">
             <h2 className="c-title c-title--small">I Delivered</h2>
@@ -80,15 +93,28 @@ class PageNewline extends Component {
           <div className="c-container">
             <h2 className="c-title c-title--small">The Brief</h2>
             <h3 className="c-paragraph c-paragraph--large">Building an online supplement to The Iron Yard's immersive classroom.</h3>
+            <p className="c-paragraph">The original Newline Education Platform began as "The Iron Yard Online", an online supplement to The Iron Yard's immersive classroom. The Iron Yard was a high-intensity, immersive programming trade school with 15 locations across US. I worked for The Iron Yard from 2015 through 2017. As a product designer, I shaped the user-flow and feel of the application as directed by the company leadership's vision.</p>
             <div className="c-grid">
-              <div className="c-grid__cell u-3/5--lap">
-                <p className="c-paragraph">The original Newline Education Platform began as "The Iron Yard Online", an online supplement to The Iron Yard's immersive classroom. The Iron Yard was a high-intensity, immersive programming trade school with 15 locations across US. I worked for The Iron Yard from 2015 through 2017. As a product designer, I shaped the user-flow and feel of the application as directed by the company leadership's vision.</p>
-                <p className="c-paragraph">The goal of The Iron Yard Online was to provide a centralized store of all class materials. Having a single application and store of all class content allowed us to guarantee the same quality classroom experience to all 15 campuses. In addition, having a central store of all student information all in one application allowed the company to create quality assurance models and run analytics on current and previous classrooms. The data, used to determine the health of campuses and classrooms quarter-over-quarter, became invaluable to the company leadership through my time there.</p>
-                <p className="c-paragraph">Fellow product designer, Jeremiah and I, along with direction from the company's CTO Mason Stewart white-boarded the initial concepts and iterated them into high-fidelity wireframes.</p>
-              </div>
-              <div className="c-grid__cell u-2/5--lap">
-                <img src={imageWhiteboard} style={{maxWidth: "550px"}} />
-              </div>
+              <div className="c-grid__cell u-1/10--lap" children={
+                <React.Fragment><img src={imageTeamAmy} /><div className="c-paragraph c-paragraph--small" children="Eric"/></React.Fragment>} />
+              <div className="c-grid__cell u-1/10--lap" children={
+                <React.Fragment><img src={imageTeamAudrey} /><div className="c-paragraph c-paragraph--small" children="Eric"/></React.Fragment>} />
+              <div className="c-grid__cell u-1/10--lap" children={
+                <React.Fragment><img src={imageTeamBenjamin} /><div className="c-paragraph c-paragraph--small" children="Eric"/></React.Fragment>} />
+              <div className="c-grid__cell u-1/10--lap" children={
+                <React.Fragment><img src={imageTeamElizabeth} /><div className="c-paragraph c-paragraph--small" children="Eric"/></React.Fragment>} />
+              <div className="c-grid__cell u-1/10--lap" children={
+                <React.Fragment><img src={imageTeamEric} /><div className="c-paragraph c-paragraph--small" children="Eric"/></React.Fragment>} />
+              <div className="c-grid__cell u-1/10--lap" children={
+                <React.Fragment><img src={imageTeamKara} /><div className="c-title c-title--smallest" children="Eric"/></React.Fragment>} />
+              <div className="c-grid__cell u-1/10--lap" children={
+                <React.Fragment><img src={imageTeamMason} /><div className="c-title c-title--smallest" children="Eric"/></React.Fragment>} />
+              <div className="c-grid__cell u-1/10--lap" children={
+                <React.Fragment><img src={imageTeamPaul} /><div className="c-title c-title--smallest" children="Eric"/></React.Fragment>} />
+              <div className="c-grid__cell u-1/10--lap" children={
+                <React.Fragment><img src={imageTeamPeter} /><div className="c-title c-title--smallest" children="Eric"/></React.Fragment>} />
+              <div className="c-grid__cell u-1/10--lap" children={
+                <React.Fragment><img src={imageTeamVicky} /><div className="c-title c-title--smallest" children="Eric"/></React.Fragment>} />
             </div>
           </div>
         </section>
@@ -169,4 +195,4 @@ class PageNewline extends Component {
   }
 }
 
-export default WithPage(PageNewline);
+export default WithPage(PageOffsite);

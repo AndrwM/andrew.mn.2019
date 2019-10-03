@@ -543,7 +543,7 @@
             <text id="25%-Complete" font-family="Lato-Regular, Lato" font-size="12" font-weight="normal" fill="#656D78">
                 <tspan x="379" y="919">25% Complete</tspan>
             </text>
-            <text id="IBM’s-Front-End-Deve" font-family="BrandonText-Medium, Brandon Text" font-size="14" font-weight="400" line-spacing="26" letter-spacing="0.145833328" fill="#262F37">
+            <text id="IBM’s-frontend-Deve" font-family="BrandonText-Medium, Brandon Text" font-size="14" font-weight="400" line-spacing="26" letter-spacing="0.145833328" fill="#262F37">
                 <tspan x="379" y="871">IBM’s Front End Developer Assessment</tspan>
             </text>
             <path d="M382,892 L696,892 C697.656854,892 699,893.343146 699,895 C699,896.656854 697.656854,898 696,898 L382,898 C380.343146,898 379,896.656854 379,895 C379,893.343146 380.343146,892 382,892 Z" id="Rectangle-7" fill="#DEE6E8"></path>

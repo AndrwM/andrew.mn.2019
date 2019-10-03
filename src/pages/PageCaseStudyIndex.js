@@ -30,7 +30,7 @@ class PageCaseStudyIndex extends Component {
   componentDidMount() {
     this.props.setAppState({
       headerContent: this.renderHeader(),
-      headerBg: "#ebf5ff"
+      headerBg: "#fdf6ff"
     });
   }
 
@@ -50,8 +50,11 @@ class PageCaseStudyIndex extends Component {
               Throughout my career, I have switch-hit between digital&nbsp;product&nbsp;design &amp; frontend&nbsp;engineering<br/> with occasional work on the backend too.
             </p>
             <p className="c-paragraph">
-              {/* While I’m not an expert in back-end development, as a self-taught professional I’m no stranger to digging in further down the tech-stack than is expected of me to build-out infrastructure necessary to support the UI I’m implementing. Whether its spinning up databases, writing queries, building models or controllers, etc &ndash; I have even built my own Elixir+Phoenix and RoR personal projects from scratch before. This has left me with a well-rounded set of skills especially suited for smaller development teams where some responsibilities can be ambiguous between dsiciplines. */}
-              While I’m not an expert in back-end development, as a self-taught professional I’m no stranger to digging in further down the tech-stack than is expected of me to build-out infrastructure to support the UI I’m implementing. Whether its spinning up databases, writing queries, building models or controllers, etc., I’m not afraid of the gutsy stuff. I have even built my own Elixir+Phoenix and RoR personal projects from scratch before. This has left me with a well-rounded set of skills, especially suited for smaller development teams where people on the product team where multiple hats.
+              {/* While I’m not an expert in backend development, as a self-taught professional I’m no stranger to digging in further down the tech-stack than is expected of me to build-out infrastructure necessary to support the UI I’m implementing. Whether its spinning up databases, writing queries, building models or controllers, etc &ndash; I have even built my own Elixir+Phoenix and RoR personal projects from scratch before. This has left me with a well-rounded set of skills especially suited for smaller development teams where some responsibilities can be ambiguous between dsiciplines. */}
+              While I’m not an expert in backend development, as a self-taught professional I’m no stranger to digging in further down the tech-stack than is expected of me to build-out infrastructure to support the UI I’m implementing. Whether its spinning up databases, writing queries, building models or controllers, etc., I’m not afraid of the gutsy stuff. I have even built my own Elixir+Phoenix and RoR personal projects from scratch before.
+            </p>
+            <p className="c-paragraph">
+              This has left me with a well-rounded set of skills, especially suited for smaller development teams where people on the product team wear multiple hats.
             </p>
             <div className="c-grid u-padding-top u-padding-bottom-small u-margin-bottom-large u-border-bottom">
               <div className="c-grid__cell u-1/2--desk">
@@ -80,7 +83,7 @@ class PageCaseStudyIndex extends Component {
           description={[
             "Working on Offsite, I was responsible for leading all:  <em> feature wireframing, design prototyping, UI design, design system engineering, frontend engineering architecture decisions, and frontend code review.</em>",
             "It's an advertising marketplace & ad generator bolted on top of Google Ads. It allows parties to share Google Ads audiences without disclosing/touching peoples personally identifiable information.",
-            "The app exclusively uses a custom CSS/BEM-based design system and uses React to handle input and front-end validations on top of a HTML/ERB based Ruby On Rails enviroment."
+            "The app exclusively uses a custom CSS/BEM-based design system and uses React to handle input and frontend validations on top of a HTML/ERB based Ruby On Rails enviroment."
           ]} />
         <CaseStudyPreview
           // backgroundStyle={{
@@ -99,7 +102,7 @@ class PageCaseStudyIndex extends Component {
           role="Senior&nbsp;UI&nbsp;Designer, Frontend&nbsp;Engineer, Remote&nbsp;Full-Time"
           image={imageNewline}
           url="/case-studies/newline"
-          description={["I worked on the product team to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system.", "From the ground-up we designed, built, and documented a CSS component system with over 50 elements. It allowed anyone on the team to quickly assemble a view. In addition to authoring the design system, I worked with the engineering team in building the front-end for an in-browser IDE and student messaging system."]} />
+          description={["I worked on the product team to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system.", "From the ground-up we designed, built, and documented a CSS component system with over 50 elements. It allowed anyone on the team to quickly assemble a view. In addition to authoring the design system, I worked with the engineering team in building the frontend for an in-browser IDE and student messaging system."]} />
         <section className="c-wrapper c-wrapper--flush u-border-bottom">
           <div className="c-container-2col">
             <div className="c-container-2col__item">
@@ -185,7 +188,7 @@ class PageCaseStudyIndex extends Component {
             <div className="c-container-2col__item c-container-2col__item--stripe u-padding-bottom-large">
               <div className="c-title c-title--medium" children="More Work" />
               <p className="c-paragraph c-paragraph--medium">
-                Due to privacy restrictions, some of my work is not available publicly. If you would like to see engineering or marketing samples, email me at <a className="c-link" href="mailto:Studio@Andrew.Mn">Studio@Andrew.Mn</a>.
+                Due to privacy restrictions, some of my work is not available publicly. If you would like to see engineering or marketing samples, email me at <a className="c-link" href="mailto:Studio@Andrew.mn">Studio@Andrew.mn</a>.
               </p>
               <div className="c-title c-title--small u-padding-top u-border-top" children="BMW" />
               <p className="c-paragraph c-paragraph--sans-medium">
@@ -217,15 +220,15 @@ class PageCaseStudyIndex extends Component {
   //       //   context={["2col"]}
   //       //   title="TheIronYard.com"
   //       //   timePeriod="2017"
-  //       //   type="UI Design System, Front-End Engineering, RoR Development"
+  //       //   type="UI Design System, frontend Engineering, RoR Development"
   //       //   image={imageTiy}
   //       //   url={false}
-  //       //   description={["Newline is the course-work software of The Iron Yard. I on the product team to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system.", "From the ground-up we designed, built, and documented a CSS component system with over 50 elements. It allowed anyone on the team to quickly assemble a view. In addition to authoring the design system, I worked with the engineering team in building the front-end for an in-browser IDE and student messaging system."]} />,
+  //       //   description={["Newline is the course-work software of The Iron Yard. I on the product team to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system.", "From the ground-up we designed, built, and documented a CSS component system with over 50 elements. It allowed anyone on the team to quickly assemble a view. In addition to authoring the design system, I worked with the engineering team in building the frontend for an in-browser IDE and student messaging system."]} />,
   //       // <CaseStudyPreview
   //       //   context={["2col"]}
   //       //   title="Echo Cordless Tools"
   //       //   timePeriod="2015"
-  //       //   type="Lead Marketing Design, Lead Front-End Engineer"
+  //       //   type="Lead Marketing Design, Lead frontend Engineer"
   //       //   image={imageEcho}
   //       //   url={false}
   //       //   description={["In 2015 I was contracted by TTI North America's in-house design agency, Torque Creative, to create an interactive marketing website to showcase a new line of all-electric tools. This project was particularly special to me because Torque gave me access to their in-house photography division. I had autonomy to art-direct the imagery of the products I needed to complete the project."]} />,
@@ -235,15 +238,15 @@ class PageCaseStudyIndex extends Component {
   //         context={["2col"]}
   //         title="Arkiver Life Journal"
   //         timePeriod="2013 – 2014"
-  //         type="Lead UI Designer, Front-End Engineer"
+  //         type="Lead UI Designer, frontend Engineer"
   //         image={imageArkiver}
   //         url={false}
-  //         description={["I began working with Arkiver when they needed to redesign their filtering interface and several other key views. Following our initial engagement, the founders of Arkiver loved the work and I continued working with them on a retainer basis for 2 years. Through the life of our engagement I designed their user onboarding flow, in-app sharing flow and assisted with the front-end development alongside their engineers."]} />,
+  //         description={["I began working with Arkiver when they needed to redesign their filtering interface and several other key views. Following our initial engagement, the founders of Arkiver loved the work and I continued working with them on a retainer basis for 2 years. Through the life of our engagement I designed their user onboarding flow, in-app sharing flow and assisted with the frontend development alongside their engineers."]} />,
   //       <CaseStudyPreview
   //         context={["2col"]}
   //         title="Depends Canada"
   //         timePeriod="2013"
-  //         type="Lead Front-End Engineer"
+  //         type="Lead frontend Engineer"
   //         image={imageDependsCanada}
   //         url={false}
   //         description={["While working for Organic, Inc., I had the opportunity to lead the engineering for a brand new marketing website for the Canadian division of Depends adult incontinence products. In addition, I also oversaw how American and French language translations were implemented and managed their effect on the design specifications."]} />
@@ -252,7 +255,7 @@ class PageCaseStudyIndex extends Component {
   //       context={["2col"]}
   //       title="Employee Injury Manager"
   //       timePeriod="2014"
-  //       type="Lead UI-Designer, Front-End Engineer"
+  //       type="Lead UI-Designer, frontend Engineer"
   //       image={imageInjuryManager}
   //       url={false}
   //       description={["A majority of workers' compensation lawsuits were results of unclear policies, slow communication, and missing accountability. My client was building a SAAS employee injury management platform to solve the problem. I was brought in as a UX consultant to do design the flow of the application and create a UI design system."]} />
