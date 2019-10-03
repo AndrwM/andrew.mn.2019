@@ -11,7 +11,7 @@ import PageCoindex from "./pages/work/PageCoindex";
 const Routes = [
   { path: "/", PageComponent: PageAbout, isPublic: true, breadcrumb: "Andrew McIntee" },
   { path: "/resume", PageComponent: PageResume, isPublic: true, breadcrumb: "Resumé" },
-  { path: "/experience", PageComponent: PageExperience, isPublic: false, breadcrumb: "Tooling Experience" },
+  { path: "/experience", PageComponent: PageExperience, isPublic: true, breadcrumb: "Tooling Experience" },
   { path: "/case-studies", PageComponent: PageCaseStudyIndex, isPublic: true, breadcrumb: "Case Studies" },
   { path: "/case-studies/offsite", PageComponent: PageOffsite, isPublic: false },
   { path: "/case-studies/newline", PageComponent: PageNewline, isPublic: true },

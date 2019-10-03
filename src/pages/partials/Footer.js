@@ -38,7 +38,7 @@ class PartialFooter extends Component {
                         <NavLink to="/resume" className="c-link" activeClassName="c-link--active">Resumé</NavLink>
                       </li>
                       <li className="c-list__item c-list__item--remote">
-                        <NavLink to="/faq" className="c-link c-link--arrow-remote" activeClassName="c-link--active">LinkedIn</NavLink>
+                        <a href="https://www.linkedin.com/in/AndrewMcIntee/" target="_blank" className="c-link c-link--arrow-remote">LinkedIn</a>
                       </li>
                     </ul>
                   </div>
@@ -51,7 +51,7 @@ class PartialFooter extends Component {
                         <NavLink to="/experience" className="c-link" activeClassName="c-link--active">Tooling Experience</NavLink>
                       </li>
                       <li className="c-list__item c-list__item--remote">
-                        <NavLink to="/faq" className="c-link c-link--arrow-remote" activeClassName="c-link--active">Github</NavLink>
+                        <a href="https://github.com/andrwM" target="_blank" className="c-link c-link--arrow-remote">Github</a>
                       </li>
                     </ul>
                   </div>
