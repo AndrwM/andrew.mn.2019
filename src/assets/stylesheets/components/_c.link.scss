@@ -29,12 +29,16 @@
     }
   }
 
-  &--arrow-l {
-    cursor: w-resize;
+  &--arrow-remote {
+    cursor: ne-resize;
   }
 
   &--arrow-r {
     cursor: e-resize;
+  }
+
+  &--arrow-d {
+    cursor: s-resize;
   }
 
   &--arrow-d {

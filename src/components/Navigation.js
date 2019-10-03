@@ -15,8 +15,8 @@ class Navigation extends Component {
             <Link to="/resume" className="c-link c-link--arrow-r">Resumé</Link>
           </li>
           {this.props.context !== "no-about-link" &&
-            <li className="c-list__item">
-              <HashLink smooth to="/#about" className="c-link c-link--arrow-d u-hi">About Me <span className="u-subtler" children="("/>↓<span className="u-subtler" children=")"/></HashLink>
+            <li className="c-list__item c-list__item--down">
+              <HashLink smooth to="/#about" className="c-link c-link--arrow-d u-hi">About Me</HashLink>
             </li>
           }
         </ul>
