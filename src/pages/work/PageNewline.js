@@ -58,7 +58,7 @@ class PageNewline extends Component {
           </div>
           <div className="c-grid__cell u-1/2--lap u-1/4--desk">
             <h2 className="c-title c-title--small">Responsible For</h2>
-            <p className="c-paragraph c-paragraph--sans-medium">The Iron Yard's Product Team</p>
+            <p className="c-paragraph c-paragraph--sans-medium">User Experience &amp; Front-End Engineering</p>
           </div>
           <div className="c-grid__cell u-1/2--lap u-1/4--desk">
             <h2 className="c-title c-title--small">Project Length</h2>
