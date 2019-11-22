@@ -49,7 +49,7 @@ class PageResume extends Component {
               </div>
               <div className="c-grid__cell 5/6--lap">
                 <h3 className="c-title c-title--small u-margin-bottom-none">Division Of Labor Product Agency</h3>
-                <h4 className="c-title c-title--smallest">Lead Product Designer &amp; Sr. frontend Engineer</h4>
+                <h4 className="c-title c-title--smallest">Lead Product Designer &amp; Sr. Frontend Engineer</h4>
                 <ul className="c-list u-margin-bottom-smallest">
                   <li className="c-list__item">Responsible for all design systems, design processes, and frontend UI implementations accross all projects</li>
                   <li className="c-list__item">Lead wireframes, hi-fidelity UI comps, frontend engineering, and direct user feedback for all software projects</li>
@@ -76,7 +76,7 @@ class PageResume extends Component {
                 <h3 className="c-title c-title--small u-margin-bottom-none">Coindex Blockchain Trading Platform</h3>
                 <h4 className="c-title c-title--smallest">Co-Founder, Director of Product Design</h4>
                 <ul className="c-list u-margin-bottom-smallest">
-                  <li className="c-list__item">YCombinator top 15 applicant</li>
+                  <li className="c-list__item">TechStars top 15 applicant</li>
                   <li className="c-list__item">Responsible for all product design &amp; UI engineering</li>
                   <li className="c-list__item">Responsible for all marketing visual design &amp; web development</li>
                 </ul>

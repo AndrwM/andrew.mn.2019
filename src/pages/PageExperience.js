@@ -27,7 +27,7 @@ class PageExperience extends Component {
             <p className="c-paragraph c-paragraph--large">Iʼm proud to be a generalist with a laser focus on user experience and frontend engineering excellence.</p>
             <p className="c-paragraph">While not completely exhaustive, I hope the list below can shed light on the many tools, languages, frameworks, libraries that I have worked with over the years.</p>
           </div>
-            <p className="c-paragraph">I have worked within and adacent to many different organization styles. From running my own UI design agency, horizontal/self-managed, all the way to multi-tier managerial agencies. Within each of these organizations there have been different ways of reporting, hand-offs, and planning.</p>
+            <p className="c-paragraph">I have worked within and adjacent to many different organization styles. From running my own UI design agency, horizontal/self-managed, all the way to multi-tier managerial agencies. Within each of these organizations there have been different ways of reporting, hand-offs, and planning.</p>
         </section>
         <section className="c-wrapper u-padding-top-small u-border-top">
           <div className="c-container">
@@ -112,6 +112,8 @@ class PageExperience extends Component {
                   <li className="c-list__item c-list__item--exp-3">PHP / Wordpress</li>
                   <li className="c-list__item c-list__item--exp-2">Elixir / Phoenix</li>
                   <li className="c-list__item c-list__item--exp-1">Node / Express</li>
+                  <li className="c-list__item c-list__item--exp-1">Python / Django</li>
+                  <li className="c-list__item c-list__item--exp-1">.NET</li>
                 </ul>
                 <h2 className="c-title c-title--smallest u-border-bottom u-padding-vertical-tiny">Testing &amp; Build Tooling</h2>
                 <ul className="c-list c-list--measure">

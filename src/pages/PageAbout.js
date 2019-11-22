@@ -47,7 +47,7 @@ class PageAbout extends Component {
             <h2 className="c-title c-title--small u-margin-top-small">Currently…</h2>
             <ul className="c-list c-list--large c-list--sparkle">
               <li className="c-list__item">Fully-remote worker based out of Atlanta &amp; Mexico City.</li>
-              <li className="c-list__item">Taking time to study Spanish &amp; get dive certified in Jordan.</li>
+              <li className="c-list__item">Taking time to study Spanish &amp; get dive certified in Egypt.</li>
               <li className="c-list__item">Just wrapped up a big project with a venture-backed software company.</li>
               {/* <li className="c-list__item">Interested in working together? <span className="u-subtler">&nbsp;&ndash;&nbsp;</span> <a href="mailto:studio@Andrew.mn" className="c-link">Studio@Andrew.mn</a></li> */}
             </ul>

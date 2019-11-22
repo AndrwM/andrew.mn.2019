@@ -79,7 +79,7 @@ class PageCaseStudyIndex extends Component {
           type="Design&nbsp;System, React&nbsp;Engineering, RoR&nbsp;Development"
           image={imageOffsite}
           url={false}
-          cta="Case study coming September 2019."
+          cta="Case study coming December 2019."
           description={[
             "Working on Offsite, I was responsible for leading all:  <em> feature wireframing, design prototyping, UI design, design system engineering, frontend engineering architecture decisions, and frontend code review.</em>",
             "It's an advertising marketplace & ad generator bolted on top of Google Ads. It allows parties to share Google Ads audiences without disclosing/touching peoples personally identifiable information.",
@@ -110,7 +110,7 @@ class PageCaseStudyIndex extends Component {
                 context={["no-browser", "2col"]}
                 title="Coindex Labs, Automated Crypto Trader"
                 timePeriod="2017 &ndash; 2018"
-                role="Director of Product Design, Part-Time"
+                role="Director of Product Design,<br/>Part-Time"
                 type="UI Design, Prototyping, React&nbsp;Design&nbsp;System&nbsp;Engineering"
                 image={imageCoindex}
                 url="/case-studies/coindex"
@@ -163,7 +163,7 @@ class PageCaseStudyIndex extends Component {
                 context="2col"
                 title="South Carolina Dept. Of Commerce <br/>Free Online Code Platform"
                 timePeriod="2018"
-                role="Lead&nbsp;Designer, Lead&nbsp;Frontend&nbsp;Engineer"
+                role="Lead&nbsp;Designer,<br/>Lead&nbsp;Frontend&nbsp;Engineer"
                 type="Wireframes, Data&nbsp;Visualization & State&nbsp;Reporting, Frontend&nbsp;Engineering"
                 image={imageScCodes}
                 url="https://dashboard.sccodes.org/stats"

@@ -20,7 +20,7 @@ class PartialFooter extends Component {
     return (
       <div
         className="c-page__footer"
-        style={{ background: `#f1f9fc linear-gradient(to bottom, #f1f9fc 0%, ${this.props.themeColor} 90%)` }}>
+        style={{ background: `#f1f9fc linear-gradient(to bottom, #f1f9fc 0%, ${this.props.themeColor} 100%)` }}>
         <section className="c-wrapper c-wrapper--flush">
           <div className="c-container">
             <div className="c-grid">
@@ -72,7 +72,7 @@ class PartialFooter extends Component {
                     <Link
                       to={parentPage.url}
                       className="c-button c-button--xlarge c-button--arrow-l"
-                      children={`Take me back to ${parentPage.name}`}
+                      children={`Back to “${parentPage.name === "Andrew McIntee" ? "About Me" : parentPage.name}”`}
                     />
                   </div>
                 }
