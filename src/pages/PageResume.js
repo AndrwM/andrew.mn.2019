@@ -31,11 +31,11 @@ class PageResume extends Component {
               I have been working full-time in the web development, marketing design, or digital product space for the past 8 years; of those, 4 of them have been full-time remote. Most recently I was lead _for all_ of the user experience, design, and frontend at my most recent company, a 17-employee digital product agency.
             </p>
             <p className="c-paragraph">
-              In my time within the digital product space, I have had the privalage of being mentored by seniors and have also had the opportunity to pay it back through web engineering workshops and mentoring the juniors below me.
+              In my time within the digital product space, I have had the privilege of being mentored by seniors and have also had the opportunity to pay it back through web engineering workshops and mentoring the juniors below me.
             </p>
             <h2 className="c-title c-title--small u-margin-top">What I'm Looking For In My Next Opportunity&hellip;</h2>
             <p className="c-paragraph">
-              I'm looking to join a small to medium sized digital product agency or software product where I can continue honing my skillset towards the career-path of being a product owner; responsible for all design, engineering, or both. My preference is to work on a geographically distributed team with team members who also find they are the most productive when they routinely change their working enviroment.
+              I'm looking to join a small to medium sized digital product agency or software product where I can continue honing my skillset towards the career-path of being a product owner; responsible for all design, engineering, or both. My preference is to work on a geographically distributed team with team members who also find they are the most productive when they routinely change their working environment.
             </p>
             <HashLink smooth to="#professional-experience" className="c-button c-button--arrow-d">Professional Experience</HashLink>
           </div>
@@ -51,14 +51,14 @@ class PageResume extends Component {
                 <h3 className="c-title c-title--small u-margin-bottom-none">Division Of Labor Product Agency</h3>
                 <h4 className="c-title c-title--smallest">Lead Product Designer &amp; Sr. Frontend Engineer</h4>
                 <ul className="c-list u-margin-bottom-smallest">
-                  <li className="c-list__item">Responsible for all design systems, design processes, and frontend UI implementations accross all projects</li>
+                  <li className="c-list__item">Responsible for all design systems, design processes, and frontend UI implementations across all projects</li>
                   <li className="c-list__item">Lead wireframes, hi-fidelity UI comps, frontend engineering, and direct user feedback for all software projects</li>
                   <li className="c-list__item">Built our own in-house design system and frontend react library</li>
                   <li className="c-list__item">Interfaced directly with our clients as the design director</li>
                   <li className="c-list__item">Developed frontend engineering best practices and documention</li>
-                  <li className="c-list__item">Nurtured software design systems accross changing marketing or engineering requirements</li>
+                  <li className="c-list__item">Nurtured software design systems across changing marketing or engineering requirements</li>
                   <li className="c-list__item">Represented the design department as one of the 3 primary disciplines of the 17 employee company, next to engineering &amp; marketing</li>
-                  <li className="c-list__item">Deployed features in Elixir/Phoenix, React/Redux SPA, and Ruby On Rails enviroments</li>
+                  <li className="c-list__item">Deployed features in Elixir/Phoenix, React/Redux SPA, and Ruby On Rails environments</li>
                   <li className="c-list__item">Worked 100% remotely</li>
                 </ul>
                 <p className="c-paragraph c-paragraph--sans-smallest u-subtle">Clients: BMW, FlatIron Code School, South Carolina Dept. Of Commerce</p>

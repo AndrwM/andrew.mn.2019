@@ -27,7 +27,6 @@ class App extends Component {
 // -- Header Settings ---
     };
 
-
     this.setAppState = this.setAppState.bind(this);
     this.refHeader = React.createRef();
   }

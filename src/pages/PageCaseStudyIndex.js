@@ -83,7 +83,7 @@ class PageCaseStudyIndex extends Component {
           description={[
             "Working on Offsite, I was responsible for leading all:  <em> feature wireframing, design prototyping, UI design, design system engineering, frontend engineering architecture decisions, and frontend code review.</em>",
             "It's an advertising marketplace & ad generator bolted on top of Google Ads. It allows parties to share Google Ads audiences without disclosing/touching peoples personally identifiable information.",
-            "The app exclusively uses a custom CSS/BEM-based design system and uses React to handle input and frontend validations on top of a HTML/ERB based Ruby On Rails enviroment."
+            "The app exclusively uses a custom CSS/BEM-based design system and uses React to handle input and frontend validations on top of a HTML/ERB based Ruby On Rails environment."
           ]} />
         <CaseStudyPreview
           // backgroundStyle={{
