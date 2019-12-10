@@ -24,6 +24,7 @@ class Breadcrumb extends Component {
           className="c-navigation__breadcrumb-link"
           to={url}
           children={name}
+          onClick={() => this.setState({hover: false})}
         />
         &nbsp;/&nbsp;
       </React.Fragment>
