@@ -12,7 +12,7 @@ class PageCoindex extends Component {
     this.props.setAppState({
       headerContent: this.renderHeader(),
       headerHeight: "60vh",
-      headerBg: "#abffe0"
+      headerBg: "#caffec"
     });
   }
 
@@ -59,7 +59,7 @@ class PageCoindex extends Component {
           </div>
         </section>
         <SliderLarge
-          background="#abffe0"
+          background="#caffec"
           slides={[
             slide1,
             slide2,
