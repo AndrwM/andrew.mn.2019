@@ -4,21 +4,18 @@ import withBreadcrumbs from "react-router-breadcrumbs-hoc";
 import Routes from "../Routes";
 
 class Breadcrumb extends Component {
-  // _formatName(string) {
-  //   console.log(string)
-  //   return(string.replace(/_/g, ' ').replace(/(?: |\b)(\w)/g, function(key) {
-  //     return key.toUpperCase()
-  //   }));
-  // }
+  constructor(props) {
+    super(props);
+    this.state = {hover: false};
+  }
 
-  // _name(name, url) {
-  //   switch (url) {
-  //     case "/":
-  //       return "Andrew McIntee";
-  //     default:
-  //       return this._formatName(name);
-  //   }
-  // }
+  onHover(bool){
+    if (window.scrollY > 60) {
+      this.setState({hover: bool});
+    } else {
+      this.setState({hover: false});
+    }
+  }
 
   renderLink(name, url) {
     return (
@@ -43,11 +40,13 @@ class Breadcrumb extends Component {
 
   render() {
     return (
-      <nav className="c-navigation" style={{"--theme": this.props.themeColor}}>
+      <nav
+        className={`c-navigation ${this.state.hover ? "c-navigation--hover" : ""}`}
+        style={{"--theme": this.props.themeColor}}
+        onMouseEnter={() => this.onHover(true)}
+        onMouseLeave={() => this.onHover(false)}
+      >
         <div className="c-navigation__container">
-          {/* <div className="c-navigation__breadcrumb-link c-navigation__breadcrumb-link--static">
-            <span className="c-emoji" children="🙂" />&nbsp;
-          </div> */}
           {this.props.breadcrumbs.map(({ breadcrumb, match }, index) => (
             <React.Fragment key={index}>
               {index < this.props.breadcrumbs.length - 1 ? (
@@ -57,7 +56,6 @@ class Breadcrumb extends Component {
               )}
             </React.Fragment>
           ))}
-          {/* <a className="c-navigation__top" onClick={() => {window.scrollTo(0, 0)}}>top</a> */}
         </div>
       </nav>
     );

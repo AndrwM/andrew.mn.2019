@@ -1,10 +1,14 @@
-
-// Only rollover if content is touched
-// .c-navigation {pointer-events: none;}
-// .c-navigation__container {pointer-events: all;}
-
 .c-navigation {
   $border-height: 4px;
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
   z-index: 99999;
   opacity: 1;
@@ -63,8 +67,7 @@
     }
   }
 
-  &:hover {
-    color: green;
+  &.c-navigation--hover {
     &::before {
       transition-delay: unset;
       height: 100%;
@@ -80,16 +83,6 @@
 
   @media #{$bp-lap} {
     padding: 0;
-    // background: transparent linear-gradient(to bottom, rgba(#ffffff, 1) 0%, transparent 50%, transparent 100%);
-  }
-
-  @keyframes fade {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
   }
 
   .c-navigation__container {

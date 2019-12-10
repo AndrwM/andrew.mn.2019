@@ -32,7 +32,7 @@ class PartialFooter extends Component {
                   <div className="c-grid__cell u-1/2">
                     <ul className="c-list c-list--large c-list--rocket">
                       <li className="c-list__item">
-                        <NavLink exact to="/" className="c-link" activeClassName="c-link--active">Andrew McIntee <span className="u-subtler" children="("/>About Me<span className="u-subtler" children=")"/></NavLink>
+                        <NavLink exact to="/" className="c-link" activeClassName="c-link--active">Home <span className="u-subtler" children="("/>About Me<span className="u-subtler" children=")"/></NavLink>
                       </li>
                       <li className="c-list__item">
                         <NavLink to="/resume" className="c-link" activeClassName="c-link--active">Resumé</NavLink>
