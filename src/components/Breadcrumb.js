@@ -44,10 +44,12 @@ class Breadcrumb extends Component {
       <nav
         className={`c-navigation ${this.state.hover ? "c-navigation--hover" : ""}`}
         style={{"--theme": this.props.themeColor}}
-        onMouseEnter={() => this.onHover(true)}
         onMouseLeave={() => this.onHover(false)}
-      >
-        <div className="c-navigation__container">
+        >
+        <div
+          className="c-navigation__container"
+          onMouseEnter={() => this.onHover(true)}
+        >
           {this.props.breadcrumbs.map(({ breadcrumb, match }, index) => (
             <React.Fragment key={index}>
               {index < this.props.breadcrumbs.length - 1 ? (

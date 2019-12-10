@@ -65,10 +65,10 @@ class PartialFooter extends Component {
                 <p className="c-paragraph c-paragraph--sans-small u-subtle">Your privacy is important; this site is GDPR compliant. <br/>© Andrew McIntee 2019, unless otherwise stated.</p>
               </div>
             </div>
-            <div className="u-border-dark-top u-padding-vertical u-margin-top-small">
-              <div className="c-grid c-grid--middle">
+            <div className="u-border-dark-top u-padding-vertical">
+              <div className="c-grid">
                 {parentPage &&
-                  <div className="c-grid__cell u-1/2--lap u-2/3--desk">
+                  <div className="c-grid__cell u-1/2--lap u-2/3--desk u-margin-top-small">
                     <Link
                       to={parentPage.url}
                       className="c-button c-button--xlarge c-button--arrow-l"
@@ -76,7 +76,7 @@ class PartialFooter extends Component {
                     />
                   </div>
                 }
-                <div className="c-grid__cell u-1/2--lap u-1/3--desk">
+                <div className="c-grid__cell c-grid__cell--pull-right u-1/2--lap u-1/3--desk u-margin-top-small">
                   <p className="c-paragraph c-paragraph--sans-medium u-margin-none">
                   Thanks for visiting. Have a great day.<br/> <a href="#" className="c-link">Studio@Andrew.mn</a>
                   </p>
