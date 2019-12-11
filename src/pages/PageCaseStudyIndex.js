@@ -113,7 +113,6 @@ class PageCaseStudyIndex extends Component {
                 role="Director of Product Design,<br/>Part-Time"
                 type="UI Design, Prototyping, React&nbsp;Design&nbsp;System&nbsp;Engineering"
                 image={imageCoindex}
-                url="/case-studies/coindex"
                 description={[
                   "I joined Coindex Labs to lead the creation of the consumer-facing portfolio manager that ran on top of the trading algorithm for a cryptocurrency investment fund.",
                   "During the company's Seed Round, I served as the Director of Product."
@@ -128,7 +127,7 @@ class PageCaseStudyIndex extends Component {
                 type="UI&nbsp;Comps, Design&nbsp;System&nbsp;Documentation For Engineering Dept."
                 image={imageHelix}
                 url="/case-studies/college-admissions-portal"
-                description={["A leading college admissions software platform on the west coast engaged us to design a new UI design system for their engineering team."]} />
+                description={["A leading college admissions software platform on the west coast engaged me to design a new UI design system for their engineering team."]} />
             </div>
           </div>
         </section>

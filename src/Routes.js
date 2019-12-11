@@ -13,9 +13,10 @@ const Routes = [
   { path: "/resume", PageComponent: PageResume, isPublic: true, breadcrumb: "Resumé" },
   { path: "/experience", PageComponent: PageExperience, isPublic: true, breadcrumb: "Tooling Experience" },
   { path: "/case-studies", PageComponent: PageCaseStudyIndex, isPublic: true, breadcrumb: "Case Studies" },
-  { path: "/case-studies/offsite", PageComponent: PageOffsite, isPublic: false },
   { path: "/case-studies/newline", PageComponent: PageNewline, isPublic: true },
-  { path: "/case-studies/college-admissions-portal", PageComponent: PageHelix, isPublic: false, breadcrumb: "College Admissions Portal" },
+  // Hidden Pages
+  { path: "/case-studies/offsite", PageComponent: PageOffsite, isPublic: false },
+  { path: "/case-studies/college-admissions-portal", PageComponent: PageHelix, isPublic: true, breadcrumb: "College Admissions Portal" },
   { path: "/case-studies/connect-hero", PageComponent: PageConnectHero, isPublic: false, breadcrumb: "Connect Hero" },
   { path: "/case-studies/coindex", PageComponent: PageCoindex, isPublic: false },
 ];

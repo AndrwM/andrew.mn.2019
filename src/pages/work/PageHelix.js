@@ -18,8 +18,8 @@ class PageNewline extends Component {
   componentDidMount() {
     this.props.setAppState({
       headerContent: this.renderHeader(),
-      headerHeight: "60vh",
-      headerBg: "#fffebc"
+      headerHeight: "65vh",
+      headerBg: "#fff0e6"
     });
   }
 
@@ -31,24 +31,24 @@ class PageNewline extends Component {
             College Admissions Portal
             <span className="c-title__subtle">2018</span>
           </h1>
-          <p className="c-paragraph c-paragraph--sans-large">UI Design System, frontend Engineering, RoR Development</p>
+          <p className="c-paragraph c-paragraph--sans-large">Design System</p>
         </div>
         <div className="c-grid c-grid--stretch u-margin-top-large u-margin-bottom-tiny">
           <div className="c-grid__cell">
             <h2 className="c-title c-title--small">In Association With</h2>
-            <p className="c-paragraph c-paragraph--sans-medium">The Iron Yard Product Team</p>
+            <p className="c-paragraph c-paragraph--sans-medium">Division Of Labor Product Agency</p>
           </div>
           <div className="c-grid__cell">
             <h2 className="c-title c-title--small">Responsible For</h2>
-            <p className="c-paragraph c-paragraph--sans-medium">The Iron Yard's Product Team</p>
+            <p className="c-paragraph c-paragraph--sans-medium">Project Lead</p>
           </div>
           <div className="c-grid__cell">
             <h2 className="c-title c-title--small">Project Length</h2>
-            <p className="c-paragraph c-paragraph--sans-medium">2 Years</p>
+            <p className="c-paragraph c-paragraph--sans-medium">3 Months</p>
           </div>
           <div className="c-grid__cell">
             <h2 className="c-title c-title--small">I Delivered</h2>
-            <p className="c-paragraph c-paragraph--sans-medium">User Research, UI Comps, Design System, JS &amp; Ruby code.</p>
+            <p className="c-paragraph c-paragraph--sans-medium">UI Comps &amp; Design System Documentation For Engineering Dept.</p>
           </div>
         </div>
       </React.Fragment>
@@ -61,17 +61,13 @@ class PageNewline extends Component {
         <section className="c-wrapper">
           <div className="c-container">
             <h2 className="c-title c-title--small">About The Project</h2>
-            <h2 className="c-paragraph c-paragraph--large">Building an online supplement to The Iron Yard's immersive classroom.</h2>
-            <p className="c-paragraph">The original Newline Education Platform began as "The Iron Yard Online", an online supplement to The Iron Yard's immersive classroom. The Iron Yard was a high-intensity, immersive programming trade school with 15 locations across US. I worked for The Iron Yard from 2015 through 2017.</p>
-          </div>
-        </section>
-        <section className="c-wrapper u-border-top">
-          <div className="c-container">
-            <img src={image1} />
+            <h2 className="c-paragraph c-paragraph--large">A leading college admissions software company reached out to us to design and document the design system for the new version of their product.</h2>
+            <p className="c-paragraph">While leading design at Division Of Labor, a product development agency, I was responsible for leading the charge in re-designing this whitelabel solution.</p>
+            <p className="c-paragraph">The client's engineering team was building their app but was struggling to define the aesthetic and layout of their new mobile-first app. We worked alongside them to build design documentation that the engineering team could turn around and build.</p>
           </div>
         </section>
         <SliderLarge
-          background="#fffebc"
+          background="#fff0e6"
           slides={[
             slide1,
             slide2,
@@ -82,9 +78,9 @@ class PageNewline extends Component {
         ]} />
         <section className="c-wrapper">
           <div className="c-container">
-            <h2 className="c-title c-title--small">Learn To Code, Change Your Career</h2>
-            <p className="c-paragraph">In addition to the above, I also built custom interfaces for the Bootstrap-based administrative &amp; content-creation system used by course-writers, campus operations, and admissions. I led user interface design for the lightweight in-browser IDE, administrative course manager, student manager, and student-to-instructor messaging.</p>
-            <p className="c-paragraph">It was a pleasure working with the Product team at The Iron Yard. During my time there we were able to bring a fun and interactive online classroom experience to over 10,000 students. Much love to everyone involved.</p><a href="http://newline.theironyard.com" target="_blank" className="c-button c-button--arrow-remote">Newline Lives On Here (Invite-Only)</a>
+            <h2 className="c-title c-title--small">The Design System Assembled</h2>
+            <p className="c-paragraph">In addition to design system documentation we also provided them with high-resolution design mockups showing our reccomended layout and how this system could be white-labeled.</p>
+            <img src={image1} className="u-padding-top" />
           </div>
         </section>
       </React.Fragment>
