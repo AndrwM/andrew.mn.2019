@@ -18,7 +18,6 @@ class App extends Component {
     super(props);
     this.state = {
       authorized: (window.location.hostname == "localhost") ? true : false,
-      visited: [],
 // -- Header Settings ---
       headerContent: null,
       headerHeight: null,
@@ -27,7 +26,6 @@ class App extends Component {
 // -- Header Settings ---
     };
 
-    this.setAppState = this.setAppState.bind(this);
     this.refHeader = React.createRef();
   }
 
@@ -44,7 +42,7 @@ class App extends Component {
     }
   }
 
-  setAppState(newState){
+  setAppState = (newState) =>{
     this.setState(newState);
   }
 
