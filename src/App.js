@@ -7,6 +7,7 @@ import Footer from "./pages/partials/Footer";
 
 // --- Components
 import Breadcrumb from "./components/Breadcrumb";
+import Navigation from "./components/Navigation";
 
 // --- Assets
 import "./assets/fonts/Graphik-Regular-Web.woff"
@@ -69,16 +70,15 @@ class App extends Component {
   render() {
     return (
       <HashRouter>
-        <div className="c-notice">
+        {/* <div className="c-notice">
           Pardon the dust! This site is in *active* development.
+        </div> */}
+        <div class="c-page__navigation" style={{"--theme": this.state.headerBg}}>
+          <Navigation />
+          <div class="c-page__navigation-aesthetic" />
         </div>
-        <div class="c-page__navigation">
-          <div class="c-page__navigation-container">
-            cool
-          </div>
-        </div>
-        <div class="c-page__content">
-          <Route path="/:subpage" render={() => <Breadcrumb themeColor={this.state.headerBg}/>} />
+        <div class="c-page__content" style={{"--theme": this.state.headerBg}}>
+          <Route path="/:subpage" render={() => <Breadcrumb />} />
           {this.renderHeader()}
           {this.renderPage()}
         </div>
