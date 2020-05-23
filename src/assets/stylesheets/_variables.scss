@@ -6,6 +6,7 @@ $w-desk: "1101px";
 $bp-touch: "(hover: none) and (pointer: coarse)";
 $bp-hand: "(min-width: #{$w-hand})";
 $bp-lap: "(min-width: #{$w-lap})";
+$bp-lap-to-desk: "(min-width: #{$w-lap}) and (max-width: #{$w-desk})";
 $bp-desk: "(min-width: #{$w-desk})";
 
 $border-radius: 5px;

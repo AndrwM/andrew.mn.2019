@@ -1,5 +1,6 @@
 .c-container {
   @include clearfix;
+  box-sizing: border-box;
   margin: auto;
   max-width: $page-max-width;
 
