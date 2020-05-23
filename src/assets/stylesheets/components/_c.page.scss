@@ -1,10 +1,32 @@
 .c-page {
+  $_navigation-width: 16.6vw;
+
   background: #ffffff;
   padding: 0;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 
   @media #{$bp-lap} {
+    flex-direction: row;
     margin-bottom: 93vh;
+  }
+
+  .c-page__navigation {
+    @media #{$bp-lap} {
+      border-right: 1px $c-border solid;
+      min-width: $_navigation-width;
+      position: sticky;
+      top: 0;
+      align-self: flex-start;
+      height: 100vh;
+      padding: 20vh $s-regular 0;
+    }
+  }
+
+  .c-page__content {
+    @media #{$bp-lap} {
+      width: calc(100% - #{$_navigation-width});
+    }
   }
 
   .c-page__footer {
