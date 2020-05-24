@@ -51,7 +51,9 @@ class App extends Component {
     return(
       <header className="c-header" ref={this.refHeader}>
         <div className="c-header__background" style={{height: this.state.headerHeight, backgroundColor: this.state.headerBg}} />
-        <div className="c-header__content" key={this.state.headerKey} children={this.state.headerContent} />
+        <div className="c-header__content" key={this.state.headerKey}>
+          <div className="c-container" children={this.state.headerContent} />
+        </div>
       </header>
     );
   }

@@ -59,16 +59,13 @@
   }
 
   &__content {
-    max-width: $page-max-width;
-    margin: 0 auto;
     z-index: +1;
     position: relative;
     box-sizing: border-box;
-    padding: 120px 6% 60px;
+    padding: 60px 6vw;
 
-    @media #{$bp-lap} {
-      padding: 100px 9% 60px;
-    }
+    @media #{$bp-lap} { padding: 80px 6vw; }
+    @media #{$bp-desk} { padding: 140px 8vw; }
 
     &:empty {
       padding: 0;
