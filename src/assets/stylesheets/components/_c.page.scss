@@ -1,5 +1,5 @@
 .c-page {
-  $_navigation-width: 12.5vw;
+  $_navigation-width: 16vw;
 
   background: #ffffff;
   padding: 0;
@@ -8,31 +8,36 @@
 
   @media #{$bp-lap} {
     flex-direction: row;
-    margin-bottom: 93vh;
+    // margin-bottom: 93vh;
   }
 
   .c-page__navigation {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 
-    .c-page__navigation-aesthetic {
-      background: var(--theme);
-      width: 100%;
-      height: 10px;
-    }
+    // .c-page__navigation-aesthetic {
+    //   background: var(--theme);
+    //   width: 100%;
+    //   height: 10px;
+    // }
 
     @media #{$bp-lap} {
-      border-right: 1px $c-border solid;
-      min-width: $_navigation-width;
+      border-right: 1px rgba(0,0,0,0.05) solid;
+      width: $_navigation-width;
       position: sticky;
       top: 0;
       align-self: flex-start;
       height: 100vh;
-      padding: $s-large $s-large 0 $s-large;
+      padding: $s-regular $s-regular 0 $s-large;
     }
   }
 
   .c-page__content {
     @media #{$bp-lap} {
       width: calc(100% - #{$_navigation-width});
+      display: flex;
+      flex-direction: column;
     }
   }
 

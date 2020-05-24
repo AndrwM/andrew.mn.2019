@@ -58,17 +58,21 @@
     }
   }
 
+  @include emoji-bullet("wave",   "👋");
   @include emoji-bullet("rocket",   "🚀");
   @include emoji-bullet("sparkle",  "✨");
   @include emoji-bullet("glove",    "🧤");
   @include emoji-bullet("measure",  "📐");
   @include emoji-bullet("remote",  "🔗");
+  @include emoji-bullet("cherry",  "🍒");
+  @include emoji-bullet("diamond",  "💎");
   @include emoji-bullet("down",  "👇");
+  @include emoji-bullet("computer",  "👨‍💻");
 
-  @include emoji-bullet("exp-1",  "🕹");
-  @include emoji-bullet("exp-2",  "🔧");
-  @include emoji-bullet("exp-3",  "⚒");
-  @include emoji-bullet("exp-4",  "📐");
+  @include emoji-bullet("exp-1",  "🔧");
+  @include emoji-bullet("exp-2",  "🔨");
+  @include emoji-bullet("exp-3",  "⚒️");
+  @include emoji-bullet("exp-4",  "⚙️");
 
   // &--rocket .c-list__item::before,
   // .c-list__item--rocket::before {

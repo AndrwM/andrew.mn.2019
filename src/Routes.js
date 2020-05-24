@@ -1,6 +1,7 @@
 import PageAbout from "./pages/PageAbout";
 import PageResume from "./pages/PageResume";
 import PageExperience from "./pages/PageExperience";
+import PageColophon from "./pages/PageColophon";
 import PageCaseStudyIndex from "./pages/PageCaseStudyIndex";
 import PageOffsite from "./pages/work/PageOffsite";
 import PageNewline from "./pages/work/PageNewline";
@@ -14,6 +15,7 @@ const Routes = [
   { path: "/experience", PageComponent: PageExperience, isPublic: true, breadcrumb: "Tooling Experience" },
   { path: "/case-studies", PageComponent: PageCaseStudyIndex, isPublic: true, breadcrumb: "Case Studies" },
   { path: "/case-studies/newline", PageComponent: PageNewline, isPublic: true },
+  { path: "/colophon", PageComponent: PageColophon, isPublic: true, breadcrumb: "Colophon" },
   // Hidden Pages
   { path: "/case-studies/offsite", PageComponent: PageOffsite, isPublic: false },
   { path: "/case-studies/college-admissions-portal", PageComponent: PageHelix, isPublic: true, breadcrumb: "College Admissions Portal" },

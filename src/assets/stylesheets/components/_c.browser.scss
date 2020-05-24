@@ -1,5 +1,5 @@
 .c-browser {
-  $top-height: 26px;
+  $top-height: 20px;
   $border-radius: 4px;
 
   background: #cbd3d8;
@@ -27,16 +27,16 @@
   }
 
   &::after {
-    border: 1px solid #bddef0;
-    background: rgba(255, 255, 255, 0.65);
-    border-radius: 4px;
+    border: 1px solid rgba(#bddef0, 0.8);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
     content: "";
-    height: 12px;
+    height: 8px;
     position: absolute;
     top: 6px;
     z-index: +1;
-    left: 8px;
-    right: 8px;
+    left: 6px;
+    right: 6px;
     margin: 0 auto;
   }
 

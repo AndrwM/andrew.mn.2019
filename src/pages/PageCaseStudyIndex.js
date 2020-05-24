@@ -36,42 +36,25 @@ class PageCaseStudyIndex extends Component {
 
   renderHeader() {
     return (
-      <React.Fragment />
+      <React.Fragment>
+        <h2 className="c-title c-title--small">Case Studies</h2>
+        <p className="c-paragraph c-paragraph--large">
+          Throughout my career, I have switch-hit between digital&nbsp;product&nbsp;design &amp; frontend&nbsp;engineering<br/> with occasional work on the backend too.
+        </p>
+        <p className="c-paragraph">
+          {/* While I’m not an expert in backend development, as a self-taught professional I’m no stranger to digging in further down the tech-stack than is expected of me to build-out infrastructure necessary to support the UI I’m implementing. Whether its spinning up databases, writing queries, building models or controllers, etc &ndash; I have even built my own Elixir+Phoenix and RoR personal projects from scratch before. This has left me with a well-rounded set of skills especially suited for smaller development teams where some responsibilities can be ambiguous between dsiciplines. */}
+          While I’m not an expert in backend development, as a self-taught professional I’m no stranger to digging in further down the tech-stack than is expected of me to build-out infrastructure to support the UI I’m implementing. Whether its spinning up databases, writing queries, building models or controllers, etc., I’m not afraid of the gutsy stuff. I have even built my own Elixir+Phoenix and RoR personal projects from scratch before.
+        </p>
+        <p className="c-paragraph">
+          This has left me with a well-rounded set of skills, especially suited for smaller development teams where people on the product team wear multiple hats.
+        </p>
+      </React.Fragment>
     );
   }
 
   render() {
     return (
       <React.Fragment>
-        <section className="c-wrapper u-padding-bottom">
-          <div className="c-container">
-            <h2 className="c-title c-title--small">Case Studies</h2>
-            <p className="c-paragraph c-paragraph--large">
-              Throughout my career, I have switch-hit between digital&nbsp;product&nbsp;design &amp; frontend&nbsp;engineering<br/> with occasional work on the backend too.
-            </p>
-            <p className="c-paragraph">
-              {/* While I’m not an expert in backend development, as a self-taught professional I’m no stranger to digging in further down the tech-stack than is expected of me to build-out infrastructure necessary to support the UI I’m implementing. Whether its spinning up databases, writing queries, building models or controllers, etc &ndash; I have even built my own Elixir+Phoenix and RoR personal projects from scratch before. This has left me with a well-rounded set of skills especially suited for smaller development teams where some responsibilities can be ambiguous between dsiciplines. */}
-              While I’m not an expert in backend development, as a self-taught professional I’m no stranger to digging in further down the tech-stack than is expected of me to build-out infrastructure to support the UI I’m implementing. Whether its spinning up databases, writing queries, building models or controllers, etc., I’m not afraid of the gutsy stuff. I have even built my own Elixir+Phoenix and RoR personal projects from scratch before.
-            </p>
-            <p className="c-paragraph">
-              This has left me with a well-rounded set of skills, especially suited for smaller development teams where people on the product team wear multiple hats.
-            </p>
-            <div className="c-grid u-padding-top u-padding-bottom-small u-margin-bottom-large u-border-bottom">
-              <div className="c-grid__cell u-1/2--desk">
-                <h2 className="c-title c-title--small u-margin-top-small">Design Experience</h2>
-                <ExperienceDesign />
-              </div>
-              <div className="c-grid__cell u-1/2--desk">
-                <h2 className="c-title c-title--small u-margin-top-small">Programming Experience</h2>
-                <ExperienceEngineering />
-              </div>
-            </div>
-            <p className="c-paragraph">
-              {/* Below you’ll find a collection of software projects I have participated in, in some-type of leadership capacity. Prior to my experience of 6 years in software development, I worked within the marketing world at national agencies as cross-disciplinary visual designer &amp; web developer. */}
-              Below you’ll find a collection of software projects I have played a leadership role in. Prior to my experience of 6 years in software development, I worked within the marketing world at national agencies as cross-disciplinary visual designer & web developer.
-            </p>
-          </div>
-        </section>
         <CaseStudyPreview
           title="OffSite Ad Platform"
           timePeriod="2018 &ndash; 2019"
@@ -79,11 +62,10 @@ class PageCaseStudyIndex extends Component {
           type="Design&nbsp;System, React&nbsp;Engineering, RoR&nbsp;Development"
           image={imageOffsite}
           url={false}
-          cta="Case study coming December 2019."
           description={[
-            "Working on Offsite, I was responsible for leading all:  <em> feature wireframing, design prototyping, UI design, design system engineering, frontend engineering architecture decisions, and frontend code review.</em>",
-            "It's an advertising marketplace & ad generator bolted on top of Google Ads. It allows parties to share Google Ads audiences without disclosing/touching peoples personally identifiable information.",
-            "The app exclusively uses a custom CSS/BEM-based design system and uses React to handle input and frontend validations on top of a HTML/ERB based Ruby On Rails environment."
+            "An advertising marketplace & ad generator bolted on top of Google Ads. It allows parties to share Google Ads audiences without disclosing/touching peoples personally identifiable information.",
+            "The app exclusively uses a custom CSS/BEM-based design system and uses React to handle input and frontend validations on top of a HTML/ERB based Ruby On Rails environment.",
+            "Working on Offsite, I was responsible for leading all:  <em> feature wireframing, design prototyping, UI design, design system engineering, frontend engineering architecture decisions, and frontend code review.</em>"
           ]} />
         <CaseStudyPreview
           // backgroundStyle={{

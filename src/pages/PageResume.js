@@ -14,7 +14,15 @@ class PageResume extends Component {
 
   renderHeader() {
     return (
-      <React.Fragment />
+      <React.Fragment>
+        <h2 className="c-title c-title--small">Resumé</h2>
+        <p className="c-paragraph c-paragraph--large">
+          Designer &amp; web engineer of 8 years&hellip;<br/> Remote worker going on 4.
+        </p>
+        <p className="c-paragraph">
+          I have been working full-time in the web development, marketing design, or digital product space for the past 8 years; of those, 4 of them have been full-time remote. Most recently I was lead _for all_ of the user experience, design, and frontend at my most recent company, a 17-employee digital product agency.
+        </p>
+      </React.Fragment>
     );
   }
 
@@ -23,13 +31,6 @@ class PageResume extends Component {
       <React.Fragment>
         <section className="c-wrapper">
           <div className="c-container">
-            <h2 className="c-title c-title--small">Resumé</h2>
-            <p className="c-paragraph c-paragraph--large">
-              Designer &amp; web engineer of 8 years&hellip;<br/> Remote worker going on 4.
-            </p>
-            <p className="c-paragraph">
-              I have been working full-time in the web development, marketing design, or digital product space for the past 8 years; of those, 4 of them have been full-time remote. Most recently I was lead _for all_ of the user experience, design, and frontend at my most recent company, a 17-employee digital product agency.
-            </p>
             <p className="c-paragraph">
               In my time within the digital product space, I have had the privilege of being mentored by seniors and have also had the opportunity to pay it back through web engineering workshops and mentoring the juniors below me.
             </p>
@@ -240,7 +241,7 @@ class PageResume extends Component {
             </div>
           </div>
         </section>
-        <section className="c-wrapper c-wrapper--slim c-wrapper--white u-padding-top-large">
+        {/* <section className="c-wrapper c-wrapper--slim c-wrapper--white u-padding-top-large">
           <div className="c-container">
             <h2 className="c-title c-title--medium u-margin-bottom-small">Contact Info</h2>
             <div className="u-margin-bottom">
@@ -252,7 +253,7 @@ class PageResume extends Component {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
       </React.Fragment>
     );
   }

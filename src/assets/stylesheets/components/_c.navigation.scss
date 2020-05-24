@@ -86,9 +86,10 @@
   }
 
   .c-navigation__container {
-    @extend %c-wrapper;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    max-width: $page-max-width;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 2vh 0;
     position: relative;
     color: rgba($c-grey-medium, 0.2);
     z-index: $z-4;

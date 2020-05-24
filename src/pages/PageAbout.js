@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import WithPage from "../components/WithPage";
 import Reveal from '../components/Reveal';
-import Navigation from "../components/Navigation";
 import ExperienceDesign from "./partials/ExperienceDesign";
 import ExperienceEngineering from "./partials/ExperienceEngineering";
 import Brands from "./partials/Brands";
@@ -12,47 +11,49 @@ class PageAbout extends Component {
   componentDidMount() {
     this.props.setAppState({
       headerContent: this.renderHeader(),
-      headerBg: "#f1f9fc"
+      headerBg: "#eeffdf"
     });
   }
 
-  _greeting(){
-    const date = new Date();
-    const hour = date.getHours()
-    if (hour > 19) { return "Good evening"   } else
-    if (hour > 12) { return "Good afternoon" } else
-    if (hour > 3)  { return "Good morning"   } else
-    if (hour >= 0) { return "Good evening"   } else
-    { return "Good Day" };
-  }
+  // _greeting(){
+  //   const date = new Date();
+  //   const hour = date.getHours()
+  //   if (hour > 19) { return "Good evening"   } else
+  //   if (hour > 12) { return "Good afternoon" } else
+  //   if (hour > 3)  { return "Good morning"   } else
+  //   if (hour >= 0) { return "Good evening"   } else
+  //   { return "Good Day" };
+  // }
 
   renderHeader() {
     return (
       <React.Fragment>
-        <h1 className="c-title c-title--large" style={{textTransform: "capitalize"}}>
+        {/* <h1 className="c-title c-title--large" style={{textTransform: "capitalize"}}>
           {this._greeting()}
           &nbsp;
           <span className="u-subtler" style={{fontWeight: 100}}>—</span>
         </h1>
         <p className="c-paragraph c-paragraph--xlarge">
-        My name is Andrew McIntee.
-        <br/> I am a product designer &amp; web engineer
-        <br/> specializing in design systems.
+          My name is Andrew McIntee.
+          <br/> I am a product designer &amp; web engineer
+          <br/> specializing in design systems.
+        </p> */}
+        {/* <h2 className="c-title c-title--small OVERRIDE-color-white">
+          About Me
+        </h2> */}
+        <p className="c-paragraph c-paragraph--large">
+          <span className="c-emoji c-emoji--in-margin">👋</span>
+          Hey I'm Andrew McIntee, a product designer &amp; web engineer specializing in design systems.
         </p>
-        <div className="c-grid c-grid--large u-margin-top-large">
-          <div className="c-grid__cell u-1/3--lap u-1/6--desk">
-            <Navigation />
-          </div>
-          <div className="c-grid__cell u-2/3--lap u-5/6--desk">
-            <h2 className="c-title c-title--small u-margin-top-small">Currently…</h2>
-            <ul className="c-list c-list--large c-list--sparkle">
-              <li className="c-list__item">Fully-remote worker based out of Atlanta &amp; Mexico City.</li>
-              <li className="c-list__item">Taking time to study Spanish &amp; get dive certified in Egypt.</li>
-              <li className="c-list__item">Just wrapped up a big project with a venture-backed software company.</li>
-              {/* <li className="c-list__item">Interested in working together? <span className="u-subtler">&nbsp;&ndash;&nbsp;</span> <a href="mailto:studio@Andrew.mn" className="c-link">Studio@Andrew.mn</a></li> */}
-            </ul>
-          </div>
-        </div>
+        <p className="c-paragraph">
+        I have over 8 years of industry experience and most recently lead design &amp; frontend engineering on a product team. I have also been a remote-worker for over 4 years.
+        </p>
+        {/* <h2 className="c-title c-title--smallest u-margin-top-large OVERRIDE-color-white">Currently…</h2>
+        <ul className="c-list c-list--large c-list--sparkle">
+          <li className="c-list__item OVERRIDE-color-white">UX Developer at Kajabi, building our design system Sage.</li>
+          <li className="c-list__item OVERRIDE-color-white">Splitting time between the southeast US &amp; Mexico City.</li>
+          <li className="c-list__item OVERRIDE-color-white">Learning spanish and diving deep into Ruby.</li>
+        </ul> */}
       </React.Fragment>
     );
   }
@@ -62,17 +63,6 @@ class PageAbout extends Component {
       <React.Fragment>
       <section className="c-wrapper c-wrapper--slimmest u-padding-vertical-large" id="about">
         <div className="c-container OVERRIDE-about-lockup-1">
-          <Reveal>
-            <h2 className="c-title c-title--small u-margin-top-small">About Me</h2>
-            <p className="c-paragraph c-paragraph--large">
-              I have over 8 years of industry experience and most recently lead design &amp; frontend engineering on a product team.
-            </p>
-          </Reveal>
-          <Reveal>
-            <p className="c-paragraph">
-              My passion is in building, executing and nurturing design systems for software. I have also been a remote-worker for over 4 years.
-            </p>
-          </Reveal>
           <Reveal>
             <p className="c-paragraph">
               {/* Currently my focus is on design systems and the engineering powering user interfaces and I work with product teams and startups to create efficient and seamless software user experiences. In addition to design and frontend engineering, I also dive onto the server-level to build out modeling or functionality to support the interface needs. */}
@@ -137,11 +127,6 @@ class PageAbout extends Component {
               {/* I am looking to join a medium-sized startup company. To continue nurturing an excellent software experiences, connecting: UI connecting, usability testing, engineering execution, design documentation, and company processes to create a culture of user experience excellence. In the interim, I am available for UI design or frontend engineering consulting engagements. */}
               I am looking to join a medium-sized startup company. I want to continue nurturing excellent software experiences for users, connecting: UI, usability testing, engineering execution, design documentation, and company processes to create a culture of user experience excellence. In the interim, I am available for UI design or frontend engineering consulting engagements.
             </p>
-          </Reveal>
-          <Reveal>
-            <div className="u-padding-vertical-small u-padding-top u-margin-top u-border-top">
-              <Navigation context="no-about-link" />
-            </div>
           </Reveal>
           <Reveal>
             <p className="c-paragraph">

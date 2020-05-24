@@ -4,10 +4,10 @@ import Routes from "./Routes";
 
 // --- Partials
 import Footer from "./pages/partials/Footer";
+import Navigation from "./pages/partials/Navigation";
 
 // --- Components
 import Breadcrumb from "./components/Breadcrumb";
-import Navigation from "./components/Navigation";
 
 // --- Assets
 import "./assets/fonts/Graphik-Regular-Web.woff"
@@ -75,14 +75,14 @@ class App extends Component {
         </div> */}
         <div class="c-page__navigation" style={{"--theme": this.state.headerBg}}>
           <Navigation />
-          <div class="c-page__navigation-aesthetic" />
         </div>
         <div class="c-page__content" style={{"--theme": this.state.headerBg}}>
-          <Route path="/:subpage" render={() => <Breadcrumb />} />
+          {/* <Route path="/:subpage/" render={() => <Breadcrumb />} /> */}
+          {/* <Breadcrumb /> */}
           {this.renderHeader()}
           {this.renderPage()}
+          <Footer themeColor={this.state.headerBg}/>
         </div>
-        <Footer themeColor={this.state.headerBg}/>
       </HashRouter>
     );
   }

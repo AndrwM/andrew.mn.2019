@@ -86,10 +86,10 @@ class CaseStudyPreview extends Component {
           <div className="c-container">
             <Reveal>
               <div className="c-grid c-grid--flush c-grid--bottom">
-                <div className="c-grid__cell u-6/12--lap">
+                <div className="c-grid__cell u-8/12--lap">
                   {this.renderContent()}
                 </div>
-                <div className="c-grid__cell u-6/12--lap c-grid__cell--pull-right u-padding-top" style={{position: "relative"}}>
+                <div className="c-grid__cell u-4/12--lap c-grid__cell--pull-right u-padding-top" style={{position: "relative"}}>
                   {this.props.backgroundStyle && <div style={this.props.backgroundStyle} />}
                   {this.renderPreview()}
                 </div>
