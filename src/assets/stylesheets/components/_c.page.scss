@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
 
-  @media #{$bp-lap} {
+  @media #{$bp-hand} {
     flex-direction: row;
     // margin-bottom: 93vh;
   }
@@ -22,20 +22,30 @@
     //   height: 10px;
     // }
 
-    @media #{$bp-lap} {
-      border-right: 1px rgba(0,0,0,0.05) solid;
+    @media #{$bp-hand} {
+      background: linear-gradient(to left, rgba(0, 0, 0, 0.01) 0%, transparent 10%);
+      // border-right: 2px rgba(0,0,0,0.1) solid;
+      box-shadow: 1px 0 0 0 rgba(0,0,0,0.05);
       width: $_navigation-width;
       position: sticky;
       top: 0;
       align-self: flex-start;
       height: 100vh;
-      padding: $s-regular $s-regular 0 $s-large;
+      min-width: 130px;
+      max-width: 280px;
+      z-index: +1;
+      padding: $s-tiny $s-tiny 0 $s-tiny;
+    }
+
+    @media #{$bp-desk} {
+      // min-width: 200px;
+      padding: $s-regular $s-small $s-tiny $s-large;
     }
   }
 
   .c-page__content {
-    @media #{$bp-lap} {
-      width: calc(100% - #{$_navigation-width});
+    @media #{$bp-hand} {
+      width: 100%;
       display: flex;
       flex-direction: column;
     }

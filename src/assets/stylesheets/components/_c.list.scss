@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
 
-    @media #{$bp-lap} { line-height: 1.8; }
+    @media #{$bp-desk} { line-height: 1.8; }
 
     &::before {
       content: '-';
@@ -18,7 +18,7 @@
       margin: 0 10px 0 -15px;
     }
 
-    @media #{$bp-lap} {
+    @media #{$bp-desk} {
       font-size: 14px;
       margin: 0 0 5px;
 
@@ -34,11 +34,11 @@
 
   &--large > .c-list__item {
     font-size: 16px;
-    @media #{$bp-lap} { font-size: 16px; }
+    @media #{$bp-desk} { font-size: 16px; }
   }
 
   &--horizontal {
-    @media #{$bp-lap} {
+    @media #{$bp-desk} {
       display: flex;
       justify-content: space-between;
     }
@@ -51,7 +51,7 @@
       margin: 2px 4px auto 2px;
       vertical-align: middle;
 
-      @media #{$bp-lap} {
+      @media #{$bp-desk} {
         font-size: 135%;
         margin: 2px 9px auto -33px;
       }

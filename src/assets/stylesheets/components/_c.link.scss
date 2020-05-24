@@ -8,6 +8,10 @@
   transition: all 0.1s ease-in-out;
   white-space: nowrap;
 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
   &::before {
     background: $faded-color;
     bottom: -4px;
