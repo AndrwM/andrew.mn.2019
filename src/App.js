@@ -75,10 +75,8 @@ class App extends Component {
         {/* <div className="c-notice">
           Pardon the dust! This site is in *active* development.
         </div> */}
-        <div class="c-page__navigation" style={{"--theme": this.state.headerBg}}>
-          <Navigation />
-        </div>
-        <div class="c-page__content" style={{"--theme": this.state.headerBg}}>
+        <Navigation themeColor={this.state.headerBg}/>
+        <div className="c-page__content" style={{"--theme": this.state.headerBg}}>
           {/* <Route path="/:subpage/" render={() => <Breadcrumb />} /> */}
           {/* <Breadcrumb /> */}
           {this.renderHeader()}
