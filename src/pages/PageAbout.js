@@ -42,7 +42,7 @@ class PageAbout extends Component {
           About Me
         </h2> */}
         <p className="c-paragraph c-paragraph--large">
-          <span className="c-emoji c-emoji--in-margin">👋</span>
+          {/* <span className="c-emoji c-emoji--in-margin">👋</span> */}
           Hey I'm Andrew McIntee, a product designer &amp; web engineer specializing in design systems.
         </p>
         <p className="c-paragraph">

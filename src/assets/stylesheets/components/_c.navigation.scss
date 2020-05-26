@@ -15,11 +15,15 @@
   animation: 2s ease fade;
   font: 400 14px / 2 $ff-primary;
   position: fixed;
-  padding: 0;
   box-sizing: border-box;
   width: 100%;
   color: rgba(#000000, 0.2);
   background: transparent;
+  padding: 0 6vw;
+  box-sizing: border-box;
+
+  @media #{$bp-lap} { padding: 0 6vw; }
+  @media #{$bp-desk} { padding: 0 8vw; }
 
   &::before {
     content: "";
@@ -40,6 +44,7 @@
 
     @media #{$bp-touch} {
       height: 100%;
+      box-shadow: 0 1px 0 0 rgba(0,0,0,0.05);
     }
   }
 
@@ -79,10 +84,6 @@
       opacity: 0.9;
       visibility: visible;
     }
-  }
-
-  @media #{$bp-lap} {
-    padding: 0;
   }
 
   .c-navigation__container {

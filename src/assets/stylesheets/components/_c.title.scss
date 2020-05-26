@@ -40,19 +40,22 @@
     // color: #508897;
 
     @media #{$bp-lap} {
-      font: 400 32px / 1.4 $ff-primary;
+      font: 400 38px / 1.4 $ff-primary;
       .c-title__subtle { font-size: 50%; }
     }
 
   }
 
   &--medium {
-    // font: 400 24px / 1.4 $ff-display;
-    font: 400 34px / 1.4 $ff-display;
+    font: 400 24px / 1.4 $ff-display;
     margin: 0 0 $s-small;
 
     @media #{$bp-lap} {
-      // margin: 0 0 $s-xtiny;
+      font: 400 28px / 1.4 $ff-display;
+    }
+
+    @media #{$bp-desk} {
+      font: 400 30px / 1.4 $ff-display;
     }
   }
 

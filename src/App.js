@@ -78,7 +78,7 @@ class App extends Component {
         <Navigation themeColor={this.state.headerBg}/>
         <div className="c-page__content" style={{"--theme": this.state.headerBg}}>
           {/* <Route path="/:subpage/" render={() => <Breadcrumb />} /> */}
-          {/* <Breadcrumb /> */}
+          <Breadcrumb />
           {this.renderHeader()}
           {this.renderPage()}
           <Footer themeColor={this.state.headerBg}/>

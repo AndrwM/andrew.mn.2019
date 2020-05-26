@@ -18,7 +18,7 @@
     position: fixed;
     background: white;
     z-index: 9999;
-    min-width: 160px;
+    min-width: 170px;
     max-width: 280px;
     top: 0;
     width: $_navigation-width;
@@ -48,12 +48,12 @@
     position: absolute;
     transform: translateX(100%);
     right: 0;
-    top: $s-tiny;
+    top: $s-large;
     padding: 0 20px;
     z-index: 9999999;
     cursor: pointer;
 
-    @media #{$bp-desk} {
+    @media #{$bp-lap} {
       display: none
     }
   }
@@ -67,6 +67,10 @@
     will-change: padding-left, padding-right;
     height: 100vh;
     padding: $s-tiny $s-tiny 0 $s-tiny;
+
+    @media #{$bp-lap} {
+      padding: $s-small $s-tiny $s-tiny $s-tiny;
+    }
 
     @media #{$bp-desk} {
       padding: $s-regular $s-small $s-tiny $s-large;

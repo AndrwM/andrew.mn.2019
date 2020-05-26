@@ -39,8 +39,10 @@
     background-repeat: no-repeat;
     background-size: 34%;
   }
+}
 
-  .OVERRIDE-signature {
+.OVERRIDE-signature {
+  @media #{$bp-hand} {
     background-image: url("../images/signature2.png");
     background-position: 90px 0px;
     background-repeat: no-repeat;

@@ -29,17 +29,17 @@ class PageExperience extends Component {
           <div className="c-container">
             <h2 className="c-title c-title--label u-margin-none">Legend</h2>
             <ul className="c-grid c-list c-list--large">
-              <li className="c-grid__cell u-1/4--lap c-list__item c-list__item--exp-1">Hobby Experience</li>
-              <li className="c-grid__cell u-1/4--lap c-list__item c-list__item--exp-2">Limited Production</li>
-              <li className="c-grid__cell u-1/4--lap c-list__item c-list__item--exp-3">Experienced Production</li>
-              <li className="c-grid__cell u-1/4--lap c-list__item c-list__item--exp-4">Expert Experience</li>
+              <li className="c-grid__cell u-1/2--lap u-1/4--desk c-list__item c-list__item--exp-1">Hobby Experience</li>
+              <li className="c-grid__cell u-1/2--lap u-1/4--desk c-list__item c-list__item--exp-2">Limited Production</li>
+              <li className="c-grid__cell u-1/2--lap u-1/4--desk c-list__item c-list__item--exp-3">Experienced Production</li>
+              <li className="c-grid__cell u-1/2--lap u-1/4--desk c-list__item c-list__item--exp-4">Expert Experience</li>
             </ul>
           </div>
         </section>
         <section className="c-wrapper c-wrapper--flush">
           <div className="c-container">
             <div className="c-grid">
-              <div className="c-grid__cell u-1/4--lap u-border">
+              <div className="c-grid__cell u-1/2--lap u-1/4--desk u-border">
                 <h2 className="c-title c-title--small u-border-dark-bottom u-padding-top u-padding-bottom-tiny">Product Design</h2>
                 <ul className="c-list c-list--small">
                   <li className="c-list__item c-list__item--exp-4">Wireframing</li>
@@ -51,7 +51,7 @@ class PageExperience extends Component {
                   <li className="c-list__item c-list__item--exp-3">Accessibility<br/> (screen reader, color blindness, dyslexia&hellip;)</li>
                 </ul>
               </div>
-              <div className="c-grid__cell u-1/4--lap u-border">
+              <div className="c-grid__cell u-1/2--lap u-1/4--desk u-border">
                 <h2 className="c-title c-title--small u-border-dark-bottom u-padding-top u-padding-bottom-tiny">Visual Design Tooling</h2>
                 <ul className="c-list c-list--small">
                   <li className="c-list__item c-list__item--exp-4">Photoshop</li>
@@ -60,7 +60,7 @@ class PageExperience extends Component {
                   <li className="c-list__item c-list__item--exp-4">Project Planning</li>
                 </ul>
               </div>
-              <div className="c-grid__cell u-1/4--lap u-border">
+              <div className="c-grid__cell u-1/2--lap u-1/4--desk u-border">
                 <h2 className="c-title c-title--small u-border-dark-bottom u-padding-top u-padding-bottom-tiny">Prototyping &amp; Handoff</h2>
                 <ul className="c-list c-list--small">
                   <li className="c-list__item c-list__item--exp-4">Invision App</li>
@@ -70,21 +70,21 @@ class PageExperience extends Component {
                   <li className="c-list__item c-list__item--exp-2">Asana</li>
                 </ul>
               </div>
-              <div className="c-grid__cell u-1/4--lap u-border">
+              <div className="c-grid__cell u-1/2--lap u-1/4--desk u-border">
                 <h2 className="c-title c-title--small u-border-dark-bottom u-padding-top u-padding-bottom-tiny">Support</h2>
                 <ul className="c-list c-list--small">
                   <li className="c-list__item c-list__item--exp-4">Intercom</li>
                   <li className="c-list__item c-list__item--exp-4">Helpscout</li>
                 </ul>
               </div>
-              <div className="c-grid__cell u-1/4--lap u-border">
+              <div className="c-grid__cell u-1/2--lap u-1/4--desk u-border">
                 <h2 className="c-title c-title--small u-border-dark-bottom u-padding-top u-padding-bottom-tiny">Design Misc.</h2>
                 <ul className="c-list c-list--small">
                   <li className="c-list__item c-list__item--exp-2">Branding &amp; Logo Design</li>
                   <li className="c-list__item c-list__item--exp-1">Photography</li>
                 </ul>
               </div>
-              <div className="c-grid__cell u-1/4--lap u-border">
+              <div className="c-grid__cell u-1/2--lap u-1/4--desk u-border">
                 <h2 className="c-title c-title--small u-border-dark-bottom u-padding-top u-padding-bottom-tiny">Markup Flavors</h2>
                 <ul className="c-list">
                   <li className="c-list__item c-list__item--exp-4">HTML</li>
@@ -94,7 +94,7 @@ class PageExperience extends Component {
                   <li className="c-list__item c-list__item--exp-2">Mustache</li>
                 </ul>
               </div>
-              <div className="c-grid__cell u-1/4--lap u-border">
+              <div className="c-grid__cell u-1/2--lap u-1/4--desk u-border">
                 <h2 className="c-title c-title--small u-border-dark-bottom u-padding-top u-padding-bottom-tiny">Frontend Frameworks &amp; Libs</h2>
                 <ul className="c-list">
                   <li className="c-list__item c-list__item--exp-4">Backbone</li>
@@ -106,7 +106,7 @@ class PageExperience extends Component {
                   <li className="c-list__item c-list__item--exp-4">React Formik</li>
                 </ul>
               </div>
-              <div className="c-grid__cell u-1/4--lap u-border">
+              <div className="c-grid__cell u-1/2--lap u-1/4--desk u-border">
                 <h2 className="c-title c-title--small u-border-dark-bottom u-padding-top u-padding-bottom-tiny">Styling &amp; CSS Organization Strategies</h2>
                 <ul className="c-list">
                   <li className="c-list__item c-list__item--exp-4">BEM</li>
@@ -116,7 +116,7 @@ class PageExperience extends Component {
                   <li className="c-list__item c-list__item--exp-2">LESS</li>
                 </ul>
               </div>
-              <div className="c-grid__cell u-1/4--lap u-border">
+              <div className="c-grid__cell u-1/2--lap u-1/4--desk u-border">
                 <h2 className="c-title c-title--small u-border-dark-bottom u-padding-top u-padding-bottom-tiny">Backend Engineering</h2>
                 <ul className="c-list c-list--small">
                   <li className="c-list__item c-list__item--exp-3">Ruby / Ruby On Rails</li>
@@ -127,7 +127,7 @@ class PageExperience extends Component {
                   <li className="c-list__item c-list__item--exp-1">.NET</li>
                 </ul>
               </div>
-              <div className="c-grid__cell u-1/4--lap u-border">
+              <div className="c-grid__cell u-1/2--lap u-1/4--desk u-border">
                 <h2 className="c-title c-title--small u-border-dark-bottom u-padding-top u-padding-bottom-tiny">Testing &amp; Build Tooling</h2>
                 <ul className="c-list c-list--small">
                   <li className="c-list__item c-list__item--exp-3">Rspec / Capybara</li>
@@ -138,7 +138,7 @@ class PageExperience extends Component {
                   <li className="c-list__item c-list__item--exp-4">AssetPipeline</li>
                 </ul>
               </div>
-              <div className="c-grid__cell u-1/4--lap u-border">
+              <div className="c-grid__cell u-1/2--lap u-1/4--desk u-border">
                 <h2 className="c-title c-title--small u-border-dark-bottom u-padding-top u-padding-bottom-tiny">DevOps</h2>
                 <ul className="c-list c-list--small">
                   <li className="c-list__item c-list__item--exp-3">Heroku</li>
@@ -148,14 +148,14 @@ class PageExperience extends Component {
                   <li className="c-list__item c-list__item--exp-2">Gitlab</li>
                 </ul>
               </div>
-              <div className="c-grid__cell u-1/4--lap u-border">
+              <div className="c-grid__cell u-1/2--lap u-1/4--desk u-border">
                 <h2 className="c-title c-title--small u-border-dark-bottom u-padding-top u-padding-bottom-tiny">Marketing</h2>
                 <ul className="c-list c-list--small">
                   <li className="c-list__item c-list__item--exp-4">Digital Advertising Design</li>
                   <li className="c-list__item c-list__item--exp-4">Email Design &amp; Engineering</li>
                 </ul>
               </div>
-              <div className="c-grid__cell u-1/4--lap u-border">
+              <div className="c-grid__cell u-1/2--lap u-1/4--desk u-border">
                 <h2 className="c-title c-title--small u-border-dark-bottom u-padding-top u-padding-bottom-tiny">Marketing &amp; Tracking Tooling</h2>
                 <ul className="c-list c-list--small">
                   <li className="c-list__item c-list__item--exp-3">Google Analytics &amp; Tag Manager</li>
@@ -163,7 +163,7 @@ class PageExperience extends Component {
                   <li className="c-list__item c-list__item--exp-4">Google Optimize</li>
                 </ul>
               </div>
-              <div className="c-grid__cell u-1/4--lap u-border">
+              <div className="c-grid__cell u-1/2--lap u-1/4--desk u-border">
                 <h2 className="c-title c-title--small u-border-dark-bottom u-padding-top u-padding-bottom-tiny">Communication &amp; Planning Misc.</h2>
                 <ul className="c-list c-list--small">
                   <li className="c-list__item c-list__item--exp-4">Slack</li>
@@ -175,7 +175,7 @@ class PageExperience extends Component {
                   <li className="c-list__item c-list__item--exp-2">TeamGnatt</li>
                 </ul>
               </div>
-              <div className="c-grid__cell u-1/4--lap u-border">
+              <div className="c-grid__cell u-1/2--lap u-1/4--desk u-border">
                 <h2 className="c-title c-title--small u-border-dark-bottom u-padding-top u-padding-bottom-tiny">Communication &amp; Planning Misc.</h2>
                 <ul className="c-list c-list--small">
                   <li className="c-list__item c-list__item--exp-4">Slack</li>
@@ -187,7 +187,7 @@ class PageExperience extends Component {
                   <li className="c-list__item c-list__item--exp-2">TeamGnatt</li>
                 </ul>
               </div>
-              <div className="c-grid__cell u-1/4--lap u-border">
+              <div className="c-grid__cell u-1/2--lap u-1/4--desk u-border">
                 <h2 className="c-title c-title--small u-border-dark-bottom u-padding-top u-padding-bottom-tiny">Communication &amp; Planning Misc.</h2>
                 <ul className="c-list c-list--small">
                   <li className="c-list__item c-list__item--exp-4">Slack</li>

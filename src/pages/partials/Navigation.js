@@ -15,7 +15,7 @@ class Navigation extends Component {
     return (
       <nav className={`c-page__navigation ${this.state.open ? "" : "c-page__navigation--closed"}`} style={{"--theme": this.props.themeColor}}>
         <div className="c-page__navigation-button" onClick={() => this.setState({open: !this.state.open})}>
-          Menu&nbsp;{this.state.open ? "←" : "→"}
+          {this.state.open ? "←" : "Navigation"}
         </div>
         <div class="c-page__navigation-container">
           {/* <p className="c-paragraph c-paragraph--large">
