@@ -15,7 +15,6 @@ class PageResume extends Component {
   renderHeader() {
     return (
       <React.Fragment>
-        <h2 className="c-title c-title--small">Resumé</h2>
         <p className="c-paragraph c-paragraph--large">
           Designer &amp; web engineer of 8 years&hellip;<br/> Remote worker going on 4.
         </p>

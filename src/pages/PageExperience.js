@@ -15,7 +15,6 @@ class PageExperience extends Component {
   renderHeader() {
     return (
       <React.Fragment>
-        <h2 className="c-title c-title--small">Tooling Experience</h2>
         <p className="c-paragraph c-paragraph--large">Iʼm proud to be a generalist with a laser focus on user experience and frontend engineering excellence.</p>
         <p className="c-paragraph">While not completely exhaustive, I hope the list below can shed light on the many tools, languages, frameworks, libraries that I have worked with over the years.</p>
       </React.Fragment>
@@ -28,7 +27,7 @@ class PageExperience extends Component {
         <section className="c-wrapper c-wrapper--slim u-padding-bottom-none">
           <div className="c-container">
             <h2 className="c-title c-title--label u-margin-none">Legend</h2>
-            <ul className="c-grid c-list c-list--large">
+            <ul className="c-grid c-list">
               <li className="c-grid__cell u-1/2--lap u-1/4--desk c-list__item c-list__item--exp-1">Hobby Experience</li>
               <li className="c-grid__cell u-1/2--lap u-1/4--desk c-list__item c-list__item--exp-2">Limited Production</li>
               <li className="c-grid__cell u-1/2--lap u-1/4--desk c-list__item c-list__item--exp-3">Experienced Production</li>

@@ -21,9 +21,9 @@
   background: transparent;
   padding: 0 6vw;
   box-sizing: border-box;
+  padding: 20px 6vw;
 
-  @media #{$bp-lap} { padding: 0 6vw; }
-  @media #{$bp-desk} { padding: 0 8vw; }
+  @media #{$bp-desk} { padding: 34px 8vw; }
 
   &::before {
     content: "";
@@ -87,17 +87,15 @@
   }
 
   .c-navigation__container {
-    max-width: $page-max-width;
     margin: auto;
     box-sizing: border-box;
-    padding: 2vh 0;
     position: relative;
     color: rgba($c-grey-medium, 0.2);
     z-index: $z-4;
   }
 
   .c-navigation__breadcrumb-link {
-    font: 400 15px / 2 $ff-primary;
+    font: 400 16px / 2 $ff-primary;
     color: $c-grey-medium;
     cursor: w-resize;
     position: relative;
@@ -126,7 +124,7 @@
     }
 
     &--static {
-      font: 500 15px / 2 $ff-primary;
+      font: 500 20px / 2 $ff-primary;
       cursor: default;
 
       &::after { content: none; }

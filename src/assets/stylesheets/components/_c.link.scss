@@ -11,6 +11,9 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  padding-left: $s-xtiny;
+  padding-right: $s-xtiny;
+  border-radius: $border-radius;
 
   &::before {
     background: $faded-color;
@@ -24,8 +27,8 @@
   }
 
   &[href]:hover {
-    background: #ffffff;
-    color: $c-primary;
+    background: $c-primary;
+    color: $c-grey-extralight;
 
     &::before {
       background: rgba($c-primary, 0.5);
@@ -74,7 +77,7 @@
   }
 
   &--on-dark {
-    color: #ffffff;
+    color: $c-grey-extralight;
 
     &.c-link--active {
       background: rgba(#ffffff, 0.2);

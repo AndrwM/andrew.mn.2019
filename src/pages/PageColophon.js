@@ -13,6 +13,15 @@ class PageColophon extends Component {
   renderHeader() {
     return (
       <React.Fragment>
+        <p className="c-paragraph c-paragraph--large">
+          By hand &amp; with love.
+        </p>
+        <p className="c-paragraph">
+          This site is built in React &amp; create-react-app.<br/> It's hosted on <a href="https://github.com/AndrwM/andrew.mn" target="blank" className="c-link c-link--arrow-remote">Github</a> and typeset in Graphik &amp; Louize.<br/> Photography courtesy of <a href="https://amoamostudio.com/" target="blank" className="c-link c-link--arrow-remote">Amo Amo Studio</a> &amp; <a href="http://www.angelazion.com/" target="blank" className="c-link c-link--arrow-remote">Angela Zion</a>.
+        </p>
+        <p className="c-paragraph c-paragraph--sans-small">
+          <a href="https://github.com/AndrwM/andrew.mn" target="blank" className="c-link c-link--arrow-remote">Website Source</a>
+        </p>
       </React.Fragment>
     );
   }
@@ -20,15 +29,6 @@ class PageColophon extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="c-wrapper u-padding-bottom">
-          <h2 className="c-title c-title--small">Colophon</h2>
-          <p className="c-paragraph">
-            This site is built by hand and with love in React &amp; create-react-app.<br/> It's hosted on <a href="https://github.com/AndrwM/andrew.mn" target="blank" className="c-link c-link--arrow-remote">Github</a> and typeset in Graphik &amp; Louize.<br/> Photography courtesy of <a href="https://amoamostudio.com/" target="blank" className="c-link c-link--arrow-remote">Amo Amo Studio</a> &amp; <a href="http://www.angelazion.com/" target="blank" className="c-link c-link--arrow-remote">Angela Zion</a>.
-          </p>
-          <p className="c-paragraph c-paragraph--sans-small">
-            <a href="https://github.com/AndrwM/andrew.mn" target="blank" className="c-link c-link--arrow-remote">Website Source</a>
-          </p>
-        </section>
       </React.Fragment>
     );
   }

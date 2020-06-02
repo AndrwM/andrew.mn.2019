@@ -39,7 +39,7 @@ class PartialFooter extends Component {
                 </p>
               </div>
               <div className="c-grid__cell c-grid__cell--pull-right u-1/2--lap u-1/3--desk">
-                <p className="c-paragraph c-paragraph--sans-small u-subtle">
+                <p className="c-paragraph c-paragraph--sans-smallest u-subtle">
                   Your privacy is important; this site is GDPR compliant. <br/>Views expressed are my own. <br/>© Andrew McIntee '08&ndash;2020.
                 </p>
               </div>

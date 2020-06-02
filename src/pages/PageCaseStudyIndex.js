@@ -37,7 +37,6 @@ class PageCaseStudyIndex extends Component {
   renderHeader() {
     return (
       <React.Fragment>
-        <h2 className="c-title c-title--small">Case Studies</h2>
         <p className="c-paragraph c-paragraph--large">
           Throughout my career, I have switch-hit between digital&nbsp;product&nbsp;design &amp; frontend&nbsp;engineering<br/> with occasional work on the backend too.
         </p>

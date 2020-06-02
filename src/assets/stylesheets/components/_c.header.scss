@@ -62,9 +62,9 @@
     z-index: +1;
     position: relative;
     box-sizing: border-box;
-    padding: 140px 6vw;
+    padding: 120px 6vw;
 
-    @media #{$bp-desk} { padding: 140px 8vw; }
+    @media #{$bp-desk} { padding: 120px 8vw; }
 
     &:empty {
       padding: 0;

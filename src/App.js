@@ -4,7 +4,7 @@ import Routes from "./Routes";
 
 // --- Partials
 import Footer from "./pages/partials/Footer";
-import Navigation from "./pages/partials/Navigation";
+import Aside from "./pages/partials/Aside";
 
 // --- Components
 import Breadcrumb from "./components/Breadcrumb";
@@ -19,6 +19,7 @@ class App extends Component {
     super(props);
     this.state = {
       authorized: (window.location.hostname == "localhost") ? true : false,
+      asideActive: true,
 // -- Header Settings ---
       headerContent: null,
       headerHeight: null,
@@ -75,7 +76,7 @@ class App extends Component {
         {/* <div className="c-notice">
           Pardon the dust! This site is in *active* development.
         </div> */}
-        <Navigation themeColor={this.state.headerBg}/>
+        <Aside themeColor={this.state.headerBg} active={this.state.asideActive} />
         <div className="c-page__content" style={{"--theme": this.state.headerBg}}>
           {/* <Route path="/:subpage/" render={() => <Breadcrumb />} /> */}
           <Breadcrumb />

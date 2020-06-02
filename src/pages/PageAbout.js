@@ -41,9 +41,9 @@ class PageAbout extends Component {
         {/* <h2 className="c-title c-title--small OVERRIDE-color-white">
           About Me
         </h2> */}
-        <p className="c-paragraph c-paragraph--large">
+        <p className="c-paragraph c-paragraph--xlarge">
           {/* <span className="c-emoji c-emoji--in-margin">👋</span> */}
-          Hey I'm Andrew McIntee, a product designer &amp; web engineer specializing in design systems.
+          I’m a product designer &amp; web engineer<br/>specializing in design systems.
         </p>
         <p className="c-paragraph">
         I have over 8 years of industry experience and most recently lead design &amp; frontend engineering on a product team. I have also been a remote-worker for over 4 years.

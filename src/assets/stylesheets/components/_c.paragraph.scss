@@ -92,6 +92,7 @@
     color: #2c2d35;
     font: 400 30px / 1.25 $ff-display;
     max-width: none;
+    margin: 0 0 52px;
 
     @media #{$bp-hand} { font: 400 44px / 1.25 $ff-display; }
     @media #{$bp-lap} { font: 400 60px / 1.25 $ff-display; }
