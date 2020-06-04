@@ -11,11 +11,11 @@ class Aside extends Component {
   render() {
     return (
       <nav
-        className={`c-page__aside ${this.props.active ? "" : "c-page__aside--closed"}`}
+        className={`c-page__aside ${this.props.asideActive ? "" : "c-page__aside--closed"}`}
         style={{"--theme": this.props.themeColor}}
       >
-        {/* <div className="c-page__aside-button" onClick={() => this.setState({open: !this.props.active})}>
-          {this.props.active ? "←" : "Navigation"}
+        {/* <div className="c-page__aside-button" onClick={() => this.setState({open: !this.props.asideActive})}>
+          {this.props.asideActive ? "←" : "Navigation"}
         </div> */}
         <div class="c-page__aside-container">
           {/* <p className="c-paragraph c-paragraph--large">

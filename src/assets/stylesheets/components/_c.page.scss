@@ -5,11 +5,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-
-  @media #{$bp-hand} {
-    flex-direction: row;
-    // margin-bottom: 93vh;
-  }
+  flex-direction: row;
 
   .c-page__aside {
     box-sizing: border-box;
@@ -29,14 +25,14 @@
     //   height: 10px;
     // }
 
-    @media #{$bp-hand} {
+    // @media #{$bp-hand} {
       background: linear-gradient(to left, black 0%, #171717 100%);
       // border-right: 2px rgba(0,0,0,0.1) solid;
       box-shadow: 1px 0 0 0 rgba(0,0,0,0.05);
       position: sticky;
       align-self: flex-start;
       height: 100vh;
-    }
+    // }
 
     &.c-page__aside--closed {
       width: 0;

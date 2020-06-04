@@ -76,10 +76,10 @@ class App extends Component {
         {/* <div className="c-notice">
           Pardon the dust! This site is in *active* development.
         </div> */}
-        <Aside themeColor={this.state.headerBg} active={this.state.asideActive} />
+        <Aside themeColor={this.state.headerBg} asideActive={this.state.asideActive} />
         <div className="c-page__content" style={{"--theme": this.state.headerBg}}>
           {/* <Route path="/:subpage/" render={() => <Breadcrumb />} /> */}
-          <Breadcrumb />
+          <Breadcrumb setAppState={this.setAppState} asideActive={this.state.asideActive} />
           {this.renderHeader()}
           {this.renderPage()}
           <Footer themeColor={this.state.headerBg}/>

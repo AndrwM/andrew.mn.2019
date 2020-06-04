@@ -6,7 +6,7 @@ import Routes from "../Routes";
 class Breadcrumb extends Component {
   constructor(props) {
     super(props);
-    this.state = {hover: false};
+    this.state = { hover: false };
   }
 
   onHover(bool){
@@ -45,11 +45,14 @@ class Breadcrumb extends Component {
         className={`c-navigation ${this.state.hover ? "c-navigation--hover" : ""}`}
         style={{"--theme": this.props.themeColor}}
         onMouseLeave={() => this.onHover(false)}
-        >
+      >
         <div
           className="c-navigation__container"
           onMouseEnter={() => this.onHover(true)}
         >
+          <div className="c-navigation__breadcrumb-menuhotlink" onClick={() => this.props.setAppState({asideActive: !this.props.asideActive})}>
+            ≡
+          </div>
           {this.props.breadcrumbs.map(({ breadcrumb, match }, index) => (
             <React.Fragment key={index}>
               {index < this.props.breadcrumbs.length - 1 ? (
