@@ -73,17 +73,20 @@ class App extends Component {
   render() {
     return (
       <HashRouter>
-        <div className={`c-page ${this.state.asideActive ? "" : "c-page--collapsed"}`}>
+        <div
+          className={`c-page ${this.state.asideActive ? "" : "c-page--collapsed"}`}
+          style={{"--theme": this.state.headerBg}}
+        >
           <div className="c-notice">
             Pardon the dust! This site is in *active* development.
           </div>
-          <Aside themeColor={this.state.headerBg} asideActive={this.state.asideActive} setAppState={this.setAppState} />
-          <div className="c-page__content" style={{"--theme": this.state.headerBg}}>
+          <Aside asideActive={this.state.asideActive} setAppState={this.setAppState} />
+          <div className="c-page__content">
             {/* <Route path="/:subpage/" render={() => <Breadcrumb />} /> */}
             <Breadcrumb />
             {this.renderHeader()}
             {this.renderPage()}
-            <Footer themeColor={this.state.headerBg}/>
+            <Footer />
           </div>
         </div>
       </HashRouter>

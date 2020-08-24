@@ -11,10 +11,7 @@ class Aside extends Component {
   render() {
     return (
       <React.Fragment>
-        <nav
-          className="c-page__aside"
-          style={{"--theme": this.props.themeColor}}
-        >
+        <nav className="c-page__aside">
           {/* <div className="c-page__aside-button" onClick={() => this.setState({open: !this.props.asideActive})}>
             {this.props.asideActive ? "←" : "Navigation"}
           </div> */}

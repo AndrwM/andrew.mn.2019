@@ -43,7 +43,6 @@ class Breadcrumb extends Component {
     return (
       <nav
         className={`c-navigation ${this.state.hover ? "c-navigation--hover" : ""}`}
-        style={{"--theme": this.props.themeColor}}
         onMouseLeave={() => this.onHover(false)}
       >
         <div

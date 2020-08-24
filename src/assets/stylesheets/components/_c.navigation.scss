@@ -14,7 +14,8 @@
   opacity: 1;
   animation: 2s ease fade;
   font: 400 14px / 2 $ff-primary;
-  position: fixed;
+  position: sticky;
+  top: 0;
   box-sizing: border-box;
   width: 100%;
   color: rgba(#000000, 0.2);
@@ -92,6 +93,8 @@
     color: rgba($c-grey-medium, 0.2);
     z-index: $z-4;
     align-items: baseline;
+    margin: auto;
+    max-width: $page-max-width;
   }
 
   .c-navigation__breadcrumb-link {
