@@ -94,31 +94,6 @@
     align-items: baseline;
   }
 
-  .c-navigation__breadcrumb-menuhotlink {
-    font: 400 40px / 1 $ff-primary;
-    color: $c-grey-medium;
-    cursor: pointer;
-    position: relative;
-    text-decoration: none;
-    transition: all 0.1s ease-in-out;
-    white-space: nowrap;
-    display: inline-block;
-    margin: 0 $s-tiny 0 0;
-    padding: 0 $s-tiny 6px;
-    border-radius: $border-radius;
-    background: white;
-    vertical-align: middle;
-
-    &:hover {
-      background: $c-primary;
-      color: white;
-    }
-
-    @media #{$bp-lap} {
-      display: none;
-    }
-  }
-
   .c-navigation__breadcrumb-link {
     font: 400 16px / 2 $ff-primary;
     color: $c-grey-medium;

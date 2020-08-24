@@ -1,91 +1,109 @@
-.c-page {
-  $_navigation-width: 16vw;
+$_navigation-width: 16vw;
 
+.c-page {
   background: #ffffff;
   padding: 0;
   display: flex;
   flex-direction: column;
   flex-direction: row;
+}
 
-  .c-page__aside {
-    box-sizing: border-box;
-    transition: 0.5s width, 0.5s min-width, 0.8s padding;
-    will-change: width, min-width;
-    position: fixed;
-    background: white;
-    z-index: 9999;
-    min-width: 170px;
-    max-width: 280px;
-    top: 0;
-    width: $_navigation-width;
+.c-page__aside {
+  box-sizing: border-box;
+  transition: 0.5s width, 0.5s min-width, 0.8s padding;
+  will-change: width, min-width;
+  position: fixed;
+  background: white;
+  z-index: 9999;
+  min-width: 170px;
+  max-width: 280px;
+  top: 0;
+  width: $_navigation-width;
+  background: linear-gradient(to left, black 0%, #171717 100%);
+  box-shadow: 1px 0 0 0 rgba(0,0,0,0.05);
+  position: sticky;
+  align-self: flex-start;
+  height: 100vh;
 
-    // .c-page__aside-aesthetic {
-    //   background: var(--theme);
-    //   width: 100%;
-    //   height: 10px;
-    // }
+  .c-page--collapsed & {
+    width: 0;
+    min-width: 0;
+  }
+}
 
-    // @media #{$bp-hand} {
-      background: linear-gradient(to left, black 0%, #171717 100%);
-      // border-right: 2px rgba(0,0,0,0.1) solid;
-      box-shadow: 1px 0 0 0 rgba(0,0,0,0.05);
-      position: sticky;
-      align-self: flex-start;
-      height: 100vh;
-    // }
+.c-page__view-toggle {
+  font: 400 12px / 2 $ff-primary;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,0.5);
+  writing-mode: vertical-rl;
+  padding: $s-small $s-tiny $s-tiny $s-tiny;
+  box-sizing: border-box;
+  background: #171717;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
 
-    &.c-page__aside--closed {
-      width: 0;
-      min-width: 0;
-    }
+  // @media #{$bp-lap} {
+  //   padding: $s-small $s-tiny $s-tiny $s-tiny;
+  // }
+
+  @media #{$bp-desk} {
+    padding: 44px $s-tiny;
   }
 
-  .c-page__aside-container {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    transition: 0.8s padding-left, 0.8s padding-right;
-    will-change: padding-left, padding-right;
-    height: 100vh;
-    padding: $s-tiny $s-tiny 0 $s-tiny;
+  .c-page--collapsed & {
+    color: rgba(255,255,255,0.9);
+  }
+}
 
-    @media #{$bp-lap} {
-      padding: $s-small $s-tiny $s-tiny $s-tiny;
-    }
+.c-page__aside-container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: $s-tiny $s-tiny 0 $s-tiny;
+  transition: 0.8s padding-left, 0.8s padding-right;
+  will-change: padding-left, padding-right;
 
-    @media #{$bp-desk} {
-      padding: $s-regular $s-small $s-tiny $s-large;
-    }
+  @media #{$bp-lap} {
+    padding: $s-small $s-tiny $s-tiny $s-tiny;
   }
 
-  .c-page__aside--closed  .c-page__aside-container {
+  @media #{$bp-desk} {
+    padding: $s-regular $s-small $s-tiny $s-large;
+  }
+
+  .c-page--collapsed & {
     padding-left: 0;
     padding-right: 0;
   }
+}
 
-  .c-page__content {
-    @media #{$bp-hand} {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-  }
 
-  .c-page__footer {
-    padding: $s-regular 0;
-    background: #f1f9fc;
+.c-page__content {
+  @media #{$bp-hand} {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+  }
+}
 
-    @media #{$bp-lap} {
-      height: 100vh;
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      z-index: -1;
-    }
+.c-page__footer {
+  padding: $s-regular 0;
+  background: #f1f9fc;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @media #{$bp-lap} {
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
   }
 }

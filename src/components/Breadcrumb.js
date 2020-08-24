@@ -50,9 +50,6 @@ class Breadcrumb extends Component {
           className="c-navigation__container"
           onMouseEnter={() => this.onHover(true)}
         >
-          <div className="c-navigation__breadcrumb-menuhotlink" onClick={() => this.props.setAppState({asideActive: !this.props.asideActive})}>
-            ≡
-          </div>
           {this.props.breadcrumbs.map(({ breadcrumb, match }, index) => (
             <React.Fragment key={index}>
               {index < this.props.breadcrumbs.length - 1 ? (
