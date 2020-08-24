@@ -11,7 +11,7 @@ class PageAbout extends Component {
   componentDidMount() {
     this.props.setAppState({
       headerContent: this.renderHeader(),
-      headerBg: "#eeffdf"
+      theme: "#eeffdf"
     });
   }
 

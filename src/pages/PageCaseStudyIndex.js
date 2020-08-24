@@ -30,7 +30,7 @@ class PageCaseStudyIndex extends Component {
   componentDidMount() {
     this.props.setAppState({
       headerContent: this.renderHeader(),
-      headerBg: "#fdf6ff"
+      theme: "#fdf6ff"
     });
   }
 

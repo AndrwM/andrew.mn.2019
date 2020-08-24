@@ -8,7 +8,7 @@ class PageResume extends Component {
   componentDidMount() {
     this.props.setAppState({
       headerContent: this.renderHeader(),
-      headerBg: "#fef5f0"
+      theme: "#fef5f0"
     });
   }
 

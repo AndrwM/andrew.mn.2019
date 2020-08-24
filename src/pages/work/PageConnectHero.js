@@ -14,7 +14,7 @@ class PageNewline extends Component {
   componentDidMount() {
     this.props.setAppState({
       headerContent: this.renderHeader(),
-      headerBg: "#f2fce9"
+      theme: "#f2fce9"
     });
   }
 

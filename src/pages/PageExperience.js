@@ -8,7 +8,7 @@ class PageExperience extends Component {
   componentDidMount() {
     this.props.setAppState({
       headerContent: this.renderHeader(),
-      headerBg: "#f0fef6"
+      theme: "#f0fef6"
     });
   }
 

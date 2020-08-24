@@ -19,12 +19,12 @@ class App extends Component {
     super(props);
     this.state = {
       authorized: (window.location.hostname == "localhost") ? true : false,
-      asideActive: true,
+      asideActive: (window.innerWidth > 710),
+      theme: "#f1f9fc",
 // -- Header Settings ---
       headerContent: null,
       headerHeight: null,
       headerKey: 0,
-      headerBg: "#f1f9fc",
 // -- Header Settings ---
     };
 
@@ -44,14 +44,14 @@ class App extends Component {
     }
   }
 
-  setAppState = (newState) =>{
+  setAppState = (newState) => {
     this.setState(newState);
   }
 
-  renderHeader(){
+  renderHeader() {
     return(
       <header className="c-header" ref={this.refHeader}>
-        <div className="c-header__background" style={{height: this.state.headerHeight, backgroundColor: this.state.headerBg}} />
+        <div className="c-header__background" style={{height: this.state.headerHeight, backgroundColor: this.state.theme}} />
         <div className="c-header__content" key={this.state.headerKey}>
           <div className="c-container" children={this.state.headerContent} />
         </div>
@@ -59,7 +59,7 @@ class App extends Component {
     );
   }
 
-  renderPage(){
+  renderPage() {
     return Routes.map(({ path, PageComponent, isPublic }) => (
       <Route exact key={path} path={path} render={() =>
         <PageComponent
@@ -75,7 +75,7 @@ class App extends Component {
       <HashRouter>
         <div
           className={`c-page ${this.state.asideActive ? "" : "c-page--collapsed"}`}
-          style={{"--theme": this.state.headerBg}}
+          style={{"--theme": this.state.theme}}
         >
           <div className="c-notice">
             Pardon the dust! This site is in *active* development.

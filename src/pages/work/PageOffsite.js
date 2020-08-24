@@ -50,7 +50,7 @@ class PageOffsite extends Component {
   componentDidMount() {
     this.props.setAppState({
       headerContent: this.renderHeader(),
-      headerBg: this.color
+      theme: this.color
     });
   }
 

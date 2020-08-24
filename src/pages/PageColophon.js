@@ -6,7 +6,7 @@ class PageColophon extends Component {
   componentDidMount() {
     this.props.setAppState({
       headerContent: this.renderHeader(),
-      headerBg: "#fff3f9"
+      theme: "#fff3f9"
     });
   }
 
