@@ -5,20 +5,23 @@ class SpotifyPlaylist extends Component {
     super(props);
 
     this.state = {
-      expanded: false
+      expand: false
     };
   }
 
   render() {
     return(
       <React.Fragment>
-        <section className={`c-spotify ${this.state.expanded ? "c-spotify--expanded" : ""}`}>
+        <section
+        onClick={() => this.setState({ expand: !this.state.expand })}
+        className={`c-spotify ${this.state.expand ? "c-spotify--expand" : ""}`}
+      >
           <div className="c-spotify__content">
             <h1 className="c-title c-title--on-dark c-title--small u-margin-none">
-              Steak Association
+              {this.state.expand ? "Steak Association" : "Steak Association"}
             </h1>
             <p className="c-paragraph c-paragraph--on-dark c-paragraph--sans-small">
-              Steaks on the grill, this time its personal.
+              {this.state.expand ? "Collapse Player" :  "Steaks on the grill, this time its personal."}
             </p>
           </div>
           <div
