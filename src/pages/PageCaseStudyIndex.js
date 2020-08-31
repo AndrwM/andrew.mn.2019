@@ -42,7 +42,8 @@ class PageCaseStudyIndex extends Component {
         </p>
         <p className="c-paragraph">
           {/* While I’m not an expert in backend development, as a self-taught professional I’m no stranger to digging in further down the tech-stack than is expected of me to build-out infrastructure necessary to support the UI I’m implementing. Whether its spinning up databases, writing queries, building models or controllers, etc &ndash; I have even built my own Elixir+Phoenix and RoR personal projects from scratch before. This has left me with a well-rounded set of skills especially suited for smaller development teams where some responsibilities can be ambiguous between dsiciplines. */}
-          While I’m not an expert in backend development, as a self-taught professional I’m no stranger to digging in further down the tech-stack than is expected of me to build-out infrastructure to support the UI I’m implementing. Whether its spinning up databases, writing queries, building models or controllers, etc., I’m not afraid of the gutsy stuff. I have even built my own Elixir+Phoenix and RoR personal projects from scratch before.
+          {/* While I’m not an expert in backend development, as a self-taught professional I’m no stranger to digging in further down the tech-stack than is expected of me to build-out infrastructure to support the UI I’m implementing. Whether its spinning up databases, writing queries, building models or controllers, etc., I’m not afraid of the gutsy stuff. I have even built my own Elixir+Phoenix and RoR personal projects from scratch before. */}
+          I’m no stranger to digging in further down the tech-stack to support the interface. Whether its spinning up databases, writing queries, building models or controllers, etc. &mdash; I’m not afraid of the gutsy stuff.
         </p>
         <p className="c-paragraph">
           This has left me with a well-rounded set of skills, especially suited for smaller development teams where people on the product team wear multiple hats.
@@ -55,43 +56,63 @@ class PageCaseStudyIndex extends Component {
     return (
       <React.Fragment>
         <CaseStudyPreview
-          title="OffSite Ad Platform"
-          timePeriod="2018 &ndash; 2019"
-          role="Principal&nbsp;Designer, Lead&nbsp;Frontend&nbsp;Engineer, Remote&nbsp;Full-Time"
-          type="Design&nbsp;System, React&nbsp;Engineering, RoR&nbsp;Development"
+          title="Kajabi, Product Design System"
+          timePeriod="2020 &ndash; present"
+          role="User Experience Developer, Remote&nbsp;Full-Time"
+          type="Design System Dev Ops, Component Markup &amp; Scripting, RoR&nbsp;Integration"
           image={imageOffsite}
           url={false}
           description={[
-            "An advertising marketplace & ad generator bolted on top of Google Ads. It allows parties to share Google Ads audiences without disclosing/touching peoples personally identifiable information.",
-            "The app exclusively uses a custom CSS/BEM-based design system and uses React to handle input and frontend validations on top of a HTML/ERB based Ruby On Rails environment.",
-            "Working on Offsite, I was responsible for leading all:  <em> feature wireframing, design prototyping, UI design, design system engineering, frontend engineering architecture decisions, and frontend code review.</em>"
+            "I currently serve on the design system team at Kajabi. We design and manage the UI that powers over 30 million subscription learning sites."
           ]} />
-        <CaseStudyPreview
-          // backgroundStyle={{
-          //   backgroundImage: `url(${imageNewlinePreview})`,
-          //   position: "absolute",
-          //   backgroundSize: "100%",
-          //   backgroundRepeat: "no-repeat",
-          //   bottom: 0,
-          //   height: "104%",
-          //   width: "123%",
-          //   right: "-15.5%"
-          // }}
-          title="Newline Education Platform"
-          timePeriod="2015 &ndash; 2017"
-          type="UI&nbsp;Design&nbsp;System, Frontend&nbsp;Engineering, RoR&nbsp;Development"
-          role="Senior&nbsp;UI&nbsp;Designer, Frontend&nbsp;Engineer, Remote&nbsp;Full-Time"
-          image={imageNewline}
-          url="/case-studies/newline"
-          description={["I worked on the product team to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system.", "From the ground-up we designed, built, and documented a CSS component system with over 50 elements. It allowed anyone on the team to quickly assemble a view. In addition to authoring the design system, I worked with the engineering team in building the frontend for an in-browser IDE and student messaging system."]} />
+        <section className="c-wrapper c-wrapper--flush u-border-bottom">
+          <div className="c-container-2col">
+            <div className="c-container-2col__item">
+              <CaseStudyPreview
+                context="2col"
+                title="OffSite Ad Platform"
+                timePeriod="2018 &ndash; 2019"
+                role="Principal&nbsp;Designer, Lead&nbsp;Frontend&nbsp;Engineer, Remote&nbsp;Full-Time"
+                type="Design&nbsp;System, React&nbsp;Engineering, RoR&nbsp;Development"
+                image={imageOffsite}
+                url={false}
+                description={[
+                  "An advertising marketplace & ad generator bolted on top of Google Ads. It allows parties to share Google Ads audiences without disclosing/touching peoples personally identifiable information.",
+                  "The app exclusively uses a custom CSS/BEM-based design system and uses React to handle input and frontend validations on top of a HTML/ERB based Ruby On Rails environment.",
+                  "Working on Offsite, I was responsible for leading all:  <em> feature wireframing, design prototyping, UI design, design system engineering, frontend engineering architecture decisions, and frontend code review.</em>"
+                ]} />
+              </div>
+            <div className="c-container-2col__item">
+              <CaseStudyPreview
+                context="2col"
+                // backgroundStyle={{
+                //   backgroundImage: `url(${imageNewlinePreview})`,
+                //   position: "absolute",
+                //   backgroundSize: "100%",
+                //   backgroundRepeat: "no-repeat",
+                //   bottom: 0,
+                //   height: "104%",
+                //   width: "123%",
+                //   right: "-15.5%"
+                // }}
+                title="Newline Education Platform"
+                timePeriod="2015 &ndash; 2017"
+                type="UI&nbsp;Design&nbsp;System, Frontend&nbsp;Engineering, RoR&nbsp;Development"
+                role="Senior&nbsp;UI&nbsp;Designer, Frontend&nbsp;Engineer, Remote&nbsp;Full-Time"
+                image={imageNewline}
+                url="/case-studies/newline"
+                description={["I worked on the product team to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system.", "From the ground-up we designed, built, and documented a CSS component system with over 50 elements. It allowed anyone on the team to quickly assemble a view. In addition to authoring the design system, I worked with the engineering team in building the frontend for an in-browser IDE and student messaging system."]} />
+            </div>
+          </div>
+        </section>
         <section className="c-wrapper c-wrapper--flush u-border-bottom">
           <div className="c-container-2col">
             <div className="c-container-2col__item">
               <CaseStudyPreview
                 context={["no-browser", "2col"]}
-                title="Coindex Labs, Automated Crypto Trader"
+                title="Coindex Labs, Automated Trading"
                 timePeriod="2017 &ndash; 2018"
-                role="Director of Product Design,<br/>Part-Time"
+                role="Director of Product Design, Part-Time"
                 type="UI Design, Prototyping, React&nbsp;Design&nbsp;System&nbsp;Engineering"
                 image={imageCoindex}
                 description={[
@@ -143,7 +164,7 @@ class PageCaseStudyIndex extends Component {
                 context="2col"
                 title="South Carolina Dept. Of Commerce <br/>Free Online Code Platform"
                 timePeriod="2018"
-                role="Lead&nbsp;Designer,<br/>Lead&nbsp;Frontend&nbsp;Engineer"
+                role="Lead&nbsp;Designer, Lead&nbsp;Frontend&nbsp;Engineer"
                 type="Wireframes, Data&nbsp;Visualization & State&nbsp;Reporting, Frontend&nbsp;Engineering"
                 image={imageScCodes}
                 url="https://dashboard.sccodes.org/stats"

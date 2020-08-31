@@ -97,4 +97,9 @@
     @media #{$bp-hand} { font: 400 44px / 1.25 $ff-display; }
     @media #{$bp-lap} { font: 400 60px / 1.25 $ff-display; }
   }
+
+  &--on-dark {
+    color: white;
+    opacity: 0.6;
+  }
 }

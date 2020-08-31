@@ -37,7 +37,8 @@
     right: 0;
     left: 0;
     background: $c-light-blue linear-gradient(to bottom, rgba(#ffffff, 1) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(#4c24ff, 0.1) 100%);
-    transition: all 1.2s cubic-bezier(0.35, 0.46, 0.45, 1);
+    transition: 0.5s cubic-bezier(0.35, 0.46, 0.45, 1);
+    transition-property: transform, background-color, height;
     animation: 8s cubic-bezier(0.25, 0.46, 0.45, 0.94) float infinite;
     min-height: $min-height;
     will-change: transform, background-color, height;
@@ -62,9 +63,9 @@
     z-index: +1;
     position: relative;
     box-sizing: border-box;
-    padding: 0 6vw 2vh;
+    padding: $s-small 6vw 2vh;
 
-    @media #{$bp-desk} { padding: 1vh 8vw 120px; }
+    @media #{$bp-desk} { padding: 2vh 8vw 120px; }
 
     &:empty {
       padding: 0;

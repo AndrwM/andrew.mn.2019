@@ -10,17 +10,15 @@
     display: flex;
     align-items: center;
 
-    @media #{$bp-desk} { line-height: 1.8; }
-
     &::before {
       content: '-';
-
       margin: 0 10px 0 -15px;
     }
 
     @media #{$bp-desk} {
       font-size: 14px;
       margin: 0 0 5px;
+      line-height: 1.8;
 
       &::before {
         margin: 0 8px 0 0;
@@ -58,6 +56,7 @@
     }
   }
 
+  @include emoji-bullet("mushroom",   "🍄");
   @include emoji-bullet("wave",   "👋");
   @include emoji-bullet("rocket",   "🚀");
   @include emoji-bullet("sparkle",  "✨");

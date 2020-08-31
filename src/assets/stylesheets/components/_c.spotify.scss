@@ -1,0 +1,56 @@
+.c-spotify {
+  height: 420px;
+  position: relative;
+  margin-bottom: $s-small;
+  border-radius: $border-radius;
+  overflow: hidden;
+  background: black;
+}
+
+.c-spotify__cover {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 98px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  transition: opacity 0.2s ease;
+
+  :hover > & {
+    opacity: 0;
+  }
+}
+
+.c-spotify__content {
+  background: rgba(black, 0.7);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: $s-small $s-small $s-tiny $s-small;
+  z-index: +1;
+  transition: opacity 0.2s ease;
+  backdrop-filter: blur(6px);
+
+  :hover > & {
+    opacity: 0;
+  }
+}
+
+.c-spotify__iframe {
+  padding: 8px;
+  box-sizing: border-box;
+  height: 106px; // 80 + 20
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: +1;
+  transition: height 0.3s ease;
+  will-change: height;
+
+  :hover > & {
+    height: 420px;
+  }
+}

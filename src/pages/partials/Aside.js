@@ -25,7 +25,7 @@ class Aside extends Component {
             {/* <h2 className="c-title c-title--small">Navigation</h2> */}
             <ul className="c-list c-list--large">
               <li className="c-list__item c-list__item--wave">
-                <NavLink exact to="/" className="c-link c-link--on-dark" activeClassName="c-link--active">About Me</NavLink>
+                <NavLink exact to="/" className="c-link c-link--on-dark" activeClassName="c-link--active">Andrew McIntee</NavLink>
               </li>
               <li className="c-list__item c-list__item--rocket">
                 <NavLink exact to="/case-studies" className="c-link c-link--on-dark" activeClassName="c-link--active">Case Studies</NavLink>
@@ -40,6 +40,9 @@ class Aside extends Component {
                   Resumé
                   <span className="u-subtle">&nbsp;(2019)</span>
                 </NavLink>
+              </li>
+              <li className="c-list__item c-list__item--mushroom">
+                <NavLink to="/playlists" className="c-link c-link--on-dark" activeClassName="c-link--active">Playlists</NavLink>
               </li>
               <li className="c-list__item c-list__item--diamond">
                 <NavLink to="/colophon" className="c-link c-link--on-dark" activeClassName="c-link--active">Colophon</NavLink>

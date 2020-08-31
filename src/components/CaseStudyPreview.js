@@ -20,10 +20,18 @@ class CaseStudyPreview extends Component {
   renderContent() {
     return(
       <React.Fragment>
-        <h3 className="c-title c-title--medium">
+        <h3 className="c-title c-title--medium u-margin-bottom-none">
           <span dangerouslySetInnerHTML={{__html: this.props.title}} />
           <span className="c-title__subtle">{this.props.timePeriod}</span>
         </h3>
+        <div className="u-margin-bottom-small">
+          <h4 className="c-paragraph c-paragraph--sans-small u-margin-none" dangerouslySetInnerHTML={{__html: this.props.role}}/>
+          {/* <p className="c-paragraph c-paragraph--sans-small" dangerouslySetInnerHTML={{__html: this.props.role}}/> */}
+          {/* <h4 className="c-title c-title--smallest u-margin-none u-padding-top-small">
+            I Delivered
+          </h4>
+          <p className="c-paragraph c-paragraph--sans-small" dangerouslySetInnerHTML={{__html: this.props.type}}/> */}
+        </div>
         {/* <h4 className="c-title c-title--smallest u-margin-bottom-small">
           {this.props.role}
           <span className="u-subtler" children="&#160;&#160;/&#160;&#160;" />
@@ -32,10 +40,16 @@ class CaseStudyPreview extends Component {
         {this.props.description && this.props.description.map((paragraph, index) => (
           <p key={index} className="c-paragraph c-paragraph--medium" dangerouslySetInnerHTML={{__html: paragraph}} />
         ))}
-        <div className="u-padding-bottom">
+        <div className="u-margin-bottom u-border-top">
+          <h4 className="c-title c-title--smallest u-margin-none u-padding-top-small">
+              I Delivered
+            </h4>
+            <p className="c-paragraph c-paragraph--sans-small" dangerouslySetInnerHTML={{__html: this.props.type}}/>
+        </div>
+        <div className="u-margin-bottom">
           {this.renderButton()}
         </div>
-        <div className="u-border-top u-margin-bottom-small u-margin-top-auto">
+        {/* <div className="u-border-top u-margin-bottom-small u-margin-top-auto">
           <div className="c-grid c-grid--small">
             <div className="c-grid__cell u-1/2--lap">
               <h4 className="c-title c-title--smallest u-margin-none u-padding-top-small">
@@ -50,7 +64,7 @@ class CaseStudyPreview extends Component {
               <p className="c-paragraph c-paragraph--sans-small" dangerouslySetInnerHTML={{__html: this.props.type}}/>
             </div>
           </div>
-        </div>
+        </div> */}
       </React.Fragment>
     );
   }

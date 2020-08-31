@@ -29,7 +29,7 @@ class PartialFooter extends Component {
               <Link
                 to={parentPage.url}
                 className="c-button c-button--xlarge c-button--arrow-l u-margin-bottom"
-                children={`Back to “${parentPage.name === "Andrew McIntee" ? "About Me" : parentPage.name}”`}
+                children={`Back to ${parentPage.name === "Andrew McIntee" ? "Home" : parentPage.name}`}
               />
             }
             <div className="c-grid">
