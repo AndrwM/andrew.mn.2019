@@ -25,24 +25,18 @@ class Aside extends Component {
             {/* <h2 className="c-title c-title--small">Navigation</h2> */}
             <ul className="c-list c-list--large">
               <li className="c-list__item c-list__item--wave">
-                <NavLink exact to="/" className="c-link c-link--on-dark" activeClassName="c-link--active">Andrew McIntee</NavLink>
+                <NavLink exact to="/" className="c-link c-link--on-dark" activeClassName="c-link--active">About</NavLink>
               </li>
               <li className="c-list__item c-list__item--rocket">
-                <NavLink exact to="/case-studies" className="c-link c-link--on-dark" activeClassName="c-link--active">Case Studies</NavLink>
+                <NavLink exact to="/case-studies" className="c-link c-link--on-dark" activeClassName="c-link--active">Work</NavLink>
               </li>
             </ul>
             <ul className="c-list c-list--small u-margin-top-auto">
               <li className="c-list__item c-list__item--computer">
-                <NavLink to="/experience" className="c-link c-link--on-dark" activeClassName="c-link--active">Tooling Experience</NavLink>
+                <NavLink to="/experience" className="c-link c-link--on-dark" activeClassName="c-link--active">Tools</NavLink>
               </li>
               <li className="c-list__item c-list__item--cherry">
-                <NavLink to="/resume" className="c-link c-link--on-dark" activeClassName="c-link--active">
-                  Resumé
-                  <span className="u-subtle">&nbsp;(2019)</span>
-                </NavLink>
-              </li>
-              <li className="c-list__item c-list__item--mushroom">
-                <NavLink to="/playlists" className="c-link c-link--on-dark" activeClassName="c-link--active">Playlists</NavLink>
+                <NavLink to="/resume" className="c-link c-link--on-dark" activeClassName="c-link--active">Resumé</NavLink>
               </li>
               <li className="c-list__item c-list__item--diamond">
                 <NavLink to="/colophon" className="c-link c-link--on-dark" activeClassName="c-link--active">Colophon</NavLink>
@@ -57,7 +51,7 @@ class Aside extends Component {
           </div>
         </nav>
         <div className="c-page__view-toggle" onClick={() => this.props.setAppState({asideActive: !this.props.asideActive})}>
-          {this.props.asideActive ? "〣\u00A0\u00A0close" : "〣\u00A0\u00A0menu"}
+          {this.props.asideActive ? "\u21E4": "\u21E5"}
         </div>
       </React.Fragment>
     );

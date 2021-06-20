@@ -42,8 +42,8 @@ class PageAbout extends Component {
           About Me
         </h2> */}
         <p className="c-paragraph c-paragraph--xlarge">
-          {/* <span className="c-emoji c-emoji--in-margin">👋</span> */}
-          I’m a product designer &amp; web engineer<br/>specializing in design systems.
+          I’m a product designer &amp; web&nbsp;engineer<br/>specializing in design systems.
+          &nbsp;<span className="c-emoji c-emoji--large">👋</span>
         </p>
         <p className="c-paragraph">
         I have over 8 years of industry experience and most recently lead design &amp; frontend engineering on a product team. I have also been a remote-worker for over 4 years.

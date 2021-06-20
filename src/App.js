@@ -77,9 +77,9 @@ class App extends Component {
           className={`c-page ${this.state.asideActive ? "" : "c-page--collapsed"}`}
           style={{"--theme": this.state.theme}}
         >
-          <div className="c-notice">
+          {/* <div className="c-notice">
             Pardon the dust! This site is in *active* development.
-          </div>
+          </div> */}
           <Aside asideActive={this.state.asideActive} setAppState={this.setAppState} />
           <div className="c-page__content">
             {/* <Route path="/:subpage/" render={() => <Breadcrumb />} /> */}

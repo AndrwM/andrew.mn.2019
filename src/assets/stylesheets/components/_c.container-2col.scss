@@ -28,8 +28,8 @@
       }
 
       &--stripe {
-        &:nth-child(1) {background: linear-gradient(to left, #fdf6ff, transparent);}
-        &:nth-child(2) {background: linear-gradient(to right, #fdf6ff, transparent);}
+        &:nth-child(1) {background: linear-gradient(to left, #fdf6ff, #ffffff);}
+        &:nth-child(2) {background: linear-gradient(to right, #fdf6ff, #ffffff);}
       }
     }
   }

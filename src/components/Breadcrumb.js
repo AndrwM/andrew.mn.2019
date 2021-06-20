@@ -35,6 +35,7 @@ class Breadcrumb extends Component {
     return (
       <div className="c-navigation__breadcrumb-link c-navigation__breadcrumb-link--static">
         {name}
+        &nbsp;<span className="u-subtle">(2019)</span>
       </div>
     );
   }
