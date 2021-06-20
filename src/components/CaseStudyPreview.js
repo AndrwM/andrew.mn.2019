@@ -40,12 +40,14 @@ class CaseStudyPreview extends Component {
         {this.props.description && this.props.description.map((paragraph, index) => (
           <p key={index} className="c-paragraph c-paragraph--medium" dangerouslySetInnerHTML={{__html: paragraph}} />
         ))}
-        <div className="u-margin-bottom u-border-top">
-          <h4 className="c-title c-title--smallest u-margin-none u-padding-top-small">
-              I Delivered
-            </h4>
-            <p className="c-paragraph c-paragraph--sans-small" dangerouslySetInnerHTML={{__html: this.props.type}}/>
-        </div>
+        {this.props.type && (
+          <div className="u-margin-bottom u-border-top">
+            <h4 className="c-title c-title--smallest u-margin-none u-padding-top-small">
+                I Delivered
+              </h4>
+              <p className="c-paragraph c-paragraph--sans-small" dangerouslySetInnerHTML={{__html: this.props.type}}/>
+          </div>
+        )}
         <div className="u-margin-bottom">
           {this.renderButton()}
         </div>

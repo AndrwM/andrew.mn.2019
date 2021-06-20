@@ -58,12 +58,14 @@ class PageCaseStudyIndex extends Component {
         <CaseStudyPreview
           title="Kajabi, Product Design System"
           timePeriod="2020 &ndash; present"
-          role="User Experience Developer, Remote&nbsp;Full-Time"
-          type="Design System Dev Ops, Component Markup &amp; Scripting, RoR&nbsp;Integration"
-          image={imageOffsite}
-          url={false}
+          role="Engineer, Remote&nbsp;Full-Time"
+          image={false}
+          context={["no-browser"]}
+          cta="See The Design System"
+          url="http://sage-design-system.kajabi.com/pages/index"
           description={[
-            "I currently serve on the design system team at Kajabi. We design and manage the UI that powers over 30 million subscription learning sites."
+            "Software engineering within product R&D.",
+            "Previously, served on the designed system team at Kajabi. We design and manage the UI that powers over 30 million subscription learning sites."
           ]} />
         <section className="c-wrapper c-wrapper--flush u-border-bottom">
           <div className="c-container-2col">
