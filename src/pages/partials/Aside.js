@@ -25,33 +25,33 @@ class Aside extends Component {
             {/* <h2 className="c-title c-title--small">Navigation</h2> */}
             <ul className="c-list c-list--large">
               <li className="c-list__item c-list__item--wave">
-                <NavLink exact to="/" className="c-link c-link--on-dark" activeClassName="c-link--active">About</NavLink>
+                <NavLink exact to="/" className="c-link" activeClassName="c-link--active">About</NavLink>
               </li>
               <li className="c-list__item c-list__item--rocket">
-                <NavLink exact to="/case-studies" className="c-link c-link--on-dark" activeClassName="c-link--active">Work</NavLink>
+                <NavLink exact to="/case-studies" className="c-link" activeClassName="c-link--active">Work</NavLink>
               </li>
             </ul>
             <ul className="c-list c-list--small u-margin-top-auto">
               <li className="c-list__item c-list__item--computer">
-                <NavLink to="/experience" className="c-link c-link--on-dark" activeClassName="c-link--active">Tools</NavLink>
+                <NavLink to="/experience" className="c-link" activeClassName="c-link--active">Tools</NavLink>
               </li>
               <li className="c-list__item c-list__item--cherry">
-                <NavLink to="/resume" className="c-link c-link--on-dark" activeClassName="c-link--active">Resumé</NavLink>
+                <NavLink to="/resume" className="c-link" activeClassName="c-link--active">Resumé</NavLink>
               </li>
               <li className="c-list__item c-list__item--diamond">
-                <NavLink to="/colophon" className="c-link c-link--on-dark" activeClassName="c-link--active">Colophon</NavLink>
+                <NavLink to="/colophon" className="c-link" activeClassName="c-link--active">Colophon</NavLink>
               </li>
               <li className="c-list__item c-list__item--remote">
-                <a href="https://github.com/andrwM" target="_blank" className="c-link c-link--on-dark c-link--arrow-remote">Github</a>
+                <a href="https://github.com/andrwM" target="_blank" className="c-link c-link--arrow-remote">Github</a>
               </li>
               <li className="c-list__item c-list__item--remote">
-                <a href="https://www.linkedin.com/in/AndrewMcIntee/" target="_blank" className="c-link c-link--on-dark c-link--arrow-remote">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/AndrewMcIntee/" target="_blank" className="c-link c-link--arrow-remote">LinkedIn</a>
               </li>
             </ul>
           </div>
         </nav>
         <div className="c-page__view-toggle" onClick={() => this.props.setAppState({asideActive: !this.props.asideActive})}>
-          {this.props.asideActive ? "\u21E4": "\u21E5"}
+          {this.props.asideActive ? "\u21E4": "☰"}
         </div>
       </React.Fragment>
     );

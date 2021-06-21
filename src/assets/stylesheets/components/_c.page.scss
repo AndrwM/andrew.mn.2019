@@ -19,8 +19,7 @@ $_navigation-width: 16vw;
   max-width: 160px;
   top: 0;
   width: $_navigation-width;
-  background: linear-gradient(to left, black 0%, #171717 100%);
-  box-shadow: 1px 0 0 0 rgba(0,0,0,0.05);
+  background: white;
   position: sticky;
   align-self: flex-start;
   height: 100vh;
@@ -34,25 +33,31 @@ $_navigation-width: 16vw;
 .c-page__view-toggle {
   font: 400 20px / 2 $ff-primary;
   text-transform: uppercase;
-  color: rgba(255,255,255,1);
+  color: #434551;
   padding: 36px $s-xtiny;
   box-sizing: border-box;
-  background-color: black;
+  background-color: white;
   height: 100vh;
   position: sticky;
   top: 0;
   cursor: pointer;
   z-index: 100000;
   transition: transform 0.1s ease-out, background-color 0.1s ease-out, padding 0.4s ease;
+  border-right: 1px solid rgba(#000000, 0.06);
+
+  &:hover {
+    background-color: rgba(#000000, 0.04);
+  }
 
   .c-page--collapsed & {
     padding-left: $s-small;
     padding-right: $s-small;
+    color: white;
     background-color: #713df0;
-  }
 
-  &:hover {
-    background-color: #8050f6;
+    &:hover {
+      background-color: #7a47fc;
+    }
   }
 }
 
@@ -63,7 +68,7 @@ $_navigation-width: 16vw;
   box-sizing: border-box;
   height: 100vh;
   padding: $s-tiny $s-tiny 0 $s-tiny;
-  transition: 0.8s padding-left, 0.8s padding-right;
+  transition: 0.2s padding-left, 0.2s padding-right;
   will-change: padding-left, padding-right;
 
   @media #{$bp-lap} {
@@ -75,6 +80,7 @@ $_navigation-width: 16vw;
   }
 
   .c-page--collapsed & {
+    visibility: hidden;
     padding-left: 0;
     padding-right: 0;
   }
